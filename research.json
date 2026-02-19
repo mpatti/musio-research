@@ -3,6 +3,14 @@
   "research": [
     {
       "date": "2026-02-19",
+      "source": "Google Blog",
+      "title": "Google Lyria 3 - AI Music in Gemini",
+      "summary": "Google released Lyria 3, their most advanced music generation model, now available in the Gemini app. Users can create 30-second tracks using text prompts or upload photos/videos for AI to create matching music.",
+      "url": "https://blog.google/products/gemini/google-lyria-music-generation-gemini/",
+      "category": "tools"
+    },
+    {
+      "date": "2026-02-19",
       "source": "Forbes",
       "title": "ElevenLabs Launches AI Music Platform",
       "summary": "ElevenLabs launches ElevenLabs Music, entering the AI music race with Suno and Udio, using artist-led releases like The Eleven Album to compete.",
