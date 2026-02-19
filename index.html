@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musio Research | AI & Music Tech Trends</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --musio-gold: #FFD700;
+            --musio-gold-light: #FFE44D;
+            --musio-dark: #0D0D12;
+            --musio-dark-elevated: #12121A;
+            --musio-dark-card: #1A1A24;
+            --musio-text: #FAFAFA;
+            --musio-text-muted: #8E8E9A;
+            --musio-purple: #8B5CF6;
+            --musio-green: #10B981;
+            --musio-red: #EF4444;
+            --musio-blue: #3B82F6;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--musio-dark);
+            color: var(--musio-text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(18, 18, 26, 0.95);
+            backdrop-filter: blur(20px);
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--musio-gold), #FFA500);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            box-shadow: 0 4px 20px rgba(255, 215, 0, 0.3);
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--musio-gold), #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .logo-sub {
+            font-size: 0.85rem;
+            color: var(--musio-text-muted);
+            font-weight: 500;
+        }
+        
+        .header-links {
+            display: flex;
+            gap: 24px;
+        }
+        
+        .header-links a {
+            color: var(--musio-text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .header-links a:hover {
+            color: var(--musio-gold);
+        }
+        
+        /* Hero */
+        .hero {
+            text-align: center;
+            padding: 80px 24px 60px;
+            background: radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.08) 0%, transparent 60%);
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+        
+        .hero h1 span {
+            background: linear-gradient(135deg, var(--musio-gold), #FFA500);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--musio-text-muted);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        /* Filters */
+        .filters {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            padding: 0 24px 40px;
+            flex-wrap: wrap;
+        }
+        
+        .filter-btn {
+            background: var(--musio-dark-card);
+            border: 2px solid transparent;
+            color: var(--musio-text-muted);
+            padding: 10px 20px;
+            border-radius: 24px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .filter-btn:hover {
+            border-color: rgba(255, 215, 0, 0.3);
+            color: var(--musio-text);
+        }
+        
+        .filter-btn.active {
+            background: rgba(255, 215, 0, 0.1);
+            border-color: var(--musio-gold);
+            color: var(--musio-gold);
+        }
+        
+        /* Research Grid */
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+            gap: 20px;
+            padding: 0 24px 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .research-card {
+            background: var(--musio-dark-card);
+            border-radius: 16px;
+            padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .research-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(255, 215, 0, 0.2);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+        
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 16px;
+        }
+        
+        .card-category {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 6px 12px;
+            border-radius: 20px;
+        }
+        
+        .category-business { background: rgba(139, 92, 246, 0.2); color: #A78BFA; }
+        .category-tools { background: rgba(16, 185, 129, 0.2); color: #34D399; }
+        .category-trends { background: rgba(59, 130, 246, 0.2); color: #60A5FA; }
+        .category-tech { background: rgba(255, 165, 0, 0.2); color: #FB923C; }
+        
+        .card-date {
+            font-size: 0.8rem;
+            color: var(--musio-text-muted);
+        }
+        
+        .card-source {
+            font-size: 0.85rem;
+            color: var(--musio-gold);
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .card-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+        
+        .card-summary {
+            font-size: 0.9rem;
+            color: var(--musio-text-muted);
+            flex: 1;
+            margin-bottom: 16px;
+        }
+        
+        .card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--musio-gold);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: gap 0.2s;
+        }
+        
+        .card-link:hover {
+            gap: 12px;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--musio-dark-elevated);
+            padding: 40px 24px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+        
+        footer p {
+            color: var(--musio-text-muted);
+            font-size: 0.9rem;
+        }
+        
+        footer a {
+            color: var(--musio-gold);
+            text-decoration: none;
+        }
+        
+        /* Responsive */
+        @media (max-width: 640px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .header-links { display: none; }
+            .research-grid { grid-template-columns: 1fr; }
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .research-card {
+            animation: fadeIn 0.5s ease forwards;
+            opacity: 0;
+        }
+        
+        .research-card:nth-child(1) { animation-delay: 0.1s; }
+        .research-card:nth-child(2) { animation-delay: 0.15s; }
+        .research-card:nth-child(3) { animation-delay: 0.2s; }
+        .research-card:nth-child(4) { animation-delay: 0.25s; }
+        .research-card:nth-child(5) { animation-delay: 0.3s; }
+        .research-card:nth-child(6) { animation-delay: 0.35s; }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">🎹</div>
+            <div>
+                <div class="logo-text">Musio</div>
+                <div class="logo-sub">Research</div>
+            </div>
+        </div>
+        <nav class="header-links">
+            <a href="#">Trends</a>
+            <a href="#">Tools</a>
+            <a href="#">Business</a>
+            <a href="#">About</a>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>AI & Music<br><span>Tech Intelligence</span></h1>
+        <p>Tracking the latest trends in AI music generation, virtual instruments, and music technology. Updated continuously.</p>
+    </section>
+    
+    <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="trends">Trends</button>
+        <button class="filter-btn" data-filter="tools">Tools</button>
+        <button class="filter-btn" data-filter="business">Business</button>
+        <button class="filter-btn" data-filter="tech">Tech</button>
+    </div>
+    
+    <div class="research-grid" id="research-grid">
+        <!-- Research cards loaded via JavaScript -->
+    </div>
+    
+    <footer>
+        <p>Musio Research &bull; Powered by AI &bull; <a href="https://musio.com" target="_blank">musio.com</a></p>
+    </footer>
+    
+    <script>
+        // Load research data
+        let researchData = [];
+        
+        async function loadResearch() {
+            try {
+                const response = await fetch('research.json');
+                const data = await response.json();
+                researchData = data.research || [];
+                renderResearch(researchData);
+            } catch (error) {
+                console.error('Error loading research:', error);
+                document.getElementById('research-grid').innerHTML = 
+                    '<p style="text-align:center;color:var(--musio-text-muted);grid-column:1/-1;">Failed to load research data.</p>';
+            }
+        }
+        
+        function renderResearch(data) {
+            const grid = document.getElementById('research-grid');
+            
+            if (!data || data.length === 0) {
+                grid.innerHTML = '<p style="text-align:center;color:var(--musio-text-muted);grid-column:1/-1;">No research found.</p>';
+                return;
+            }
+            
+            grid.innerHTML = data.map(item => `
+                <article class="research-card" data-category="${item.category || 'trends'}">
+                    <div class="card-header">
+                        <span class="card-category category-${item.category || 'trends'}">${item.category || 'Trends'}</span>
+                        <span class="card-date">${formatDate(item.date)}</span>
+                    </div>
+                    <div class="card-source">${item.source}</div>
+                    <h3 class="card-title">${item.title}</h3>
+                    <p class="card-summary">${item.summary}</p>
+                    <a href="${item.url}" target="_blank" rel="noopener" class="card-link">
+                        Read more <span>→</span>
+                    </a>
+                </article>
+            `).join('');
+        }
+        
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+        }
+        
+        // Filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                if (filter === 'all') {
+                    renderResearch(researchData);
+                } else {
+                    const filtered = researchData.filter(item => 
+                        (item.category || 'trends') === filter
+                    );
+                    renderResearch(filtered);
+                }
+            });
+        });
+        
+        // Load on page load
+        loadResearch();
+    </script>
+</body>
+</html>
