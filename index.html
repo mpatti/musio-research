@@ -336,9 +336,7 @@
     
     <div class="tldr">
         <div class="tldr-label">TL;DR — State of AI & Music</div>
-        <div class="tldr-text">
-            The AI music landscape in 2026 is defined by two competing forces: generative AI tools like <strong>Suno, Udio, and ElevenLabs</strong> that create complete songs from prompts are exploding in popularity and signing landmark deals with major labels (Warner, Universal), while streaming platforms fight back with <strong>three-tier royalty systems</strong> that pay less or nothing for AI-generated content. For Musio, the opportunity lies in the middle ground—<strong>AI-assisted production tools</strong> that enhance human creativity rather than replace it. The VST/plugin market remains strong with tools like <strong>Serum 2</strong> leading the pack, showing that composers still value high-quality sample libraries and instruments over pure AI generation.
-        </div>
+        <div class="tldr-text" id="tldr-text">Loading...</div>
     </div>
     
     <div class="filters">
@@ -366,6 +364,12 @@
                 const response = await fetch('research.json');
                 const data = await response.json();
                 researchData = data.research || [];
+                
+                // Load TLDR
+                if (data.tldr) {
+                    document.getElementById('tldr-text').innerHTML = data.tldr;
+                }
+                
                 renderResearch(researchData);
             } catch (error) {
                 console.error('Error loading research:', error);
