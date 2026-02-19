@@ -96,7 +96,7 @@
         /* Hero */
         .hero {
             text-align: center;
-            padding: 80px 24px 60px;
+            padding: 80px 24px 40px;
             background: radial-gradient(ellipse at 50% 0%, rgba(255, 215, 0, 0.08) 0%, transparent 60%);
         }
         
@@ -118,6 +118,33 @@
             color: var(--musio-text-muted);
             max-width: 600px;
             margin: 0 auto;
+        }
+        
+        /* TLDR */
+        .tldr {
+            background: var(--musio-dark-card);
+            border-radius: 16px;
+            padding: 28px;
+            margin: 0 24px 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 1px solid rgba(255, 215, 0, 0.15);
+        }
+        
+        .tldr-label {
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: var(--musio-gold);
+            margin-bottom: 12px;
+        }
+        
+        .tldr-text {
+            font-size: 1.05rem;
+            color: var(--musio-text);
+            line-height: 1.7;
         }
         
         /* Filters */
@@ -306,6 +333,13 @@
         <h1>AI & Music<br><span>Tech Intelligence</span></h1>
         <p>Tracking the latest trends in AI music generation, virtual instruments, and music technology. Updated continuously.</p>
     </section>
+    
+    <div class="tldr">
+        <div class="tldr-label">TL;DR — State of AI & Music</div>
+        <div class="tldr-text">
+            The AI music landscape in 2026 is defined by two competing forces: generative AI tools like <strong>Suno, Udio, and ElevenLabs</strong> that create complete songs from prompts are exploding in popularity and signing landmark deals with major labels (Warner, Universal), while streaming platforms fight back with <strong>three-tier royalty systems</strong> that pay less or nothing for AI-generated content. For Musio, the opportunity lies in the middle ground—<strong>AI-assisted production tools</strong> that enhance human creativity rather than replace it. The VST/plugin market remains strong with tools like <strong>Serum 2</strong> leading the pack, showing that composers still value high-quality sample libraries and instruments over pure AI generation.
+        </div>
+    </div>
     
     <div class="filters">
         <button class="filter-btn active" data-filter="all">All</button>
