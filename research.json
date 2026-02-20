@@ -1,71 +1,86 @@
 {
-  "date": "2026-02-20",
-  "summary": "AI Music Market Research - February 2026",
-  "key_themes": [
-    "Big Tech entering AI music creation (Google, Apple, NVIDIA)",
-    "AI music generators commoditizing stock music market",
-    "New programmable DSP plugins emerging",
-    "Major labels partnering on AI tools"
-  ],
-  "highlights": [
+  "insightTech": "Big Tech entering AI music creation (Google, Apple, NVIDIA). AI music generators commoditizing stock music market. New programmable DSP plugins emerging. Major labels partnering on AI tools.",
+  "insightStrategy": "Musio+ Complete can differentiate through bundling all instruments from multiple developers. Opportunity to increase visibility before launch - Musio not widely appearing in current AI music discussions.",
+  "research": [
     {
-      "title": "Universal Music + NVIDIA Partnership",
+      "date": "2026-02-20",
       "source": "Forbes",
-      "date": "Jan 2026",
+      "title": "Universal Music + NVIDIA Partnership",
+      "summary": "Universal Music Group partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'.",
       "url": "https://www.forbes.com/sites/conormurray/2026/01/06/universal-music-group-strikes-deal-with-nvidia-to-develop-ai-music-discovery-and-creation-tools/",
-      "snippet": "Universal Music Group partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'"
+      "category": "business"
     },
     {
-      "title": "Google & Apple AI Music Features",
+      "date": "2026-02-20",
       "source": "Mint",
-      "date": "Feb 2026",
+      "title": "Google & Apple AI Music Features",
+      "summary": "Both Google and Apple adding AI-powered music generation to core apps - generate songs, cover art, playlists from simple prompts.",
       "url": "https://www.livemint.com/technology/tech-news/google-and-apple-turn-to-ai-music-tools-to-deepen-consumer-engagement-heres-how/amp-11771505080923.html",
-      "snippet": "Both Google and Apple adding AI-powered music generation to core apps - generate songs, cover art, playlists from simple prompts"
+      "category": "tools"
     },
     {
-      "title": "Amorph - New Programmable DSP Plugin",
+      "date": "2026-02-20",
       "source": "Synthtopia",
-      "date": "Feb 18 2026",
+      "title": "Amorph - New Programmable DSP Plugin",
+      "summary": "New AI-based plugin in public beta - lets users create any audio effect or instrument directly in their DAW.",
       "url": "https://www.synthtopia.com/content/2026/02/18/new-ai-based-plugin-amorph-lets-you-create-new-effects-instruments-right-in-your-daw/",
-      "snippet": "New AI-based plugin in public beta - lets users create any audio effect or instrument directly in their DAW"
+      "category": "tools"
     },
     {
-      "title": "ACE Studio 2.0",
+      "date": "2026-02-20",
       "source": "Twitter",
-      "date": "Feb 2026",
+      "title": "ACE Studio 2.0",
+      "summary": "All-in-one AI music studio with AI vocals, AI instruments, generative AI kits, stem splitter, and DAW plugin integration.",
       "url": "https://twitter.com/ai",
-      "snippet": "All-in-one AI music studio with AI vocals, AI instruments, generative AI kits, stem splitter, and DAW plugin integration"
+      "category": "tools"
     },
     {
-      "title": "AI Music Generators Killing Stock Music",
+      "date": "2026-02-20",
       "source": "The AI Journal",
-      "date": "Feb 2026",
+      "title": "AI Music Generators Killing Stock Music",
+      "summary": "Analysis of how AI music generators are displacing traditional stock music market.",
       "url": "https://aijourn.com/the-end-of-stock-music-top-5-best-ai-music-generators-in-2026/",
-      "snippet": "Analysis of how AI music generators are displacing traditional stock music market"
+      "category": "trends"
+    },
+    {
+      "date": "2026-02-20",
+      "source": "Billboard",
+      "title": "Top AI Music Companies 2026",
+      "summary": "Suno generates a Spotify catalog's worth of music every two weeks. Suno raised $1.2B - largest music tech funding in history.",
+      "url": "https://www.billboard.com/lists/top-ai-music-companies-2026-future-music/",
+      "category": "business"
+    },
+    {
+      "date": "2026-02-20",
+      "source": "Music Business Worldwide",
+      "title": "ElevenLabs Raises $500M at $11B Valuation",
+      "summary": "AI audio startup ElevenLabs raised $500 million in Series D, valuing the company at $11 billion.",
+      "url": "https://www.musicbusinessworldwide.com/elevenlabs-creator-of-suno-rival-eleven-music-raises-500m-at-11bn-valuation/",
+      "category": "business"
+    },
+    {
+      "date": "2026-02-20",
+      "source": "Google Blog",
+      "title": "Google Lyria 3 - AI Music in Gemini",
+      "summary": "Google releases Lyria 3, transforming text prompts or images into 30-second tracks with vocals and lyrics. Now free in Gemini app.",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
+      "category": "tools"
+    },
+    {
+      "date": "2026-02-20",
+      "source": "Bloomberg",
+      "title": "Music Industry Enters Less-Is-More Era",
+      "summary": "60,000 wholly AI-generated tracks delivered to streaming services daily. Apple Music flagged 2B fraudulent streams in 2025.",
+      "url": "https://www.bloomberg.com/news/newsletters/2026-02-12/streaming-music-enters-its-less-is-more-era",
+      "category": "trends"
+    },
+    {
+      "date": "2026-02-20",
+      "source": "Revolution 93.5",
+      "title": "Best VST Plugins for Music Production 2026",
+      "summary": "Top VSTs: Serum 2 (legendary wavetable synth), Massive X (Native Instruments), Vital (free, highly rated), MOSAIQ.",
+      "url": "https://www.revolution935.com/2026/01/27/the-best-vst-plugins-for-music-production-in-2026-your-complete-producers-toolkit/",
+      "category": "tools"
     }
-  ],
-  "competitors_mentioned": [
-    "Suno (market leader)",
-    "Udio",
-    "Mubert",
-    "Soundraw",
-    "AIVA",
-    "ElevenLabs Music",
-    "Boomy",
-    "Soundful",
-    "LANDR",
-    "Mureka"
-  ],
-  "musio_positioning": {
-    "cb_insights_competitors": ["DigiTraxAI", "Session", "Cynanite", "Know What's Loved", "SourceAudio"],
-    "market_perception": "Not widely appearing in AI music generator discussions - opportunity to increase visibility",
-    "differentiation_opportunity": "Musio+ Complete bundling all instruments from multiple developers"
-  },
-  "trends": [
-    "AI lyric video generators emerging as new category",
-    "AI music video creation tools gaining traction",
-    "Major labels getting serious about AI partnerships",
-    "Google/Apple embedding AI music directly in consumer products",
-    "Non-generative AI tools for productivity gaining attention"
   ]
 }
