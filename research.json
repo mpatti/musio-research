@@ -1,6 +1,22 @@
 {
-  "tldr": "AI music is hitting the Billboard Hot 100, major labels are making deals with AI companies, and the industry is establishing new rules. Google Lyria 3 is now free in Gemini. The three-tier royalty system is shaping up: human-made > AI-assisted > fully AI. For Musio, the opportunity is AI-assisted production tools that enhance human creativity, not replace it.",
+  "tldr": "AI music is hitting the Billboard Hot 100, major labels are making deals with AI companies, and the industry is establishing new rules. Google Lyria 3 is now free in Gemini - generating full songs from text/images. The three-tier royalty system is shaping up: human-made > AI-assisted > fully AI. For Musio, the opportunity is AI-assisted production tools that enhance human creativity.",
   "research": [
+    {
+      "date": "2026-02-19",
+      "source": "X/Twitter",
+      "title": "Google Lyria 3 Released - AI Music in Gemini",
+      "summary": "Google releases Lyria 3, new AI for turning ideas into complete music in any genre. Transform simple text prompts or images into full songs with vocals, instruments, and lyrics in seconds. Now free in Gemini app.",
+      "url": "https://twitter.com/search?q=Google+Lyria+3",
+      "category": "tools"
+    },
+    {
+      "date": "2026-02-19",
+      "source": "X/Twitter",
+      "title": "Who's Who of AI Audio Generation 2026",
+      "summary": "Complete landscape: Suno, Udio, ElevenLabs, Stable Audio, Bark, and more. Music, voice, sound effects - APIs and open source available.",
+      "url": "https://twitter.com/hashtag/AI #Audio #Music",
+      "category": "tools"
+    },
     {
       "date": "2026-02-19",
       "source": "Musio.com",
@@ -51,14 +67,6 @@
     },
     {
       "date": "2026-02-19",
-      "source": "European Business Review",
-      "title": "Top 5 AI Music Generators 2026",
-      "summary": "AI music generation branched into two directions: generative 'complete' song creators (Suno, Udio) and AI-assisted production tools.",
-      "url": "https://www.europeanbusinessreview.com/tested-top-5-ai-music-generators-in-2026/",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-19",
       "source": "Forbes",
       "title": "AI Music Royalty Tiers",
       "summary": "Spotify, Apple Music, Amazon adopting AI detection systems with three-tier royalty structure: (1) fully human-made, (2) AI-assisted, (3) fully AI-generated (minimal/no rates)",
@@ -75,19 +83,11 @@
     },
     {
       "date": "2026-02-19",
-      "source": "WaveSpeed AI",
-      "title": "Best AI Music Generators 2026",
-      "summary": "Comprehensive comparison of AI music generators including Suno, Udio, and emerging tools for creating royalty-free music, sound effects, and audio.",
-      "url": "https://wavespeed.ai/blog/posts/best-ai-music-generators-2026",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-19",
-      "source": "Soundverse",
-      "title": "AI Music Industry Trends 2026",
-      "summary": "Exploring how Ethical AI Music Framework shapes music innovation and ethics. Streaming platforms fighting AI-generated content.",
-      "url": "https://www.soundverse.ai/blog/article/ai-music-industry-trends-2026",
-      "category": "business"
+      "source": "Billboard Pro",
+      "title": "Music Predictions 2026: AI on the Hot 100",
+      "summary": "Billboard's predictions for 2026: Will AI-generated songs crack the Hot 100? Discussion of UMG-Downtown deal, AI music settlements, and industry shakeup.",
+      "url": "https://www.billboard.com/pro/music-predictions-2026-ai-hot-100-umg-deal/",
+      "category": "trends"
     },
     {
       "date": "2026-02-19",
@@ -96,14 +96,6 @@
       "summary": "OpenClaw's rapid rise highlights growing interest in AI agents beyond chatbots. Its open-source design accelerated adoption from Silicon Valley.",
       "url": "https://www.cnbc.com/2026/02/02/openclaw-open-source-ai-agent-rise-controversy-clawdbot-moltbot-moltbook.html",
       "category": "tech"
-    },
-    {
-      "date": "2026-02-19",
-      "source": "Billboard Pro",
-      "title": "Music Predictions 2026: AI on the Hot 100",
-      "summary": "Billboard's predictions for 2026: Will AI-generated songs crack the Hot 100? Discussion of UMG-Downtown deal, AI music settlements, and industry shakeup.",
-      "url": "https://www.billboard.com/pro/music-predictions-2026-ai-hot-100-umg-deal/",
-      "category": "trends"
     }
   ]
 }
