@@ -1,102 +1,71 @@
 {
-  "insightTech": "AI music generation is exploding - Google Lyria 3 now creates full songs from text/images in Gemini (30-second tracks). ElevenLabs raised $500M at $11B valuation, entering the music race. Suno raised $1.2B in the largest music tech round ever. All major players settling licensing deals with labels - the era of licensed AI music is here.",
-  "insightStrategy": "Musio+ Complete launching March 2026: 3,400+ instruments, 117 collections from ALL developers for $20/mo or $149/year (normally $199). Position as the 'everything in one place' platform vs competitors who charge separately. Emphasize: unified access, best price/quality ratio, professional-grade tools.",
-  "research": [
+  "date": "2026-02-20",
+  "summary": "AI Music Market Research - February 2026",
+  "key_themes": [
+    "Big Tech entering AI music creation (Google, Apple, NVIDIA)",
+    "AI music generators commoditizing stock music market",
+    "New programmable DSP plugins emerging",
+    "Major labels partnering on AI tools"
+  ],
+  "highlights": [
     {
-      "date": "2026-02-20",
-      "source": "Serper/Google",
-      "title": "Google Lyria 3 Released - AI Music in Gemini",
-      "summary": "Google releases Lyria 3, new AI for turning ideas into complete music in any genre. Transform simple text prompts or images into 30-second tracks with vocals, instruments, and lyrics. Now free in Gemini app. Lyria 2 API pricing: $0.06 per 30 seconds.",
-      "url": "https://blog.google/innovation-and-ai/products/gemini-app/lyria-3/",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-20",
+      "title": "Universal Music + NVIDIA Partnership",
       "source": "Forbes",
-      "title": "ElevenLabs Launches AI Music Platform",
-      "summary": "ElevenLabs launches ElevenLabs Music, entering the AI music race with Suno and Udio. Raised $500M in Series D at $11B valuation - largest AI audio round ever.",
-      "url": "https://www.forbes.com/sites/charliefink/2026/01/21/elevenlabs-launches-ai-music-platform-enters-race-with-suno-and-udio/",
-      "category": "tools"
+      "date": "Jan 2026",
+      "url": "https://www.forbes.com/sites/conormurray/2026/01/06/universal-music-group-strikes-deal-with-nvidia-to-develop-ai-music-discovery-and-creation-tools/",
+      "snippet": "Universal Music Group partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'"
     },
     {
-      "date": "2026-02-20",
-      "source": "Billboard",
-      "title": "Top AI Music Companies 2026",
-      "summary": "Suno generates a Spotify catalog's worth of music every two weeks. Suno raised $1.2B - largest music tech funding round in history. Both Suno and Udio settling lawsuits with major labels and building licensed models.",
-      "url": "https://www.billboard.com/lists/top-ai-music-companies-2026-future-music/",
-      "category": "business"
+      "title": "Google & Apple AI Music Features",
+      "source": "Mint",
+      "date": "Feb 2026",
+      "url": "https://www.livemint.com/technology/tech-news/google-and-apple-turn-to-ai-music-tools-to-deepen-consumer-engagement-heres-how/amp-11771505080923.html",
+      "snippet": "Both Google and Apple adding AI-powered music generation to core apps - generate songs, cover art, playlists from simple prompts"
     },
     {
-      "date": "2026-02-20",
-      "source": "Music Business Worldwide",
-      "title": "ElevenLabs Raises $500M at $11B Valuation",
-      "summary": "AI audio startup ElevenLabs raised $500 million in Series D, valuing the company at $11 billion. Major player in voice and now music AI.",
-      "url": "https://www.musicbusinessworldwide.com/elevenlabs-creator-of-suno-rival-eleven-music-raises-500m-at-11bn-valuation/",
-      "category": "business"
+      "title": "Amorph - New Programmable DSP Plugin",
+      "source": "Synthtopia",
+      "date": "Feb 18 2026",
+      "url": "https://www.synthtopia.com/content/2026/02/18/new-ai-based-plugin-amorph-lets-you-create-new-effects-instruments-right-in-your-daw/",
+      "snippet": "New AI-based plugin in public beta - lets users create any audio effect or instrument directly in their DAW"
     },
     {
-      "date": "2026-02-20",
-      "source": "Bloomberg",
-      "title": "Music Industry Enters Less-Is-More Era",
-      "summary": "60,000 wholly AI-generated tracks delivered to streaming services daily. 200+ million songs on platforms. Apple Music flagged 2 billion fraudulent streams in 2025 ($17M in fake royalties).",
-      "url": "https://www.bloomberg.com/news/newsletters/2026-02-12/streaming-music-enters-its-less-is-more-era",
-      "category": "trends"
+      "title": "ACE Studio 2.0",
+      "source": "Twitter",
+      "date": "Feb 2026",
+      "url": "https://twitter.com/ai",
+      "snippet": "All-in-one AI music studio with AI vocals, AI instruments, generative AI kits, stem splitter, and DAW plugin integration"
     },
     {
-      "date": "2026-02-20",
-      "source": "Spotify Newsroom",
-      "title": "Spotify 2025 Payouts - What's Next for Artists",
-      "summary": "Spotify paying $11B+ in 2025. AI being exploited to flood platforms with low-quality 'slop' to game royalties. Spotify introducing AI detection and human editorial priorities.",
-      "url": "https://newsroom.spotify.com/2026-01-28/2025-music-industry-payouts-whats-next-for-artists/",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-20",
-      "source": "Revolution 93.5",
-      "title": "Best VST Plugins for Music Production 2026",
-      "summary": "Top VSTs: Serum 2 (legendary wavetable synth), Massive X (Native Instruments), Vital (free, highly rated), MOSAIQ. Also top effects: FabFilter Pro-Q 4, Soundtoys Decapitator, Valhalla SuperMassive.",
-      "url": "https://www.revolution935.com/2026/01/27/the-best-vst-plugins-for-music-production-in-2026-your-complete-producers-toolkit/",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-20",
-      "source": "TechCrunch",
-      "title": "Google Adds Music Generation to Gemini",
-      "summary": "Google adds Lyria 3 to Gemini app. 30-second tracks from text or images. Designed for 'original expression, not mimicking existing artists.' Free tier available, AI Plus subscribers get higher limits.",
-      "url": "https://techcrunch.com/2026/02/18/google-adds-music-generation-capabilities-to-the-gemini-app/",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-20",
-      "source": "Engadget",
-      "title": "Gemini Can Now Generate Music",
-      "summary": "Google's Lyria 3 model can now generate 30-second approximations of what real music sounds like. Integrated directly into the Gemini app.",
-      "url": "https://www.engadget.com/ai/gemini-can-now-generate-a-30-second-approximation-of-what-real-music-sounds-like-204445903.html",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-20",
-      "source": "Substack/Zinstrel",
-      "title": "The AI Music Stack Moves in Sync",
-      "summary": "Suno Studio 1.2 introduced timing control, alternate takes, and expanded meter (time signature) support, adding real precision to AI music production.",
-      "url": "https://zinstrel.substack.com/p/feb-20-synthesis-now-the-ai-music",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-20",
-      "source": "Soundverse AI",
-      "title": "Can AI Music Be Monetized in 2026?",
-      "summary": "By 2026, AI-generated songs are no longer just creative experiments—they are legitimate revenue sources across streaming, publishing, and licensing.",
-      "url": "https://www.soundverse.ai/blog/article/can-ai-music-be-monetized-across-all-platforms-1439",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-20",
-      "source": "Dixon Beats",
-      "title": "10 Best VST Plugins for 2026",
-      "summary": "Must-have VST plugins: Serum 2 by Xfer Records (legendary wavetable synth), MOSAIQ, and emerging tools for music production.",
-      "url": "https://www.dixonbeats.com/blogs/music-production-news/10-best-vst-plugins-for-2026-must-have",
-      "category": "tools"
+      "title": "AI Music Generators Killing Stock Music",
+      "source": "The AI Journal",
+      "date": "Feb 2026",
+      "url": "https://aijourn.com/the-end-of-stock-music-top-5-best-ai-music-generators-in-2026/",
+      "snippet": "Analysis of how AI music generators are displacing traditional stock music market"
     }
+  ],
+  "competitors_mentioned": [
+    "Suno (market leader)",
+    "Udio",
+    "Mubert",
+    "Soundraw",
+    "AIVA",
+    "ElevenLabs Music",
+    "Boomy",
+    "Soundful",
+    "LANDR",
+    "Mureka"
+  ],
+  "musio_positioning": {
+    "cb_insights_competitors": ["DigiTraxAI", "Session", "Cynanite", "Know What's Loved", "SourceAudio"],
+    "market_perception": "Not widely appearing in AI music generator discussions - opportunity to increase visibility",
+    "differentiation_opportunity": "Musio+ Complete bundling all instruments from multiple developers"
+  },
+  "trends": [
+    "AI lyric video generators emerging as new category",
+    "AI music video creation tools gaining traction",
+    "Major labels getting serious about AI partnerships",
+    "Google/Apple embedding AI music directly in consumer products",
+    "Non-generative AI tools for productivity gaining attention"
   ]
 }
