@@ -120,18 +120,34 @@
         }
         
         /* TLDR */
-        .tldr {
+        .insights-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 0 24px 40px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        @media (max-width: 768px) {
+            .insights-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .insight-box {
             background: var(--musio-dark-card);
             border-radius: 16px;
             padding: 28px;
-            margin: 0 24px 40px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
             border: 1px solid #2a2a2a;
         }
         
-        .tldr-label {
+        .insight-box.strategy {
+            border-color: rgba(233, 69, 96, 0.3);
+        }
+        
+        .insight-label {
             font-size: 0.75rem;
             font-weight: 700;
             text-transform: uppercase;
@@ -140,13 +156,17 @@
             margin-bottom: 4px;
         }
         
-        .tldr-updated {
+        .insight-box.strategy .insight-label {
+            color: #4ade80;
+        }
+        
+        .insight-updated {
             font-size: 0.8rem;
             color: var(--musio-text-muted);
             margin-bottom: 12px;
         }
         
-        .tldr-text {
+        .insight-text {
             font-size: 1.05rem;
             color: var(--musio-text);
             line-height: 1.7;
@@ -340,10 +360,17 @@
         <p>Tracking the latest trends in AI music generation, virtual instruments, and music technology. Updated continuously.</p>
     </section>
     
-    <div class="tldr">
-        <div class="tldr-label">TL;DR — State of AI & Music</div>
-        <div class="tldr-updated">Updated: February 19, 2026, 9:45 PM</div>
-        <div class="tldr-text" id="tldr-text">Loading...</div>
+    <div class="insights-grid">
+        <div class="insight-box">
+            <div class="insight-label">State of Music & Tech</div>
+            <div class="insight-updated">Updated: February 19, 2026</div>
+            <div class="insight-text" id="insight-tech">Loading...</div>
+        </div>
+        <div class="insight-box strategy">
+            <div class="insight-label">Musio Strategy & Messaging</div>
+            <div class="insight-updated">Updated: February 19, 2026</div>
+            <div class="insight-text" id="insight-strategy">Loading...</div>
+        </div>
     </div>
     
     <div class="filters">
@@ -372,9 +399,12 @@
                 const data = await response.json();
                 researchData = data.research || [];
                 
-                // Load TLDR
-                if (data.tldr) {
-                    document.getElementById('tldr-text').innerHTML = data.tldr;
+                // Load insights boxes
+                if (data.insightTech) {
+                    document.getElementById('insight-tech').innerHTML = data.insightTech;
+                }
+                if (data.insightStrategy) {
+                    document.getElementById('insight-strategy').innerHTML = data.insightStrategy;
                 }
                 
                 renderResearch(researchData);
