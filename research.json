@@ -1,5 +1,5 @@
 {
-  "tldr": "Google just entered the AI music race with <strong>Lyria 3</strong>—free in Gemini app, creating 30-second tracks from text or media. This joins Suno, Udio, and ElevenLabs in a rapidly consolidating market. Warner & Universal have settled lawsuits with AI music companies, signing licensing deals—the new normal. Streaming platforms are fighting back with <strong>three-tier royalty systems</strong> that pay less for AI-generated content. For Musio, the opportunity is in <strong>AI-assisted production tools</strong> that enhance human creativity, not replace it. The VST/plugin market remains strong (Serum 2 leading), showing composers still value high-quality sample libraries.",
+  "tldr": "AI music is hitting the Billboard Hot 100, major labels are making deals with AI companies, and the industry is establishing new rules. Google Lyria 3 is now free in Gemini. The three-tier royalty system is shaping up: human-made > AI-assisted > fully AI. For Musio, the opportunity is AI-assisted production tools that enhance human creativity, not replace it.",
   "research": [
     {
       "date": "2026-02-19",
@@ -96,6 +96,14 @@
       "summary": "OpenClaw's rapid rise highlights growing interest in AI agents beyond chatbots. Its open-source design accelerated adoption from Silicon Valley.",
       "url": "https://www.cnbc.com/2026/02/02/openclaw-open-source-ai-agent-rise-controversy-clawdbot-moltbot-moltbook.html",
       "category": "tech"
+    },
+    {
+      "date": "2026-02-19",
+      "source": "Billboard Pro",
+      "title": "Music Predictions 2026: AI on the Hot 100",
+      "summary": "Billboard's predictions for 2026: Will AI-generated songs crack the Hot 100? Discussion of UMG-Downtown deal, AI music settlements, and industry shakeup.",
+      "url": "https://www.billboard.com/pro/music-predictions-2026-ai-hot-100-umg-deal/",
+      "category": "trends"
     }
   ]
 }
