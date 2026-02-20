@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Musio | For Creators, Not Just Prompters</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --musio-red: #E94560;
+            --musio-red-light: #d63d56;
+            --musio-dark: #0a0a0a;
+            --musio-dark-elevated: #141414;
+            --musio-dark-card: #1a1a1a;
+            --musio-text: #ffffff;
+            --musio-text-muted: #9ca3af;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Outfit', sans-serif;
+            background: var(--musio-dark);
+            color: var(--musio-text);
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: rgba(10, 10, 10, 0.9);
+            backdrop-filter: blur(20px);
+            padding: 20px 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #1a1a1a;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: linear-gradient(135deg, var(--musio-red), #ff6b7a);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+        }
+        
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: white;
+        }
+        
+        .header-links {
+            display: flex;
+            gap: 24px;
+        }
+        
+        .header-links a {
+            color: var(--musio-text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .header-links a:hover {
+            color: var(--musio-red);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 24px;
+            background: radial-gradient(ellipse at 50% 0%, rgba(233, 69, 96, 0.15) 0%, transparent 60%);
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff, var(--musio-red));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero .tagline {
+            font-size: 1.5rem;
+            color: var(--musio-text-muted);
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+        
+        .hero .cta {
+            display: inline-block;
+            background: var(--musio-red);
+            color: white;
+            padding: 16px 32px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            transition: transform 0.2s, background 0.2s;
+        }
+        
+        .hero .cta:hover {
+            background: var(--musio-red-light);
+            transform: translateY(-2px);
+        }
+        
+        .section {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            color: var(--musio-red);
+        }
+        
+        .section p {
+            font-size: 1.1rem;
+            color: var(--musio-text-muted);
+            margin-bottom: 16px;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 40px;
+        }
+        
+        .comparison-card {
+            background: var(--musio-dark-card);
+            border-radius: 16px;
+            padding: 32px;
+            border: 1px solid #2a2a2a;
+        }
+        
+        .comparison-card.ai {
+            border-color: #3a3a3a;
+        }
+        
+        .comparison-card.musio {
+            border-color: var(--musio-red);
+        }
+        
+        .comparison-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+        
+        .comparison-card.ai h3 {
+            color: #9ca3af;
+        }
+        
+        .comparison-card.musio h3 {
+            color: var(--musio-red);
+        }
+        
+        .comparison-card ul {
+            list-style: none;
+        }
+        
+        .comparison-card li {
+            padding: 8px 0;
+            color: var(--musio-text-muted);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .comparison-card li::before {
+            content: "✗";
+            color: #4a4a4a;
+        }
+        
+        .comparison-card.musio li::before {
+            content: "✓";
+            color: var(--musio-red);
+        }
+        
+        .values {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        
+        .value-card {
+            background: var(--musio-dark-card);
+            border-radius: 16px;
+            padding: 32px;
+            text-align: center;
+            border: 1px solid #2a2a2a;
+        }
+        
+        .value-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 16px;
+        }
+        
+        .value-card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+        
+        .value-card p {
+            font-size: 0.95rem;
+        }
+        
+        .pricing {
+            background: var(--musio-dark-elevated);
+            border-radius: 16px;
+            padding: 40px;
+            text-align: center;
+            margin-top: 40px;
+            border: 2px solid var(--musio-red);
+        }
+        
+        .pricing .price {
+            font-size: 4rem;
+            font-weight: 800;
+            color: var(--musio-red);
+        }
+        
+        .pricing .price span {
+            font-size: 1.5rem;
+            color: var(--musio-text-muted);
+        }
+        
+        .pricing .description {
+            margin-top: 16px;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 40px 24px;
+            color: var(--musio-text-muted);
+            border-top: 1px solid #1a1a1a;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison, .values {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <div class="logo-icon">🎹</div>
+            <div>
+                <div class="logo-text">Musio</div>
+                <div class="logo-sub">For Creators</div>
+            </div>
+        </div>
+        <div class="header-links">
+            <a href="index.html">Research</a>
+            <a href="pricing.html">Pricing</a>
+            <a href="https://musio.com">musio.com</a>
+        </div>
+    </header>
+    
+    <section class="hero">
+        <h1>For Creators, Not Prompters</h1>
+        <p class="tagline">Musio is for musicians who want to play, shape, and feel the music — not just type a prompt and hope for magic.</p>
+        <a href="https://musio.com" class="cta">Get Musio →</a>
+    </section>
+    
+    <section class="section">
+        <h2>The Problem</h2>
+        <p>AI music generators are everywhere. Type a prompt, get a song. It's fast, it's fun, and it's increasingly meaningless.</p>
+        <p>The result? A flood of "AI slop" flooding streaming services. 60,000 AI-generated tracks uploaded <em>every single day</em>. It's noise. It's not art. And it's devaluing the work of real musicians.</p>
+    </section>
+    
+    <section class="section">
+        <h2>Two Paths Forward</h2>
+        <div class="comparison">
+            <div class="comparison-card ai">
+                <h3>🤖 AI Generators</h3>
+                <ul>
+                    <li>Type a prompt, get a result</li>
+                    <li>No skill required</li>
+                    <li>No creative control</li>
+                    <li>Same generic outputs</li>
+                    <li>No connection to your DAW</li>
+                    <li>Disposable, forgettable</li>
+                </ul>
+            </div>
+            <div class="comparison-card musio">
+                <h3>🎹 Musio</h3>
+                <ul>
+                    <li>Real instruments, real control</li>
+                    <li>Requires skill — like it should be</li>
+                    <li>Shape every note, every nuance</li>
+                    <li>Your unique sound</li>
+                    <li>Native VST/AU plugin for your DAW</li>
+                    <li>Music that sounds like <em>you</em></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Why Musio?</h2>
+        <div class="values">
+            <div class="value-card">
+                <div class="icon">🎻</div>
+                <h3>Real Instruments</h3>
+                <p>3,400+ professional virtual instruments from the world's best developers. Not AI approximations — the real thing.</p>
+            </div>
+            <div class="value-card">
+                <div class="icon">⚡</div>
+                <h3>All in One Place</h3>
+                <p>No more juggling subscriptions. Access every instrument from every developer in one unified library.</p>
+            </div>
+            <div class="value-card">
+                <div class="icon">💎</div>
+                <h3>Best Price/Quality</h3>
+                <p>Professional-grade tools at a fraction of the cost. Because great music shouldn't require a second mortgage.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="pricing">
+            <h2>Musio+ Complete</h2>
+            <div class="price">$20<span>/month</span></div>
+            <p class="description">or $149/year (normally $199)<br>117 collections • 3,400+ instruments • Launching March 2026</p>
+        </div>
+    </section>
+    
+    <section class="section">
+        <h2>Join the Movement</h2>
+        <p>We're building something different. A home for musicians who believe creation is more than prompting. Who want to <em>make</em> music, not just generate it.</p>
+        <p>Join thousands of creators who choose Musio.</p>
+        <br>
+        <a href="https://musio.com" class="cta">Start Creating →</a>
+    </section>
+    
+    <footer>
+        <p>© 2026 Musio. For creators, by creators.</p>
+    </footer>
+</body>
+</html>
