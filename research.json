@@ -1,8 +1,32 @@
 {
-  "lastUpdated": "2026-02-22 00:35:01",
-  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs entered the race. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools.",
-  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach.",
+  "lastUpdated": "2026-02-22 21:20:00",
+  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs entered the race. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps.",
+  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. UNESCO reports 24% income decline threat for music creators.",
   "research": [
+    {
+      "date": "2026-02-22",
+      "source": "UN News",
+      "title": "Artists face steep income decline due to AI, UNESCO finds",
+      "summary": "Music creators could see their revenues fall by 24 per cent, while those working in the audiovisual sector may lose 21 per cent of their income.",
+      "url": "https://news.un.org/en/story/2026/02/1166989",
+      "category": "trends"
+    },
+    {
+      "date": "2026-02-22",
+      "source": "LA Times",
+      "title": "Google and Apple bring AI music creation to mainstream consumers",
+      "summary": "Alphabet Inc.'s Google and Apple Inc. are adding music-focused generative artificial intelligence features to their core consumer apps.",
+      "url": "https://www.latimes.com/business/story/2026-02-18/google-apple-bring-ai-music-creation-to-mainstream-consumers",
+      "category": "tools"
+    },
+    {
+      "date": "2026-02-22",
+      "source": "Business Insider",
+      "title": "The rise of AI music could be a good thing for record-label and streaming stocks",
+      "summary": "Analysis of how AI music may impact music industry stocks and investment strategies.",
+      "url": "https://www.businessinsider.com/ai-music-stock-market-impact-investing-strategy-record-label-outlook-2026-2",
+      "category": "business"
+    },
     {
       "date": "2026-02-22",
       "source": "Billboard",
