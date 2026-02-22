@@ -361,12 +361,12 @@
     <div class="insights-grid">
         <div class="insight-box">
             <div class="insight-label">State of Music & Tech</div>
-            <div class="insight-updated">Updated: February 20, 2026</div>
+            <div class="insight-updated" id="tech-updated">Updated: February 20, 2026</div>
             <div class="insight-text" id="insight-tech">Loading...</div>
         </div>
         <div class="insight-box strategy">
             <div class="insight-label">Musio Strategy & Messaging</div>
-            <div class="insight-updated">Updated: February 20, 2026</div>
+            <div class="insight-updated" id="strategy-updated">Updated: February 20, 2026</div>
             <div class="insight-text" id="insight-strategy">Loading...</div>
         </div>
     </div>
@@ -403,6 +403,12 @@
                 }
                 if (data.insightStrategy) {
                     document.getElementById('insight-strategy').innerHTML = data.insightStrategy;
+                }
+                
+                // Update dates if present in JSON
+                if (data.lastUpdated) {
+                    document.getElementById('tech-updated').textContent = 'Updated: ' + data.lastUpdated;
+                    document.getElementById('strategy-updated').textContent = 'Updated: ' + data.lastUpdated;
                 }
                 
                 renderResearch(researchData);
