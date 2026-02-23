@@ -1,0 +1,442 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1' />
+  <title>Monopoly-Style City Music Lab</title>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Manrope:wght@400;600;700&display=swap' rel='stylesheet'>
+  <style>
+    :root {
+      --bg:#060b1f;
+      --panel:rgba(255,255,255,.08);
+      --line:rgba(255,255,255,.18);
+      --text:#eff7ff;
+      --muted:#c4d3ea;
+      --teal:#7bf3d8;
+      --gold:#ffd779;
+      --pink:#ff8fc7;
+    }
+    * {box-sizing:border-box}
+    body {
+      margin:0;
+      font-family:'Manrope',sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(circle at 10% 10%, #203f8f 0%, transparent 43%),
+        radial-gradient(circle at 90% 15%, #6d207d 0%, transparent 42%),
+        radial-gradient(circle at 30% 95%, #025350 0%, transparent 45%),
+        var(--bg);
+    }
+    .wrap {width:min(1240px,92vw); margin:24px auto 60px;}
+    .hero {
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:22px;
+      background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.03));
+      backdrop-filter: blur(7px);
+      box-shadow:0 18px 60px rgba(0,0,0,.35);
+    }
+    h1,h2,h3,h4 {font-family:'Baloo 2',sans-serif;margin:0}
+    h1 {font-size:clamp(1.9rem,3.1vw,2.9rem);line-height:1.03}
+    .sub {margin-top:8px;color:var(--muted)}
+    .tags {margin-top:14px; display:flex; flex-wrap:wrap; gap:8px}
+    .tags a {
+      text-decoration:none; color:var(--text); font-weight:700; font-size:.92rem;
+      border:1px solid var(--line); background:rgba(255,255,255,.07);
+      padding:7px 12px; border-radius:999px;
+    }
+    .legend {margin-top:10px;color:var(--muted);font-size:.9rem}
+    .city {margin-top:24px; border:1px solid var(--line); border-radius:20px; padding:16px; background:var(--panel)}
+    .city h3 {font-size:1.45rem; margin-bottom:10px}
+    .grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .track-card {border:1px solid var(--line); border-radius:14px; background:rgba(7,16,42,.72); padding:12px}
+    .track-head {display:flex; justify-content:space-between; gap:8px; align-items:flex-start}
+    .track-head h4 {font-size:1.03rem; line-height:1.15}
+    .pill {font-size:.74rem; font-weight:800; border-radius:999px; padding:4px 8px; border:1px solid transparent; white-space:nowrap}
+    .pill.elevenlabs {background:rgba(123,243,216,.18); border-color:rgba(123,243,216,.5)}
+    .pill.minimax {background:rgba(255,215,121,.18); border-color:rgba(255,215,121,.5)}
+    .pill.gemini {background:rgba(255,143,199,.18); border-color:rgba(255,143,199,.5)}
+    .meta {color:var(--muted); font-size:.86rem; margin:7px 0 9px}
+    audio {width:100%; height:34px}
+    footer {margin-top:18px; color:var(--muted); font-size:.9rem}
+  </style>
+</head>
+<body>
+  <main class='wrap'>
+    <header class='hero'>
+      <h1>🎲 Monopoly-Style City Music Lab</h1>
+      <p class='sub'>Bubbly, fun, cartoonish instrumental references — 4 core tracks per city (ElevenLabs + MiniMax) plus bonus Gemini cuts.</p>
+      <div class='tags'><a href='#new-york-city'>New York City</a> <a href='#san-francisco'>San Francisco</a> <a href='#west-palm-beach'>West Palm Beach</a> <a href='#las-vegas'>Las Vegas</a> <a href='#dallas'>Dallas</a> <a href='#washington-dc'>Washington DC</a> <a href='#los-angeles'>Los Angeles</a></div>
+      <p class='legend'>All prompts enforced: instrumental only · no lyrics · no voices · no singing</p>
+    </header>
+    
+    <section class='city' id='new-york-city'>
+      <h3>New York City</h3>
+      <div class='grid'>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Broadway Bubble Run</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>New York City · Track 1 · MP3</p>
+          <audio controls preload='none' src='tracks/new-york-city/01-broadway-bubble-run-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Subway Spring-Hop</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>New York City · Track 2 · MP3</p>
+          <audio controls preload='none' src='tracks/new-york-city/02-subway-spring-hop-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Central Park Confetti</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>New York City · Track 3 · MP3</p>
+          <audio controls preload='none' src='tracks/new-york-city/03-central-park-confetti-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Midtown Power-Up</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>New York City · Track 4 · MP3</p>
+          <audio controls preload='none' src='tracks/new-york-city/04-midtown-power-up-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Neon Borough Bounce</h4>
+            <span class='pill gemini'>💎 Gemini</span>
+          </div>
+          <p class='meta'>New York City · Track 5 · WAV</p>
+          <audio controls preload='none' src='tracks/new-york-city/05-neon-borough-bounce-gemini.wav'></audio>
+        </article>
+        
+      </div>
+    </section>
+    
+    <section class='city' id='san-francisco'>
+      <h3>San Francisco</h3>
+      <div class='grid'>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Cable Car Candy Cruise</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>San Francisco · Track 1 · MP3</p>
+          <audio controls preload='none' src='tracks/san-francisco/01-cable-car-candy-cruise-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Golden Gate Giggle Groove</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>San Francisco · Track 2 · MP3</p>
+          <audio controls preload='none' src='tracks/san-francisco/02-golden-gate-giggle-groove-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Foggy Pixel Morning</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>San Francisco · Track 3 · MP3</p>
+          <audio controls preload='none' src='tracks/san-francisco/03-foggy-pixel-morning-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Silicon Spark Parade</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>San Francisco · Track 4 · MP3</p>
+          <audio controls preload='none' src='tracks/san-francisco/04-silicon-spark-parade-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Golden Giggle Loop</h4>
+            <span class='pill gemini'>💎 Gemini</span>
+          </div>
+          <p class='meta'>San Francisco · Track 5 · WAV</p>
+          <audio controls preload='none' src='tracks/san-francisco/05-golden-giggle-loop-gemini.wav'></audio>
+        </article>
+        
+      </div>
+    </section>
+    
+    <section class='city' id='west-palm-beach'>
+      <h3>West Palm Beach (Mar-a-Lago bonus)</h3>
+      <div class='grid'>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Palm Parade Pop</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>West Palm Beach (Mar-a-Lago bonus) · Track 1 · MP3</p>
+          <audio controls preload='none' src='tracks/west-palm-beach/01-palm-parade-pop-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Boardwalk Bubble Beat</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>West Palm Beach (Mar-a-Lago bonus) · Track 2 · MP3</p>
+          <audio controls preload='none' src='tracks/west-palm-beach/02-boardwalk-bubble-beat-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Mar-a-Lago Bonus Lounge</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>West Palm Beach (Mar-a-Lago bonus) · Track 3 · MP3</p>
+          <audio controls preload='none' src='tracks/west-palm-beach/03-mar-a-lago-bonus-lounge-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Sunset Seashell Sprint</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>West Palm Beach (Mar-a-Lago bonus) · Track 4 · MP3</p>
+          <audio controls preload='none' src='tracks/west-palm-beach/04-sunset-seashell-sprint-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Palm Sunshine Pop</h4>
+            <span class='pill gemini'>💎 Gemini</span>
+          </div>
+          <p class='meta'>West Palm Beach (Mar-a-Lago bonus) · Track 5 · WAV</p>
+          <audio controls preload='none' src='tracks/west-palm-beach/05-palm-sunshine-pop-gemini.wav'></audio>
+        </article>
+        
+      </div>
+    </section>
+    
+    <section class='city' id='las-vegas'>
+      <h3>Las Vegas (Area 51 bonus)</h3>
+      <div class='grid'>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Neon Jackpot Jive</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Las Vegas (Area 51 bonus) · Track 1 · MP3</p>
+          <audio controls preload='none' src='tracks/las-vegas/01-neon-jackpot-jive-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Strip Side Shuffle</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>Las Vegas (Area 51 bonus) · Track 2 · MP3</p>
+          <audio controls preload='none' src='tracks/las-vegas/02-strip-side-shuffle-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Area 51 Bonus Boogie</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Las Vegas (Area 51 bonus) · Track 3 · MP3</p>
+          <audio controls preload='none' src='tracks/las-vegas/03-area-51-bonus-boogie-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Desert Starlight Spin</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>Las Vegas (Area 51 bonus) · Track 4 · MP3</p>
+          <audio controls preload='none' src='tracks/las-vegas/04-desert-starlight-spin-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Neon Casino Comet</h4>
+            <span class='pill gemini'>💎 Gemini</span>
+          </div>
+          <p class='meta'>Las Vegas (Area 51 bonus) · Track 5 · WAV</p>
+          <audio controls preload='none' src='tracks/las-vegas/05-neon-casino-comet-gemini.wav'></audio>
+        </article>
+        
+      </div>
+    </section>
+    
+    <section class='city' id='dallas'>
+      <h3>Dallas</h3>
+      <div class='grid'>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Big D Bounce</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Dallas · Track 1 · MP3</p>
+          <audio controls preload='none' src='tracks/dallas/01-big-d-bounce-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Rodeo Boardwalk Boogie</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>Dallas · Track 2 · MP3</p>
+          <audio controls preload='none' src='tracks/dallas/02-rodeo-boardwalk-boogie-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Skyline Saddle Pop</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Dallas · Track 3 · MP3</p>
+          <audio controls preload='none' src='tracks/dallas/03-skyline-saddle-pop-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Fairground Funk Trail</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>Dallas · Track 4 · MP3</p>
+          <audio controls preload='none' src='tracks/dallas/04-fairground-funk-trail-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Fairway Funk Stomp</h4>
+            <span class='pill gemini'>💎 Gemini</span>
+          </div>
+          <p class='meta'>Dallas · Track 5 · WAV</p>
+          <audio controls preload='none' src='tracks/dallas/05-fairway-funk-stomp-gemini.wav'></audio>
+        </article>
+        
+      </div>
+    </section>
+    
+    <section class='city' id='washington-dc'>
+      <h3>Washington DC</h3>
+      <div class='grid'>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Monument March Pop</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Washington DC · Track 1 · MP3</p>
+          <audio controls preload='none' src='tracks/washington-dc/01-monument-march-pop-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Capitol Candy Cruise</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Washington DC · Track 2 · MP3</p>
+          <audio controls preload='none' src='tracks/washington-dc/02-capitol-candy-cruise-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Cherry Blossom Bounce</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>Washington DC · Track 3 · MP3</p>
+          <audio controls preload='none' src='tracks/washington-dc/03-cherry-blossom-bounce-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Smithsonian Sprint</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Washington DC · Track 4 · MP3</p>
+          <audio controls preload='none' src='tracks/washington-dc/04-smithsonian-sprint-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Monument Confetti Run</h4>
+            <span class='pill gemini'>💎 Gemini</span>
+          </div>
+          <p class='meta'>Washington DC · Track 5 · WAV</p>
+          <audio controls preload='none' src='tracks/washington-dc/05-monument-confetti-run-gemini.wav'></audio>
+        </article>
+        
+      </div>
+    </section>
+    
+    <section class='city' id='los-angeles'>
+      <h3>Los Angeles</h3>
+      <div class='grid'>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Sunset Boulevard Bop</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Los Angeles · Track 1 · MP3</p>
+          <audio controls preload='none' src='tracks/los-angeles/01-sunset-boulevard-bop-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Venice Beach Victory Lap</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>Los Angeles · Track 2 · MP3</p>
+          <audio controls preload='none' src='tracks/los-angeles/02-venice-beach-victory-lap-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Hollywood Power-Up Parade</h4>
+            <span class='pill elevenlabs'>⚡ ElevenLabs</span>
+          </div>
+          <p class='meta'>Los Angeles · Track 3 · MP3</p>
+          <audio controls preload='none' src='tracks/los-angeles/03-hollywood-power-up-parade-elevenlabs.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Pacific Coast Pixel Cruise</h4>
+            <span class='pill minimax'>🟠 MiniMax</span>
+          </div>
+          <p class='meta'>Los Angeles · Track 4 · MP3</p>
+          <audio controls preload='none' src='tracks/los-angeles/04-pacific-coast-pixel-cruise-minimax.mp3'></audio>
+        </article>
+        
+        <article class='track-card'>
+          <div class='track-head'>
+            <h4>Sunset Pixel Sprint</h4>
+            <span class='pill gemini'>💎 Gemini</span>
+          </div>
+          <p class='meta'>Los Angeles · Track 5 · WAV</p>
+          <audio controls preload='none' src='tracks/los-angeles/05-sunset-pixel-sprint-gemini.wav'></audio>
+        </article>
+        
+      </div>
+    </section>
+    
+    <footer>Generated 2026-02-22T20:46:56.016362-05:00 · Total tracks: 35</footer>
+  </main>
+</body>
+</html>
