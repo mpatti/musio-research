@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Mike + Tobor Project Board</title>
+  <style>
+    :root { --bg:#0b1020; --panel:#11182d; --line:#253253; --text:#edf2ff; --muted:#b9c5e8; --accent:#8fd3ff; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background:linear-gradient(180deg,#0a0f1e,#0d1327); color:var(--text); }
+    .wrap { width:min(1400px,94vw); margin:20px auto 40px; }
+    .top { border:1px solid var(--line); border-radius:16px; padding:16px 18px; background:rgba(255,255,255,.03); }
+    h1 { margin:0 0 6px; font-size:1.55rem; }
+    .meta { color:var(--muted); font-size:.92rem; }
+    .grid { margin-top:18px; display:grid; grid-template-columns:repeat(4,minmax(250px,1fr)); gap:12px; align-items:start; }
+    .lane { border:1px solid var(--line); border-radius:14px; padding:10px; background:var(--panel); min-height:180px; }
+    .lane h2 { margin:2px 4px 10px; font-size:1rem; display:flex; justify-content:space-between; align-items:center; }
+    .lane h2 span { background:#1f2f53; border:1px solid #2e4578; border-radius:999px; padding:2px 8px; font-size:.8rem; color:#c8d8ff; }
+    .card { border:1px solid #2a3d68; border-radius:11px; padding:10px; background:#0f1730; margin:8px 0; }
+    .head { display:flex; justify-content:space-between; gap:8px; }
+    .pid { font-weight:700; color:var(--accent); font-size:.85rem; }
+    .status { font-size:.74rem; color:#b7d0ff; border:1px solid #35538b; border-radius:999px; padding:2px 7px; }
+    .card h3 { margin:8px 0 6px; font-size:1rem; line-height:1.2; }
+    .owner { margin:0 0 6px; color:var(--muted); font-size:.85rem; }
+    ul { margin:0; padding-left:18px; color:#d8e4ff; font-size:.88rem; }
+    .next { margin-top:8px; color:#d8e4ff; font-size:.86rem; }
+    .empty { color:var(--muted); font-size:.9rem; margin:6px; }
+    @media (max-width: 1100px) { .grid { grid-template-columns:repeat(2,minmax(220px,1fr)); } }
+    @media (max-width: 700px) { .grid { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <main class='wrap'>
+    <header class='top'>
+      <h1>Mike + Tobor Project Board</h1>
+      <p class='meta'>Visual view generated from PROJECTS.md · Updated 2026-02-22 10:52 PM EST</p>
+    </header>
+    <section class='grid'>
+      
+            <section class='lane'>
+              <h2>Active <span>2</span></h2>
+              
+    <article class='card'>
+      <div class='head'>
+        <span class='pid'>P-001</span>
+        <span class='status'>Active</span>
+      </div>
+      <h3>Assistant comms stack (Email + Calendar)</h3>
+      <p class='owner'>Owner: Tobor</p>
+      <ul><li>Gmail connected to `assistant@musio.com`</li><li>Read/send/reply working</li><li>Calendar invites + Google Meet working</li><li>Hourly inbox-check cron enabled</li></ul>
+      <p class='next'><strong>Next:</strong> Keep monitoring and triaging mail hourly</p>
+    </article>
+    
+
+    <article class='card'>
+      <div class='head'>
+        <span class='pid'>P-002</span>
+        <span class='status'>Active</span>
+      </div>
+      <h3>Date-night coordination workflow</h3>
+      <p class='owner'>Owner: Tobor</p>
+      <ul><li>Lynne requested switching date night to Friday the 27th</li><li>Thread replies are being preserved in-context</li></ul>
+      <p class='next'><strong>Next:</strong> Propose concrete Friday plan options (time/place)</p>
+    </article>
+    
+            </section>
+            
+            <section class='lane'>
+              <h2>Waiting <span>0</span></h2>
+              <p class='empty'>No items.</p>
+            </section>
+            
+            <section class='lane'>
+              <h2>Backlog <span>1</span></h2>
+              
+    <article class='card'>
+      <div class='head'>
+        <span class='pid'>P-003</span>
+        <span class='status'>Backlog</span>
+      </div>
+      <h3>Persistent project dashboard (optional external mirror)</h3>
+      <p class='owner'>Owner: Tobor</p>
+      <ul><li>If wanted later: mirror this tracker to a private external destination (e.g., private repo/doc)</li></ul>
+      
+    </article>
+    
+            </section>
+            
+            <section class='lane'>
+              <h2>Done <span>1</span></h2>
+              
+    <article class='card'>
+      <div class='head'>
+        <span class='pid'>P-004</span>
+        <span class='status'>Done</span>
+      </div>
+      <h3>Monopoly-style city music inspiration pack</h3>
+      <p class='owner'>Owner: Tobor</p>
+      <ul><li>35 tracks generated (ElevenLabs + MiniMax + Gemini)</li><li>Playlist site built and published</li><li>Repo: https://github.com/mpatti/monopoly-city-music-lab</li><li>Live page: https://mpatti.github.io/monopoly-city-music-lab/</li><li>_(empty)_</li></ul>
+      
+    </article>
+    
+            </section>
+            
+    </section>
+  </main>
+</body>
+</html>
