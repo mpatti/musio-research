@@ -1,8 +1,29 @@
 {
-  "lastUpdated": "2026-02-23T17:00:00Z",
+  "lastUpdated": "2026-02-24T09:00:00Z",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs entered the race. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Suno hires ex-Merlin CEO Jeremy Sirota as CCO.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. UNESCO reports 24% income decline threat for music creators.",
   "research": [
+    {
+      "date": "2026-02-24",
+      "source": "The Verge",
+      "title": "AMD forges $100 billion deal with Meta for AI chips",
+      "summary": "Meta signed a multi-year agreement to buy six gigawatts worth of AMD processors for AI data centers. The deal could see Meta owning 10 percent of AMD's stock.",
+      "category": "business"
+    },
+    {
+      "date": "2026-02-24",
+      "source": "The Verge",
+      "title": "OpenAI's Stargate struggles",
+      "summary": "OpenAI reportedly explored building its own data centers as the three companies disagreed over their roles, but high costs have led the AI giant to strike individual deals with SoftBank and Oracle instead.",
+      "category": "business"
+    },
+    {
+      "date": "2026-02-24",
+      "source": "The Verge",
+      "title": "X working on 'Made with AI' labels",
+      "summary": "The in-development feature shows a toggle allowing users to disclose synthetically made or manipulated content, in response to India ordering social platforms to embrace provenance systems like C2PA.",
+      "category": "trends"
+    },
     {
       "date": "2026-02-23",
       "source": "Music Business Worldwide",
@@ -25,7 +46,7 @@
       "category": "business"
     },
     {
-      "date": "2026-02-22",
+      "date": "2026-02-23",
       "source": "Music Business Worldwide",
       "title": "Apple revives Apple Music Connect as B2B promo platform",
       "summary": "Apple has relaunched Apple Music Connect as a B2B platform for labels and distributors, giving teams a single dashboard to manage release cycle elements.",
@@ -49,7 +70,7 @@
       "date": "2026-02-20",
       "source": "Music Business Worldwide",
       "title": "Live Nation revenues top $25B in 2025",
-      "summary": "Live Nation reported revenues exceeding $25B in 2025, up $2B year-over-year, with adjusted operating profit of $2.4B.",
+      "summary": "Live Nation reported revenues exceeding $25B in 2025, up $2B year-over-year, with adjusted operating operating profit of $2.4B.",
       "category": "business"
     },
     {
@@ -94,6 +115,27 @@
       "title": "Universal Music + NVIDIA Partnership",
       "summary": "Universal Music Group partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'.",
       "category": "business"
+    },
+    {
+      "date": "2025-11-21",
+      "source": "Billboard",
+      "title": "AI Platform KLAY Signs Licensing Deals With UMG, WMG, Sony",
+      "summary": "KLAY signed licensing deals with Universal, Warner, and Sony for both recorded music and publishing rights, becoming one of the first fully licensed AI music platforms.",
+      "category": "business"
+    },
+    {
+      "date": "2025-11-25",
+      "source": "Billboard",
+      "title": "Suno & WMG Ink Licensing Deal, Settling Lawsuit",
+      "summary": "Suno and Warner Music Group signed a licensing deal, effectively settling WMG's legal claims against the AI music company.",
+      "category": "business"
+    },
+    {
+      "date": "2025-11-24",
+      "source": "Billboard",
+      "title": "iHeartRadio Won't Play AI Music or Use AI Generated Personalities",
+      "summary": "iHeartMedia executive says company won't play AI music or use AI generated personalities in podcasts or radio, in a staff memo outlining new programming direction.",
+      "category": "trends"
     }
   ]
 }
