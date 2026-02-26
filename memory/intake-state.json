@@ -1,0 +1,54 @@
+{
+  "initializedAt": "2026-02-22T23:50:00-05:00",
+  "lastCheck": "2026-02-25T04:14:00-05:00",
+  "seenEmailThreadIds": [
+    "19c9062d5dd1d885",
+    "19c8b1780f65401b",
+    "19c8ac5fbcb95066",
+    "19c888012fa568c8",
+    "19c887d184d29253",
+    "19c8874d8be93927",
+    "19c8873db0ce1356",
+    "19c8872d4feeeebd",
+    "19c88712b6d63e35",
+    "19c8868e09f61677",
+    "19c88660e516eb3a"
+  ],
+  "seenSiteTaskIds": [
+    "mlzaotnt-u5gze",
+    "mlyrl2d6-jim9n",
+    "mlyqoerv-uxcdh",
+    "mlyqm47j-yx716",
+    "mlyql4te-72cj5",
+    "mlyq3e24-f7btg",
+    "mlzf1khl-e64y4",
+    "mlzk532t-bnaen",
+    "mm025cbb-3emlj",
+    "mm02fnxf-27joe",
+    "mlz-daw-repo-001",
+    "mlz-daw-003",
+    "mlz-daw-002",
+    "mlz-daw-001",
+    "mlz-city-nyc-v2-001",
+    "mlz-city-la-001",
+    "mlz-city-dc-001",
+    "mlz-city-dallas-001",
+    "mlz-city-vegas-001",
+    "mlz-city-wpb-001",
+    "mlz-city-sf-001",
+    "mlz-city-nyc-001",
+    "mlz-levelpack-001",
+    "mlzchase-deposit-001",
+    "mm11jra9-ekkwl"
+  ],
+  "status": "success",
+  "email": {
+    "newSinceLastCheck": 1,
+    "note": "1 new inbound email from Lynne Patti about Dads' Day at CC. Already on calendar for March 3. FYI - no action needed."
+  },
+  "github": { "status": "ok", "sync": "updated" },
+  "siteTasks": {
+    "new": [],
+    "note": "All tasks already seen. New task 'Launch Slop Studio DAW' (mm11jra9-ekkwl) is in backlog - awaiting details from Mike."
+  }
+}
