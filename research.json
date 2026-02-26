@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-26T14:00:00Z",
+  "lastUpdated": "2026-02-26T18:00:00Z",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs entered the race. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. Google launches Lyria 3 in Gemini. UNESCO warns 24% income decline for music creators.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. UNESCO reports 24% income decline threat for music creators. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits.",
   "research": [
@@ -67,41 +67,6 @@
       "category": "trends"
     },
     {
-      "date": "2026-02-25",
-      "source": "Music Business Worldwide",
-      "title": "Google acquires AI music platform ProducerAI",
-      "summary": "Google acquires ProducerAI, a Suno challenger in the AI music generation space.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-24",
-      "source": "The Verge",
-      "title": "AMD forges $100 billion deal with Meta for AI chips",
-      "summary": "Meta signed a multi-year agreement to buy six gigawatts worth of AMD processors for AI data centers. The deal could see Meta owning 10 percent of AMD's stock.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-24",
-      "source": "The Verge",
-      "title": "OpenAI's Stargate struggles",
-      "summary": "OpenAI reportedly explored building its own data centers as the three companies disagreed over their roles, but high costs have led the AI giant to strike individual deals with SoftBank and Oracle instead.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-24",
-      "source": "The Verge",
-      "title": "X working on 'Made with AI' labels",
-      "summary": "The in-development feature shows a toggle allowing users to disclose synthetically made or manipulated content, in response to India ordering social platforms to embrace provenance systems like C2PA.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-24",
-      "source": "The Verge",
-      "title": "ChatGPT ads now live",
-      "summary": "Ads from Expedia, Qualcomm, Best Buy, and Enterprise Mobility are starting to show up in ChatGPT responses.",
-      "category": "business"
-    },
-    {
       "date": "2026-02-23",
       "source": "Music Business Worldwide",
       "title": "Suno hires ex-Merlin CEO Jeremy Sirota as Chief Commercial Officer",
@@ -137,20 +102,6 @@
       "category": "trends"
     },
     {
-      "date": "2026-02-23",
-      "source": "Music Business Worldwide",
-      "title": "AI-driven kids media firm Animaj strikes global deal with The Orchard and Sony Music Publishing",
-      "summary": "Animaj's global deal sees The Orchard's kids division handle recordings distribution while Sony Music Publishing administers publishing rights across their catalogue.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-20",
-      "source": "Music Business Worldwide",
-      "title": "Live Nation revenues top $25B in 2025",
-      "summary": "Live Nation reported revenues exceeding $25B in 2025, up $2B year-over-year, with adjusted operating operating profit of $2.4B.",
-      "category": "business"
-    },
-    {
       "date": "2026-02-22",
       "source": "UN News",
       "title": "Artists face steep income decline due to AI, UNESCO finds",
@@ -180,7 +131,7 @@
       "category": "business"
     },
     {
-      "date": "2026-02-22",
+      "date": "2026-02-21",
       "source": "Forbes",
       "title": "ElevenLabs Launches AI Music",
       "summary": "ElevenLabs launches ElevenLabs Music, entering AI music race alongside Suno and Udio with artist-led releases.",
@@ -199,48 +150,6 @@
       "title": "Google Gemini Launches Lyria 3",
       "summary": "Google's Lyria 3 is now available in the Gemini app, allowing users to create 30-second tracks from text prompts or images.",
       "category": "tools"
-    },
-    {
-      "date": "2026-02-17",
-      "source": "Billboard",
-      "title": "Taylor Swift Trademarks, J. Cole Cam'ron Response, AI Songs Debate",
-      "summary": "Legal news covering Taylor Swift trademarks, J. Cole's response to Cam'ron lawsuit, and ongoing AI songs debate.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-01-29",
-      "source": "Billboard",
-      "title": "Xania Monet's Manager Launches Label JV With Create",
-      "summary": "New label joint venture supporting both 'AI-Driven' and 'Traditional' talent, showing industry embrace of AI in artist development.",
-      "category": "business"
-    },
-    {
-      "date": "2026-01-14",
-      "source": "Billboard",
-      "title": "AI Opt-In Isn't Enough - Artists Want Partnership",
-      "summary": "Guest column argues that AI opt-in is the floor, not the ceiling - artists want respect and partnership, not just licenses.",
-      "category": "trends"
-    },
-    {
-      "date": "2025-11-21",
-      "source": "Billboard",
-      "title": "AI Platform KLAY Signs Licensing Deals With UMG, WMG, Sony",
-      "summary": "KLAY signed licensing deals with Universal, Warner, and Sony for both recorded music and publishing rights, becoming one of the first fully licensed AI music platforms.",
-      "category": "business"
-    },
-    {
-      "date": "2025-11-25",
-      "source": "Billboard",
-      "title": "Suno & WMG Ink Licensing Deal, Settling Lawsuit",
-      "summary": "Suno and Warner Music Group signed a licensing deal, effectively settling WMG's legal claims against the AI music company.",
-      "category": "business"
-    },
-    {
-      "date": "2025-11-24",
-      "source": "Billboard",
-      "title": "iHeartRadio Won't Play AI Music or Use AI Generated Personalities",
-      "summary": "iHeartMedia executive says company won't play AI music or use AI generated personalities in podcasts or radio, in a staff memo outlining new programming direction.",
-      "category": "trends"
     }
   ]
 }
