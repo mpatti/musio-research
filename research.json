@@ -1,14 +1,21 @@
 {
-  "lastUpdated": "2026-02-26T22:00:00Z",
+  "lastUpdated": "2026-02-27T14:00:00Z",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs entered the race. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. Google launches Lyria 3 in Gemini. UNESCO warns 24% income decline for music creators.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. UNESCO reports 24% income decline threat for music creators. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits.",
   "research": [
     {
-      "date": "2026-02-26",
-      "source": "AP News",
-      "title": "AI song generator startups Suno and Udio angered the music industry. Now they're hoping to join it",
+      "date": "2026-02-27",
+      "source": "Marietta Times / AP",
+      "title": "AI song generator startups Suno and Udio hoping to join music industry",
       "summary": "Suno and Udio, the AI music generators that faced lawsuits from major labels, are now seeking to become part of the music industry through licensing deals and partnerships.",
       "category": "business"
+    },
+    {
+      "date": "2026-02-27",
+      "source": "CMU News",
+      "title": "As AI-Generated Music Advances, Humans Still Lead in Creativity, CMU Research Finds",
+      "summary": "Carnegie Mellon University research finds that humans still lead in creativity despite advances in AI-generated music.",
+      "category": "trends"
     },
     {
       "date": "2026-02-26",
