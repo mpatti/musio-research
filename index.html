@@ -407,8 +407,18 @@
                 
                 // Update dates if present in JSON
                 if (data.lastUpdated) {
-                    document.getElementById('tech-updated').textContent = 'Updated: ' + data.lastUpdated;
-                    document.getElementById('strategy-updated').textContent = 'Updated: ' + data.lastUpdated;
+                    const updatedDate = new Date(data.lastUpdated);
+                    const updatedLabel = isNaN(updatedDate.getTime())
+                        ? data.lastUpdated
+                        : updatedDate.toLocaleString('en-US', {
+                            month: 'short',
+                            day: 'numeric',
+                            year: 'numeric',
+                            hour: 'numeric',
+                            minute: '2-digit'
+                        });
+                    document.getElementById('tech-updated').textContent = 'Updated: ' + updatedLabel;
+                    document.getElementById('strategy-updated').textContent = 'Updated: ' + updatedLabel;
                 }
                 
                 renderResearch(researchData);
@@ -427,7 +437,12 @@
                 return;
             }
             
-            grid.innerHTML = data.map(item => `
+            grid.innerHTML = data.map(item => {
+                const linkHtml = item.url
+                    ? `<a href="${item.url}" target="_blank" rel="noopener" class="card-link">Read more <span>→</span></a>`
+                    : '';
+
+                return `
                 <article class="research-card" data-category="${item.category || 'trends'}">
                     <div class="card-header">
                         <span class="card-category category-${item.category || 'trends'}">${item.category || 'Trends'}</span>
@@ -436,11 +451,10 @@
                     <div class="card-source">${item.source}</div>
                     <h3 class="card-title">${item.title}</h3>
                     <p class="card-summary">${item.summary}</p>
-                    <a href="${item.url}" target="_blank" rel="noopener" class="card-link">
-                        Read more <span>→</span>
-                    </a>
+                    ${linkHtml}
                 </article>
-            `).join('');
+            `;
+            }).join('');
         }
         
         function formatDate(dateStr) {
