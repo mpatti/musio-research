@@ -1,9 +1,37 @@
 {
-  "lastUpdated": "2026-03-05T09:00:00Z",
-  "note": "Morning research - March 5, 2026. Added 10 new items from Billboard AI music tag. Web search unavailable (no Brave API key). Key updates: Apple Music introduces AI song tagging, major platforms rolling out AI detection/attribution tools. KLAY signs deals with all three majors. Suno now at 2M paid subs, $300M ARR. Google Lyria 3 in Gemini. ElevenLabs raised $500M at $11B. Artists pushing back ('Say No To Suno'). UNESCO warns 24% income decline.",
+  "lastUpdated": "2026-03-05T13:00:00Z",
+  "note": "Midday research - March 5, 2026. Added 5 new items. Web search unavailable (no Brave API key). Key updates: Apple Music introduces AI transparency tags, South Korea forms coalition against AI copyright infringement, Create raises $450M at $2.2B, Charlie Puth joins Moises as CMO. Earlier: Suno 2M subs/$300M ARR, ElevenLabs $500M at $11B, Google Lyria 3 in Gemini, UNESCO warns 24% income decline.",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation - major player. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. UNESCO reports 24% income decline threat for music creators. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts - major platform integration.",
   "research": [
+    {
+      "date": "2026-03-05",
+      "source": "Music Business Worldwide",
+      "title": "South Korea's music industry unites to declare 'war' on AI copyright infringement",
+      "summary": "South Korea's music rights groups form coalition to confront AI copyright crisis - major industry united front against unauthorized AI training.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-05",
+      "source": "Music Business Worldwide",
+      "title": "Create raises $450M at $2.2B Valuation",
+      "summary": "Create Music Group completes $450 million funding round at $2.2 billion valuation - major player in AI music and label services space.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-05",
+      "source": "Music Business Worldwide",
+      "title": "Spotify says it paid out $213M to Australian music rightsholders in 2025, up 7% YoY",
+      "summary": "Australian listeners streamed domestic artists 223 million more times in 2025 than the year prior - strong growth in local consumption.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-05",
+      "source": "Music Business Worldwide",
+      "title": "Charlie Puth joins AI music creation platform Moises as Chief Music Officer",
+      "summary": "Grammy-nominated songwriter and producer Charlie Puth joins Moises as CMO to guide creative and product direction.",
+      "category": "business"
+    },
     {
       "date": "2026-03-05",
       "source": "Billboard",
