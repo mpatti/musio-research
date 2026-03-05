@@ -1,9 +1,79 @@
 {
-  "lastUpdated": "2026-03-04T17:00:00Z",
-  "note": "Evening research - Web search unavailable (no Brave API key). Using existing research data. Last research from March 2-3, 2026.",
+  "lastUpdated": "2026-03-05T09:00:00Z",
+  "note": "Morning research - March 5, 2026. Added 10 new items from Billboard AI music tag. Web search unavailable (no Brave API key). Key updates: Apple Music introduces AI song tagging, major platforms rolling out AI detection/attribution tools. KLAY signs deals with all three majors. Suno now at 2M paid subs, $300M ARR. Google Lyria 3 in Gemini. ElevenLabs raised $500M at $11B. Artists pushing back ('Say No To Suno'). UNESCO warns 24% income decline.",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation - major player. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. UNESCO reports 24% income decline threat for music creators. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts - major platform integration.",
   "research": [
+    {
+      "date": "2026-03-05",
+      "source": "Billboard",
+      "title": "Apple Music Introduces Tagging for AI Songs, Its First Regulation on AI Use",
+      "summary": "Apple Music becomes latest platform to introduce AI song tagging - first regulation on AI use by the streaming giant.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-02-19",
+      "source": "Billboard",
+      "title": "Google's Gemini Launches New AI Music Model, Lyria 3",
+      "summary": "Google's Gemini launches Lyria 3 - new AI music model available in Gemini app, competing with Suno and Udio.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-02-17",
+      "source": "Billboard",
+      "title": "Taylor Swift Trademarks, J. Cole Cam'ron Response, A.I. Songs Debate",
+      "summary": "Music law news recap covering Taylor Swift trademarks, J. Cole/Cam'ron lawsuit, and ongoing AI songs debate.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-01-29",
+      "source": "Billboard",
+      "title": "Xania Monet's Manager Launches Label JV With Create, Supporting 'AI-Driven' & 'Traditional' Talent",
+      "summary": "Xania Monet's manager launches new label joint venture with Create, supporting both AI-driven and traditional talent - shows hybrid model emerging.",
+      "category": "business"
+    },
+    {
+      "date": "2026-01-14",
+      "source": "Billboard",
+      "title": "AI Opt-In Is the Floor, Not the Ceiling: Artists Want Respect, Not Just Licenses",
+      "summary": "Guest column argues AI opt-in is just the starting point - artists want meaningful partnership and respect, not just licensing deals.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-01-06",
+      "source": "Billboard",
+      "title": "AI Artists, Escalating Ticketing Battles, Opportunity and Humanity: What to Expect in Music Business 2026",
+      "summary": "Year ahead: AI artists, ticketing battles, opportunity and humanity - key trends shaping music business in 2026.",
+      "category": "trends"
+    },
+    {
+      "date": "2025-12-09",
+      "source": "Billboard",
+      "title": "Year-End Roundup: The Biggest Music Business Stories of 2025",
+      "summary": "Year-end roundup of biggest music business stories including labels, AI, politics and what to expect in 2026.",
+      "category": "trends"
+    },
+    {
+      "date": "2025-11-25",
+      "source": "Billboard",
+      "title": "Suno & WMG Ink Licensing Deal, Effectively Settling WMG's Legal Claims",
+      "summary": "Suno and Warner Music Group sign licensing deal, effectively settling WMG's legal claims against the AI music company.",
+      "category": "business"
+    },
+    {
+      "date": "2025-11-24",
+      "source": "Billboard",
+      "title": "iHeartRadio Says Company Won't 'Play AI Music' or Use 'AI Generated Personalities'",
+      "summary": "iHeartRadio exec says company won't play AI music or use AI generated personalities - notable stance against AI in radio.",
+      "category": "trends"
+    },
+    {
+      "date": "2025-11-21",
+      "source": "Billboard",
+      "title": "AI Platform KLAY Signs Licensing Deals With UMG, WMG, Sony",
+      "summary": "AI platform KLAY signs licensing deals with Universal, Warner, and Sony for recorded music and publishing rights.",
+      "category": "business"
+    },
     {
       "date": "2026-03-04",
       "source": "Music Business Worldwide",
