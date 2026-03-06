@@ -1,14 +1,63 @@
 {
-  "lastUpdated": "2026-03-06T13:00:00Z",
-  "note": "Midday research - March 6, 2026. UMG strong Q4, Spain market up 13.7%. Web search unavailable (no Brave API key). Key updates from MBW: UMG Q4 $4.19B (+10.6%), Grainge compares Downtown to EMI acquisition. Morning research covered: UMG Q4, Robert Kyncl at Morgan Stanley, Spain market, Apple Music AI tags, South Korea coalition, Create $450M, Charlie Puth joins Moises.",
+  "lastUpdated": "2026-03-06T17:00:00Z",
+  "note": "Evening research - March 6, 2026. Web fetch from MBW homepage. Key updates: UMG Q4 strong ($4.19B, +10.6%), Create $450M at $2.2B, Spain market up 13.7%, Lucy Dickins leaving WME, PRS CEO exiting, industry groups push TICKET Act.",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003).",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns.",
   "research": [
     {
       "date": "2026-03-06",
       "source": "Music Business Worldwide",
+      "title": "Lucy Dickins, agent for Adele and Mumford & Sons, to exit WME after seven years",
+      "summary": "Long-time Co-Head Kirk Sommer will continue to lead WME's Contemporary Music division. Dickins was a prominent agent in the UK music industry.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Kobalt inks worldwide sub-publishing and admin deal with UK's Sync Music Global",
+      "summary": "Kobalt will oversee global administration for the independent publisher's catalogue and roster.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Suicideboys sued in the UK over alleged unauthorized sample",
+      "summary": "Rough Trade and Beggars Music sue Suicideboys over alleged unauthorized sample. The song in question has amassed over 115 million Spotify streams.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Andrea Czapary Martin to exit as CEO of UK's PRS for Music at end of 2026",
+      "summary": "PRS represents the rights of more than 180,000 songwriters, composers, and music publishers.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Music industry groups push Senate to tighten TICKET Act, cap resale fees at 10%",
+      "summary": "Fix the Tix also pushes for disclosure of the base ticket price and a prohibition on speculative ticketing.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Reservoir faces competing takeover proposals from Wesbild and Richmond Hill",
+      "summary": "Shareholders Wesbild and Richmond Hill propose to acquire all outstanding shares of Reservoir at $10.50 per share in cash, countering Irenic Capital bid.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Idris Elba's indie label 7wallace strikes strategic partnership with Nas",
+      "summary": "Strategic partnership announced between Idris Elba's 7wallace label and Nas.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
       "title": "Sir Lucian Grainge talks AI strategy, Downtown, D2C, superfans on UMG Q4 call",
-      "summary": "UMG CEO compares Downtown Music acquisition to EMI (2011) - 'one of the most successful and strategically important in music industry history.' Says Downtown will be transformational for UMG's label, publishing, and superfan businesses.",
+      "summary": "UMG CEO compares Downtown Music acquisition to EMI (2011) - 'one of the most successful and strategically important in music industry history.' Says Downtown will be transformational for UMG's label, publishing and superfan businesses.",
       "category": "business"
     },
     {
