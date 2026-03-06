@@ -1,9 +1,23 @@
 {
-  "lastUpdated": "2026-03-06T09:00:00Z",
-  "note": "Morning research - March 6, 2026. Web search unavailable (no Brave API key). Key new stories: UMG Q4 $4.19B (+10.6% YoY), Robert Kyncl (WMG) talks AI at Morgan Stanley, Spain's market up 13.7%, Apple Music AI tags. Yesterday's updates: South Korea's coalition, Create $450M, Charlie Puth joins Moises, Apple Music AI tagging, Suno/Udio licensing complete.",
+  "lastUpdated": "2026-03-06T13:00:00Z",
+  "note": "Midday research - March 6, 2026. UMG strong Q4, Spain market up 13.7%. Web search unavailable (no Brave API key). Key updates from MBW: UMG Q4 $4.19B (+10.6%), Grainge compares Downtown to EMI acquisition. Morning research covered: UMG Q4, Robert Kyncl at Morgan Stanley, Spain market, Apple Music AI tags, South Korea coalition, Create $450M, Charlie Puth joins Moises.",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003).",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns.",
   "research": [
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Sir Lucian Grainge talks AI strategy, Downtown, D2C, superfans on UMG Q4 call",
+      "summary": "UMG CEO compares Downtown Music acquisition to EMI (2011) - 'one of the most successful and strategically important in music industry history.' Says Downtown will be transformational for UMG's label, publishing, and superfan businesses.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "UMG puts US listing plans on hold",
+      "summary": "Universal Music Group has put plans for a US stock listing on hold, according to Q4 earnings call comments.",
+      "category": "business"
+    },
     {
       "date": "2026-03-06",
       "source": "Music Business Worldwide",
@@ -49,7 +63,7 @@
     {
       "date": "2026-03-05",
       "source": "Music Business Worldwide",
-      "title": "Spotify says it paid out $213M to Australian music rightsholders in 2025, up 7% YoY",
+      "title": "Spotify paid out $213M to Australian rightsholders in 2025, up 7% YoY",
       "summary": "Australian listeners streamed domestic artists 223 million more times in 2025 than the year prior - strong growth in local consumption.",
       "category": "business"
     },
@@ -63,317 +77,71 @@
     {
       "date": "2026-03-05",
       "source": "Billboard",
-      "title": "Apple Music Introduces Tagging for AI Songs, Its First Regulation on AI Use",
+      "title": "Apple Music Introduces Tagging for AI Songs",
       "summary": "Apple Music becomes latest platform to introduce AI song tagging - first regulation on AI use by the streaming giant.",
       "category": "tools"
-    },
-    {
-      "date": "2026-02-19",
-      "source": "Billboard",
-      "title": "Google's Gemini Launches New AI Music Model, Lyria 3",
-      "summary": "Google's Gemini launches Lyria 3 - new AI music model available in Gemini app, competing with Suno and Udio.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-17",
-      "source": "Billboard",
-      "title": "Taylor Swift Trademarks, J. Cole Cam'ron Response, A.I. Songs Debate",
-      "summary": "Music law news recap covering Taylor Swift trademarks, J. Cole/Cam'ron lawsuit, and ongoing AI songs debate.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-01-29",
-      "source": "Billboard",
-      "title": "Xania Monet's Manager Launches Label JV With Create, Supporting 'AI-Driven' & 'Traditional' Talent",
-      "summary": "Xania Monet's manager launches new label joint venture with Create, supporting both AI-driven and traditional talent - shows hybrid model emerging.",
-      "category": "business"
-    },
-    {
-      "date": "2026-01-14",
-      "source": "Billboard",
-      "title": "AI Opt-In Is the Floor, Not the Ceiling: Artists Want Respect, Not Just Licenses",
-      "summary": "Guest column argues AI opt-in is just the starting point - artists want meaningful partnership and respect, not just licensing deals.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-01-06",
-      "source": "Billboard",
-      "title": "AI Artists, Escalating Ticketing Battles, Opportunity and Humanity: What to Expect in Music Business 2026",
-      "summary": "Year ahead: AI artists, ticketing battles, opportunity and humanity - key trends shaping music business in 2026.",
-      "category": "trends"
-    },
-    {
-      "date": "2025-12-09",
-      "source": "Billboard",
-      "title": "Year-End Roundup: The Biggest Music Business Stories of 2025",
-      "summary": "Year-end roundup of biggest music business stories including labels, AI, politics and what to expect in 2026.",
-      "category": "trends"
-    },
-    {
-      "date": "2025-11-25",
-      "source": "Billboard",
-      "title": "Suno & WMG Ink Licensing Deal, Effectively Settling WMG's Legal Claims",
-      "summary": "Suno and Warner Music Group sign licensing deal, effectively settling WMG's legal claims against the AI music company.",
-      "category": "business"
-    },
-    {
-      "date": "2025-11-24",
-      "source": "Billboard",
-      "title": "iHeartRadio Says Company Won't 'Play AI Music' or Use 'AI Generated Personalities'",
-      "summary": "iHeartRadio exec says company won't play AI music or use AI generated personalities - notable stance against AI in radio.",
-      "category": "trends"
-    },
-    {
-      "date": "2025-11-21",
-      "source": "Billboard",
-      "title": "AI Platform KLAY Signs Licensing Deals With UMG, WMG, Sony",
-      "summary": "AI platform KLAY signs licensing deals with Universal, Warner, and Sony for recorded music and publishing rights.",
-      "category": "business"
     },
     {
       "date": "2026-03-04",
       "source": "Music Business Worldwide",
       "title": "Suno and Udio Complete Licensing Deals",
-      "summary": "Suno and Udio have now completed licensing deals with major labels, transitioning from defendants to industry partners. Both platforms now pay licensing fees for training data.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-02",
-      "source": "The Verge",
-      "title": "Anthropic Pentagon Standoff",
-      "summary": "Trump administration banned federal use of Anthropic's Claude, but US military strikes on Iran used Anthropic AI for intelligence assessments and target identification hours after the ban was announced. Anthropic vows to challenge the designation in court.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-02",
-      "source": "The Verge",
-      "title": "OpenAI Pentagon Agreement",
-      "summary": "OpenAI reached new agreement with Pentagon allowing deployment of models on classified networks. CEO Sam Altman says the agreement includes prohibitions on domestic mass surveillance and 'human responsibility for the use of force, including for autonomous weapon systems.'",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-01",
-      "source": "The Verge",
-      "title": "YouTube's Algorithm Feeds AI Slop to Kids",
-      "summary": "The New York Times found that after watching children's channels like CoComelon or Bluey, more than 40% of YouTube Shorts recommended contained AI-generated visuals. YouTube doesn't require AI videos for children to be labeled.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-28",
-      "source": "The Verge",
-      "title": "Ilya Sutskever Weighs In on Anthropic-Pentagon",
-      "summary": "OpenAI co-founder Ilya Sutskever (now at Safe Superintelligence) posted that 'it's extremely good that Anthropic has not backed down' and that 'in the future, there will be much more challenging situations of this nature.'",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "ElevenLabs, creator of Suno rival Eleven Music, raises $500M at $11bn valuation",
-      "summary": "ElevenLabs raised $500M in latest round led by Sequoia Capital, reaching $11B valuation. Major entry into AI music market to compete with Suno and Udio.",
+      "summary": "Suno and Udio have now completed licensing deals with major labels, transitioning from defendants to industry partners.",
       "category": "business"
     },
     {
       "date": "2026-02-27",
       "source": "Music Business Worldwide",
-      "title": "Spotify to let users 'steer the algorithm' by personalizing playlists with AI prompts",
-      "summary": "Spotify launching new feature allowing users to personalize playlists with AI prompts - part of broader shift in personalization strategy.",
+      "title": "ElevenLabs raises $500M at $11B valuation",
+      "summary": "ElevenLabs raised $500M in latest round led by Sequoia Capital, reaching $11B valuation. Major entry into AI music market.",
+      "category": "business"
+    },
+    {
+      "date": "2026-02-27",
+      "source": "Music Business Worldwide",
+      "title": "Spotify to let users 'steer the algorithm' with AI prompts",
+      "summary": "Spotify launching new feature allowing users to personalize playlists with AI prompts.",
       "category": "tools"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "Musixmatch launches Music Lens, an AI agent that transforms catalogs into actionable insights",
-      "summary": "Musixmatch launched Music Lens - AI-powered tool built for the industry that transforms catalogs into actionable insights for publishers, labels, and creators.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "Australia rejects proposal that would have exempted AI training from copyright laws",
-      "summary": "Australia rejected AI training exemption, planning licensing regime for AI developers and rightsholders instead.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "AI companies accused of 'largest domestic piracy of IP in our nation's history' at congressional hearing",
-      "summary": "At congressional hearing led by MAGA Republican, AI companies accused of largest domestic piracy of IP in US history. Meta's Mark Zuckerberg made the call to pirate copyrighted material.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "Universal Music applauds Cloudflare's move that allows content owners to charge AI companies for access",
-      "summary": "Cloudflare now allows content owners to charge AI companies for access - Universal Music applauds. Could create new licensing marketplace.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Marietta Times / AP",
-      "title": "AI song generator startups Suno and Udio hoping to join music industry",
-      "summary": "Suno and Udio, the AI music generators that faced lawsuits from major labels, are now seeking to become part of the music industry through licensing deals and partnerships.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "CMU News",
-      "title": "As AI-Generated Music Advances, Humans Still Lead in Creativity, CMU Research Finds",
-      "summary": "Carnegie Mellon University research finds that humans still lead in creativity despite advances in AI-generated music.",
-      "category": "trends"
     },
     {
       "date": "2026-02-26",
       "source": "Billboard",
-      "title": "Suno CEO Says AI Music Company Hits 2M Paid Subscribers, $300M ARR",
+      "title": "Suno hits 2M Paid Subscribers, $300M ARR",
       "summary": "Suno announces 2 million paid subscribers and $300M annual recurring revenue - major milestone for AI music sector.",
       "category": "business"
     },
     {
       "date": "2026-02-26",
-      "source": "Digital Music News",
-      "title": "Musician Opposes Stability AI Dismissal Push in Training Lawsuit",
-      "summary": "A musician is fighting to keep a lawsuit against Stability AI alive, arguing that the company's motion to dismiss should be denied in the AI training copyright case.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-26",
       "source": "Music Ally",
-      "title": "Google buys AI-music startup ProducerAI – formerly Riffusion",
-      "summary": "Google acquires ProducerAI (formerly Riffusion), strengthening its position in the AI music generation market to compete with Suno and Udio.",
+      "title": "Google buys ProducerAI (formerly Riffusion)",
+      "summary": "Google acquires ProducerAI, strengthening its position in the AI music generation market.",
       "category": "business"
     },
     {
       "date": "2026-02-25",
       "source": "Music Business Worldwide",
       "title": "Artist representatives launch 'Say No To Suno' campaign",
-      "summary": "Artists and their representatives launch campaign against AI music generators, arguing 'AI slop dilutes the royalty pools of legitimate artists from whose music this slop is derived.'",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-25",
-      "source": "Google Blog",
-      "title": "ProducerAI: Your music creation partner, now in Google Labs",
-      "summary": "Google launches ProducerAI in Google Labs - a new AI music creation tool that directly competes with Suno and Udio. Available to consumers via Google's ecosystem.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-24",
-      "source": "Billboard",
-      "title": "Who Is Building the Future of AI Music? Start With These 11 Companies",
-      "summary": "Comprehensive overview of 11 key companies shaping AI music: Suno, Udio, Google, Apple, ElevenLabs, Meta, Amazon, TikTok (ByteDance), KLAY, and emerging startups.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-23",
-      "source": "MediaPost",
-      "title": "4 Must-See AI Music Video Generator Reviews: Best Tools Tested for 2026",
-      "summary": "Roundup of AI music video generator tools - showing the expansion of AI beyond audio into visual content creation.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-23",
-      "source": "Aloha State Daily",
-      "title": "Google AI-Generated Audio Could Become New Ad Frontier",
-      "summary": "Google's AI-generated audio technology being explored for advertising - brands may soon use AI music in commercials.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-22",
-      "source": "Billboard",
-      "title": "State legislatures considering AI music regulations",
-      "summary": "Multiple bills being introduced at state level to regulate AI music - addressing royalty distribution, attribution, and artist rights.",
+      "summary": "Campaign against AI music generators, arguing 'AI slop dilutes the royalty pools of legitimate artists.'",
       "category": "trends"
     },
     {
       "date": "2026-02-23",
       "source": "Music Business Worldwide",
-      "title": "Suno hires ex-Merlin CEO Jeremy Sirota as Chief Commercial Officer",
-      "summary": "Suno, the AI music generation startup, has hired former Merlin CEO Jeremy Sirota as CCO to lead commercial strategy. Sirota will report directly to CEO Mikey Shulman.",
+      "title": "Suno hires ex-Merlin CEO Jeremy Sirota as CCO",
+      "summary": "Suno hires former Merlin CEO Jeremy Sirota to lead commercial strategy.",
       "category": "business"
-    },
-    {
-      "date": "2026-02-23",
-      "source": "Music Business Worldwide",
-      "title": "Google launches Lyria 3 - most advanced AI music generator - in Gemini app",
-      "summary": "Google's Lyria 3 model is now available in the Gemini app, letting users create 30-second tracks from text prompts or images. This is Google's most advanced AI music generation yet.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-23",
-      "source": "Music Business Worldwide",
-      "title": "AI sample generator Just 4 Noise raises $1M",
-      "summary": "Just 4 Noise, an AI sample generator that lets producers describe sounds they want and get unique royalty-free samples for their DAW, raised $1M from BADideas.fund and Sound Hub Denmark.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-23",
-      "source": "Music Business Worldwide",
-      "title": "Apple revives Apple Music Connect as B2B promo platform",
-      "summary": "Apple has relaunched Apple Music Connect as a B2B platform for labels and distributors, giving teams a single dashboard to manage release cycle elements.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-21",
-      "source": "Music Business Worldwide",
-      "title": "Sony Group develops tech to track original music in AI-generated songs",
-      "summary": "Sony Group has developed technology to identify and track original music within AI-generated songs, addressing copyright concerns in the AI music space.",
-      "category": "trends"
     },
     {
       "date": "2026-02-22",
       "source": "UN News",
       "title": "Artists face steep income decline due to AI, UNESCO finds",
-      "summary": "Music creators could see their revenues fall by 24 per cent, while those working in the audiovisual sector may lose 21 per cent of their income.",
-      "url": "https://news.un.org/en/story/2026/02/1166989",
+      "summary": "Music creators could see revenues fall by 24% due to AI, while audiovisual sector may lose 21%.",
       "category": "trends"
-    },
-    {
-      "date": "2026-02-22",
-      "source": "LA Times",
-      "title": "Google and Apple bring AI music creation to mainstream consumers",
-      "summary": "Alphabet Inc.'s Google and Apple Inc. are adding music-focused generative artificial intelligence features to their core consumer apps.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-22",
-      "source": "Business Insider",
-      "title": "The rise of AI music could be a good thing for record-label and streaming stocks",
-      "summary": "Analysis of how AI music may impact music industry stocks and investment strategies.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-22",
-      "source": "Billboard",
-      "title": "Top AI Music Companies 2026",
-      "summary": "Udio and Suno both sued by major labels in 2024, now settling. Udio reached settlement with Universal in Oct 2025. New licensed AI platforms launching in 2026.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-21",
-      "source": "Forbes",
-      "title": "ElevenLabs Launches AI Music",
-      "summary": "ElevenLabs launches ElevenLabs Music, entering AI music race alongside Suno and Udio with artist-led releases.",
-      "category": "tools"
     },
     {
       "date": "2026-02-21",
       "source": "Forbes",
       "title": "Universal Music + NVIDIA Partnership",
-      "summary": "Universal Music Group partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-19",
-      "source": "Billboard",
-      "title": "Google Gemini Launches Lyria 3",
-      "summary": "Google's Lyria 3 is now available in the Gemini app, allowing users to create 30-second tracks from text prompts or images.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "Warner Music Brazil brings back voice of samba legend Cleber Augusto through AI",
-      "summary": "Warner Music Brazil used AI to recreate voice of samba legend Cleber Augusto, who lost his voice following throat cancer surgery more than two decades ago.",
+      "summary": "UMG partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'.",
       "category": "business"
     }
   ]
