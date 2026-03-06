@@ -1,14 +1,42 @@
 {
-  "lastUpdated": "2026-03-05T17:00:00Z",
-  "note": "Evening research - March 5, 2026. Web search unavailable (no Brave API key). Today's updates already captured in morning/midday research: South Korea's industry-wide coalition against AI copyright infringement, Create's $450M round at $2.2B, Charlie Puth joining Moises as CMO, Apple Music introducing AI song tagging. Suno/Udio completed licensing deals with major labels. Key ongoing developments: ElevenLabs ($500M at $11B), Suno (2M subs/$300M ARR), Google Lyria 3 in Gemini, UNESCO 24% income warning, 'Say No To Suno' artist campaign.",
-  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation - major player. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers.",
-  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. UNESCO reports 24% income decline threat for music creators. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts - major platform integration.",
+  "lastUpdated": "2026-03-06T09:00:00Z",
+  "note": "Morning research - March 6, 2026. Web search unavailable (no Brave API key). Key new stories: UMG Q4 $4.19B (+10.6% YoY), Robert Kyncl (WMG) talks AI at Morgan Stanley, Spain's market up 13.7%, Apple Music AI tags. Yesterday's updates: South Korea's coalition, Create $450M, Charlie Puth joins Moises, Apple Music AI tagging, Suno/Udio licensing complete.",
+  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003).",
+  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns.",
   "research": [
     {
-      "date": "2026-03-05",
+      "date": "2026-03-06",
       "source": "Music Business Worldwide",
-      "title": "South Korea's music industry unites to declare 'war' on AI copyright infringement",
-      "summary": "South Korea's music rights groups form coalition to confront AI copyright crisis - major industry united front against unauthorized AI training.",
+      "title": "UMG generated $4.19B in Q4, up 10.6% YoY",
+      "summary": "Universal Music's Q4 results driven by Taylor Swift, KPop Demon Hunters soundtrack, Olivia Dean and more - strong quarter for major label.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Robert Kyncl talks Suno, AI, value of music at Morgan Stanley",
+      "summary": "Warner Music Group CEO Robert Kyncl made the case for AI as opportunity at Morgan Stanley conference, following shareholder letter on AI value.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Spain's recorded music market grew 13.7% in 2025",
+      "summary": "Spain's market strongest since 2003 with subscription streaming revenues up 19.2% YoY, though revenues remain 26% below 2001 peak.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "Apple Music launches AI transparency tags",
+      "summary": "Apple Music introduces AI transparency tags - but only if labels and distributors voluntarily declare AI-generated content.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-03-06",
+      "source": "Music Business Worldwide",
+      "title": "South Korea's music industry unites against AI copyright infringement",
+      "summary": "Six music rights organizations form coalition declaring 'state of emergency' and 'declaration of war' against AI copyright infringement.",
       "category": "trends"
     },
     {
