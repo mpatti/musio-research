@@ -1,14 +1,28 @@
 {
-  "lastUpdated": "2026-03-09T09:00:00Z",
-  "note": "Morning research - March 9, 2026. Web fetch from MBW homepage. Key updates: Live Nation settles DOJ antitrust battle, Cumulus Media files for bankruptcy ($600M debt), HYBE-Spotify K-pop podcast partnership, Create $450M at $2.2B, UMG Q4 strong ($4.19B, +10.6%), Spain market up 13.7%, PRS CEO exiting, industry groups push TICKET Act.",
-  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003).",
-  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns.",
+  "lastUpdated": "2026-03-09T13:00:00Z",
+  "note": "Midday research - March 9, 2026. Key updates: GEMA vs Suno German court hearing (landmark copyright case), Ed Sheeran 'Thinking Out Loud' case update, plus all morning items (Live Nation DOJ settlement, Create $450M at $2.2B, UMG Q4 $4.19B +10.6%, Spain market up 13.7%, Cumulus bankruptcy, HYBE-Spotify podcast deal).",
+  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno German court case underway - key test for AI copyright.",
+  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
     {
       "date": "2026-03-09",
       "source": "Music Business Worldwide",
       "title": "Live Nation settles antitrust battle with DOJ (report)",
       "summary": "Live Nation reaches settlement with Department of Justice in antitrust battle, according to Politico reports.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-09",
+      "source": "Music Business Worldwide",
+      "title": "GEMA vs. Suno: German court hears landmark AI music copyright case",
+      "summary": "Oral proceedings in Munich court in copyright case brought by Germany's GEMA against AI music generator Suno - key test for AI copyright in Europe.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-09",
+      "source": "Music Business Worldwide",
+      "title": "Ed Sheeran's lawyers push to end remaining 'Thinking Out Loud' copyright case",
+      "summary": "Sheeran's legal team argues the copyright registration underpinning the case was never valid.",
       "category": "business"
     },
     {
