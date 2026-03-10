@@ -1,9 +1,23 @@
 {
-  "lastUpdated": "2026-03-09T21:00:00Z",
-  "note": "Evening research - March 9, 2026. Added: beatBread hires ex-Spotify/CD Baby execs, AEG promotions. Earlier today: GEMA vs Suno German court hearing, Live Nation DOJ settlement, Create $450M at $2.2B, UMG Q4 $4.19B +10.6%, Ed Sheeran case update, Cumulus bankruptcy, HYBE-Spotify podcast deal, Lucy Dickins to CAA, Kobalt deal, Suicideboys sample lawsuit, PRS CEO departure, TICKET Act push, Reservoir takeover battle, Idris Elba/Nas partnership, UMG US listing on hold, Spain market +13.7%.",
+  "lastUpdated": "2026-03-10T09:00:00Z",
+  "note": "Morning research - March 10, 2026. Added: Apple Music AI tagging, Google Lyria 3, Xania Monet/Create label JV, artist partnership column, 2026 predictions, 2025 year-end review. Key developments: Suno now has 2M paid subscribers, $300M ARR; ElevenLabs at $11B; major labels licensing with AI companies.",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno German court case underway - key test for AI copyright.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
+    {
+      "date": "2026-03-10",
+      "source": "Billboard",
+      "title": "Apple Music Introduces Tagging for AI Songs, Its First Regulation on AI Use",
+      "summary": "Apple Music becomes latest platform to introduce AI song tagging - first formal regulation on AI use by the streaming giant. Tags are voluntary for labels and distributors.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-03-10",
+      "source": "Billboard",
+      "title": "Google's Gemini Launches New AI Music Model, Lyria 3",
+      "summary": "Google's Gemini introduces Lyria 3, its newest AI music generation model - major tech player deepening AI music capabilities.",
+      "category": "tools"
+    },
     {
       "date": "2026-03-09",
       "source": "Music Business Worldwide",
@@ -241,6 +255,48 @@
       "title": "Universal Music + NVIDIA Partnership",
       "summary": "UMG partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'.",
       "category": "business"
+    },
+    {
+      "date": "2026-02-19",
+      "source": "Billboard",
+      "title": "Google's Gemini Launches New AI Music Model, Lyria 3",
+      "summary": "Google's Gemini introduces Lyria 3, its newest AI music generation model - major tech player deepening AI music capabilities.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-02-17",
+      "source": "Billboard",
+      "title": "Taylor Swift Trademarks, J. Cole Cam'ron Response, A.I. Songs Debate & More Top Music Law News",
+      "summary": "Overview of key music law developments including Taylor Swift trademark filings, AI songs debate in the industry.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-01-29",
+      "source": "Billboard",
+      "title": "Xania Monet's Manager Launches Label JV With Create, Supporting 'AI-Driven' & 'Traditional' Talent",
+      "summary": "Xania Monet's manager launches joint venture with Create Music Group supporting both AI-driven and traditional talent.",
+      "category": "business"
+    },
+    {
+      "date": "2026-01-14",
+      "source": "Billboard",
+      "title": "AI Opt-In Is the Floor, Not the Ceiling: Artists Want Respect, Not Just Licenses (Guest Column)",
+      "summary": "Guest column arguing that opt-in licensing is minimum requirement - artists want true partnerships with AI companies, not just compensation.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-01-06",
+      "source": "Billboard",
+      "title": "AI Artists, Escalating Ticketing Battles, Opportunity and Humanity: What to Expect in the Music Business in 2026",
+      "summary": "Industry predictions for 2026: AI music maturation, ticketing regulatory battles, and focus on human creativity.",
+      "category": "trends"
+    },
+    {
+      "date": "2025-12-09",
+      "source": "Billboard",
+      "title": "Year-End Roundup: The Biggest Music Business Stories of 2025",
+      "summary": "Year-end review of major 2025 music business developments including AI, streaming, and industry consolidation.",
+      "category": "trends"
     }
   ]
 }
