@@ -1,9 +1,51 @@
 {
-  "lastUpdated": "2026-03-10T22:00:00Z",
-  "note": "Evening research - March 10, 2026. Note: Web search unavailable (API key not configured). Research based on existing data. Key stories: GEMA vs Suno hearing in Munich court today (copyright precedent), Live Nation DOJ settlement ($280M), Apple Music AI tagging (voluntary), Google Lyria 3. Continue monitoring: UNESCO 24% income decline warning, Suno 2M subscribers, ElevenLabs $11B valuation.",
-  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno German court case underway - key test for AI copyright.",
+  "lastUpdated": "2026-03-11T09:00:00Z",
+  "note": "Morning research - March 11, 2026. Web search unavailable (API key not configured). Research compiled from MBW homepage fetch. Key new stories: Google sued by indie artists over Lyria 3 training data, UK government weighing copyright exception for AI (March 18 deadline), Live Nation DOJ settlement details, Steam sued by UK PRS over game music, ChatGPT now Shazams songs. Continuing: GEMA vs Suno hearing in Munich court (copyright precedent), ElevenLabs $11B valuation, Suno 2M subscribers.",
+  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno case outcome could set precedent for AI music licensing in Europe. ChatGPT now can Shazam songs via Apple integration.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Indie artists sue Google, claiming YouTube used their catalog to train Lyria 3 AI",
+      "summary": "Independent artists have filed lawsuit against Google alleging YouTube used their music catalog to train Lyria 3 AI model without permission - expanding legal front in AI copyright battles.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "UK government weighs commercial research exception for AI training on copyrighted music",
+      "summary": "UK government considering copyright exception that could let AI companies train on copyrighted music without permission. Lawmakers face March 18 deadline on copyright reform.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Live Nation confirms details of antitrust settlement with DOJ",
+      "summary": "Live Nation confirms details of antitrust settlement with US Department of Justice. Company set aside $280M for damages claims from states.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Steam faces legal action from UK's PRS over alleged unlicensed use of music in games",
+      "summary": "Gaming platform Steam sued by UK PRS for Music over alleged unlicensed use of music in games. PRS attempted to reach agreement for many years before issuing legal proceedings on March 4.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "ChatGPT can now Shazam songs as Apple brings music recognition tool to OpenAI's chatbot",
+      "summary": "OpenAI integrates Apple's Shazam music recognition into ChatGPT - users can now identify songs directly through the chatbot. Apple previously integrated Spotify and Apple Music into OpenAI's app ecosystem.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Universal Music Nordics restructures under 'One Nordic' model",
+      "summary": "Universal Music restructures Nordic operations, unifying units in Denmark, Norway, Sweden, Finland, and Baltics under single 'One Nordic' organizational model.",
+      "category": "business"
+    },
     {
       "date": "2026-03-10",
       "source": "Music Business Worldwide",
@@ -45,20 +87,6 @@
       "title": "AEG International Global Partnerships strengthens leadership team with key promotions",
       "summary": "Georgina Iceton, Will Dowdy, and Matthew Zweck each promoted to Senior Vice President roles.",
       "category": "business"
-    },
-    {
-      "date": "2026-03-09",
-      "source": "Music Business Worldwide",
-      "title": "Live Nation settles antitrust battle with DOJ (report)",
-      "summary": "Live Nation reaches settlement with Department of Justice in antitrust battle, according to Politico reports.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-09",
-      "source": "Music Business Worldwide",
-      "title": "GEMA vs. Suno: German court hears landmark AI music copyright case",
-      "summary": "Oral proceedings in Munich court in copyright case brought by Germany's GEMA against AI music generator Suno - key test for AI copyright in Europe.",
-      "category": "trends"
     },
     {
       "date": "2026-03-09",
@@ -168,13 +196,6 @@
     {
       "date": "2026-03-06",
       "source": "Music Business Worldwide",
-      "title": "Apple Music launches AI transparency tags",
-      "summary": "Apple Music introduces AI transparency tags - but only if labels and distributors voluntarily declare AI-generated content.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
       "title": "South Korea's music industry unites against AI copyright infringement",
       "summary": "Six music rights organizations form coalition declaring 'state of emergency' and 'declaration of war' against AI copyright infringement.",
       "category": "trends"
@@ -199,13 +220,6 @@
       "title": "Charlie Puth joins AI music creation platform Moises as Chief Music Officer",
       "summary": "Grammy-nominated songwriter and producer Charlie Puth joins Moises as CMO to guide creative and product direction.",
       "category": "business"
-    },
-    {
-      "date": "2026-03-05",
-      "source": "Billboard",
-      "title": "Apple Music Introduces Tagging for AI Songs",
-      "summary": "Apple Music becomes latest platform to introduce AI song tagging - first regulation on AI use by the streaming giant.",
-      "category": "tools"
     },
     {
       "date": "2026-03-04",
@@ -271,45 +285,10 @@
       "category": "business"
     },
     {
-      "date": "2026-02-19",
-      "source": "Billboard",
-      "title": "Google's Gemini Launches New AI Music Model, Lyria 3",
-      "summary": "Google's Gemini introduces Lyria 3, its newest AI music generation model - major tech player deepening AI music capabilities.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-02-17",
-      "source": "Billboard",
-      "title": "Taylor Swift Trademarks, J. Cole Cam'ron Response, A.I. Songs Debate & More Top Music Law News",
-      "summary": "Overview of key music law developments including Taylor Swift trademark filings, AI songs debate in the industry.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-01-29",
-      "source": "Billboard",
-      "title": "Xania Monet's Manager Launches Label JV With Create, Supporting 'AI-Driven' & 'Traditional' Talent",
-      "summary": "Xania Monet's manager launches joint venture with Create Music Group supporting both AI-driven and traditional talent.",
-      "category": "business"
-    },
-    {
       "date": "2026-01-14",
       "source": "Billboard",
       "title": "AI Opt-In Is the Floor, Not the Ceiling: Artists Want Respect, Not Just Licenses (Guest Column)",
       "summary": "Guest column arguing that opt-in licensing is minimum requirement - artists want true partnerships with AI companies, not just compensation.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-01-06",
-      "source": "Billboard",
-      "title": "AI Artists, Escalating Ticketing Battles, Opportunity and Humanity: What to Expect in the Music Business in 2026",
-      "summary": "Industry predictions for 2026: AI music maturation, ticketing regulatory battles, and focus on human creativity.",
-      "category": "trends"
-    },
-    {
-      "date": "2025-12-09",
-      "source": "Billboard",
-      "title": "Year-End Roundup: The Biggest Music Business Stories of 2025",
-      "summary": "Year-end review of major 2025 music business developments including AI, streaming, and industry consolidation.",
       "category": "trends"
     }
   ]
