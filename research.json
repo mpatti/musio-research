@@ -1,21 +1,77 @@
 {
-  "lastUpdated": "2026-03-11T09:00:00Z",
-  "note": "Morning research - March 11, 2026. Web search unavailable (API key not configured). Research compiled from MBW homepage fetch. Key new stories: Google sued by indie artists over Lyria 3 training data, UK government weighing copyright exception for AI (March 18 deadline), Live Nation DOJ settlement details, Steam sued by UK PRS over game music, ChatGPT now Shazams songs. Continuing: GEMA vs Suno hearing in Munich court (copyright precedent), ElevenLabs $11B valuation, Suno 2M subscribers.",
+  "lastUpdated": "2026-03-11T13:00:00Z",
+  "note": "Midday research - March 11, 2026, 1:00 PM ET. Key new stories: Apple Music/TikTok exclusive partnership (full-song streaming + Listening Party), Bad Bunny wins copyright case, MLC vs Pandora mechanical royalties battle heating up, Reservoir/Hans Zimmer deal, TikTok avoids Canada shutdown. Continuing: Google sued by indie artists over Lyria 3, UK government weighing copyright exception for AI (March 18 deadline), Live Nation DOJ settlement ($280M), Steam sued by UK PRS over game music, ChatGPT now Shazams songs, GEMA vs Suno Munich hearing (copyright precedent).",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno case outcome could set precedent for AI music licensing in Europe. ChatGPT now can Shazam songs via Apple integration.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
-      "title": "Indie artists sue Google, claiming YouTube used their catalog to train Lyria 3 AI",
-      "summary": "Independent artists have filed lawsuit against Google alleging YouTube used their music catalog to train Lyria 3 AI model without permission - expanding legal front in AI copyright battles.",
-      "category": "trends"
+      "title": "Apple Music lands exclusive TikTok partnership to bring full-song streaming into social app",
+      "summary": "Apple Music and TikTok announce exclusive partnership allowing full-song streaming within the social app, plus 'Listening Party' feature for real-time fan interaction.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Bad Bunny beats copyright lawsuit over 'Enséñame a Bailar' sample",
+      "summary": "Producer's copyright claim over 'Un Verano Sin Ti' track ends in dismissal - significant win for the artist.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "The MLC and Pandora clash in opposition briefs as mechanical royalties battle nears decisive stage",
+      "summary": "Both filings landed in US District Court for Middle District of Tennessee as mechanical royalties battle escalates.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Reservoir strikes worldwide publishing admin deal with Hans Zimmer",
+      "summary": "Reservoir will administer Zimmer's catalog through his company, Remote Control Publishing - expanding relationship with Academy Award-winning composer.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "TikTok avoids shutdown in Canada after security review",
+      "summary": "TikTok will implement 'security gateways and privacy-enhancing technologies' in Canada under new terms, avoiding shutdown.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Hari Nair to exit as CEO of India's Tips Music",
+      "summary": "Former Sony Music India and ByteDance veteran will exit on April 30.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Stromae's Mosaert label renews global deal with Warner Chappell Music",
+      "summary": "Renewed agreement keeps WCM as global representative for Stromae's catalog.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Confirmed: Agent Lucy Dickins to join CAA after exiting WME",
+      "summary": "Dickins will serve on CAA's Managing Director committee and continue working directly with top music artists.",
+      "category": "business"
     },
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
       "title": "UK government weighs commercial research exception for AI training on copyrighted music",
       "summary": "UK government considering copyright exception that could let AI companies train on copyrighted music without permission. Lawmakers face March 18 deadline on copyright reform.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Indie artists sue Google, claiming YouTube used their catalog to train Lyria 3 AI",
+      "summary": "Independent artists have filed lawsuit against Google alleging YouTube used their music catalog to train Lyria 3 AI model without permission - expanding legal front in AI copyright battles.",
       "category": "trends"
     },
     {
