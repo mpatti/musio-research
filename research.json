@@ -1,9 +1,23 @@
 {
-  "lastUpdated": "2026-03-11T13:00:00Z",
-  "note": "Midday research - March 11, 2026, 1:00 PM ET. Key new stories: Apple Music/TikTok exclusive partnership (full-song streaming + Listening Party), Bad Bunny wins copyright case, MLC vs Pandora mechanical royalties battle heating up, Reservoir/Hans Zimmer deal, TikTok avoids Canada shutdown. Continuing: Google sued by indie artists over Lyria 3, UK government weighing copyright exception for AI (March 18 deadline), Live Nation DOJ settlement ($280M), Steam sued by UK PRS over game music, ChatGPT now Shazams songs, GEMA vs Suno Munich hearing (copyright precedent).",
+  "lastUpdated": "2026-03-11T17:00:00Z",
+  "note": "Evening research - March 11, 2026, 5:00 PM ET. Key stories: Spotify Loud & Clear report (80 artists $10M+, 1,500 $1M+), Apple Music/TikTok exclusive partnership, Bad Bunny wins copyright case, MLC vs Pandora mechanical royalties battle, GEMA vs Suno Munich hearing (precedent-setting), UK government weighing copyright exception for AI (March 18 deadline), Live Nation DOJ settlement ($280M), Steam sued by UK PRS over game music, ChatGPT now Shazams songs, Dionne Warwick sues over royalty 'pilfering', indie artists sue Google over Lyria 3.",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno case outcome could set precedent for AI music licensing in Europe. ChatGPT now can Shazam songs via Apple integration.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "80 artists generated $10M+ each from Spotify last year. Over 1,500 generated $1M+. Here's the full breakdown",
+      "summary": "Spotify published its annual Loud & Clear report showing 80 artists generated $10M+ each in 2025, with over 1,500 artists generating $1M+.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Dionne Warwick sues rights company over alleged 'pilfering of millions' in royalty income",
+      "summary": "Dionne Warwick sues Artists Rights Enforcement Corporation over alleged 'pilfering of millions' in royalty income. The company previously sued the singer claiming it is owed 'hundreds of thousands, if not millions, of dollars.'",
+      "category": "business"
+    },
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
@@ -16,6 +30,13 @@
       "source": "Music Business Worldwide",
       "title": "Bad Bunny beats copyright lawsuit over 'Enséñame a Bailar' sample",
       "summary": "Producer's copyright claim over 'Un Verano Sin Ti' track ends in dismissal - significant win for the artist.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-11",
+      "source": "Music Business Worldwide",
+      "title": "Dionne Warwick sues rights company over alleged 'pilfering of millions' in royalty income",
+      "summary": "Dionne Warwick sues Artists Rights Enforcement Corporation alleging 'pilfering of millions' in royalty income.",
       "category": "business"
     },
     {
