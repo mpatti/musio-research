@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-11T17:00:00Z",
-  "note": "Evening research - March 11, 2026, 5:00 PM ET. Key stories: Spotify Loud & Clear report (80 artists $10M+, 1,500 $1M+), Apple Music/TikTok exclusive partnership, Bad Bunny wins copyright case, MLC vs Pandora mechanical royalties battle, GEMA vs Suno Munich hearing (precedent-setting), UK government weighing copyright exception for AI (March 18 deadline), Live Nation DOJ settlement ($280M), Steam sued by UK PRS over game music, ChatGPT now Shazams songs, Dionne Warwick sues over royalty 'pilfering', indie artists sue Google over Lyria 3.",
+  "lastUpdated": "2026-03-12T09:00:00Z",
+  "note": "Morning research - March 12, 2026, 9:00 AM ET. No new search results (API unavailable). Carrying forward key developments from March 11. UK government copyright exception deadline (March 18) approaching. GEMA vs Suno Munich hearing complete - ruling pending. Suno/Udio now licensed and paying. ElevenLabs at $11B. Major labels launching licensed AI platforms.",
   "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno case outcome could set precedent for AI music licensing in Europe. ChatGPT now can Shazam songs via Apple integration.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
@@ -15,7 +15,7 @@
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
       "title": "Dionne Warwick sues rights company over alleged 'pilfering of millions' in royalty income",
-      "summary": "Dionne Warwick sues Artists Rights Enforcement Corporation over alleged 'pilfering of millions' in royalty income. The company previously sued the singer claiming it is owed 'hundreds of thousands, if not millions, of dollars.'",
+      "summary": "Dionne Warwick sues Artists Rights Enforcement Corporation over alleged 'pilfering of millions' in royalty income.",
       "category": "business"
     },
     {
@@ -35,50 +35,8 @@
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
-      "title": "Dionne Warwick sues rights company over alleged 'pilfering of millions' in royalty income",
-      "summary": "Dionne Warwick sues Artists Rights Enforcement Corporation alleging 'pilfering of millions' in royalty income.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
       "title": "The MLC and Pandora clash in opposition briefs as mechanical royalties battle nears decisive stage",
       "summary": "Both filings landed in US District Court for Middle District of Tennessee as mechanical royalties battle escalates.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Reservoir strikes worldwide publishing admin deal with Hans Zimmer",
-      "summary": "Reservoir will administer Zimmer's catalog through his company, Remote Control Publishing - expanding relationship with Academy Award-winning composer.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "TikTok avoids shutdown in Canada after security review",
-      "summary": "TikTok will implement 'security gateways and privacy-enhancing technologies' in Canada under new terms, avoiding shutdown.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Hari Nair to exit as CEO of India's Tips Music",
-      "summary": "Former Sony Music India and ByteDance veteran will exit on April 30.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Stromae's Mosaert label renews global deal with Warner Chappell Music",
-      "summary": "Renewed agreement keeps WCM as global representative for Stromae's catalog.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Confirmed: Agent Lucy Dickins to join CAA after exiting WME",
-      "summary": "Dickins will serve on CAA's Managing Director committee and continue working directly with top music artists.",
       "category": "business"
     },
     {
@@ -106,22 +64,15 @@
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
       "title": "Steam faces legal action from UK's PRS over alleged unlicensed use of music in games",
-      "summary": "Gaming platform Steam sued by UK PRS for Music over alleged unlicensed use of music in games. PRS attempted to reach agreement for many years before issuing legal proceedings on March 4.",
+      "summary": "Gaming platform Steam sued by UK PRS for Music over alleged unlicensed use of music in games.",
       "category": "business"
     },
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
       "title": "ChatGPT can now Shazam songs as Apple brings music recognition tool to OpenAI's chatbot",
-      "summary": "OpenAI integrates Apple's Shazam music recognition into ChatGPT - users can now identify songs directly through the chatbot. Apple previously integrated Spotify and Apple Music into OpenAI's app ecosystem.",
+      "summary": "OpenAI integrates Apple's Shazam music recognition into ChatGPT - users can now identify songs directly through the chatbot.",
       "category": "tools"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Universal Music Nordics restructures under 'One Nordic' model",
-      "summary": "Universal Music restructures Nordic operations, unifying units in Denmark, Norway, Sweden, Finland, and Baltics under single 'One Nordic' organizational model.",
-      "category": "business"
     },
     {
       "date": "2026-03-10",
@@ -129,13 +80,6 @@
       "title": "GEMA vs. Suno: Landmark AI music copyright case heard in Munich court today",
       "summary": "Oral proceedings in Munich court in copyright case brought by Germany's GEMA against AI music generator Suno - key test for AI copyright in Europe. Outcome could set precedent for AI music licensing.",
       "category": "trends"
-    },
-    {
-      "date": "2026-03-10",
-      "source": "Music Business Worldwide",
-      "title": "Live Nation settles antitrust battle with DOJ",
-      "summary": "Live Nation reaches settlement with Department of Justice in antitrust battle, according to Politico reports. Company sets aside $280M for damages claims from states.",
-      "category": "business"
     },
     {
       "date": "2026-03-10",
@@ -152,101 +96,10 @@
       "category": "tools"
     },
     {
-      "date": "2026-03-09",
-      "source": "Music Business Worldwide",
-      "title": "beatBread makes run of new appointments, including ex-Spotify and CD Baby execs",
-      "summary": "New hires from CD Baby, Spotify and Countsy bring finance, operations and AI expertise to the music funding company's leadership team.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-09",
-      "source": "Music Business Worldwide",
-      "title": "AEG International Global Partnerships strengthens leadership team with key promotions",
-      "summary": "Georgina Iceton, Will Dowdy, and Matthew Zweck each promoted to Senior Vice President roles.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-09",
-      "source": "Music Business Worldwide",
-      "title": "Ed Sheeran's lawyers push to end remaining 'Thinking Out Loud' copyright case",
-      "summary": "Sheeran's legal team argues the copyright registration underpinning the case was never valid.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-09",
-      "source": "Music Business Worldwide",
-      "title": "Cumulus Media files for bankruptcy to shed $600M in debt",
-      "summary": "US radio broadcaster Cumulus Media files for bankruptcy - second Chapter 11 filing after 2017. Aims to shed $600M in debt.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-09",
-      "source": "Music Business Worldwide",
-      "title": "HYBE and Spotify strike global content partnership for K-pop video podcasts",
-      "summary": "HYBE will produce original podcast content through its in-house studio, with the first show launching later this month.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Lucy Dickins, agent for Adele and Mumford & Sons, to exit WME after seven years",
-      "summary": "Long-time Co-Head Kirk Sommer will continue to lead WME's Contemporary Music division. Dickins was a prominent agent in the UK music industry.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Kobalt inks worldwide sub-publishing and admin deal with UK's Sync Music Global",
-      "summary": "Kobalt will oversee global administration for the independent publisher's catalogue and roster.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Suicideboys sued in the UK over alleged unauthorized sample",
-      "summary": "Rough Trade and Beggars Music sue Suicideboys over alleged unauthorized sample. The song in question has amassed over 115 million Spotify streams.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Andrea Czapary Martin to exit as CEO of UK's PRS for Music at end of 2026",
-      "summary": "PRS represents the rights of more than 180,000 songwriters, composers, and music publishers.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Music industry groups push Senate to tighten TICKET Act, cap resale fees at 10%",
-      "summary": "Fix the Tix also pushes for disclosure of the base ticket price and a prohibition on speculative ticketing.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Reservoir faces competing takeover proposals from Wesbild and Richmond Hill",
-      "summary": "Shareholders Wesbild and Richmond Hill propose to acquire all outstanding shares of Reservoir at $10.50 per share in cash, countering Irenic Capital bid.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Idris Elba's indie label 7wallace strikes strategic partnership with Nas",
-      "summary": "Strategic partnership announced between Idris Elba's 7wallace label and Nas.",
-      "category": "business"
-    },
-    {
       "date": "2026-03-06",
       "source": "Music Business Worldwide",
       "title": "Sir Lucian Grainge talks AI strategy, Downtown, D2C, superfans on UMG Q4 call",
-      "summary": "UMG CEO compares Downtown Music acquisition to EMI (2011) - 'one of the most successful and strategically important in music industry history.' Says Downtown will be transformational for UMG's label, publishing and superfan businesses.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "UMG puts US listing plans on hold",
-      "summary": "Universal Music Group has put plans for a US stock listing on hold, according to Q4 earnings call comments.",
+      "summary": "UMG CEO compares Downtown Music acquisition to EMI (2011) - 'one of the most successful and strategically important in music industry history.'",
       "category": "business"
     },
     {
@@ -260,15 +113,8 @@
       "date": "2026-03-06",
       "source": "Music Business Worldwide",
       "title": "Robert Kyncl talks Suno, AI, value of music at Morgan Stanley",
-      "summary": "Warner Music Group CEO Robert Kyncl made the case for AI as opportunity at Morgan Stanley conference, following shareholder letter on AI value.",
+      "summary": "Warner Music Group CEO Robert Kyncl made the case for AI as opportunity at Morgan Stanley conference.",
       "category": "trends"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Spain's recorded music market grew 13.7% in 2025",
-      "summary": "Spain's market strongest since 2003 with subscription streaming revenues up 19.2% YoY, though revenues remain 26% below 2001 peak.",
-      "category": "business"
     },
     {
       "date": "2026-03-06",
@@ -282,13 +128,6 @@
       "source": "Music Business Worldwide",
       "title": "Create raises $450M at $2.2B Valuation",
       "summary": "Create Music Group completes $450 million funding round at $2.2 billion valuation - major player in AI music and label services space.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-05",
-      "source": "Music Business Worldwide",
-      "title": "Spotify paid out $213M to Australian rightsholders in 2025, up 7% YoY",
-      "summary": "Australian listeners streamed domestic artists 223 million more times in 2025 than the year prior - strong growth in local consumption.",
       "category": "business"
     },
     {
@@ -313,13 +152,6 @@
       "category": "business"
     },
     {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "Spotify to let users 'steer the algorithm' with AI prompts",
-      "summary": "Spotify launching new feature allowing users to personalize playlists with AI prompts.",
-      "category": "tools"
-    },
-    {
       "date": "2026-02-26",
       "source": "Billboard",
       "title": "Suno hits 2M Paid Subscribers, $300M ARR",
@@ -341,31 +173,10 @@
       "category": "trends"
     },
     {
-      "date": "2026-02-23",
-      "source": "Music Business Worldwide",
-      "title": "Suno hires ex-Merlin CEO Jeremy Sirota as CCO",
-      "summary": "Suno hires former Merlin CEO Jeremy Sirota to lead commercial strategy.",
-      "category": "business"
-    },
-    {
       "date": "2026-02-22",
       "source": "UN News",
       "title": "Artists face steep income decline due to AI, UNESCO finds",
       "summary": "Music creators could see revenues fall by 24% due to AI, while audiovisual sector may lose 21%.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-21",
-      "source": "Forbes",
-      "title": "Universal Music + NVIDIA Partnership",
-      "summary": "UMG partnered with NVIDIA to develop AI music discovery and creation tools, pledging 'Antidote' to 'AI Slop'.",
-      "category": "business"
-    },
-    {
-      "date": "2026-01-14",
-      "source": "Billboard",
-      "title": "AI Opt-In Is the Floor, Not the Ceiling: Artists Want Respect, Not Just Licenses (Guest Column)",
-      "summary": "Guest column arguing that opt-in licensing is minimum requirement - artists want true partnerships with AI companies, not just compensation.",
       "category": "trends"
     }
   ]
