@@ -456,10 +456,12 @@
     let audioCtx;
     let analyser;
     let source;
-    let freqData;
-    let waveData;
-    let prevFreq;
     let objectUrl;
+
+    const FALLBACK_FFT_SIZE = 4096;
+    let freqData = new Uint8Array(FALLBACK_FFT_SIZE / 2);
+    let waveData = new Uint8Array(FALLBACK_FFT_SIZE);
+    let prevFreq = new Uint8Array(FALLBACK_FFT_SIZE / 2);
 
     let w = 0;
     let h = 0;
@@ -626,6 +628,40 @@
       if (state.flux > beatThreshold && state.beatCooldown <= 0.001 && state.overall > 0.08) {
         state.beat = 1;
         state.beatCooldown = 0.18;
+      }
+
+      el.lowV.textContent = `${Math.round(state.low * 100)}%`;
+      el.midV.textContent = `${Math.round(state.mid * 100)}%`;
+      el.highV.textContent = `${Math.round(state.high * 100)}%`;
+    }
+
+    function animateIdleSpectrum(timeSec) {
+      const len = freqData.length;
+      for (let i = 0; i < len; i++) {
+        const n = i / len;
+        const curve = Math.exp(-n * 2.9);
+        const drift =
+          0.54 +
+          0.46 * Math.sin(timeSec * (0.55 + n * 0.9) + n * 20 + state.seededDrift * 0.12);
+        freqData[i] = Math.floor(clamp((18 + 88 * curve * drift) * state.sensitivity, 0, 255));
+      }
+
+      for (let i = 0; i < waveData.length; i++) {
+        const n = i / waveData.length;
+        const wave = Math.sin(timeSec * 2.4 + n * Math.PI * 2 * 4.2) * 0.42;
+        waveData[i] = Math.floor(128 + 42 * wave);
+      }
+
+      state.low = lerp(state.low, 0.13 + 0.08 * Math.sin(timeSec * 0.9), 0.08);
+      state.mid = lerp(state.mid, 0.09 + 0.06 * Math.sin(timeSec * 1.3 + 1.1), 0.08);
+      state.high = lerp(state.high, 0.07 + 0.05 * Math.sin(timeSec * 1.9 + 2.2), 0.08);
+      state.overall = (state.low + state.mid + state.high) / 3;
+      state.centroid = lerp(state.centroid, 0.22 + 0.14 * Math.sin(timeSec * 0.35), 0.05);
+
+      const ghostBeat = 0.5 + 0.5 * Math.sin(timeSec * 1.6 + state.seededDrift * 0.25);
+      if (ghostBeat > 0.95 && state.beatCooldown <= 0.001) {
+        state.beat = 0.55;
+        state.beatCooldown = 0.26;
       }
 
       el.lowV.textContent = `${Math.round(state.low * 100)}%`;
@@ -809,13 +845,17 @@
       fps = lerp(fps || 60, 1 / Math.max(0.001, dt), 0.08);
       el.hudFps.textContent = `${Math.round(fps)}`;
 
-      if (state.playing && analyser) analyze();
+      const t = now / 1000;
+      if (state.playing && analyser) {
+        analyze();
+      } else {
+        animateIdleSpectrum(t);
+      }
 
       state.beat = Math.max(0, state.beat - dt * 2.2);
       state.beatCooldown = Math.max(0, state.beatCooldown - dt);
       state.hueShift += dt * (3 + state.overall * 24);
 
-      const t = now / 1000;
       drawBackground(t);
 
       switch (state.mode) {
@@ -842,12 +882,21 @@
     }
 
     async function play() {
-      if (!audio.src) return;
+      if (!objectUrl) {
+        el.engineStatus.textContent = "Load a track first";
+        return;
+      }
       if (!ensureAudioGraph()) return;
-      if (audioCtx.state === "suspended") await audioCtx.resume();
-      await audio.play();
-      state.playing = true;
-      el.engineStatus.textContent = `Now playing · ${modeMap[state.mode]}`;
+      try {
+        if (audioCtx.state === "suspended") await audioCtx.resume();
+        await audio.play();
+        state.playing = true;
+        el.engineStatus.textContent = `Now playing · ${modeMap[state.mode]}`;
+      } catch (err) {
+        state.playing = false;
+        el.engineStatus.textContent = "Playback blocked · click Play again";
+        console.error("Audio playback error", err);
+      }
     }
 
     function pause() {
