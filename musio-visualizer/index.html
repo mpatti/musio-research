@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musio Visualizer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --musio-red: #e94560;
+      --musio-red-soft: #ff5b7e;
+      --musio-bg: #090909;
+      --musio-surface: #121212;
+      --musio-surface-2: #1a1a1a;
+      --musio-border: #2a2a2a;
+      --musio-text: #f3f4f6;
+      --musio-muted: #9ca3af;
+      --musio-green: #32d583;
+      --glow: 0 24px 70px rgba(233, 69, 96, 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+      background: radial-gradient(circle at 15% -10%, rgba(233, 69, 96, 0.18), transparent 40%),
+        radial-gradient(circle at 85% -20%, rgba(255, 91, 126, 0.1), transparent 35%),
+        var(--musio-bg);
+      color: var(--musio-text);
+      font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 1480px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 22px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--musio-red), var(--musio-red-soft));
+      display: grid;
+      place-items: center;
+      box-shadow: var(--glow);
+      font-weight: 800;
+      font-size: 20px;
+    }
+
+    .brand-copy h1 {
+      font-size: 1.15rem;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .brand-copy p {
+      color: var(--musio-muted);
+      font-size: 0.86rem;
+    }
+
+    .status-pill {
+      border: 1px solid var(--musio-border);
+      background: rgba(255, 255, 255, 0.02);
+      color: var(--musio-muted);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 0.8rem;
+      font-weight: 600;
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 18px;
+      min-height: calc(100vh - 140px);
+    }
+
+    .panel,
+    .stage-wrap {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.008));
+      border: 1px solid var(--musio-border);
+      border-radius: 20px;
+      backdrop-filter: blur(8px);
+    }
+
+    .panel {
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .card {
+      border-radius: 16px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: var(--musio-surface);
+      padding: 14px;
+    }
+
+    .card h2 {
+      font-size: 0.84rem;
+      text-transform: uppercase;
+      letter-spacing: 1.4px;
+      color: var(--musio-muted);
+      margin-bottom: 10px;
+    }
+
+    .dropzone {
+      border: 1.5px dashed rgba(233, 69, 96, 0.45);
+      border-radius: 14px;
+      padding: 18px;
+      text-align: center;
+      transition: 0.2s ease;
+      background: rgba(233, 69, 96, 0.04);
+      cursor: pointer;
+    }
+
+    .dropzone.dragover {
+      border-color: var(--musio-red-soft);
+      background: rgba(233, 69, 96, 0.12);
+      transform: translateY(-1px);
+    }
+
+    .dropzone strong {
+      font-size: 1rem;
+      font-weight: 700;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .dropzone span {
+      color: var(--musio-muted);
+      font-size: 0.85rem;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .track {
+      margin-top: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.025);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .track .name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 2px;
+    }
+
+    .track .meta {
+      color: var(--musio-muted);
+      font-size: 0.82rem;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    button,
+    select {
+      appearance: none;
+      border: 1px solid var(--musio-border);
+      background: var(--musio-surface-2);
+      color: var(--musio-text);
+      border-radius: 10px;
+      padding: 10px 12px;
+      font-family: inherit;
+      font-weight: 600;
+      font-size: 0.88rem;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    button:hover,
+    select:hover {
+      border-color: rgba(233, 69, 96, 0.55);
+    }
+
+    .primary {
+      background: linear-gradient(135deg, var(--musio-red), var(--musio-red-soft));
+      border: none;
+      box-shadow: 0 12px 30px rgba(233, 69, 96, 0.3);
+    }
+
+    .row {
+      display: grid;
+      gap: 8px;
+    }
+
+    .row label {
+      font-size: 0.8rem;
+      color: var(--musio-muted);
+      font-weight: 600;
+      letter-spacing: 0.3px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--musio-red);
+      cursor: pointer;
+    }
+
+    .timeline {
+      margin-top: 4px;
+    }
+
+    .time {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 4px;
+      font-size: 0.8rem;
+      color: var(--musio-muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-top: 2px;
+    }
+
+    .metric {
+      padding: 10px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .metric .k {
+      color: var(--musio-muted);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 4px;
+    }
+
+    .metric .v {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .stage-wrap {
+      position: relative;
+      overflow: hidden;
+      min-height: 620px;
+    }
+
+    #stage {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border-radius: 20px;
+    }
+
+    .hud {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      right: 14px;
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+    }
+
+    .hud-card {
+      background: rgba(7, 7, 7, 0.58);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 10px;
+      padding: 8px 10px;
+      backdrop-filter: blur(8px);
+      font-size: 0.79rem;
+      color: #e5e7eb;
+    }
+
+    .hud strong {
+      color: white;
+      font-weight: 700;
+    }
+
+    .hint {
+      color: var(--musio-muted);
+      font-size: 0.78rem;
+      margin-top: 2px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 1080px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      .stage-wrap {
+        min-height: 62vh;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon">M</div>
+        <div class="brand-copy">
+          <h1>Musio Visualizer</h1>
+          <p>Upload audio. Watch sound become motion.</p>
+        </div>
+      </div>
+      <div class="status-pill" id="engineStatus">Engine ready · waiting for audio</div>
+    </header>
+
+    <main class="layout">
+      <section class="panel">
+        <article class="card">
+          <h2>Upload Track</h2>
+          <label class="dropzone" id="dropzone" for="audioFile">
+            <strong>Drop your file here</strong>
+            <span>or click to upload MP3, WAV, M4A, OGG</span>
+            <input id="audioFile" type="file" accept="audio/*" />
+          </label>
+
+          <div class="track">
+            <div class="name" id="trackName">No track loaded</div>
+            <div class="meta" id="trackMeta">Visualizer stands by.</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Playback</h2>
+          <div class="controls" style="margin-bottom: 10px;">
+            <button id="playBtn" class="primary">Play</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="restartBtn">Restart</button>
+            <button id="fullscreenBtn">Fullscreen</button>
+          </div>
+
+          <div class="row timeline">
+            <label>
+              Timeline
+              <span id="timeReadout">00:00 / 00:00</span>
+            </label>
+            <input type="range" id="seek" min="0" max="1000" value="0" />
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Visual Modes</h2>
+          <div class="row" style="margin-bottom: 10px;">
+            <label for="mode">Scene</label>
+            <select id="mode">
+              <option value="prism">Prism Arc</option>
+              <option value="nebula">Nebula Pulse</option>
+              <option value="kinetic">Kinetic Grid</option>
+            </select>
+          </div>
+
+          <div class="row" style="margin-bottom: 10px;">
+            <label for="sensitivity">Sensitivity <span id="sensVal">1.00x</span></label>
+            <input type="range" id="sensitivity" min="0.5" max="2.5" step="0.01" value="1" />
+          </div>
+
+          <div class="row">
+            <label for="density">Particle Density <span id="densityVal">140</span></label>
+            <input type="range" id="density" min="40" max="320" step="1" value="140" />
+          </div>
+        </article>
+
+        <article class="card">
+          <h2>Live Analysis</h2>
+          <div class="metrics">
+            <div class="metric"><div class="k">Low</div><div class="v" id="lowV">0%</div></div>
+            <div class="metric"><div class="k">Mid</div><div class="v" id="midV">0%</div></div>
+            <div class="metric"><div class="k">High</div><div class="v" id="highV">0%</div></div>
+          </div>
+          <div class="hint">Beat-aware smoothing + spectral flux detection drive the motion system for a richer, musical response.</div>
+        </article>
+      </section>
+
+      <section class="stage-wrap" id="stageWrap">
+        <canvas id="stage"></canvas>
+        <div class="hud">
+          <div class="hud-card">Mode: <strong id="hudMode">Prism Arc</strong></div>
+          <div class="hud-card">FPS: <strong id="hudFps">0</strong></div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <audio id="audio" crossorigin="anonymous"></audio>
+
+  <script>
+    const stage = document.getElementById("stage");
+    const ctx = stage.getContext("2d", { alpha: false });
+    const audio = document.getElementById("audio");
+
+    const el = {
+      fileInput: document.getElementById("audioFile"),
+      dropzone: document.getElementById("dropzone"),
+      trackName: document.getElementById("trackName"),
+      trackMeta: document.getElementById("trackMeta"),
+      playBtn: document.getElementById("playBtn"),
+      pauseBtn: document.getElementById("pauseBtn"),
+      restartBtn: document.getElementById("restartBtn"),
+      fullscreenBtn: document.getElementById("fullscreenBtn"),
+      seek: document.getElementById("seek"),
+      timeReadout: document.getElementById("timeReadout"),
+      mode: document.getElementById("mode"),
+      hudMode: document.getElementById("hudMode"),
+      sensitivity: document.getElementById("sensitivity"),
+      sensVal: document.getElementById("sensVal"),
+      density: document.getElementById("density"),
+      densityVal: document.getElementById("densityVal"),
+      lowV: document.getElementById("lowV"),
+      midV: document.getElementById("midV"),
+      highV: document.getElementById("highV"),
+      hudFps: document.getElementById("hudFps"),
+      engineStatus: document.getElementById("engineStatus"),
+      stageWrap: document.getElementById("stageWrap"),
+    };
+
+    let audioCtx;
+    let analyser;
+    let source;
+    let freqData;
+    let waveData;
+    let prevFreq;
+    let objectUrl;
+
+    let w = 0;
+    let h = 0;
+    let dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    let particles = [];
+    let particleCount = 140;
+
+    let lastFrame = performance.now();
+    let fps = 0;
+
+    const state = {
+      mode: "prism",
+      sensitivity: 1,
+      low: 0,
+      mid: 0,
+      high: 0,
+      overall: 0,
+      flux: 0,
+      fluxAvg: 0,
+      centroid: 0,
+      beat: 0,
+      beatCooldown: 0,
+      hueShift: 0,
+      playing: false,
+      seededDrift: Math.random() * 1000,
+    };
+
+    const modeMap = {
+      prism: "Prism Arc",
+      nebula: "Nebula Pulse",
+      kinetic: "Kinetic Grid",
+    };
+
+    function clamp(v, min, max) {
+      return Math.min(max, Math.max(min, v));
+    }
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function avg(arr, from, to) {
+      let sum = 0;
+      const n = Math.max(1, to - from);
+      for (let i = from; i < to; i++) sum += arr[i];
+      return sum / n;
+    }
+
+    function createParticles(count) {
+      particles = Array.from({ length: count }, () => ({
+        angle: Math.random() * Math.PI * 2,
+        radius: 80 + Math.random() * 420,
+        speed: (Math.random() * 0.007 + 0.0012) * (Math.random() > 0.5 ? 1 : -1),
+        size: Math.random() * 2.5 + 0.6,
+        alpha: Math.random() * 0.7 + 0.2,
+        drift: Math.random() * 0.8 + 0.2,
+        hueOffset: Math.random() * 60 - 30,
+      }));
+    }
+
+    function resize() {
+      const rect = el.stageWrap.getBoundingClientRect();
+      w = Math.max(300, rect.width);
+      h = Math.max(300, rect.height);
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      stage.width = Math.floor(w * dpr);
+      stage.height = Math.floor(h * dpr);
+      stage.style.width = `${w}px`;
+      stage.style.height = `${h}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    }
+
+    function ensureAudioGraph() {
+      if (!audioCtx) {
+        const Ctx = window.AudioContext || window.webkitAudioContext;
+        if (!Ctx) {
+          alert("Your browser does not support Web Audio API.");
+          return false;
+        }
+        audioCtx = new Ctx();
+        analyser = audioCtx.createAnalyser();
+        analyser.fftSize = 4096;
+        analyser.smoothingTimeConstant = 0.88;
+
+        source = audioCtx.createMediaElementSource(audio);
+        source.connect(analyser);
+        analyser.connect(audioCtx.destination);
+
+        freqData = new Uint8Array(analyser.frequencyBinCount);
+        waveData = new Uint8Array(analyser.fftSize);
+        prevFreq = new Uint8Array(analyser.frequencyBinCount);
+      }
+      return true;
+    }
+
+    async function loadTrack(file) {
+      if (!file) return;
+      if (!ensureAudioGraph()) return;
+
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+      objectUrl = URL.createObjectURL(file);
+      audio.src = objectUrl;
+      audio.load();
+
+      el.trackName.textContent = file.name;
+      const mb = (file.size / (1024 * 1024)).toFixed(2);
+      el.trackMeta.textContent = `${mb} MB · ${file.type || "audio"}`;
+      el.engineStatus.textContent = "Track loaded · press play";
+    }
+
+    function fmt(sec) {
+      if (!Number.isFinite(sec)) return "00:00";
+      const s = Math.floor(sec % 60).toString().padStart(2, "0");
+      const m = Math.floor(sec / 60).toString().padStart(2, "0");
+      return `${m}:${s}`;
+    }
+
+    function updateTimeline() {
+      const dur = audio.duration || 0;
+      const t = audio.currentTime || 0;
+      const norm = dur ? (t / dur) * 1000 : 0;
+      el.seek.value = String(Math.floor(norm));
+      el.timeReadout.textContent = `${fmt(t)} / ${fmt(dur)}`;
+    }
+
+    function analyze() {
+      if (!analyser) return;
+
+      analyser.getByteFrequencyData(freqData);
+      analyser.getByteTimeDomainData(waveData);
+
+      const len = freqData.length;
+      const lowEnd = Math.floor(len * 0.12);
+      const midEnd = Math.floor(len * 0.5);
+
+      const low = avg(freqData, 0, lowEnd) / 255;
+      const mid = avg(freqData, lowEnd, midEnd) / 255;
+      const high = avg(freqData, midEnd, len) / 255;
+
+      state.low = lerp(state.low, low, 0.24);
+      state.mid = lerp(state.mid, mid, 0.2);
+      state.high = lerp(state.high, high, 0.18);
+      state.overall = (state.low + state.mid + state.high) / 3;
+
+      let flux = 0;
+      let weighted = 0;
+      let total = 0;
+
+      for (let i = 0; i < len; i++) {
+        const diff = freqData[i] - prevFreq[i];
+        if (diff > 0) flux += diff;
+        prevFreq[i] = freqData[i];
+
+        weighted += i * freqData[i];
+        total += freqData[i];
+      }
+
+      state.flux = flux / (len * 255);
+      state.fluxAvg = lerp(state.fluxAvg, state.flux, 0.06);
+      state.centroid = total > 0 ? weighted / total / len : 0;
+
+      const beatThreshold = state.fluxAvg * 1.38 + 0.01;
+      if (state.flux > beatThreshold && state.beatCooldown <= 0.001 && state.overall > 0.08) {
+        state.beat = 1;
+        state.beatCooldown = 0.18;
+      }
+
+      el.lowV.textContent = `${Math.round(state.low * 100)}%`;
+      el.midV.textContent = `${Math.round(state.mid * 100)}%`;
+      el.highV.textContent = `${Math.round(state.high * 100)}%`;
+    }
+
+    function drawBackground(timeSec) {
+      const cx = w / 2;
+      const cy = h / 2;
+
+      const hue = 345 + Math.sin(timeSec * 0.08 + state.seededDrift) * 20 + state.centroid * 35;
+      const glowBoost = 0.1 + state.overall * 0.42 + state.beat * 0.25;
+
+      const g = ctx.createRadialGradient(cx, cy, 60, cx, cy, Math.max(w, h) * 0.8);
+      g.addColorStop(0, `hsla(${hue}, 95%, 62%, ${0.22 + glowBoost})`);
+      g.addColorStop(0.45, `hsla(${hue - 40}, 90%, 40%, ${0.12 + state.mid * 0.2})`);
+      g.addColorStop(1, "rgba(5,5,6,1)");
+
+      ctx.fillStyle = g;
+      ctx.fillRect(0, 0, w, h);
+
+      ctx.fillStyle = `rgba(8,8,10,${0.18 - state.high * 0.08})`;
+      ctx.fillRect(0, 0, w, h);
+    }
+
+    function drawParticles(timeSec) {
+      const cx = w / 2;
+      const cy = h / 2;
+      const pulse = 1 + state.beat * 0.65 + state.low * 0.55;
+
+      for (const p of particles) {
+        p.angle += p.speed * (0.5 + state.sensitivity * 0.7 + state.mid * 0.5);
+        const radius = p.radius * (0.84 + 0.16 * Math.sin(timeSec * p.drift)) * pulse;
+        const x = cx + Math.cos(p.angle) * radius;
+        const y = cy + Math.sin(p.angle) * radius * 0.58;
+
+        const alpha = p.alpha * (0.25 + state.high * 0.85);
+        const size = p.size * (0.8 + state.overall * 1.5 + state.beat * 1.8);
+        const hue = 348 + p.hueOffset + state.centroid * 40;
+
+        ctx.beginPath();
+        ctx.fillStyle = `hsla(${hue}, 100%, 72%, ${alpha})`;
+        ctx.arc(x, y, size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+    }
+
+    function drawWaveRing(timeSec) {
+      if (!waveData) return;
+      const cx = w / 2;
+      const cy = h / 2;
+      const baseR = Math.min(w, h) * 0.16;
+
+      ctx.lineWidth = 2.2;
+      ctx.beginPath();
+
+      const step = 4;
+      for (let i = 0; i < waveData.length; i += step) {
+        const n = i / waveData.length;
+        const angle = n * Math.PI * 2;
+        const wave = (waveData[i] - 128) / 128;
+        const amp = 18 + state.high * 42 + state.beat * 36;
+        const radius = baseR + wave * amp;
+
+        const x = cx + Math.cos(angle + timeSec * 0.08) * radius;
+        const y = cy + Math.sin(angle + timeSec * 0.08) * radius;
+        if (i === 0) ctx.moveTo(x, y);
+        else ctx.lineTo(x, y);
+      }
+
+      ctx.closePath();
+      ctx.strokeStyle = `hsla(${340 + state.centroid * 28}, 100%, 70%, ${0.75 + state.mid * 0.2})`;
+      ctx.stroke();
+
+      const orb = ctx.createRadialGradient(cx, cy, 6, cx, cy, baseR + 40 + state.beat * 24);
+      orb.addColorStop(0, `rgba(255,255,255,${0.95 - state.high * 0.2})`);
+      orb.addColorStop(0.3, `hsla(${346 + state.centroid * 25}, 100%, 68%, 0.8)`);
+      orb.addColorStop(1, "rgba(255,80,120,0)");
+      ctx.fillStyle = orb;
+      ctx.beginPath();
+      ctx.arc(cx, cy, baseR + 48 + state.beat * 18, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function drawPrismArc(timeSec) {
+      const cx = w / 2;
+      const cy = h / 2;
+      const bars = 210;
+      const len = freqData.length;
+      const inner = Math.min(w, h) * 0.2;
+
+      ctx.lineCap = "round";
+      for (let i = 0; i < bars; i++) {
+        const n = i / bars;
+        const idx = Math.floor(n * len * 0.9);
+        const f = (freqData[idx] || 0) / 255;
+
+        const angle = n * Math.PI * 2 + timeSec * (0.04 + state.high * 0.06);
+        const length = 12 + Math.pow(f, 1.6) * (220 * state.sensitivity + state.beat * 120);
+
+        const x1 = cx + Math.cos(angle) * inner;
+        const y1 = cy + Math.sin(angle) * inner;
+        const x2 = cx + Math.cos(angle) * (inner + length);
+        const y2 = cy + Math.sin(angle) * (inner + length);
+
+        ctx.strokeStyle = `hsla(${330 + 90 * n + state.centroid * 55}, 96%, ${56 + f * 24}%, ${0.08 + f * 0.95})`;
+        ctx.lineWidth = 1.2 + f * 3.8;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+      }
+
+      drawWaveRing(timeSec);
+      drawParticles(timeSec);
+    }
+
+    function drawNebulaPulse(timeSec) {
+      drawParticles(timeSec);
+
+      const cx = w / 2;
+      const cy = h / 2;
+      const loops = 5;
+      for (let j = 0; j < loops; j++) {
+        const radius = Math.min(w, h) * (0.16 + j * 0.08) + state.low * 80 + state.beat * 35;
+        ctx.beginPath();
+        const count = 120;
+        for (let i = 0; i <= count; i++) {
+          const n = i / count;
+          const idx = Math.floor(n * (freqData.length - 1));
+          const f = (freqData[idx] || 0) / 255;
+          const wobble = (Math.sin(n * Math.PI * 8 + timeSec * (0.8 + j * 0.12)) * 16 + f * 26) * (0.4 + j * 0.13);
+          const a = n * Math.PI * 2 + timeSec * (0.07 + j * 0.02);
+          const r = radius + wobble;
+          const x = cx + Math.cos(a) * r;
+          const y = cy + Math.sin(a) * r * 0.72;
+          if (i === 0) ctx.moveTo(x, y);
+          else ctx.lineTo(x, y);
+        }
+        ctx.closePath();
+        ctx.strokeStyle = `hsla(${338 + j * 16 + state.centroid * 34}, 95%, ${52 + j * 5}%, ${0.14 + j * 0.05})`;
+        ctx.lineWidth = 1.4 + j * 0.35;
+        ctx.stroke();
+      }
+
+      drawWaveRing(timeSec);
+    }
+
+    function drawKineticGrid(timeSec) {
+      const cols = 42;
+      const rows = 24;
+      const cellW = w / cols;
+      const cellH = h / rows;
+      const len = freqData.length;
+
+      for (let y = 0; y < rows; y++) {
+        for (let x = 0; x < cols; x++) {
+          const n = (y * cols + x) / (cols * rows);
+          const idx = Math.floor(n * (len - 1));
+          const f = (freqData[idx] || 0) / 255;
+          const pulse = Math.sin(timeSec * 2 + x * 0.32 + y * 0.2) * 0.5 + 0.5;
+          const energy = clamp(f * state.sensitivity + pulse * 0.25 + state.beat * 0.3, 0, 1);
+          const hue = 326 + x * 1.5 + state.centroid * 45;
+          const alpha = energy * 0.62;
+
+          ctx.fillStyle = `hsla(${hue}, 98%, ${42 + energy * 36}%, ${alpha})`;
+          const px = x * cellW + cellW * 0.1;
+          const py = y * cellH + cellH * 0.1;
+          ctx.fillRect(px, py, cellW * 0.8, cellH * 0.8);
+        }
+      }
+
+      drawParticles(timeSec);
+      drawWaveRing(timeSec);
+    }
+
+    function render(now) {
+      const dt = Math.min(0.05, (now - lastFrame) / 1000);
+      lastFrame = now;
+      fps = lerp(fps || 60, 1 / Math.max(0.001, dt), 0.08);
+      el.hudFps.textContent = `${Math.round(fps)}`;
+
+      if (state.playing && analyser) analyze();
+
+      state.beat = Math.max(0, state.beat - dt * 2.2);
+      state.beatCooldown = Math.max(0, state.beatCooldown - dt);
+      state.hueShift += dt * (3 + state.overall * 24);
+
+      const t = now / 1000;
+      drawBackground(t);
+
+      switch (state.mode) {
+        case "nebula":
+          drawNebulaPulse(t);
+          break;
+        case "kinetic":
+          drawKineticGrid(t);
+          break;
+        case "prism":
+        default:
+          drawPrismArc(t);
+          break;
+      }
+
+      updateTimeline();
+      requestAnimationFrame(render);
+    }
+
+    function setMode(mode) {
+      state.mode = mode;
+      el.hudMode.textContent = modeMap[mode] || "Prism Arc";
+      el.engineStatus.textContent = `Rendering ${modeMap[mode]}`;
+    }
+
+    async function play() {
+      if (!audio.src) return;
+      if (!ensureAudioGraph()) return;
+      if (audioCtx.state === "suspended") await audioCtx.resume();
+      await audio.play();
+      state.playing = true;
+      el.engineStatus.textContent = `Now playing · ${modeMap[state.mode]}`;
+    }
+
+    function pause() {
+      audio.pause();
+      state.playing = false;
+      el.engineStatus.textContent = "Paused";
+    }
+
+    function bindEvents() {
+      el.fileInput.addEventListener("change", (e) => loadTrack(e.target.files?.[0]));
+
+      ["dragenter", "dragover"].forEach((evt) => {
+        el.dropzone.addEventListener(evt, (e) => {
+          e.preventDefault();
+          el.dropzone.classList.add("dragover");
+        });
+      });
+
+      ["dragleave", "drop"].forEach((evt) => {
+        el.dropzone.addEventListener(evt, (e) => {
+          e.preventDefault();
+          el.dropzone.classList.remove("dragover");
+        });
+      });
+
+      el.dropzone.addEventListener("drop", (e) => {
+        const file = e.dataTransfer?.files?.[0];
+        if (file) loadTrack(file);
+      });
+
+      el.playBtn.addEventListener("click", play);
+      el.pauseBtn.addEventListener("click", pause);
+      el.restartBtn.addEventListener("click", () => {
+        audio.currentTime = 0;
+        if (!audio.paused) play();
+      });
+
+      el.fullscreenBtn.addEventListener("click", async () => {
+        if (!document.fullscreenElement) {
+          await el.stageWrap.requestFullscreen?.();
+        } else {
+          await document.exitFullscreen?.();
+        }
+      });
+
+      el.mode.addEventListener("change", (e) => setMode(e.target.value));
+
+      el.sensitivity.addEventListener("input", (e) => {
+        state.sensitivity = Number(e.target.value);
+        el.sensVal.textContent = `${state.sensitivity.toFixed(2)}x`;
+      });
+
+      el.density.addEventListener("input", (e) => {
+        particleCount = Number(e.target.value);
+        el.densityVal.textContent = `${particleCount}`;
+        createParticles(particleCount);
+      });
+
+      el.seek.addEventListener("input", (e) => {
+        if (!audio.duration) return;
+        const ratio = Number(e.target.value) / 1000;
+        audio.currentTime = ratio * audio.duration;
+      });
+
+      audio.addEventListener("ended", () => {
+        state.playing = false;
+        el.engineStatus.textContent = "Playback ended";
+      });
+
+      audio.addEventListener("pause", () => {
+        state.playing = false;
+      });
+
+      audio.addEventListener("play", () => {
+        state.playing = true;
+      });
+
+      window.addEventListener("resize", resize);
+    }
+
+    function init() {
+      resize();
+      createParticles(particleCount);
+      bindEvents();
+      setMode("prism");
+      requestAnimationFrame(render);
+    }
+
+    init();
+  </script>
+</body>
+</html>
