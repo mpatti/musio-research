@@ -35,6 +35,12 @@ Things like:
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
+## Messaging Targets
+
+- Telegram DM (user): `7444832077`
+- Use numeric chat id (or canonical `telegram:7444832077`) for cron/scheduled sends.
+- Do **not** use `mpatti` as Telegram target alias for sends.
+
 ---
 
 Add whatever helps you do your job. This is your cheat sheet.
