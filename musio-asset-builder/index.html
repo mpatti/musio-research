@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Musio Asset Builder</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/jszip@3.10.1/dist/jszip.min.js"></script>
+  <style>
+    :root {
+      --bg: #0a0b13;
+      --panel: #121527;
+      --panel-2: #161a30;
+      --border: #2b3158;
+      --text: #f8f9ff;
+      --muted: #a6add1;
+      --accent: #e94463;
+      --accent-2: #8b63ff;
+      --ok: #2ed38a;
+      --shadow: 0 18px 54px rgba(6, 8, 20, 0.45);
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      min-height: 100%;
+      background:
+        radial-gradient(1200px 400px at 20% -10%, rgba(233, 68, 99, 0.16), transparent 50%),
+        radial-gradient(1200px 500px at 100% 0%, rgba(139, 99, 255, 0.14), transparent 45%),
+        var(--bg);
+      color: var(--text);
+      font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    }
+
+    .wrap {
+      max-width: 1560px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .logo {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      font-size: 20px;
+      background: linear-gradient(135deg, var(--accent), #ff6b85);
+      box-shadow: 0 14px 40px rgba(233, 68, 99, 0.4);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 1.12rem;
+      font-weight: 800;
+      letter-spacing: 0.15px;
+    }
+
+    .brand p {
+      margin: 2px 0 0;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .status {
+      border: 1px solid var(--border);
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 999px;
+      padding: 7px 12px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 360px 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      padding: 14px;
+      position: sticky;
+      top: 16px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: 12px;
+      padding: 12px;
+      margin-bottom: 10px;
+    }
+
+    .card h2 {
+      margin: 0 0 9px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .drop {
+      border: 1.5px dashed rgba(233, 68, 99, 0.6);
+      border-radius: 12px;
+      padding: 14px;
+      text-align: center;
+      cursor: pointer;
+      transition: .2s;
+      background: rgba(233, 68, 99, 0.07);
+    }
+
+    .drop.drag {
+      transform: translateY(-1px);
+      border-color: #ff6b85;
+      background: rgba(233, 68, 99, 0.14);
+    }
+
+    .drop strong { display: block; font-size: 0.98rem; margin-bottom: 3px; }
+    .drop span { color: var(--muted); font-size: 0.82rem; }
+
+    input[type="file"] { display: none; }
+
+    .source-wrap {
+      border: 1px solid rgba(255,255,255,0.09);
+      border-radius: 12px;
+      margin-top: 10px;
+      overflow: hidden;
+      background: #0b0d19;
+      position: relative;
+      aspect-ratio: 1 / 1;
+      touch-action: none;
+    }
+
+    #sourceCanvas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      cursor: crosshair;
+    }
+
+    .source-meta {
+      margin-top: 8px;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    .row { margin-bottom: 10px; }
+
+    .row label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"], input[type="range"], button {
+      width: 100%;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--panel-2);
+      color: var(--text);
+      font-family: inherit;
+    }
+
+    input[type="text"] {
+      padding: 10px 12px;
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    input[type="range"] {
+      accent-color: var(--accent);
+    }
+
+    .btn-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    button {
+      cursor: pointer;
+      padding: 10px;
+      font-size: 0.86rem;
+      font-weight: 700;
+      transition: .15s;
+    }
+
+    button:hover { border-color: #4d568d; }
+
+    button.primary {
+      border: none;
+      background: linear-gradient(135deg, var(--accent), #ff6b85);
+      box-shadow: 0 11px 26px rgba(233, 68, 99, 0.35);
+    }
+
+    button.secondary {
+      background: linear-gradient(135deg, #6f46f0, #865dff);
+      border: none;
+      box-shadow: 0 10px 24px rgba(111, 70, 240, 0.35);
+    }
+
+    .outputs {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+      gap: 12px;
+    }
+
+    .out {
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.005));
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px;
+      box-shadow: var(--shadow);
+    }
+
+    .out h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      letter-spacing: 0.15px;
+    }
+
+    .out h3 span {
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .preview {
+      border-radius: 10px;
+      border: 1px solid rgba(255,255,255,0.09);
+      background: #0c0f1d;
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      min-height: 170px;
+      padding: 12px;
+    }
+
+    .preview canvas {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 9px 26px rgba(0, 0, 0, 0.45);
+    }
+
+    .out .controls {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .icon-btn {
+      width: 36px;
+      height: 36px;
+      border-radius: 9px;
+      border: 1px solid rgba(255,255,255,0.18);
+      background: rgba(255,255,255,0.04);
+      color: #e4e7ff;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: 700;
+    }
+
+    .icon-btn:hover { border-color: #8f98d1; }
+
+    .filename {
+      margin-top: 6px;
+      color: var(--muted);
+      font-size: 0.84rem;
+      font-weight: 500;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .hint {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 0.76rem;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 1150px) {
+      .layout { grid-template-columns: 1fr; }
+      .panel { position: static; }
+    }
+
+    @media (max-width: 480px) {
+      .outputs { grid-template-columns: 1fr; }
+      .out { padding: 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="top">
+      <div class="brand">
+        <div class="logo">M</div>
+        <div>
+          <h1>Musio Asset Builder</h1>
+          <p>Upload one square source. Get the full platform image pack instantly.</p>
+        </div>
+      </div>
+      <div class="status" id="status">Waiting for source image</div>
+    </div>
+
+    <div class="layout">
+      <aside class="panel">
+        <div class="card">
+          <h2>Source Image</h2>
+          <label class="drop" id="dropZone" for="fileInput">
+            <strong>Drop square artwork here</strong>
+            <span>or click to upload PNG/JPG/WebP</span>
+            <input id="fileInput" type="file" accept="image/*" />
+          </label>
+
+          <div class="source-wrap" id="sourceWrap">
+            <canvas id="sourceCanvas" width="600" height="600"></canvas>
+          </div>
+          <div class="source-meta" id="sourceMeta">No image loaded</div>
+        </div>
+
+        <div class="card">
+          <h2>Generation Settings</h2>
+
+          <div class="row">
+            <label for="instrumentName">Instrument / Pack Name</label>
+            <input id="instrumentName" type="text" value="cineharps" placeholder="e.g. cineharps" />
+          </div>
+
+          <div class="row">
+            <label for="zoom">Crop Zoom <span id="zoomVal">1.00x</span></label>
+            <input id="zoom" type="range" min="0.85" max="1.5" step="0.01" value="1" />
+          </div>
+
+          <div class="row">
+            <label for="textScale">Text Scale (Text Image) <span id="textScaleVal">1.00x</span></label>
+            <input id="textScale" type="range" min="0.7" max="1.5" step="0.01" value="1" />
+          </div>
+
+          <div class="btn-row" style="margin-top: 4px;">
+            <button id="autoFocusBtn">Auto Focus</button>
+            <button id="regenBtn">Regenerate</button>
+          </div>
+
+          <div class="btn-row" style="margin-top: 8px;">
+            <button id="downloadZipBtn" class="secondary">Download ZIP</button>
+            <button id="downloadAllBtn" class="primary">Download All PNG</button>
+          </div>
+
+          <div class="hint">
+            Tip: click or drag on the source preview to set focal point.
+            All output crops update in real-time.
+          </div>
+        </div>
+      </aside>
+
+      <section>
+        <div class="outputs" id="outputs"></div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    const OUTPUTS = [
+      { id: "cardImage", label: "CardImage", width: 200, height: 200, filePrefix: "poster", mode: "image", zoom: 1 },
+      { id: "wideCardImage", label: "WideCardImage", width: 439, height: 90, filePrefix: "widecard", mode: "image", zoom: 1.08 },
+      { id: "slotImage", label: "SlotImage", width: 200, height: 200, filePrefix: "poster", mode: "image", zoom: 1 },
+      { id: "bannerImage", label: "BannerImage", width: 484, height: 130, filePrefix: "banner", mode: "image", zoom: 1.03 },
+      { id: "instPanelImage", label: "instPanelImage", width: 554, height: 450, filePrefix: "instpanel", mode: "image", zoom: 1 },
+      { id: "cartImage", label: "cartImage", width: 142, height: 80, filePrefix: "cart", mode: "image", zoom: 1.15 },
+      { id: "instPanelBackgroundImage", label: "instPanelBackgroundImage", width: 554, height: 450, filePrefix: "instpanebgdl", mode: "image-dark", zoom: 1.02 },
+      { id: "instPanelTextImage", label: "instPanelTextImage", width: 554, height: 182, filePrefix: "instrumentpaneltext", mode: "text", zoom: 1 }
+    ];
+
+    const state = {
+      img: null,
+      objectUrl: null,
+      focalX: 0.5,
+      focalY: 0.5,
+      dragFocal: false,
+      zoom: 1,
+      textScale: 1,
+      renderMap: new Map()
+    };
+
+    const el = {
+      status: document.getElementById("status"),
+      fileInput: document.getElementById("fileInput"),
+      dropZone: document.getElementById("dropZone"),
+      sourceCanvas: document.getElementById("sourceCanvas"),
+      sourceWrap: document.getElementById("sourceWrap"),
+      sourceMeta: document.getElementById("sourceMeta"),
+      outputs: document.getElementById("outputs"),
+      instrumentName: document.getElementById("instrumentName"),
+      zoom: document.getElementById("zoom"),
+      zoomVal: document.getElementById("zoomVal"),
+      textScale: document.getElementById("textScale"),
+      textScaleVal: document.getElementById("textScaleVal"),
+      autoFocusBtn: document.getElementById("autoFocusBtn"),
+      regenBtn: document.getElementById("regenBtn"),
+      downloadZipBtn: document.getElementById("downloadZipBtn"),
+      downloadAllBtn: document.getElementById("downloadAllBtn")
+    };
+
+    const srcCtx = el.sourceCanvas.getContext("2d");
+
+    function slugify(input) {
+      return (input || "asset")
+        .toLowerCase()
+        .trim()
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "") || "asset";
+    }
+
+    function clamp(v, min, max) {
+      return Math.min(max, Math.max(min, v));
+    }
+
+    function uiStatus(msg, ok = false) {
+      el.status.textContent = msg;
+      el.status.style.color = ok ? "#c9ffea" : "#a6add1";
+      el.status.style.borderColor = ok ? "rgba(46,211,138,.45)" : "#2b3158";
+    }
+
+    function outputFilename(def) {
+      const slug = slugify(el.instrumentName.value || "asset");
+      return `${def.filePrefix}_${slug}.png`;
+    }
+
+    function fitCrop(imgW, imgH, outW, outH, zoom = 1) {
+      const imgRatio = imgW / imgH;
+      const outRatio = outW / outH;
+      let cropW, cropH;
+
+      if (imgRatio > outRatio) {
+        cropH = imgH;
+        cropW = cropH * outRatio;
+      } else {
+        cropW = imgW;
+        cropH = cropW / outRatio;
+      }
+
+      cropW /= zoom;
+      cropH /= zoom;
+
+      let cx = state.focalX * imgW;
+      let cy = state.focalY * imgH;
+
+      const halfW = cropW / 2;
+      const halfH = cropH / 2;
+
+      cx = clamp(cx, halfW, imgW - halfW);
+      cy = clamp(cy, halfH, imgH - halfH);
+
+      return { x: cx - halfW, y: cy - halfH, w: cropW, h: cropH };
+    }
+
+    function drawSourcePreview() {
+      const w = el.sourceCanvas.width;
+      const h = el.sourceCanvas.height;
+      srcCtx.clearRect(0, 0, w, h);
+      srcCtx.fillStyle = "#0b0d19";
+      srcCtx.fillRect(0, 0, w, h);
+
+      if (!state.img) {
+        srcCtx.fillStyle = "#8a93c9";
+        srcCtx.font = "600 20px Outfit";
+        srcCtx.textAlign = "center";
+        srcCtx.fillText("Upload source image", w / 2, h / 2 - 8);
+        srcCtx.font = "500 14px Outfit";
+        srcCtx.fillStyle = "#6f76a7";
+        srcCtx.fillText("(square recommended)", w / 2, h / 2 + 18);
+        return;
+      }
+
+      const img = state.img;
+      const ratio = Math.min(w / img.width, h / img.height);
+      const drawW = img.width * ratio;
+      const drawH = img.height * ratio;
+      const dx = (w - drawW) / 2;
+      const dy = (h - drawH) / 2;
+
+      srcCtx.drawImage(img, dx, dy, drawW, drawH);
+
+      const fx = dx + state.focalX * drawW;
+      const fy = dy + state.focalY * drawH;
+
+      srcCtx.strokeStyle = "rgba(255,255,255,0.55)";
+      srcCtx.lineWidth = 1;
+      srcCtx.beginPath();
+      srcCtx.moveTo(fx - 14, fy);
+      srcCtx.lineTo(fx + 14, fy);
+      srcCtx.moveTo(fx, fy - 14);
+      srcCtx.lineTo(fx, fy + 14);
+      srcCtx.stroke();
+
+      srcCtx.beginPath();
+      srcCtx.fillStyle = "#e94463";
+      srcCtx.arc(fx, fy, 5, 0, Math.PI * 2);
+      srcCtx.fill();
+
+      srcCtx.strokeStyle = "rgba(233,68,99,0.6)";
+      srcCtx.strokeRect(dx + 0.5, dy + 0.5, drawW - 1, drawH - 1);
+    }
+
+    function pointerToFocal(evt) {
+      if (!state.img) return;
+      const rect = el.sourceCanvas.getBoundingClientRect();
+      const px = evt.clientX - rect.left;
+      const py = evt.clientY - rect.top;
+
+      const img = state.img;
+      const ratio = Math.min(el.sourceCanvas.width / img.width, el.sourceCanvas.height / img.height);
+      const drawW = img.width * ratio;
+      const drawH = img.height * ratio;
+      const dx = (el.sourceCanvas.width - drawW) / 2;
+      const dy = (el.sourceCanvas.height - drawH) / 2;
+
+      state.focalX = clamp((px - dx) / drawW, 0, 1);
+      state.focalY = clamp((py - dy) / drawH, 0, 1);
+
+      drawSourcePreview();
+      renderAllOutputs();
+    }
+
+    function detectAutoFocus(img) {
+      const tmp = document.createElement("canvas");
+      const s = 128;
+      tmp.width = s;
+      tmp.height = s;
+      const tctx = tmp.getContext("2d");
+      tctx.drawImage(img, 0, 0, s, s);
+
+      const data = tctx.getImageData(0, 0, s, s).data;
+
+      let total = 0;
+      let sumX = 0;
+      let sumY = 0;
+
+      function luma(r, g, b) {
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      }
+
+      for (let y = 1; y < s - 1; y++) {
+        for (let x = 1; x < s - 1; x++) {
+          const i = (y * s + x) * 4;
+          const r = data[i], g = data[i + 1], b = data[i + 2];
+
+          const sat = Math.max(r, g, b) - Math.min(r, g, b);
+
+          const iL = (y * s + (x - 1)) * 4;
+          const iR = (y * s + (x + 1)) * 4;
+          const iU = ((y - 1) * s + x) * 4;
+          const iD = ((y + 1) * s + x) * 4;
+
+          const edgeX = Math.abs(luma(data[iR], data[iR + 1], data[iR + 2]) - luma(data[iL], data[iL + 1], data[iL + 2]));
+          const edgeY = Math.abs(luma(data[iD], data[iD + 1], data[iD + 2]) - luma(data[iU], data[iU + 1], data[iU + 2]));
+          const edge = edgeX + edgeY;
+
+          const weight = edge * 1.6 + sat * 0.7 + luma(r, g, b) * 0.2;
+
+          total += weight;
+          sumX += x * weight;
+          sumY += y * weight;
+        }
+      }
+
+      if (total > 0) {
+        state.focalX = clamp(sumX / total / s, 0, 1);
+        state.focalY = clamp(sumY / total / s, 0, 1);
+      } else {
+        state.focalX = 0.5;
+        state.focalY = 0.5;
+      }
+    }
+
+    function renderVariant(def) {
+      if (!state.img) return null;
+      const out = document.createElement("canvas");
+      out.width = def.width;
+      out.height = def.height;
+      const ctx = out.getContext("2d");
+
+      const zoom = state.zoom * (def.zoom || 1);
+      const crop = fitCrop(state.img.width, state.img.height, def.width, def.height, zoom);
+
+      ctx.drawImage(state.img, crop.x, crop.y, crop.w, crop.h, 0, 0, def.width, def.height);
+
+      if (def.mode === "image-dark") {
+        const grd = ctx.createLinearGradient(0, 0, def.width, def.height);
+        grd.addColorStop(0, "rgba(9,12,28,0.2)");
+        grd.addColorStop(1, "rgba(9,12,28,0.38)");
+        ctx.fillStyle = grd;
+        ctx.fillRect(0, 0, def.width, def.height);
+      }
+
+      if (def.mode === "text") {
+        ctx.globalAlpha = 0.45;
+        ctx.filter = "blur(4px)";
+        ctx.drawImage(state.img, crop.x, crop.y, crop.w, crop.h, 0, 0, def.width, def.height);
+        ctx.filter = "none";
+        ctx.globalAlpha = 1;
+
+        ctx.fillStyle = "rgba(9,12,28,0.72)";
+        ctx.fillRect(0, 0, def.width, def.height);
+
+        const name = (el.instrumentName.value || "INSTRUMENT").toUpperCase();
+        const fontSize = Math.floor(def.height * 0.36 * state.textScale);
+        ctx.font = `700 ${fontSize}px Outfit, Arial, sans-serif`;
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+
+        const textGrad = ctx.createLinearGradient(def.width * 0.25, 0, def.width * 0.75, 0);
+        textGrad.addColorStop(0, "#f8f9ff");
+        textGrad.addColorStop(0.72, "#f8f9ff");
+        textGrad.addColorStop(1, "#9f7cff");
+
+        ctx.fillStyle = textGrad;
+        ctx.shadowColor = "rgba(0,0,0,0.45)";
+        ctx.shadowBlur = 12;
+        ctx.fillText(name, def.width / 2, def.height / 2);
+        ctx.shadowBlur = 0;
+      }
+
+      return out;
+    }
+
+    function buildOutputCard(def) {
+      const card = document.createElement("article");
+      card.className = "out";
+      card.innerHTML = `
+        <h3>${def.label} <span>(${def.width}x${def.height})</span></h3>
+        <div class="preview" id="preview-${def.id}"></div>
+        <div class="controls">
+          <button class="icon-btn" id="download-${def.id}" title="Download">⬇</button>
+          <button class="icon-btn" id="copy-${def.id}" title="Copy image">⎘</button>
+          <button class="icon-btn" id="clear-${def.id}" title="Clear">✕</button>
+        </div>
+        <div class="filename" id="filename-${def.id}"></div>
+      `;
+      return card;
+    }
+
+    function renderAllOutputs() {
+      OUTPUTS.forEach((def) => {
+        const preview = document.getElementById(`preview-${def.id}`);
+        const filenameEl = document.getElementById(`filename-${def.id}`);
+        if (!preview || !filenameEl) return;
+
+        preview.innerHTML = "";
+
+        if (!state.img) {
+          filenameEl.textContent = "";
+          return;
+        }
+
+        const canvas = renderVariant(def);
+        if (!canvas) return;
+
+        state.renderMap.set(def.id, canvas);
+        preview.appendChild(canvas);
+        filenameEl.textContent = outputFilename(def);
+      });
+
+      if (state.img) {
+        uiStatus("Output pack generated", true);
+      }
+    }
+
+    function downloadCanvas(canvas, name) {
+      const a = document.createElement("a");
+      a.href = canvas.toDataURL("image/png");
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    }
+
+    async function copyCanvas(canvas) {
+      try {
+        if (!navigator.clipboard || !window.ClipboardItem) throw new Error("Clipboard API unavailable");
+        const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+        await navigator.clipboard.write([new ClipboardItem({ "image/png": blob })]);
+        uiStatus("Copied image to clipboard", true);
+      } catch (err) {
+        uiStatus("Clipboard copy not supported in this browser");
+      }
+    }
+
+    function clearOutput(id) {
+      const preview = document.getElementById(`preview-${id}`);
+      const filenameEl = document.getElementById(`filename-${id}`);
+      if (preview) preview.innerHTML = "";
+      if (filenameEl) filenameEl.textContent = "";
+      state.renderMap.delete(id);
+    }
+
+    function wireOutputActions(def) {
+      document.getElementById(`download-${def.id}`).addEventListener("click", () => {
+        const canvas = state.renderMap.get(def.id);
+        if (!canvas) return;
+        downloadCanvas(canvas, outputFilename(def));
+      });
+
+      document.getElementById(`copy-${def.id}`).addEventListener("click", () => {
+        const canvas = state.renderMap.get(def.id);
+        if (!canvas) return;
+        copyCanvas(canvas);
+      });
+
+      document.getElementById(`clear-${def.id}`).addEventListener("click", () => {
+        clearOutput(def.id);
+      });
+    }
+
+    async function downloadZip() {
+      if (!state.img || state.renderMap.size === 0) {
+        uiStatus("Load an image first");
+        return;
+      }
+      const zip = new JSZip();
+
+      for (const def of OUTPUTS) {
+        const canvas = state.renderMap.get(def.id);
+        if (!canvas) continue;
+        const blob = await new Promise((resolve) => canvas.toBlob(resolve, "image/png"));
+        zip.file(outputFilename(def), blob);
+      }
+
+      const blob = await zip.generateAsync({ type: "blob" });
+      const a = document.createElement("a");
+      a.href = URL.createObjectURL(blob);
+      a.download = `musio_assets_${slugify(el.instrumentName.value)}.zip`;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(a.href), 2000);
+
+      uiStatus("ZIP downloaded", true);
+    }
+
+    function downloadAllPNGs() {
+      if (!state.img || state.renderMap.size === 0) {
+        uiStatus("Load an image first");
+        return;
+      }
+      OUTPUTS.forEach((def, i) => {
+        const canvas = state.renderMap.get(def.id);
+        if (!canvas) return;
+        setTimeout(() => downloadCanvas(canvas, outputFilename(def)), i * 120);
+      });
+      uiStatus("Downloading all PNGs", true);
+    }
+
+    function loadImageFile(file) {
+      if (!file) return;
+      if (state.objectUrl) URL.revokeObjectURL(state.objectUrl);
+      state.objectUrl = URL.createObjectURL(file);
+
+      const img = new Image();
+      img.onload = () => {
+        state.img = img;
+        detectAutoFocus(img);
+        drawSourcePreview();
+        renderAllOutputs();
+        el.sourceMeta.textContent = `${file.name} · ${img.width}x${img.height}`;
+      };
+      img.onerror = () => {
+        uiStatus("Could not read image");
+      };
+      img.src = state.objectUrl;
+    }
+
+    function initOutputs() {
+      OUTPUTS.forEach((def) => {
+        const card = buildOutputCard(def);
+        el.outputs.appendChild(card);
+        wireOutputActions(def);
+      });
+    }
+
+    function bind() {
+      el.fileInput.addEventListener("change", (e) => loadImageFile(e.target.files?.[0]));
+
+      ["dragenter", "dragover"].forEach((evt) => {
+        el.dropZone.addEventListener(evt, (e) => {
+          e.preventDefault();
+          el.dropZone.classList.add("drag");
+        });
+      });
+
+      ["dragleave", "drop"].forEach((evt) => {
+        el.dropZone.addEventListener(evt, (e) => {
+          e.preventDefault();
+          el.dropZone.classList.remove("drag");
+        });
+      });
+
+      el.dropZone.addEventListener("drop", (e) => {
+        const file = e.dataTransfer?.files?.[0];
+        if (file) loadImageFile(file);
+      });
+
+      el.sourceCanvas.addEventListener("pointerdown", (e) => {
+        state.dragFocal = true;
+        pointerToFocal(e);
+      });
+
+      window.addEventListener("pointermove", (e) => {
+        if (!state.dragFocal) return;
+        pointerToFocal(e);
+      });
+
+      window.addEventListener("pointerup", () => {
+        state.dragFocal = false;
+      });
+
+      el.zoom.addEventListener("input", () => {
+        state.zoom = Number(el.zoom.value);
+        el.zoomVal.textContent = `${state.zoom.toFixed(2)}x`;
+        renderAllOutputs();
+      });
+
+      el.textScale.addEventListener("input", () => {
+        state.textScale = Number(el.textScale.value);
+        el.textScaleVal.textContent = `${state.textScale.toFixed(2)}x`;
+        renderAllOutputs();
+      });
+
+      el.instrumentName.addEventListener("input", renderAllOutputs);
+
+      el.autoFocusBtn.addEventListener("click", () => {
+        if (!state.img) return;
+        detectAutoFocus(state.img);
+        drawSourcePreview();
+        renderAllOutputs();
+      });
+
+      el.regenBtn.addEventListener("click", () => {
+        if (!state.img) return;
+        renderAllOutputs();
+      });
+
+      el.downloadZipBtn.addEventListener("click", downloadZip);
+      el.downloadAllBtn.addEventListener("click", downloadAllPNGs);
+    }
+
+    function init() {
+      initOutputs();
+      bind();
+      drawSourcePreview();
+    }
+
+    init();
+  </script>
+</body>
+</html>
