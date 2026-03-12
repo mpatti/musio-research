@@ -1,0 +1,4 @@
+# Local nested repos (keep local, do not track as submodules in this repo)
+/OpenDaw/
+/project-tracker/
+/tbc-browser-daw/
