@@ -7,12 +7,13 @@ A modern, audio-reactive web visualizer inspired by the Musio aesthetic.
 - Drag-and-drop audio upload (MP3/WAV/M4A/OGG)
 - Real-time Web Audio API analysis
 - Beat-aware motion using spectral flux detection
-- 5 visual scenes:
+- 6 visual scenes:
   - **Prism Arc**
   - **Nebula Pulse**
   - **Kinetic Grid**
   - **Hyper Tunnel 3D**
   - **Orbit Matrix 3D**
+  - **Cosmic Wormhole**
 - Playback controls (play/pause/restart/seek/fullscreen)
 - Live energy metrics (low/mid/high)
 - Export recording presets for social:

@@ -448,6 +448,7 @@
               <option value="kinetic">Kinetic Grid</option>
               <option value="tunnel3d">Hyper Tunnel 3D</option>
               <option value="orbit3d">Orbit Matrix 3D</option>
+              <option value="wormhole">Cosmic Wormhole</option>
             </select>
           </div>
 
@@ -585,6 +586,7 @@
       kinetic: "Kinetic Grid",
       tunnel3d: "Hyper Tunnel 3D",
       orbit3d: "Orbit Matrix 3D",
+      wormhole: "Cosmic Wormhole",
     };
 
     function clamp(v, min, max) {
@@ -1235,6 +1237,73 @@
       drawWaveRing(timeSec);
     }
 
+    function drawCosmicWormhole(timeSec) {
+      const cx = w / 2;
+      const cy = h / 2;
+      const fov = Math.min(w, h) * 0.9;
+      const ringCount = 92;
+      const speed = 0.19 + state.low * 0.36 + state.beat * 0.34;
+      const hueBase = 300 + state.centroid * 92;
+
+      for (let i = 0; i < ringCount; i++) {
+        const progress = (i / ringCount + timeSec * speed) % 1;
+        const z = 2100 - progress * 2020;
+        const scale = fov / (z + fov);
+
+        const spiral = progress * 19 + timeSec * (0.9 + state.high * 1.7);
+        const swirlAmp = (1 - progress) * (65 + state.mid * 90);
+        const x = cx + Math.cos(spiral) * swirlAmp;
+        const y = cy + Math.sin(spiral * 1.18) * swirlAmp * 0.72;
+
+        const radius = Math.max(1.4, scale * Math.min(w, h) * (1.15 + state.sensitivity * 0.42));
+        const lineWidth = clamp(0.8 + scale * 11 + state.high * 1.2, 0.8, 7);
+        const alpha = clamp(0.08 + scale * 0.92 + state.beat * 0.16, 0.05, 0.98);
+        const hue = hueBase + Math.sin(spiral * 0.75) * 38;
+
+        ctx.beginPath();
+        ctx.strokeStyle = `hsla(${hue}, 100%, ${56 + scale * 30}%, ${alpha})`;
+        ctx.lineWidth = lineWidth;
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.stroke();
+      }
+
+      const starSpeed = 8 + state.low * 26 + state.beat * 40;
+      const range = Math.min(w, h) * 1.02;
+      const dustCount = Math.min(tunnelPoints.length, 220);
+      for (let i = 0; i < dustCount; i++) {
+        const p = tunnelPoints[i];
+        p.z -= starSpeed;
+        if (p.z < 24) {
+          p.z = 1250 + Math.random() * 900;
+          p.x = (Math.random() * 2 - 1) * 1.25;
+          p.y = (Math.random() * 2 - 1) * 1.25;
+        }
+
+        const worldX = p.x * range;
+        const worldY = p.y * range;
+        const head = project3D(worldX, worldY, p.z);
+        const tail = project3D(worldX * 0.94, worldY * 0.94, p.z + starSpeed * 15 + 30);
+
+        ctx.strokeStyle = `hsla(${hueBase + 60},100%,88%,${clamp(0.04 + head.scale * 0.9, 0.05, 0.7)})`;
+        ctx.lineWidth = clamp(0.8 + head.scale * 3.8, 0.7, 2.8);
+        ctx.beginPath();
+        ctx.moveTo(tail.x, tail.y);
+        ctx.lineTo(head.x, head.y);
+        ctx.stroke();
+      }
+
+      const core = ctx.createRadialGradient(cx, cy, 6, cx, cy, Math.min(w, h) * 0.3);
+      core.addColorStop(0, `rgba(255,255,255,${0.82 + state.beat * 0.18})`);
+      core.addColorStop(0.2, `hsla(${hueBase + 20},100%,75%,${0.62 + state.mid * 0.28})`);
+      core.addColorStop(1, "rgba(10,10,16,0)");
+      ctx.fillStyle = core;
+      ctx.beginPath();
+      ctx.arc(cx, cy, Math.min(w, h) * 0.34 + state.beat * 16, 0, Math.PI * 2);
+      ctx.fill();
+
+      drawWaveRing(timeSec);
+    }
+
     function render(now) {
       const dt = Math.min(0.05, (now - lastFrame) / 1000);
       lastFrame = now;
@@ -1266,6 +1335,9 @@
           break;
         case "orbit3d":
           drawOrbitMatrix3D(t);
+          break;
+        case "wormhole":
+          drawCosmicWormhole(t);
           break;
         case "prism":
         default:
