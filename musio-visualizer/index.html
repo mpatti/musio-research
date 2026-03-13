@@ -526,6 +526,7 @@
     let audioCtx;
     let analyser;
     let source;
+    let mediaStreamDest;
     let objectUrl;
 
     const FALLBACK_FFT_SIZE = 4096;
@@ -632,8 +633,11 @@
         analyser.smoothingTimeConstant = 0.88;
 
         source = audioCtx.createMediaElementSource(audio);
+        mediaStreamDest = audioCtx.createMediaStreamDestination();
+
         source.connect(analyser);
         analyser.connect(audioCtx.destination);
+        analyser.connect(mediaStreamDest);
 
         freqData = new Uint8Array(analyser.frequencyBinCount);
         waveData = new Uint8Array(analyser.fftSize);
@@ -744,6 +748,10 @@
         el.engineStatus.textContent = "Recording unsupported in this browser";
         return;
       }
+      if (!ensureAudioGraph()) {
+        el.engineStatus.textContent = "Audio engine unavailable";
+        return;
+      }
 
       const preset = getActiveExportPreset();
       const fpsTarget = Number(el.exportFps.value) || 60;
@@ -753,9 +761,17 @@
       const videoStream = recordStage.captureStream(fpsTarget);
       const outputStream = new MediaStream(videoStream.getVideoTracks());
 
-      const audioStream = audio.captureStream?.() || audio.mozCaptureStream?.();
-      const audioTrack = audioStream?.getAudioTracks?.()[0];
-      if (audioTrack) outputStream.addTrack(audioTrack);
+      const audioTrack =
+        mediaStreamDest?.stream?.getAudioTracks?.()[0] ||
+        audio.captureStream?.()?.getAudioTracks?.()[0] ||
+        audio.mozCaptureStream?.()?.getAudioTracks?.()[0];
+
+      if (audioTrack) {
+        outputStream.addTrack(audioTrack);
+      } else {
+        el.engineStatus.textContent = "Could not attach audio track for recording";
+        return;
+      }
 
       recordingMimeType = getSupportedRecordingMimeType();
       const recorderOptions = {
