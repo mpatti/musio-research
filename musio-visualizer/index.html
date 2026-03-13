@@ -446,6 +446,8 @@
               <option value="prism">Prism Arc</option>
               <option value="nebula">Nebula Pulse</option>
               <option value="kinetic">Kinetic Grid</option>
+              <option value="tunnel3d">Hyper Tunnel 3D</option>
+              <option value="orbit3d">Orbit Matrix 3D</option>
             </select>
           </div>
 
@@ -539,6 +541,8 @@
     let dpr = Math.min(window.devicePixelRatio || 1, 2);
 
     let particles = [];
+    let tunnelPoints = [];
+    let orbitNodes = [];
     let particleCount = 140;
 
     let lastFrame = performance.now();
@@ -579,6 +583,8 @@
       prism: "Prism Arc",
       nebula: "Nebula Pulse",
       kinetic: "Kinetic Grid",
+      tunnel3d: "Hyper Tunnel 3D",
+      orbit3d: "Orbit Matrix 3D",
     };
 
     function clamp(v, min, max) {
@@ -606,6 +612,40 @@
         drift: Math.random() * 0.8 + 0.2,
         hueOffset: Math.random() * 60 - 30,
       }));
+      createDepthLayers(count);
+    }
+
+    function createDepthLayers(count) {
+      const tunnelCount = Math.max(160, Math.floor(count * 1.8));
+      const orbitCount = Math.max(90, Math.floor(count * 1.1));
+
+      tunnelPoints = Array.from({ length: tunnelCount }, () => ({
+        x: (Math.random() * 2 - 1) * 1.15,
+        y: (Math.random() * 2 - 1) * 1.15,
+        z: 120 + Math.random() * 1700,
+        twinkle: Math.random() * Math.PI * 2,
+      }));
+
+      orbitNodes = Array.from({ length: orbitCount }, () => ({
+        angle: Math.random() * Math.PI * 2,
+        ring: 90 + Math.random() * 280,
+        yBias: (Math.random() * 2 - 1) * 110,
+        zBias: (Math.random() * 2 - 1) * 210,
+        spin: (Math.random() * 0.02 + 0.003) * (Math.random() > 0.5 ? 1 : -1),
+        wobble: Math.random() * 0.9 + 0.3,
+        size: Math.random() * 2.5 + 0.8,
+      }));
+    }
+
+    function project3D(x, y, z) {
+      const fov = Math.min(w, h) * 0.95;
+      const depth = z + fov;
+      const scale = fov / Math.max(120, depth);
+      return {
+        x: w / 2 + x * scale,
+        y: h / 2 + y * scale,
+        scale,
+      };
     }
 
     function resize() {
@@ -1102,6 +1142,99 @@
       drawWaveRing(timeSec);
     }
 
+    function drawHyperTunnel3D(timeSec) {
+      const speed = (6 + state.low * 28 + state.beat * 45) * state.sensitivity;
+      const hueBase = 322 + state.centroid * 70;
+      const range = Math.min(w, h) * 0.95;
+
+      for (const p of tunnelPoints) {
+        p.z -= speed;
+        if (p.z < 18) {
+          p.z = 1200 + Math.random() * 700;
+          p.x = (Math.random() * 2 - 1) * 1.2;
+          p.y = (Math.random() * 2 - 1) * 1.2;
+          p.twinkle = Math.random() * Math.PI * 2;
+        }
+
+        const worldX = p.x * range;
+        const worldY = p.y * range;
+
+        const head = project3D(worldX, worldY, p.z);
+        const tail = project3D(worldX, worldY, p.z + speed * 14 + 16);
+
+        const alpha = clamp(0.12 + (1 - p.z / 1900) * 0.85 + state.high * 0.2, 0, 1);
+        const hue = hueBase + Math.sin(timeSec * 0.9 + p.twinkle) * 24;
+        const lw = clamp(head.scale * 7.5, 0.8, 4.4);
+
+        ctx.strokeStyle = `hsla(${hue}, 100%, ${58 + head.scale * 26}%, ${alpha})`;
+        ctx.lineWidth = lw;
+        ctx.beginPath();
+        ctx.moveTo(tail.x, tail.y);
+        ctx.lineTo(head.x, head.y);
+        ctx.stroke();
+      }
+
+      const tunnelGlow = ctx.createRadialGradient(w / 2, h / 2, 8, w / 2, h / 2, Math.min(w, h) * 0.38);
+      tunnelGlow.addColorStop(0, `rgba(255,255,255,${0.22 + state.beat * 0.4})`);
+      tunnelGlow.addColorStop(0.2, `hsla(${hueBase + 10},100%,70%,${0.23 + state.mid * 0.35})`);
+      tunnelGlow.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = tunnelGlow;
+      ctx.beginPath();
+      ctx.arc(w / 2, h / 2, Math.min(w, h) * 0.42 + state.beat * 22, 0, Math.PI * 2);
+      ctx.fill();
+
+      drawWaveRing(timeSec);
+    }
+
+    function drawOrbitMatrix3D(timeSec) {
+      const bars = 180;
+      const len = freqData.length;
+      const hueBase = 328 + state.centroid * 42;
+
+      ctx.lineCap = "round";
+      for (let i = 0; i < bars; i++) {
+        const n = i / bars;
+        const idx = Math.floor(n * (len - 1));
+        const f = (freqData[idx] || 0) / 255;
+        const angle = n * Math.PI * 2 + timeSec * (0.22 + state.high * 0.35);
+
+        const ringRadius = 190 + f * 280;
+        const x = Math.cos(angle) * ringRadius;
+        const z = 260 + Math.sin(angle) * 260;
+        const y = Math.sin(angle * 2 + timeSec * 0.9) * (80 + f * 140);
+
+        const head = project3D(x, y, z);
+        const tail = project3D(x * 0.58, y * 0.24, z + 240);
+
+        const alpha = 0.09 + f * 0.88;
+        ctx.strokeStyle = `hsla(${hueBase + n * 90}, 100%, ${56 + f * 25}%, ${alpha})`;
+        ctx.lineWidth = clamp(1 + f * 4.8 + head.scale * 1.4, 0.8, 5.5);
+        ctx.beginPath();
+        ctx.moveTo(tail.x, tail.y);
+        ctx.lineTo(head.x, head.y);
+        ctx.stroke();
+      }
+
+      for (const node of orbitNodes) {
+        node.angle += node.spin * (1 + state.mid * 1.2 + state.sensitivity * 0.35);
+
+        const x = Math.cos(node.angle) * node.ring;
+        const z = 280 + Math.sin(node.angle * 1.1 + timeSec * node.wobble) * (220 + node.zBias);
+        const y = Math.sin(node.angle * 2 + timeSec * 0.8) * 110 + node.yBias * 0.35;
+
+        const p = project3D(x, y, z);
+        const size = node.size * (0.8 + p.scale * 2.5 + state.beat * 0.7);
+
+        ctx.beginPath();
+        ctx.fillStyle = `hsla(${hueBase + node.yBias * 0.1}, 95%, 70%, ${0.15 + p.scale * 0.7})`;
+        ctx.arc(p.x, p.y, size, 0, Math.PI * 2);
+        ctx.fill();
+      }
+
+      drawParticles(timeSec);
+      drawWaveRing(timeSec);
+    }
+
     function render(now) {
       const dt = Math.min(0.05, (now - lastFrame) / 1000);
       lastFrame = now;
@@ -1127,6 +1260,12 @@
           break;
         case "kinetic":
           drawKineticGrid(t);
+          break;
+        case "tunnel3d":
+          drawHyperTunnel3D(t);
+          break;
+        case "orbit3d":
+          drawOrbitMatrix3D(t);
           break;
         case "prism":
         default:
