@@ -13,6 +13,11 @@ A modern, audio-reactive web visualizer inspired by the Musio aesthetic.
   - **Kinetic Grid**
 - Playback controls (play/pause/restart/seek/fullscreen)
 - Live energy metrics (low/mid/high)
+- Export recording presets for social:
+  - TikTok/Reels 1080x1920
+  - Instagram Square 1080x1080
+  - YouTube Landscape 1920x1080
+- Download recorded visualizer video with embedded track audio (browser support dependent)
 - Responsive, retina-aware rendering
 
 ## Tech

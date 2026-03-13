@@ -216,6 +216,12 @@
       border-color: rgba(233, 69, 96, 0.55);
     }
 
+    button:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
     .primary {
       background: linear-gradient(135deg, var(--musio-red), var(--musio-red-soft));
       border: none;
@@ -254,6 +260,24 @@
       font-size: 0.8rem;
       color: var(--musio-muted);
       font-variant-numeric: tabular-nums;
+    }
+
+    .record-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 10px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 10px;
+      font-size: 0.8rem;
+      color: var(--musio-muted);
+      font-variant-numeric: tabular-nums;
+      margin-bottom: 6px;
+    }
+
+    .record-meta .recording {
+      color: #ffd0d7;
     }
 
     .metrics {
@@ -387,6 +411,34 @@
         </article>
 
         <article class="card">
+          <h2>Export Video</h2>
+          <div class="row" style="margin-bottom: 8px;">
+            <label for="exportPreset">Preset</label>
+            <select id="exportPreset">
+              <option value="tiktok">TikTok / Reels (1080x1920)</option>
+              <option value="square">Instagram Square (1080x1080)</option>
+              <option value="landscape">YouTube Landscape (1920x1080)</option>
+            </select>
+          </div>
+
+          <div class="row" style="margin-bottom: 10px;">
+            <label for="exportFps">Frame Rate <span id="exportFpsVal">60 FPS</span></label>
+            <input type="range" id="exportFps" min="24" max="60" step="1" value="60" />
+          </div>
+
+          <div class="controls" style="margin-bottom: 8px;">
+            <button id="recordStartBtn" class="primary">Start Recording</button>
+            <button id="recordStopBtn">Stop & Save</button>
+          </div>
+
+          <div class="record-meta">
+            <span id="recordState">Ready</span>
+            <span id="recordTimer">00:00</span>
+          </div>
+          <div class="hint">Records from the visualizer canvas + your track audio. Start recording, then stop to download.</div>
+        </article>
+
+        <article class="card">
           <h2>Visual Modes</h2>
           <div class="row" style="margin-bottom: 10px;">
             <label for="mode">Scene</label>
@@ -430,11 +482,14 @@
   </div>
 
   <audio id="audio" crossorigin="anonymous"></audio>
+  <canvas id="recordStage" style="display:none"></canvas>
 
   <script>
     const stage = document.getElementById("stage");
     const ctx = stage.getContext("2d", { alpha: false });
     const audio = document.getElementById("audio");
+    const recordStage = document.getElementById("recordStage");
+    const recordCtx = recordStage.getContext("2d", { alpha: false });
 
     const el = {
       fileInput: document.getElementById("audioFile"),
@@ -459,6 +514,13 @@
       hudFps: document.getElementById("hudFps"),
       engineStatus: document.getElementById("engineStatus"),
       stageWrap: document.getElementById("stageWrap"),
+      exportPreset: document.getElementById("exportPreset"),
+      exportFps: document.getElementById("exportFps"),
+      exportFpsVal: document.getElementById("exportFpsVal"),
+      recordStartBtn: document.getElementById("recordStartBtn"),
+      recordStopBtn: document.getElementById("recordStopBtn"),
+      recordState: document.getElementById("recordState"),
+      recordTimer: document.getElementById("recordTimer"),
     };
 
     let audioCtx;
@@ -481,6 +543,19 @@
     let lastFrame = performance.now();
     let fps = 0;
 
+    let mediaRecorder;
+    let recordingChunks = [];
+    let recordingMimeType = "";
+    let recordMirrorRaf = 0;
+    let recordStartedAt = 0;
+    let recordTimerInterval = 0;
+
+    const exportPresets = {
+      tiktok: { width: 1080, height: 1920, suffix: "tiktok" },
+      square: { width: 1080, height: 1080, suffix: "square" },
+      landscape: { width: 1920, height: 1080, suffix: "landscape" },
+    };
+
     const state = {
       mode: "prism",
       sensitivity: 1,
@@ -495,6 +570,7 @@
       beatCooldown: 0,
       hueShift: 0,
       playing: false,
+      recording: false,
       seededDrift: Math.random() * 1000,
     };
 
@@ -586,6 +662,169 @@
       const s = Math.floor(sec % 60).toString().padStart(2, "0");
       const m = Math.floor(sec / 60).toString().padStart(2, "0");
       return `${m}:${s}`;
+    }
+
+    function slugify(input) {
+      return String(input || "musio_visualizer")
+        .toLowerCase()
+        .trim()
+        .replace(/\.[a-z0-9]+$/i, "")
+        .replace(/[^a-z0-9]+/g, "_")
+        .replace(/^_+|_+$/g, "") || "musio_visualizer";
+    }
+
+    function getActiveExportPreset() {
+      return exportPresets[el.exportPreset.value] || exportPresets.tiktok;
+    }
+
+    function getSupportedRecordingMimeType() {
+      const candidates = [
+        "video/mp4;codecs=avc1.42E01E,mp4a.40.2",
+        "video/webm;codecs=vp9,opus",
+        "video/webm;codecs=vp8,opus",
+        "video/webm",
+      ];
+      if (!window.MediaRecorder) return "";
+      return candidates.find((type) => MediaRecorder.isTypeSupported(type)) || "";
+    }
+
+    function setRecordState(text, recording = false) {
+      el.recordState.textContent = text;
+      el.recordState.classList.toggle("recording", recording);
+      el.recordStartBtn.disabled = recording;
+      el.recordStopBtn.disabled = !recording;
+    }
+
+    function updateRecordTimer() {
+      if (!recordStartedAt) {
+        el.recordTimer.textContent = "00:00";
+        return;
+      }
+      const elapsed = (Date.now() - recordStartedAt) / 1000;
+      el.recordTimer.textContent = fmt(elapsed);
+    }
+
+    function startRecordMirrorLoop() {
+      const draw = () => {
+        if (!state.recording) return;
+        const tw = recordStage.width;
+        const th = recordStage.height;
+        const sw = stage.width / dpr;
+        const sh = stage.height / dpr;
+
+        recordCtx.fillStyle = "#08080b";
+        recordCtx.fillRect(0, 0, tw, th);
+
+        const scale = Math.max(tw / sw, th / sh);
+        const dw = sw * scale;
+        const dh = sh * scale;
+        const dx = (tw - dw) / 2;
+        const dy = (th - dh) / 2;
+
+        recordCtx.drawImage(stage, 0, 0, stage.width, stage.height, dx, dy, dw, dh);
+        recordMirrorRaf = requestAnimationFrame(draw);
+      };
+
+      cancelAnimationFrame(recordMirrorRaf);
+      draw();
+    }
+
+    function stopRecordMirrorLoop() {
+      cancelAnimationFrame(recordMirrorRaf);
+      recordMirrorRaf = 0;
+    }
+
+    async function startRecording() {
+      if (state.recording) return;
+      if (!objectUrl) {
+        el.engineStatus.textContent = "Load a track first";
+        return;
+      }
+      if (!window.MediaRecorder) {
+        el.engineStatus.textContent = "Recording unsupported in this browser";
+        return;
+      }
+
+      const preset = getActiveExportPreset();
+      const fpsTarget = Number(el.exportFps.value) || 60;
+      recordStage.width = preset.width;
+      recordStage.height = preset.height;
+
+      const videoStream = recordStage.captureStream(fpsTarget);
+      const outputStream = new MediaStream(videoStream.getVideoTracks());
+
+      const audioStream = audio.captureStream?.() || audio.mozCaptureStream?.();
+      const audioTrack = audioStream?.getAudioTracks?.()[0];
+      if (audioTrack) outputStream.addTrack(audioTrack);
+
+      recordingMimeType = getSupportedRecordingMimeType();
+      const recorderOptions = {
+        videoBitsPerSecond: preset.width >= 1920 ? 16000000 : 12000000,
+      };
+      if (recordingMimeType) recorderOptions.mimeType = recordingMimeType;
+
+      recordingChunks = [];
+      mediaRecorder = new MediaRecorder(outputStream, recorderOptions);
+
+      mediaRecorder.ondataavailable = (e) => {
+        if (e.data && e.data.size > 0) recordingChunks.push(e.data);
+      };
+
+      mediaRecorder.onerror = (e) => {
+        console.error("MediaRecorder error", e);
+        el.engineStatus.textContent = "Recording error";
+      };
+
+      mediaRecorder.onstop = () => {
+        stopRecordMirrorLoop();
+        clearInterval(recordTimerInterval);
+        recordTimerInterval = 0;
+        recordStartedAt = 0;
+        updateRecordTimer();
+        state.recording = false;
+        setRecordState("Ready", false);
+
+        if (!recordingChunks.length) {
+          el.engineStatus.textContent = "Recording cancelled";
+          return;
+        }
+
+        const blobType = recordingMimeType || "video/webm";
+        const blob = new Blob(recordingChunks, { type: blobType });
+        const ext = blobType.includes("mp4") ? "mp4" : "webm";
+        const trackBase = slugify(el.trackName.textContent || "musio_visualizer");
+        const fileName = `${trackBase}_${preset.suffix}.${ext}`;
+
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = fileName;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 2000);
+
+        el.engineStatus.textContent = `Saved ${fileName}`;
+      };
+
+      if (audio.currentTime > 0.1) audio.currentTime = 0;
+      await play();
+
+      state.recording = true;
+      setRecordState("Recording", true);
+      recordStartedAt = Date.now();
+      updateRecordTimer();
+      recordTimerInterval = setInterval(updateRecordTimer, 200);
+
+      startRecordMirrorLoop();
+      mediaRecorder.start(1000);
+      el.engineStatus.textContent = `Recording ${preset.width}x${preset.height} @ ${fpsTarget}fps`;
+    }
+
+    function stopRecording() {
+      if (!state.recording || !mediaRecorder) return;
+      el.engineStatus.textContent = "Finalizing video...";
+      mediaRecorder.stop();
     }
 
     function updateTimeline() {
@@ -950,6 +1189,21 @@
         }
       });
 
+      el.exportFps.addEventListener("input", (e) => {
+        el.exportFpsVal.textContent = `${Number(e.target.value)} FPS`;
+      });
+
+      el.recordStartBtn.addEventListener("click", () => {
+        startRecording().catch((err) => {
+          console.error("Recording start error", err);
+          state.recording = false;
+          setRecordState("Ready", false);
+          el.engineStatus.textContent = "Could not start recording";
+        });
+      });
+
+      el.recordStopBtn.addEventListener("click", stopRecording);
+
       el.mode.addEventListener("change", (e) => setMode(e.target.value));
 
       el.sensitivity.addEventListener("input", (e) => {
@@ -971,7 +1225,11 @@
 
       audio.addEventListener("ended", () => {
         state.playing = false;
-        el.engineStatus.textContent = "Playback ended";
+        if (state.recording) {
+          stopRecording();
+        } else {
+          el.engineStatus.textContent = "Playback ended";
+        }
       });
 
       audio.addEventListener("pause", () => {
@@ -990,6 +1248,8 @@
       createParticles(particleCount);
       bindEvents();
       setMode("prism");
+      el.exportFpsVal.textContent = `${el.exportFps.value} FPS`;
+      setRecordState("Ready", false);
       requestAnimationFrame(render);
     }
 
