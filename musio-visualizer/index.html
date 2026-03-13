@@ -29,19 +29,24 @@
 
     html,
     body {
-      min-height: 100%;
+      height: 100%;
       background: radial-gradient(circle at 15% -10%, rgba(233, 69, 96, 0.18), transparent 40%),
         radial-gradient(circle at 85% -20%, rgba(255, 91, 126, 0.1), transparent 35%),
         var(--musio-bg);
       color: var(--musio-text);
       font-family: "Outfit", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
       line-height: 1.45;
+      overflow: hidden;
     }
 
     .page {
       max-width: 1480px;
+      height: 100vh;
       margin: 0 auto;
-      padding: 24px;
+      padding: 14px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
     }
 
     .topbar {
@@ -49,7 +54,8 @@
       justify-content: space-between;
       align-items: center;
       gap: 16px;
-      margin-bottom: 22px;
+      margin-bottom: 0;
+      flex-shrink: 0;
     }
 
     .brand {
@@ -93,9 +99,12 @@
 
     .layout {
       display: grid;
-      grid-template-columns: 360px 1fr;
-      gap: 18px;
-      min-height: calc(100vh - 140px);
+      grid-template-columns: 336px minmax(0, 1fr);
+      gap: 14px;
+      flex: 1;
+      min-height: 0;
+      height: 100%;
+      overflow: hidden;
     }
 
     .panel,
@@ -107,10 +116,13 @@
     }
 
     .panel {
-      padding: 18px;
+      padding: 12px;
       display: flex;
       flex-direction: column;
-      gap: 14px;
+      gap: 10px;
+      min-height: 0;
+      overflow: auto;
+      scrollbar-width: thin;
     }
 
     .card {
@@ -310,7 +322,8 @@
     .stage-wrap {
       position: relative;
       overflow: hidden;
-      min-height: 620px;
+      min-height: 0;
+      height: 100%;
     }
 
     #stage {
@@ -352,13 +365,86 @@
       line-height: 1.45;
     }
 
+    @media (max-height: 900px) and (min-width: 1081px) {
+      .page {
+        padding: 10px 14px;
+        gap: 8px;
+      }
+
+      .layout {
+        grid-template-columns: 320px minmax(0, 1fr);
+        gap: 10px;
+      }
+
+      .panel {
+        padding: 10px;
+        gap: 8px;
+      }
+
+      .card {
+        padding: 10px;
+      }
+
+      .card h2 {
+        margin-bottom: 7px;
+        font-size: 0.76rem;
+      }
+
+      .dropzone {
+        padding: 12px;
+      }
+
+      .dropzone strong {
+        font-size: 0.93rem;
+      }
+
+      .dropzone span,
+      .hint {
+        font-size: 0.74rem;
+      }
+
+      button,
+      select {
+        padding: 8px 10px;
+        font-size: 0.82rem;
+      }
+
+      .metrics {
+        gap: 6px;
+      }
+
+      .metric {
+        padding: 8px;
+      }
+    }
+
     @media (max-width: 1080px) {
+      html,
+      body {
+        height: auto;
+        overflow: auto;
+      }
+
+      .page {
+        height: auto;
+        min-height: 100vh;
+        padding: 12px;
+      }
+
       .layout {
         grid-template-columns: 1fr;
+        min-height: auto;
+        height: auto;
+        overflow: visible;
+      }
+
+      .panel {
+        overflow: visible;
       }
 
       .stage-wrap {
         min-height: 62vh;
+        height: 62vh;
       }
     }
   </style>
