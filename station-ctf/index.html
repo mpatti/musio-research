@@ -5,7 +5,7 @@
     <title>Station CTF</title>
     <style>
         body { margin: 0; overflow: hidden; background: #000; font-family: sans-serif; }
-        #start { position: fixed; inset: 0; background: #0a0a12; display: flex; align-items: center; justify-content: center; flex-direction: column; z-index: 100; visibility: visible; }
+        #start { position: fixed; inset: 0; background: #0a0a12; display: flex; align-items: center; justify-content: center; flex-direction: column; z-index: 100; visibility: visible !important; }
         #start h1 { color: #00f0ff; font-size: 4em; margin: 0; }
         #start p { color: #ff00aa; font-size: 1.5em; margin: 10px 0 30px; }
         #start button { font-size: 1.5em; padding: 15px 50px; background: #00f0ff; border: none; cursor: pointer; }
@@ -24,7 +24,7 @@
         <div style="position: fixed; top: 20px; right: 20px; color: #3388ff;">Score: <span id="score">0</span></div>
     </div>
     <canvas id="game"></canvas>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script>
         // Global error handler
         window.onerror = function(msg, url, line) {
@@ -104,7 +104,27 @@
             // Player
             const player = new THREE.Group();
             const bodyMat = new THREE.MeshStandardMaterial({ color: 0x3388ff, emissive: 0x3388ff, emissiveIntensity: 0.3 });
-            player.add(new THREE.Mesh(new THREE.CapsuleGeometry(0.5, 1.2, 8, 16), bodyMat).translateY(1.1));
+            // Player body - use cylinder + spheres since CapsuleGeometry needs newer Three.js
+            const bodyGroup = new THREE.Group();
+            const bodyCyl = new THREE.Mesh(
+                new THREE.CylinderGeometry(0.5, 0.5, 1.2, 16),
+                bodyMat
+            );
+            bodyCyl.position.y = 0.6;
+            bodyGroup.add(bodyCyl);
+            const bodyTop = new THREE.Mesh(
+                new THREE.SphereGeometry(0.5, 16, 16),
+                bodyMat
+            );
+            bodyTop.position.y = 1.2;
+            bodyGroup.add(bodyTop);
+            const bodyBot = new THREE.Mesh(
+                new THREE.SphereGeometry(0.5, 16, 16),
+                bodyMat
+            );
+            bodyBot.position.y = 0;
+            bodyGroup.add(bodyBot);
+            player.add(bodyGroup);
             player.add(new THREE.Mesh(new THREE.SphereGeometry(0.35), new THREE.MeshStandardMaterial({ color: 0x333344 })).translateY(2));
             player.position.set(40, 0, 0);
             scene.add(player);
