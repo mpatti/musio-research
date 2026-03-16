@@ -399,6 +399,21 @@
 
     <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
     <script>
+        window.onerror = function(msg, url, line) {
+            alert('Error: ' + msg + '\nLine: ' + line);
+            return true;
+        };
+        
+        console.log('THREE:', typeof THREE);
+        console.log('Vector3:', typeof THREE.Vector3);
+        
+        if (typeof THREE === 'undefined' || typeof THREE.Vector3 === 'undefined') {
+            document.body.innerHTML = '<h1 style="color:red;padding:50px">Error: THREE.js failed to load properly. Check internet connection.</h1>';
+            throw new Error('THREE not loaded properly');
+        }
+
+
+
         const CONFIG = {
             gameTime: 15 * 60,
             captureLimit: 5,
@@ -749,11 +764,15 @@
             renderer.render(scene, camera);
         }
         
-        document.getElementById('btn').addEventListener('click', () => {
-            document.getElementById('start').style.display = 'none';
-            document.getElementById('hud').style.display = 'block';
-            state.started = true;
-            document.body.requestPointerLock();
+        document.getElementById('btn').addEventListener('click', function() {
+            try {
+                document.getElementById('start').style.display = 'none';
+                document.getElementById('hud').style.display = 'block';
+                state.started = true;
+                document.body.requestPointerLock();
+            } catch(e) {
+                alert('Error: ' + e.message);
+            }
         });
         
         window.addEventListener('resize', () => {
