@@ -1,9 +1,58 @@
 {
   "lastUpdated": "2026-03-16T13:00:00Z",
-  "note": "Morning research - March 16, 2026, 9:00 AM ET. NOTE: Web search unavailable (no Brave API key configured). Previous day's research retained. Key items from March 15: Nvidia launches Fugatto - 2.5B param AI audio model. UK copyright deadline March 18. Suno/Udio now licensed. ElevenLabs at $11B. Major labels launching licensed AI platforms. Create at $2.2B. Suno at 2M subscribers, $300M ARR.",
+  "note": "Midday research - March 16, 2026, 1:00 PM ET. Web search unavailable (no Brave API key). Previous day's research retained. Key items from March 16: Concord acquires Ninja Tune. Spotify launches Taste Profile (users can edit algorithm). Quincy Jones estate catalog sale. UK copyright deadline March 18.",
   "insightTech": "AI music landscape shifting: Nvidia enters with Fugatto - 2.5B param transformer that can create novel sounds (trumpet barking, sax meowing), generate singing voices from text, modify songs by adding/removing instruments, change voice accents/emotions. Uses ComposableART technique for combining instructions. Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. Google and Apple now embedding AI music in core apps. UNESCO warns 24% income decline for music creators.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
+    {
+      "date": "2026-03-16",
+      "source": "Music Business Worldwide",
+      "title": "Concord acquires UK-based indie label Ninja Tune",
+      "summary": "Concord acquires prominent London-based independent label Ninja Tune, expanding its presence in the UK and Europe. The deal brings Ninja Tune's recorded music operations and publishing arm Just Isn't Music under Concord's umbrella. Founded in 1990 by Coldcut, Ninja Tune's catalog includes The Prodigy, Soulwax, Bonobo, ODESZA, Flying Lotus and many more. The label will continue operating under current leadership.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-16",
+      "source": "Music Business Worldwide",
+      "title": "Spotify to let users edit the algorithm behind their personalized recommendations with 'Taste Profile'",
+      "summary": "Spotify announces 'Taste Profile' - a new feature letting users see and shape the listening data driving their personalized recommendations. Initially available in beta for Premium users in New Zealand. Users can flag if the profile doesn't reflect their preferences and ask for more or less of something, or describe their current mood. Extends beyond listening data to include context like training or commuting habits.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-03-16",
+      "source": "Music Business Worldwide",
+      "title": "Quincy Jones estate sells catalog and ancillary rights to HarbourView",
+      "summary": "HarbourView acquires recorded music, publishing, and ancillary rights from the estate of legendary producer Quincy Jones.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-16",
+      "source": "Music Business Worldwide",
+      "title": "Too Lost strikes nine-figure investment round",
+      "summary": "Too Lost secures nine-figure investment round led by GoldState and TA Associates. Funds will expand tech, invest in artist advances, and execute catalog acquisitions.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-16",
+      "source": "Music Business Worldwide",
+      "title": "TikTok Radio launches on iHeartRadio as TikTok ends SiriusXM partnership",
+      "summary": "TikTok Radio launches on iHeartRadio with segments including weekly countdown of TikTok's 10 biggest songs, trending topics, and new music highlights.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-16",
+      "source": "Music Business Worldwide",
+      "title": "Scott Borchetta launches Borchetta Entertainment Group management division with Carly Pearce signing",
+      "summary": "Scott Borchetta departs from HYBE AMERICA and launches new management division with Carly Pearce signing.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-16",
+      "source": "Music Business Worldwide",
+      "title": "Pharrell Williams legal battle with ex-Neptunes partner widens as Chad Hugo challenges credits on Rosalía and Latto tracks",
+      "summary": "Legal battle between Pharrell Williams and ex-Neptunes partner Chad Hugo widens. Amended filing expands Hugo's claims alleging he was left off songwriter credits on several tracks including those with Rosalía and Latto.",
+      "category": "business"
+    },
     {
       "date": "2026-03-15",
       "source": "Music Business Worldwide",
