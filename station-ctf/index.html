@@ -26,6 +26,12 @@
     <canvas id="game"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
+        // Debug - check if THREE loaded
+        if (typeof THREE === 'undefined') {
+            document.body.innerHTML = '<h1 style="color:red;padding:50px">Error: THREE.js failed to load. Check your internet connection.</h1>';
+            throw new Error('THREE not loaded');
+        }
+        
         const btn = document.getElementById('btn');
         const startDiv = document.getElementById('start');
         const hudDiv = document.getElementById('hud');
