@@ -756,23 +756,7 @@
 
         document.addEventListener('mouseup', () => { controls.shoot = false; });
 
-        // Start game function
-        function startGame() {
-            console.log("Starting game...");
-            document.getElementById('start-screen').style.display = 'none';
-            document.getElementById('hud').style.display = 'block';
-            gameState.started = true;
-            console.log("Game started, requesting pointer lock...");
-            setTimeout(() => {
-                try {
-                    document.body.requestPointerLock();
-                } catch(e) {
-                    console.log("Pointer lock failed:", e);
-                }
-            }, 100);
-        }
-
-                function tryPickupFlag() {
+                        function tryPickupFlag() {
             if (!localPlayer) return;
             
             const enemyFlag = localPlayer.userData.team === 'blue' ? flagRed : flagBlue;
