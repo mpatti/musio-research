@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musio Marketing Hub</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0f0f0f;
+            color: #e5e5e5;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        
+        header {
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #222;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+        
+        .nav a {
+            color: #888;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 20px;
+            background: #1a1a1a;
+            transition: all 0.2s;
+            font-size: 0.9em;
+        }
+        
+        .nav a:hover, .nav a.active {
+            background: #333;
+            color: #fff;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .section h2 .icon {
+            font-size: 1.2em;
+        }
+        
+        .card {
+            background: #1a1a1a;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 15px;
+            border: 1px solid #222;
+        }
+        
+        .card h3 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #fff;
+        }
+        
+        .card p {
+            color: #999;
+            font-size: 0.95em;
+        }
+        
+        .card ul {
+            margin: 10px 0 0 20px;
+            color: #888;
+        }
+        
+        .card li {
+            margin-bottom: 5px;
+        }
+        
+        .tag {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.75em;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+        
+        .tag.high { background: #22c55e20; color: #22c55e; }
+        .tag.medium { background: #f59e0b20; color: #f59e0b; }
+        .tag.low { background: #6b728020; color: #6b7280; }
+        
+        .cta {
+            display: inline-block;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            margin-top: 10px;
+        }
+        
+        .cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+        }
+        
+        .checklist {
+            list-style: none;
+        }
+        
+        .checklist li {
+            padding: 10px 0;
+            border-bottom: 1px solid #222;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .checklist li:last-child {
+            border-bottom: none;
+        }
+        
+        .checkbox {
+            width: 18px;
+            height: 18px;
+            border: 2px solid #444;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        .checkbox.checked {
+            background: #22c55e;
+            border-color: #22c55e;
+        }
+        
+        footer {
+            margin-top: 60px;
+            padding-top: 30px;
+            border-top: 1px solid #222;
+            color: #444;
+            font-size: 0.85em;
+            text-align: center;
+        }
+        
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8em; }
+            .container { padding: 20px 15px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎵 Musio Marketing Hub</h1>
+            <p class="subtitle">Strategy, research, and things to remember</p>
+        </header>
+        
+        <nav class="nav">
+            <a href="#strategy" class="active">Strategy</a>
+            <a href="#research">Research</a>
+            <a href="#tactics">Tactics</a>
+            <a href="#todos">Action Items</a>
+        </nav>
+        
+        <div class="section" id="strategy">
+            <h2><span class="icon">🎯</span> Positioning</h2>
+            <div class="card">
+                <h3>Core Message</h3>
+                <p><strong>"Real human-performed instruments. No AI slop. Licensed & legal."</strong></p>
+                <br>
+                <p>Musio owns the anti-AI, pro-human-creator angle. The market is swinging away from AI music (iHeartRadio won't play it, "Say No To Suno" movement emerging). We can own "the authentic alternative."</p>
+            </div>
+            <div class="card">
+                <h3>Key Differentiators</h3>
+                <ul>
+                    <li>Real human performance — AI can't replicate this</li>
+                    <li>Fully licensed — no copyright lawsuits, no legal risk</li>
+                    <li>Cloud-based — no manual installs</li>
+                    <li>Ultra-light CPU footprint</li>
+                    <li>$20/month for everything — vs $4,500+ in individual libraries</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section" id="research">
+            <h2><span class="icon">📊</span> Market Research</h2>
+            <div class="card">
+                <h3>Competitive Landscape</h3>
+                <p style="margin-bottom: 15px;">Last updated: March 15, 2026</p>
+                <span class="tag high">Suno: 2M subs, $300M ARR</span>
+                <span class="tag high">ElevenLabs: $11B valuation</span>
+                <span class="tag medium">Create: $2.2B valuation</span>
+                <span class="tag low">Spitfire, Orchestral Tools: Traditional</span>
+            </div>
+            <div class="card">
+                <h3>Market Trends</h3>
+                <ul>
+                    <li>Major labels now licensing to AI companies (UMG, Sony, WMG)</li>
+                    <li>Apple Music tagging AI songs — first formal regulation</li>
+                    <li>UK copyright deadline: March 18 — could impact AI training</li>
+                    <li>GEMA vs Suno could set European AI music precedent</li>
+                    <li>UNESCO warns 24% income decline for music creators</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Opportunities</h3>
+                <ul>
+                    <li>Capture "Suno weary" composers looking for real instruments</li>
+                    <li>Press outreach — Musio not in current AI music discussions</li>
+                    <li>Artist-led campaigns like "Say No To Suno" — potential partnership</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section" id="tactics">
+            <h2><span class="icon">⚔️</span> Channel Strategy</h2>
+            <div class="card">
+                <h3>YouTube <span class="tag high">Start Here</span></h3>
+                <p>Already have founder video. Repurpose into clips. SEO-optimize titles. Post instrument walkthroughs.</p>
+                <p><strong>Est. cost:</strong> $0-500/month</p>
+            </div>
+            <div class="card">
+                <h3>Google Search <span class="tag medium">Add Week 3</span></h3>
+                <p>Target: "orchestral VST", "best sample library", "Suno alternative". Capture AI-weary searchers.</p>
+                <p><strong>Est. cost:</strong> $500-1000/month</p>
+            </div>
+            <div class="card">
+                <h3>Meta <span class="tag low">Retarget Only</span></h3>
+                <p>Don't cold audiences. Retarget website visitors. Video views campaigns only.</p>
+                <p><strong>Est. cost:</strong> $300-500/month</p>
+            </div>
+            <div class="card">
+                <h3>What to Skip</h3>
+                <ul>
+                    <li>Display ads</li>
+                    <li>Broad Meta campaigns</li>
+                    <li>Competing on "AI music generation" keywords</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section" id="todos">
+            <h2><span class="icon">✅</span> Action Items</h2>
+            <div class="card">
+                <ul class="checklist">
+                    <li><div class="checkbox"></div> Repurpose founder video into 3-4 clips (60s, 30s, Shorts)</li>
+                    <li><div class="checkbox"></div> Post 3-5 instrument demo videos on YouTube</li>
+                    <li><div class="checkbox"></div> Set up Google Search campaign ($500/mo, tight keywords)</li>
+                    <li><div class="checkbox"></div> Set up Meta retargeting ($300/mo)</li>
+                    <li><div class="checkbox"></div> Submit to Product Hunt</li>
+                    <li><div class="checkbox"></div> Post helpful answers on r/composer, r/WeAreTheMusicMakers</li>
+                    <li><div class="checkbox"></div> Email existing users for referrals/reviews</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2><span class="icon">🔗</span> Quick Links</h2>
+            <div class="card">
+                <a href="https://musio.com" class="cta" target="_blank">Musio.com →</a>
+                <a href="https://musio.com/pricing" class="cta" target="_blank" style="margin-left: 10px; background: #1a1a1a; border: 1px solid #333;">Pricing →</a>
+            </div>
+        </div>
+        
+        <footer>
+            Musio Marketing Hub — Last updated March 2026
+        </footer>
+    </div>
+    
+    <script>
+        // Simple checklist interactivity
+        document.querySelectorAll('.checkbox').forEach(box => {
+            box.addEventListener('click', () => {
+                box.classList.toggle('checked');
+            });
+        });
+        
+        // Smooth scroll for nav
+        document.querySelectorAll('.nav a').forEach(link => {
+            link.addEventListener('click', e => {
+                e.preventDefault();
+                const target = document.querySelector(link.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth' });
+                
+                document.querySelectorAll('.nav a').forEach(l => l.classList.remove('active'));
+                link.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
