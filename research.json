@@ -1,9 +1,16 @@
 {
-  "lastUpdated": "2026-03-12T22:00:00Z",
-  "note": "Evening research - March 12, 2026, 5:00 PM ET. New: Apple Music introduces AI song tagging (voluntary). Google launches Lyria 3. GEMA vs Suno Munich hearing complete - ruling pending. UK copyright exception deadline March 18. Suno/Udio now licensed and paying. ElevenLabs at $11B. Major labels launching licensed AI platforms. Create at $2.2B. Suno at 2M subscribers, $300M ARR. South Korea music industry declares 'war' on AI copyright infringement.",
-  "insightTech": "AI music landscape shifting: Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. New VSTs (Serum 2, MOSAIQ) still relevant alongside AI tools. Google and Apple now embedding AI music in core apps. Google acquires ProducerAI (formerly Riffusion). Suno hires ex-Merlin CEO Jeremy Sirota as CCO. UNESCO warns 24% income decline for music creators. Cloudflare now lets content owners charge AI crawlers. Apple Music launches AI transparency tags (voluntary). Spain's market up 13.7% (strongest since 2003). GEMA vs Suno case outcome could set precedent for AI music licensing in Europe. ChatGPT now can Shazam songs via Apple integration.",
+  "lastUpdated": "2026-03-15T21:22:00Z",
+  "note": "Evening research - March 15, 2026, 9:22 PM ET. NEW: Nvidia launches Fugatto - 2.5B param AI audio model that can generate novel sounds. UK copyright deadline March 18. Suno/Udio now licensed. ElevenLabs at $11B. Major labels launching licensed AI platforms. Create at $2.2B. Suno at 2M subscribers, $300M ARR.",
+  "insightTech": "AI music landscape shifting: Nvidia enters with Fugatto - 2.5B param transformer that can create novel sounds (trumpet barking, sax meowing), generate singing voices from text, modify songs by adding/removing instruments, change voice accents/emotions. Uses ComposableART technique for combining instructions. Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. Google and Apple now embedding AI music in core apps. UNESCO warns 24% income decline for music creators.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
+    {
+      "date": "2026-03-15",
+      "source": "Music Business Worldwide",
+      "title": "Nvidia unveils AI audio generator Fugatto that can produce 'sounds never heard before'",
+      "summary": "Nvidia launches Fugatto - 2.5B parameter foundational generative audio transformer that can generate novel sounds (trumpet barking, saxophone meowing), create singing voices from text prompts, modify songs by adding/removing instruments, and change voice accents/emotions. Trained on 32 H100 GPUs. No public release timeline announced.",
+      "category": "tools"
+    },
     {
       "date": "2026-03-12",
       "source": "Billboard",
