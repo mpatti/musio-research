@@ -271,11 +271,24 @@
         <h1>STATION</h1>
         <div class="subtitle">CAPTURE THE FLAG</div>
         <div class="tagline">Space Station CTF • 5v5 Multiplayer</div>
-        <button id="start-btn" onclick="startGame()">DEPLOY</button>
+        <button id="start-btn">DEPLOY</button>
     </div>
     
     <div id="ui-overlay">
         <div id="hud">
+            <div class="hud-top">
+                <div class="score-panel">
+                    <div class="team-score red">
+                        <div class="team-name">ALPHA</div>
+                        <div class="score" id="score-red">0</div>
+                    </div>
+                    <div class="team-score blue">
+                        <div class="team-name">OMEGA</div>
+                        <div class="score" id="score-blue">0</div>
+                    </div>
+                </div>
+                <div class="timer" id="timer">15:00</div>
+            </div>
             <div class="hud-top">
                 <div class="score-panel">
                     <div class="team-score red">
@@ -743,6 +756,8 @@
                 }
             }, 100);
         }
+
+        document.getElementById('start-btn').addEventListener('click', startGame);
 
         function tryPickupFlag() {
             if (!localPlayer) return;
