@@ -722,10 +722,17 @@
         document.addEventListener('mouseup', () => { controls.shoot = false; });
 
         function startGame() {
-            document.getElementById('start-screen').style.display = 'none';
-            document.getElementById('hud').style.display = 'block';
-            document.body.requestPointerLock();
-            gameState.started = true;
+            console.log("Starting game...");
+            try {
+                document.getElementById('start-screen').style.display = 'none';
+                document.getElementById('hud').style.display = 'block';
+                document.body.requestPointerLock();
+                gameState.started = true;
+                console.log("Game started successfully");
+            } catch(e) {
+                console.error("Error starting game:", e);
+                alert("Error: " + e.message);
+            }
         }
 
         function tryPickupFlag() {
