@@ -271,7 +271,7 @@
         <h1>STATION</h1>
         <div class="subtitle">CAPTURE THE FLAG</div>
         <div class="tagline">Space Station CTF • 5v5 Multiplayer</div>
-        <button id="start-btn" onclick="document.getElementById('start-screen').style.display='none';document.getElementById('hud').style.display='block';gameState.started=true;setTimeout(function(){document.body.requestPointerLock()},100)">DEPLOY</button>
+        <button id="start-btn" type="button">DEPLOY</button>
     </div>
     
     <div id="ui-overlay">
@@ -742,6 +742,7 @@
 
         document.addEventListener('mouseup', () => { controls.shoot = false; });
 
+        // Start game function
         function startGame() {
             console.log("Starting game...");
             document.getElementById('start-screen').style.display = 'none';
@@ -757,7 +758,10 @@
             }, 100);
         }
 
-        document.getElementById('start-btn').addEventListener('click', startGame);
+        // Initialize when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('start-btn').addEventListener('click', startGame);
+        });
 
         function tryPickupFlag() {
             if (!localPlayer) return;
