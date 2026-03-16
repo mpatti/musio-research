@@ -758,12 +758,7 @@
             }, 100);
         }
 
-        // Initialize when DOM is ready
-        document.addEventListener('DOMContentLoaded', function() {
-            document.getElementById('start-btn').addEventListener('click', startGame);
-        });
-
-        function tryPickupFlag() {
+                function tryPickupFlag() {
             if (!localPlayer) return;
             
             const enemyFlag = localPlayer.userData.team === 'blue' ? flagRed : flagBlue;
