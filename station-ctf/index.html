@@ -332,6 +332,14 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
+        window.onerror = function(msg, url, line, col, error) {
+            console.error("ERROR:", msg, "at line", line);
+            alert("JavaScript Error: " + msg);
+            return true;
+        };
+        
+        console.log("Script loaded, THREE defined:", typeof THREE !== 'undefined');
+
         const GAME_CONFIG = {
             gameTime: 15 * 60,
             captureLimit: 5,
@@ -723,16 +731,17 @@
 
         function startGame() {
             console.log("Starting game...");
-            try {
-                document.getElementById('start-screen').style.display = 'none';
-                document.getElementById('hud').style.display = 'block';
-                document.body.requestPointerLock();
-                gameState.started = true;
-                console.log("Game started successfully");
-            } catch(e) {
-                console.error("Error starting game:", e);
-                alert("Error: " + e.message);
-            }
+            document.getElementById('start-screen').style.display = 'none';
+            document.getElementById('hud').style.display = 'block';
+            gameState.started = true;
+            console.log("Game started, requesting pointer lock...");
+            setTimeout(() => {
+                try {
+                    document.body.requestPointerLock();
+                } catch(e) {
+                    console.log("Pointer lock failed:", e);
+                }
+            }, 100);
         }
 
         function tryPickupFlag() {
