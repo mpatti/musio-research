@@ -271,7 +271,7 @@
         <h1>STATION</h1>
         <div class="subtitle">CAPTURE THE FLAG</div>
         <div class="tagline">Space Station CTF • 5v5 Multiplayer</div>
-        <button id="start-btn" type="button">DEPLOY</button>
+        <button id="start-btn" type="button" onclick="startGame()">DEPLOY</button>
     </div>
     
     <div id="ui-overlay">
@@ -352,6 +352,20 @@
         };
         
         console.log("Script loaded, THREE defined:", typeof THREE !== 'undefined');
+
+        // Start game function - defined early so onclick works
+        window.startGame = function() {
+            console.log("Starting game...");
+            document.getElementById('start-screen').style.display = 'none';
+            document.getElementById('hud').style.display = 'block';
+            if (typeof gameState !== 'undefined') {
+                gameState.started = true;
+            }
+            setTimeout(function() { 
+                try { document.body.requestPointerLock(); } 
+                catch(e) { console.log("Pointer lock failed:", e); } 
+            }, 100);
+        };
 
         const GAME_CONFIG = {
             gameTime: 15 * 60,
