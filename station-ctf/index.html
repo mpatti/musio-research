@@ -5,7 +5,7 @@
     <title>Station CTF</title>
     <style>
         body { margin: 0; overflow: hidden; background: #000; font-family: sans-serif; }
-        #start { position: fixed; inset: 0; background: #0a0a12; display: flex; align-items: center; justify-content: center; flex-direction: column; z-index: 100; }
+        #start { position: fixed; inset: 0; background: #0a0a12; display: flex; align-items: center; justify-content: center; flex-direction: column; z-index: 100; visibility: visible; }
         #start h1 { color: #00f0ff; font-size: 4em; margin: 0; }
         #start p { color: #ff00aa; font-size: 1.5em; margin: 10px 0 30px; }
         #start button { font-size: 1.5em; padding: 15px 50px; background: #00f0ff; border: none; cursor: pointer; }
@@ -26,11 +26,11 @@
     <canvas id="game"></canvas>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
-        // Debug - check if THREE loaded
-        if (typeof THREE === 'undefined') {
-            document.body.innerHTML = '<h1 style="color:red;padding:50px">Error: THREE.js failed to load. Check your internet connection.</h1>';
-            throw new Error('THREE not loaded');
-        }
+        // Global error handler
+        window.onerror = function(msg, url, line) {
+            document.body.innerHTML = '<div style="color:white;padding:50px;font-family:monospace"><h1>Error</h1><p>' + msg + '</p><p>Line: ' + line + '</p></div>';
+            return true;
+        };
         
         const btn = document.getElementById('btn');
         const startDiv = document.getElementById('start');
