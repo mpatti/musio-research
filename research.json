@@ -1,9 +1,58 @@
 {
-  "lastUpdated": "2026-03-17T14:00:00Z",
-  "note": "Morning research - March 17, 2026, 9:00 AM ET. Web search unavailable (no Brave API key). Retained key items from March 16. UK copyright reform deadline is TOMORROW (March 18). Key items from March 16: Concord acquires Ninja Tune. Spotify launches Taste Profile (users can edit algorithm). Quincy Jones estate catalog sale. Too Lost strikes nine-figure round. TikTok Radio launches on iHeartRadio. iHeartRadio says it won't play AI music or use AI personalities.",
+  "lastUpdated": "2026-03-17T18:00:00Z",
+  "note": "Midday research - March 17, 2026, 1:00 PM ET. Billboard AI news: Tilly Norwood AI actress releases music video, SZA calls AI 'war', UMG earnings strong, WMG CEO outlines AI strategy. UK copyright reform deadline is TOMORROW (March 18).",
   "insightTech": "AI music landscape shifting: Nvidia enters with Fugatto - 2.5B param transformer that can create novel sounds (trumpet barking, sax meowing), generate singing voices from text, modify songs by adding/removing instruments, change voice accents/emotions. Uses ComposableART technique for combining instructions. Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. Google and Apple now embedding AI music in core apps. UNESCO warns 24% income decline for music creators.",
   "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
   "research": [
+    {
+      "date": "2026-03-17",
+      "source": "Billboard",
+      "title": "AI-Generated 'Actress' Tilly Norwood Drops Music Video for 'Take the Lead'",
+      "summary": "AI-generated virtual actress Tilly Norwood releases music video, declaring 'I'm just a tool, but I've got life' - testing boundaries of AI-generated 'artists'.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-17",
+      "source": "Billboard",
+      "title": "SZA Says She's 'At War Because of AI,' Slams 'Weird, Stereotypical Struggle Music'",
+      "summary": "SZA speaks out against AI-generated music, calling the situation 'war' and criticizing AI-generated music as 'weird, stereotypical struggle music.'",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-17",
+      "source": "Billboard",
+      "title": "Google Pulled Into AI Music Litigation as Indie Artists Claim Lyria 3 Stole YouTube Songs",
+      "summary": "Indie artists file lawsuit alleging Google used their YouTube music catalog to train Lyria 3 AI without permission - expanding legal front in AI copyright battles.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-17",
+      "source": "Billboard",
+      "title": "UMG 2025 Earnings: Strong Q4 ($4.19B, +10.6% YoY), Shelves U.S. Stock Offering",
+      "summary": "Universal Music reports strong Q4 results, discusses Downtown deal and AI plans. Company shelved U.S. stock offering citing market conditions.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-17",
+      "source": "Billboard",
+      "title": "Warner Music CEO Robert Kyncl: 'Now is the Time to Deliver' on AI Monetization",
+      "summary": "Warner Music CEO tells investors company must deliver strategic growth and AI monetization. Discussed streaming price hikes and AI opportunities.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-17",
+      "source": "Billboard",
+      "title": "Suno CEO Says AI Music Company Hits 2M Paid Subscribers, $300M ARR",
+      "summary": "Suno announces 2 million paid subscribers and $300M annual recurring revenue - major milestone for AI music sector.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-17",
+      "source": "Billboard",
+      "title": "Google Acquires AI Music Startup ProducerAI",
+      "summary": "Google acquires ProducerAI, strengthening its position in the AI music generation market.",
+      "category": "business"
+    },
     {
       "date": "2026-03-16",
       "source": "Music Business Worldwide",
