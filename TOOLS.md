@@ -35,6 +35,16 @@ Things like:
 
 Skills are shared. Your setup is yours. Keeping them apart means you can update skills without losing your notes, and share skills without leaking your infrastructure.
 
+## API Keys
+
+### Web Search
+- **Serper (Google search)**: `8339a1ffd9c6d69e68a7247eb72428c7586fa095`
+  - Use: `curl -s -X POST "https://google.serper.dev/search" -H "X-API-KEY: <key>" -H "Content-Type: application/json" -d '{"q":"query","numResults":10}'`
+
+### Twitter/X
+- **X.com Bearer Token**: `AAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAA:RxcmURAA6D7NVhl2fg4aYK3K590=ExmU9LvHof5QITvF04ONVxEBmPQPgDqAXTfsGhOINO9pHC6IO7`
+  - Note: Requires proper OAuth setup — may need additional keys
+
 ## Messaging Targets
 
 - Telegram DM (user): `7444832077`
