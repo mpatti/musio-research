@@ -41,9 +41,13 @@ Skills are shared. Your setup is yours. Keeping them apart means you can update 
 - **Serper (Google search)**: `8339a1ffd9c6d69e68a7247eb72428c7586fa095`
   - Use: `curl -s -X POST "https://google.serper.dev/search" -H "X-API-KEY: <key>" -H "Content-Type: application/json" -d '{"q":"query","numResults":10}'`
 
-### Twitter/X
-- **X.com Bearer Token**: `AAAAAAAAAAAAAAAAAAAAAEAAAAIAAAAA:RxcmURAA6D7NVhl2fg4aYK3K590=ExmU9LvHof5QITvF04ONVxEBmPQPgDqAXTfsGhOINO9pHC6IO7`
-  - Note: Requires proper OAuth setup — may need additional keys
+### Twitter/X (OAuth 1.0a)
+- **Consumer Key**: `f5UzmEp6J4WxUthsG2fIHaeKy`
+- **Consumer Secret**: `pRVCVLaiGwmUjgR8IW3CL4bNp7BAI4FtkjNEgV9flxc3dqtvK6`
+- **Access Token**: `15847656-27kiwhcq5ms2Qqy2XVKR4UefVpnrSqObZqXno0cLw`
+- **Access Token Secret**: `Xb38cb8ds2o6KgMl7gLdgDvGpFUPYSTDfRJmWKZa7Ch5u`
+- **Account**: @mpatti (Mike Patti)
+- **Note**: Free tier — search works, some endpoints may be rate limited
 
 ## Messaging Targets
 
