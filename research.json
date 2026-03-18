@@ -1,11 +1,39 @@
 {
   "lastUpdated": "2026-03-18T13:00:00Z",
-  "note": "Morning research - March 18, 2026, 9:00 AM ET. UK copyright reform deadline TODAY - government weighs commercial research exception for AI training on copyrighted music. Key ongoing: Suno/WMG & Udio major label licensing deals complete, Nvidia Fugatto launch, Google Lyria 3 indie lawsuit, GEMA vs Suno Munich hearing (outcome pending), ElevenLabs $500M raise at $11B, Suno 2M subs/$300M ARR milestone.",
+  "note": "Midday research - March 18, 2026, 1:00 PM ET. UK copyright reform deadline TODAY - government weighs commercial research exception for AI training on copyrighted music. IFPI reports global recorded music revenues SURPASS $30B for first time (2025). RIAA Chief Legal Officer Ken Doroshow retiring after 10 years. Bravado/UMG leadership refresh. Key ongoing: Suno/WMG & Udio licensing deals done, Nvidia Fugatto launch, Google Lyria 3 indie lawsuit, GEMA vs Suno Munich hearing (outcome pending), ElevenLabs $500M raise at $11B, Suno 2M subs/$300M ARR milestone.",
   "insightTech": "AI music landscape shifting: Nvidia enters with Fugatto - 2.5B param transformer that can create novel sounds (trumpet barking, sax meowing), generate singing voices from text, modify songs by adding/removing instruments, change voice accents/emotions. Uses ComposableART technique for combining instructions. Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. Google and Apple now embedding AI music in core apps. UNESCO warns 24% income decline for music creators.",
-  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe.",
+  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. IFPI reports global recorded music CROSSES $30B for first time (2025) - structural resilience even as AI reshapes creation. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe. RIAA leadership transition at a key moment for AI policy navigation.",
   "research": [
     {
-      "date": "2026-03-17",
+      "date": "2026-03-18",
+      "source": "Billboard",
+      "title": "IFPI Global Report 2026: Recorded Music Revenues Surpass $30 Billion For First Time",
+      "summary": "Global recorded music revenues cross $30B threshold for first time in 2025 - landmark milestone for the industry despite AI disruption.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-18",
+      "source": "Music Business Worldwide",
+      "title": "Ken Doroshow to retire as Chief Legal Officer of RIAA after 10 years",
+      "summary": "RIAA's long-time Chief Legal Officer Ken Doroshow retiring after a decade. SVP Jacob Tracer to assume role on acting basis as trade body navigates evolving legal and regulatory landscape.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-18",
+      "source": "Music Business Worldwide",
+      "title": "Matt Young named CEO of UMG's Bravado as Dan Goldberg and Eric Mackay join leadership team",
+      "summary": "Universal Music's global merch and artist services division Bravado gets new CEO and refreshed leadership team.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-18",
+      "source": "Billboard",
+      "title": "Mark Cuban: Music Is 'The Worst Industry Ever' (And How Artists Can Still Win)",
+      "summary": "Mark Cuban doubles down on harsh take of music industry, offers advice on how artists can still succeed despite structural challenges.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-18",
       "source": "Billboard",
       "title": "AI-Generated 'Actress' Tilly Norwood Drops Music Video for 'Take the Lead'",
       "summary": "AI-generated virtual actress Tilly Norwood releases music video, declaring 'I'm just a tool, but I've got life' - testing boundaries of AI-generated 'artists'.",
