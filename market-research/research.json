@@ -1,0 +1,77 @@
+{
+  "lastUpdated": "2026-03-19T17:00:00Z",
+  "period": "midday",
+  "sources": ["Music Business Worldwide", "TechCrunch", "The Verge"],
+  "stories": [
+    {
+      "headline": "ElevenLabs raises $500M at $11B valuation — triples valuation in under a year",
+      "category": "funding",
+      "summary": "ElevenLabs (Eleven Music, Suno rival) closes $500M Series D led by Sequoia at $11B valuation. Total raised: $781M across 5 rounds since 2022. Already has licensing deals with Merlin and Kobalt. Plans global expansion to 15+ cities.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/elevenlabs-creator-of-suno-rival-eleven-music-raises-500m-at-11bn-valuation/",
+      "date": "2026-03-19"
+    },
+    {
+      "headline": "UK gov't considers 'commercial research exception' for AI training on copyrighted music",
+      "category": "policy",
+      "summary": "UK government weighing proposal to let AI companies train on copyrighted music without permission, provided they license before commercial launch. Microsoft, Google, Meta pushed for it. BPI calls it 'deeply troubling.' March 18 parliamentary deadline. Culture Secretary reportedly opposed. Lords committee published scathing report — creative industries (£124B/2.4M jobs) vs AI sector (£12B/86K jobs).",
+      "source": "Music Business Worldwide / The Times",
+      "url": "https://www.musicbusinessworldwide.com/uk-government-weighs-commercial-research-exception-that-could-let-ai-companies-train-on-copyrighted-music-without-permission-report/",
+      "date": "2026-03-19"
+    },
+    {
+      "headline": "Spotify launches AI prompt-based playlist personalization",
+      "category": "product",
+      "summary": "Spotify rolling out feature letting users 'steer the algorithm' using AI text prompts to shape playlist recommendations. Described as part of broader shift in how Spotify approaches personalization.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/spotify-to-let-users-steer-the-algorithm-by-personalizing-playlists-with-ai-prompts/",
+      "date": "2026-03-19"
+    },
+    {
+      "headline": "Musixmatch launches Music Lens — AI analytics agent for catalog insights",
+      "category": "product",
+      "summary": "Musixmatch launches AI-powered 'Music Lens' tool for publishers, labels, and creators to extract actionable insights from music catalogs. Built specifically for the industry, not generic AI.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/musixmatch-launches-music-lens-an-ai-agent-that-transforms-catalogs-into-actionable-insights-for-publishers-labels-and-creators/",
+      "date": "2026-03-19"
+    },
+    {
+      "headline": "Major labels vs Suno lawsuit intensifies",
+      "category": "legal",
+      "summary": "Record companies (UMG, Warner, Sony) suing AI music platform Suno continue to escalate the case. Major labels turning up pressure on the startup. Key copyright and fair use arguments remain unresolved.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/3-things-you-might-have-missed-in-the-major-labels-suno-lawsuit/",
+      "date": "2026-03-19"
+    },
+    {
+      "headline": "Cloudflare launches pay-to-access tool for content owners vs AI crawlers",
+      "category": "infrastructure",
+      "summary": "Cloudflare allowing content owners to charge AI companies for access. Universal Music applauds the move as potential new licensing marketplace. Could set precedent for how AI cos pay for training data.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/universal-music-applauds-cloudflares-move-that-allows-content-owners-to-charge-ai-companies-for-access/",
+      "date": "2026-03-19"
+    },
+    {
+      "headline": "Australia rejects AI training copyright exemption — opts for licensing regime",
+      "category": "policy",
+      "summary": "Australia will not exempt AI training from copyright laws. Instead moving to licensing framework between AI developers and rightsholders. Contrast with UK's pending decision.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/australia-rejects-proposal-that-would-have-exempted-ai-training-from-copyright-laws/",
+      "date": "2026-03-19"
+    },
+    {
+      "headline": "Warner Music Brazil revives samba legend Cleber Augusto's voice via AI",
+      "category": "ai_voice",
+      "summary": "Warner Music Brazil uses AI to recreate voice of samba legend Cleber Augusto, who lost his voice to throat cancer surgery 20+ years ago. Example of legacy artist voice cloning with rightsholder involvement.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/warner-music-brazil-brings-back-voice-of-samba-legend-cleber-augusto-through-ai/",
+      "date": "2026-03-19"
+    }
+  ],
+  "themes": {
+    "funding_momentum": "Major funding continues flowing into AI audio — ElevenLabs $11B is the latest landmark. Competition between Suno, Udio, and Eleven Music heating up.",
+    "policy_pivotal": "UK decision (March 18 deadline) could reshape AI music training economics globally. Australia taking a different path via mandatory licensing.",
+    "legal_fragments": "Courts split on fair use for AI training — Anthropic books ruling vs ongoing Suno case. No clear precedent yet.",
+    "industry_adoption": "Major labels and platforms (Spotify, Musixmatch, Warner) actively deploying AI as product features and catalog tools, not just被动 resisting."
+  }
+}
