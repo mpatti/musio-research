@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-19T13:00:00Z",
-  "note": "Morning research - March 19, 2026, 9:00 AM ET. BIG HEADLINES: BMG sues Anthropic ($380B valuation built on 'stolen copyrighted works') - major escalation beyond music-AI into broad AI copyright. Lucian Grainge keynoted Nvidia GTC - first music exec there, doubles down on 'I love disruption.' IFPI Global Report confirms: global recorded music hit $31.7B in 2025 (+6.4% YoY), paid subs at 837M. Tina Turner catalog acquired by Pophouse/BMG. Tencent Music Q4 call: new WMG deal, Ed Sheeran collab, 10M AI music production users. Billboard publishes AI music timeline (Fake Drake to blockbuster settlements).",
-  "insightTech": "BMG vs Anthropic signals copyright wars entering a new phase - AI companies' broader valuations now at stake, not just training data. Lucian Grainge at Nvidia GTC suggests major labels embracing AI as infrastructure play, not just threat. Tencent Music's 10M AI music production users signals Asia as fast-moving AI music market. Nvidia continues positioning as AI audio infrastructure leader.",
-  "insightStrategy": "Musio operating in a market where industry revenues hit record $31.7B despite AI disruption - structural resilience confirmed. BMG vs Anthropic case could set precedent for AI company liability far beyond music. Watch: if Anthropic loses, all AI music training claims get stronger leverage. Grainge's bullishness at Nvidia suggests majors are making strategic bets on AI partnerships. Tencent Music 10M AI users = Asian market moving fast on AI music tools.",
+  "lastUpdated": "2026-03-19T22:00:00Z",
+  "note": "Evening research - March 19, 2026, 5:00 PM ET. Key focus: UMG Q4 earnings confirm strong growth ($4.19B, +10.6% YoY). BMG sues Anthropic ($380B valuation built on 'stolen copyrighted works') - major escalation of copyright wars. Lucian Grainge keynotes Nvidia GTC as first music exec, doubles down on AI partnerships. Suno hits 2M paid subs, $300M ARR. Nvidia launches Fugatto audio generator. iHeartRadio takes firm anti-AI music stance. South Korea's music industry declares 'war' on AI copyright infringement. Global recorded music hit record $31.7B in 2025 despite AI disruption.",
+  "insightTech": "BMG vs Anthropic signals copyright wars escalating - AI companies' $380B+ valuations now directly at stake. Nvidia Fugatto (2.5B param audio transformer) pushes boundaries of generative audio. Google acquires ProducerAI, expands Lyria 3 presence. Suno hitting 2M paid subs shows consumer demand for AI music tools is real and growing. Apple Music introduces AI song tagging as first formal platform regulation. Spotify 'Taste Profile' lets users shape their own recommendations.",
+  "insightStrategy": "Musio operating in market where industry hit record $31.7B despite AI disruption - structural resilience confirmed. Major labels (UMG, WMG) are shifting from suing AI companies to licensing them (Suno, Udio, KLAY deals). BMG vs Anthropic case could set precedent for AI company liability that affects entire sector. Tencent Music's 10M AI music production users signals Asia as fast-moving market. Grainge's bullishness at Nvidia GTC suggests majors making strategic bets on AI infrastructure. Watch: Suno $300M ARR validates AI music market; if growth continues, licensing economics become dominant story.",
   "research": [
     {
       "date": "2026-03-19",
@@ -293,7 +293,7 @@
     },
     {
       "date": "2026-02-25",
-      "source": "Music Business Worldwide",
+      "source": "UN News",
       "title": "Artist representatives launch 'Say No To Suno' campaign",
       "summary": "Campaign against AI music generators, arguing 'AI slop dilutes the royalty pools of legitimate artists.'",
       "category": "trends"
