@@ -1,14 +1,56 @@
 {
-  "lastUpdated": "2026-03-18T22:00:00Z",
-  "note": "Evening research - March 18, 2026, 6:00 PM ET. UK copyright reform deadline TODAY - government weighs commercial research exception for AI training on copyrighted music (outcome pending/confirmation needed). IFPI reports global recorded music revenues SURPASS $30B for first time (2025). RIAA Chief Legal Officer Ken Doroshow retiring after 10 years. Bravado/UMG leadership refresh. Key ongoing: Suno/WMG & Udio licensing deals done, Nvidia Fugatto launch, Google Lyria 3 indie lawsuit, GEMA vs Suno Munich hearing (outcome pending), ElevenLabs $500M raise at $11B, Suno 2M subs/$300M ARR milestone.",
-  "insightTech": "AI music landscape shifting: Nvidia enters with Fugatto - 2.5B param transformer that can create novel sounds (trumpet barking, sax meowing), generate singing voices from text, modify songs by adding/removing instruments, change voice accents/emotions. Uses ComposableART technique for combining instructions. Suno/Udio settled lawsuits, now paying licensing fees. ElevenLabs enters the race with $500M raise at $11B valuation. Major labels launching licensed AI platforms. Stock music market being commoditized by AI generators. Google and Apple now embedding AI music in core apps. UNESCO warns 24% income decline for music creators.",
-  "insightStrategy": "Musio+ Complete differentiates through bundling real instruments from multiple developers - AI can't replicate authentic human performance. Need visibility push before launch - Musio not appearing in current AI music discussions. Consider press outreach. Artist-led campaigns like 'Say No To Suno' emerging. Major labels partnering with AI companies (UMG + NVIDIA). Suno/Udio now seeking to join industry through licensing deals after lawsuits. Spotify now letting users 'steer algorithm' with AI prompts. UMG reports strong Q4 ($4.19B, +10.6% YoY) - industry remains robust despite AI disruption concerns. IFPI reports global recorded music CROSSES $30B for first time (2025) - structural resilience even as AI reshapes creation. GEMA vs Suno case outcome could set precedent for AI music licensing in Europe. RIAA leadership transition at a key moment for AI policy navigation.",
+  "lastUpdated": "2026-03-19T13:00:00Z",
+  "note": "Morning research - March 19, 2026, 9:00 AM ET. BIG HEADLINES: BMG sues Anthropic ($380B valuation built on 'stolen copyrighted works') - major escalation beyond music-AI into broad AI copyright. Lucian Grainge keynoted Nvidia GTC - first music exec there, doubles down on 'I love disruption.' IFPI Global Report confirms: global recorded music hit $31.7B in 2025 (+6.4% YoY), paid subs at 837M. Tina Turner catalog acquired by Pophouse/BMG. Tencent Music Q4 call: new WMG deal, Ed Sheeran collab, 10M AI music production users. Billboard publishes AI music timeline (Fake Drake to blockbuster settlements).",
+  "insightTech": "BMG vs Anthropic signals copyright wars entering a new phase - AI companies' broader valuations now at stake, not just training data. Lucian Grainge at Nvidia GTC suggests major labels embracing AI as infrastructure play, not just threat. Tencent Music's 10M AI music production users signals Asia as fast-moving AI music market. Nvidia continues positioning as AI audio infrastructure leader.",
+  "insightStrategy": "Musio operating in a market where industry revenues hit record $31.7B despite AI disruption - structural resilience confirmed. BMG vs Anthropic case could set precedent for AI company liability far beyond music. Watch: if Anthropic loses, all AI music training claims get stronger leverage. Grainge's bullishness at Nvidia suggests majors are making strategic bets on AI partnerships. Tencent Music 10M AI users = Asian market moving fast on AI music tools.",
   "research": [
+    {
+      "date": "2026-03-19",
+      "source": "MBW",
+      "title": "BMG sues Anthropic for infringement, alleging AI firm's $380B valuation was built on 'stolen copyrighted works'",
+      "summary": "BMG files lawsuit against Anthropic claiming the AI company's massive $380B valuation was built on copyrighted works used without license - a major escalation of copyright wars beyond the music industry into AI company valuation itself.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-19",
+      "source": "IFPI / Google News",
+      "title": "Global recorded music revenues hit $31.7B in 2025, up 6.4% YoY; paid music subscriptions reach 837M",
+      "summary": "IFPI Global Music Report 2026 confirms global recorded music revenues reached $31.7B in 2025, up 6.4% year-over-year. Paid music subscriptions hit 837 million users globally - record numbers despite AI disruption.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-19",
+      "source": "MBW",
+      "title": "Sir Lucian Grainge becomes first music exec at Nvidia GTC conference: 'I Love Disruption'",
+      "summary": "UMG CEO Sir Lucian Grainge delivered remarks at Nvidia GTC 2026 (Nvidia's AI conference, dubbed the 'Super Bowl of AI'), making him the first music executive to keynote the event. He declared 'I love disruption' - signaling major label strategic embrace of AI infrastructure partnerships.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-19",
+      "source": "MBW",
+      "title": "Tina Turner music interests acquired by Pophouse in 'strategic transaction' with BMG",
+      "summary": "Pophouse acquires Tina Turner's music interests in a strategic transaction with BMG - continuing consolidation trend in catalog ownership and artist legacy investments.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-19",
+      "source": "MBW",
+      "title": "Tencent Music Q4 earnings: new WMG deal, Ed Sheeran collaboration, 10M AI music production users",
+      "summary": "Tencent Music Q4 earnings call revealed: new Warner Music Group licensing deal, Ed Sheeran collaboration in the pipeline, and platform now has 10 million AI music production users - massive Asian market AI music adoption.",
+      "category": "business"
+    },
     {
       "date": "2026-03-18",
       "source": "Billboard",
-      "title": "IFPI Global Report 2026: Recorded Music Revenues Surpass $30 Billion For First Time",
-      "summary": "Global recorded music revenues cross $30B threshold for first time in 2025 - landmark milestone for the industry despite AI disruption.",
+      "title": "A Short History of AI-Generated Music: From 'Fake Drake' to Blockbuster Legal Settlements",
+      "summary": "Billboard publishes comprehensive timeline of AI-generated music evolution - from the viral 'Fake Drake' track that sparked the conversation to the landmark Suno/Udio/WMG settlement agreements, mapping the industry's journey from crisis to regulated market.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-18",
+      "source": "IFPI",
+      "title": "Global recorded music revenues surpass $30B for first time (2025)",
+      "summary": "IFPI Global Music Report confirms global recorded music revenues cross $30B threshold for first time in 2025 - landmark milestone for the industry despite AI disruption.",
       "category": "business"
     },
     {
@@ -85,14 +127,14 @@
       "date": "2026-03-16",
       "source": "Music Business Worldwide",
       "title": "Concord acquires UK-based indie label Ninja Tune",
-      "summary": "Concord acquires prominent London-based independent label Ninja Tune, expanding its presence in the UK and Europe. The deal brings Ninja Tune's recorded music operations and publishing arm Just Isn't Music under Concord's umbrella. Founded in 1990 by Coldcut, Ninja Tune's catalog includes The Prodigy, Soulwax, Bonobo, ODESZA, Flying Lotus and many more. The label will continue operating under current leadership.",
+      "summary": "Concord acquires prominent London-based independent label Ninja Tune, expanding its presence in the UK and Europe. Deal brings Ninja Tune's catalog including The Prodigy, Soulwax, Bonobo, ODESZA, Flying Lotus under Concord.",
       "category": "business"
     },
     {
       "date": "2026-03-16",
       "source": "Music Business Worldwide",
       "title": "Spotify to let users edit the algorithm behind their personalized recommendations with 'Taste Profile'",
-      "summary": "Spotify announces 'Taste Profile' - a new feature letting users see and shape the listening data driving their personalized recommendations. Initially available in beta for Premium users in New Zealand. Users can flag if the profile doesn't reflect their preferences and ask for more or less of something, or describe their current mood. Extends beyond listening data to include context like training or commuting habits.",
+      "summary": "Spotify announces 'Taste Profile' - new feature letting users see and shape the listening data driving their personalized recommendations. Initially beta for Premium users in New Zealand.",
       "category": "tools"
     },
     {
@@ -119,15 +161,8 @@
     {
       "date": "2026-03-16",
       "source": "Music Business Worldwide",
-      "title": "Scott Borchetta launches Borchetta Entertainment Group management division with Carly Pearce signing",
-      "summary": "Scott Borchetta departs from HYBE AMERICA and launches new management division with Carly Pearce signing.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-16",
-      "source": "Music Business Worldwide",
       "title": "Pharrell Williams legal battle with ex-Neptunes partner widens as Chad Hugo challenges credits on Rosalía and Latto tracks",
-      "summary": "Legal battle between Pharrell Williams and ex-Neptunes partner Chad Hugo widens. Amended filing expands Hugo's claims alleging he was left off songwriter credits on several tracks including those with Rosalía and Latto.",
+      "summary": "Legal battle between Pharrell Williams and ex-Neptunes partner Chad Hugo widens. Amended filing expands Hugo's claims alleging he was left off songwriter credits on several tracks.",
       "category": "business"
     },
     {
@@ -154,27 +189,6 @@
     {
       "date": "2026-03-12",
       "source": "Billboard",
-      "title": "Xania Monet's Manager Launches Label JV With Create, Supporting 'AI-Driven' & 'Traditional' Talent",
-      "summary": "Xania Monet's manager launches joint venture with Create Music Group, supporting both AI-driven and traditional talent - blending AI and conventional artist development.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-12",
-      "source": "Billboard",
-      "title": "AI Opt-In Is the Floor, Not the Ceiling: Artists Want Respect, Not Just Licenses",
-      "summary": "Guest column argues AI opt-in is insufficient - artists want meaningful partnership and respect, not just licensing deals.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-12",
-      "source": "Billboard",
-      "title": "iHeartRadio Won't Play AI Music or Use AI Generated Personalities",
-      "summary": "iHeartRadio exec says company won't play AI music or use AI generated personalities in staff memo - major radio broadcaster takes firm stance.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-12",
-      "source": "Billboard",
       "title": "AI Platform KLAY Signs Licensing Deals With UMG, WMG, Sony",
       "summary": "AI music platform KLAY signs licensing deals with all three major labels for recorded music and publishing rights - expanding licensed AI music ecosystem.",
       "category": "business"
@@ -189,15 +203,8 @@
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
-      "title": "80 artists generated $10M+ each from Spotify last year. Over 1,500 generated $1M+. Here's the full breakdown",
+      "title": "80 artists generated $10M+ each from Spotify last year. Over 1,500 generated $1M+",
       "summary": "Spotify published its annual Loud & Clear report showing 80 artists generated $10M+ each in 2025, with over 1,500 artists generating $1M+.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Dionne Warwick sues rights company over alleged 'pilfering of millions' in royalty income",
-      "summary": "Dionne Warwick sues Artists Rights Enforcement Corporation over alleged 'pilfering of millions' in royalty income.",
       "category": "business"
     },
     {
@@ -210,44 +217,16 @@
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
-      "title": "Bad Bunny beats copyright lawsuit over 'Enséñame a Bailar' sample",
-      "summary": "Producer's copyright claim over 'Un Verano Sin Ti' track ends in dismissal - significant win for the artist.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "The MLC and Pandora clash in opposition briefs as mechanical royalties battle nears decisive stage",
-      "summary": "Both filings landed in US District Court for Middle District of Tennessee as mechanical royalty battle escalates.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "UK government weighs commercial research exception for AI training on copyrighted music",
-      "summary": "UK government considering copyright exception that could let AI companies train on copyrighted music without permission. Lawmakers face March 18 deadline on copyright reform.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
       "title": "Indie artists sue Google, claiming YouTube used their catalog to train Lyria 3 AI",
-      "summary": "Independent artists have filed lawsuit against Google alleging YouTube used their music catalog to train Lyria 3 AI model without permission - expanding legal front in AI copyright battles.",
+      "summary": "Independent artists have filed lawsuit against Google alleging YouTube used their music catalog to train Lyria 3 AI model without permission.",
       "category": "trends"
     },
     {
       "date": "2026-03-11",
       "source": "Music Business Worldwide",
-      "title": "Live Nation confirms details of antitrust settlement with DOJ",
-      "summary": "Live Nation confirms details of antitrust settlement with US Department of Justice. Company set aside $280M for damages claims from states.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Steam faces legal action from UK's PRS over alleged unlicensed use of music in games",
-      "summary": "Gaming platform Steam sued by UK PRS for Music over alleged unlicensed use of music in games.",
-      "category": "business"
+      "title": "GEMA vs. Suno: Landmark AI music copyright case heard in Munich court",
+      "summary": "Oral proceedings in Munich court in copyright case brought by Germany's GEMA against AI music generator Suno - key test for AI copyright in Europe.",
+      "category": "trends"
     },
     {
       "date": "2026-03-11",
@@ -258,24 +237,10 @@
     },
     {
       "date": "2026-03-10",
-      "source": "Music Business Worldwide",
-      "title": "GEMA vs. Suno: Landmark AI music copyright case heard in Munich court today",
-      "summary": "Oral proceedings in Munich court in copyright case brought by Germany's GEMA against AI music generator Suno - key test for AI copyright in Europe. Outcome could set precedent for AI music licensing.",
+      "source": "Billboard",
+      "title": "iHeartRadio Won't Play AI Music or Use AI Generated Personalities",
+      "summary": "iHeartRadio exec says company won't play AI music or use AI generated personalities in staff memo - major radio broadcaster takes firm stance.",
       "category": "trends"
-    },
-    {
-      "date": "2026-03-10",
-      "source": "Billboard",
-      "title": "Apple Music Introduces Tagging for AI Songs, Its First Regulation on AI Use",
-      "summary": "Apple Music becomes latest platform to introduce AI song tagging - first formal regulation on AI use by the streaming giant. Tags are voluntary for labels and distributors.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-10",
-      "source": "Billboard",
-      "title": "Google's Gemini Launches New AI Music Model, Lyria 3",
-      "summary": "Google's Gemini introduces Lyria 3, its newest AI music generation model - major tech player deepening AI music capabilities.",
-      "category": "tools"
     },
     {
       "date": "2026-03-06",
@@ -290,13 +255,6 @@
       "title": "UMG generated $4.19B in Q4, up 10.6% YoY",
       "summary": "Universal Music's Q4 results driven by Taylor Swift, KPop Demon Hunters soundtrack, Olivia Dean and more - strong quarter for major label.",
       "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Robert Kyncl talks Suno, AI, value of music at Morgan Stanley",
-      "summary": "Warner Music Group CEO Robert Kyncl made the case for AI as opportunity at Morgan Stanley conference.",
-      "category": "trends"
     },
     {
       "date": "2026-03-06",
@@ -331,20 +289,6 @@
       "source": "Music Business Worldwide",
       "title": "ElevenLabs raises $500M at $11B valuation",
       "summary": "ElevenLabs raised $500M in latest round led by Sequoia Capital, reaching $11B valuation. Major entry into AI music market.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-26",
-      "source": "Billboard",
-      "title": "Suno hits 2M Paid Subscribers, $300M ARR",
-      "summary": "Suno announces 2 million paid subscribers and $300M annual recurring revenue - major milestone for AI music sector.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-26",
-      "source": "Music Ally",
-      "title": "Google buys ProducerAI (formerly Riffusion)",
-      "summary": "Google acquires ProducerAI, strengthening its position in the AI music generation market.",
       "category": "business"
     },
     {
