@@ -1,9 +1,30 @@
 {
-  "lastUpdated": "2026-03-19T22:00:00Z",
-  "note": "Evening research - March 19, 2026, 5:00 PM ET. Key focus: UMG Q4 earnings confirm strong growth ($4.19B, +10.6% YoY). BMG sues Anthropic ($380B valuation built on 'stolen copyrighted works') - major escalation of copyright wars. Lucian Grainge keynotes Nvidia GTC as first music exec, doubles down on AI partnerships. Suno hits 2M paid subs, $300M ARR. Nvidia launches Fugatto audio generator. iHeartRadio takes firm anti-AI music stance. South Korea's music industry declares 'war' on AI copyright infringement. Global recorded music hit record $31.7B in 2025 despite AI disruption.",
-  "insightTech": "BMG vs Anthropic signals copyright wars escalating - AI companies' $380B+ valuations now directly at stake. Nvidia Fugatto (2.5B param audio transformer) pushes boundaries of generative audio. Google acquires ProducerAI, expands Lyria 3 presence. Suno hitting 2M paid subs shows consumer demand for AI music tools is real and growing. Apple Music introduces AI song tagging as first formal platform regulation. Spotify 'Taste Profile' lets users shape their own recommendations.",
-  "insightStrategy": "Musio operating in market where industry hit record $31.7B despite AI disruption - structural resilience confirmed. Major labels (UMG, WMG) are shifting from suing AI companies to licensing them (Suno, Udio, KLAY deals). BMG vs Anthropic case could set precedent for AI company liability that affects entire sector. Tencent Music's 10M AI music production users signals Asia as fast-moving market. Grainge's bullishness at Nvidia GTC suggests majors making strategic bets on AI infrastructure. Watch: Suno $300M ARR validates AI music market; if growth continues, licensing economics become dominant story.",
+  "lastUpdated": "2026-03-20T14:00:00Z",
+  "note": "Morning research - March 20, 2026, 9:00 AM ET. Key focus: UK govt reverses AI training stance (major policy win for rights holders), Sony targets 135K+ artist deepfakes, Michael Smith pleads guilty to $8M AI streaming fraud (first US criminal case), Italy recorded music +10.7% YoY, SXSW London 2026 lineup announced. BMG vs Anthropic and Grainge at Nvidia GTC carry over from yesterday.",
+  "insightTech": "UK reversal is a significant policy win for music industry — government was leaning toward opt-out model, now back to opt-in. Sony's 135K deepfakes (Beyoncé, Queen, Harry Styles targeted) shows scale of impersonation problem — doubling from 75K a year ago. First US criminal prosecution for AI streaming fraud (Michael Smith, $8M) sets legal precedent. Italy growth (+10.7%) shows strong European streaming expansion.",
+  "insightStrategy": "UK policy reversal signals regulatory headwinds for AI companies in Europe — jurisdiction matters. Sony's deepfake takedown campaign is becoming a template for rights holder enforcement. Michael Smith guilty plea (reduced to 5-year max from 60) suggests DOJ is willing to prosecute AI-assisted fraud but with plea deal leverage. SXSW London launch (2026) signals new European showcase for emerging acts.",
   "research": [
+    {
+      "date": "2026-03-20",
+      "source": "MBW",
+      "title": "UK government reverses course, abandons plan to let AI companies train on copyrighted music without permission",
+      "summary": "UK Technology Secretary Liz Kendall announces government 'no longer has a preferred option' on AI copyright reform, reversing from earlier stance that would have allowed AI devs to train on copyrighted works unless rightsholders opted out. Major win for music industry and creative sector lobbying. Government will now pursue broader consultation rather than mandated exception.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-20",
+      "source": "MBW / BBC",
+      "title": "Sony Music targets 135,000+ deepfakes of its artists' music for removal from streaming platforms",
+      "summary": "Sony Music has asked streaming platforms to remove 135,000+ deepfake tracks impersonating its artists, including Beyoncé, Queen, and Harry Styles. Sony says this is likely only a fraction of the actual total. Dennis Kooker (Sony President, Global Digital) notes deepfakes cause 'direct commercial harm' and are 'demand-driven events' exploiting artist promotion cycles. Company flagged ~60,000 in the past year alone, up from 75,000 the prior year.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-19",
+      "source": "MBW",
+      "title": "Streaming fraud man who pocketed $8M using hundreds of thousands of AI songs streamed billions of times pleads guilty",
+      "summary": "Michael Smith of Cornelius, NC pleads guilty to one count of conspiracy to commit wire fraud in first-ever US criminal prosecution for AI-assisted streaming fraud. Smith used AI to generate thousands of fake songs, streamed them billions of times via bots, and diverted $8M in royalties from real artists. Facing up to 5 years prison (reduced from 60 years under initial charges). Must forfeit $8M+. Sentencing July 29.",
+      "category": "trends"
+    },
     {
       "date": "2026-03-19",
       "source": "MBW",
@@ -34,9 +55,23 @@
     },
     {
       "date": "2026-03-19",
-      "source": "MBW",
-      "title": "Tencent Music Q4 earnings: new WMG deal, Ed Sheeran collaboration, 10M AI music production users",
+      "source": "Billboard",
+      "title": "Tina Turner music interests acquired by Pophouse in 'strategic transaction' with BMG",
       "summary": "Tencent Music Q4 earnings call revealed: new Warner Music Group licensing deal, Ed Sheeran collaboration in the pipeline, and platform now has 10 million AI music production users - massive Asian market AI music adoption.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-20",
+      "source": "Billboard",
+      "title": "SXSW London reveals first musical acts for 2026 festival",
+      "summary": "SXSW announces first wave of musical acts for inaugural SXSW London festival in 2026, expanding the South by Southwest brand to Europe.",
+      "category": "business"
+    },
+    {
+      "date": "2026-03-20",
+      "source": "MBW",
+      "title": "Recorded music revenues in Italy grew +10.7% YoY in 2025; paid streaming revenues jumped 14.1% YoY",
+      "summary": "Italy's recorded music revenues grew 10.7% YoY in 2025, with paid streaming revenues up 14.1%. Paid subscriptions totaled EUR €234.4M ($269M), representing 69% of Italy's total streaming revenues - strong European growth story.",
       "category": "business"
     },
     {
