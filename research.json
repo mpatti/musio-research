@@ -1,9 +1,37 @@
 {
-  "lastUpdated": "2026-03-20T22:00:00Z",
-  "note": "Evening research - March 20, 2026, 5:00 PM ET. No fresh news today — web search unavailable due to missing Brave API key. UK policy reversal, Sony's 135K deepfake takedowns, Michael Smith $8M fraud guilty plea, Suno/WMG deal, BMG vs Anthropic lawsuit, Grainge at Nvidia GTC, Suno $300M ARR, Create Music $2.2B valuation, and Italy +10.7% growth remain the key stories. ACTION: configure BRAVE_API_KEY to enable fresh search in future cron runs.",
-  "insightTech": "UK reversal is a significant policy win for music industry — government was leaning toward opt-out model, now back to opt-in. Sony's 135K deepfakes (Beyoncé, Queen, Harry Styles targeted) shows scale of impersonation problem — doubling from 75K a year ago. First US criminal prosecution for AI streaming fraud (Michael Smith, $8M) sets legal precedent. Italy growth (+10.7%) shows strong European streaming expansion.",
-  "insightStrategy": "UK policy reversal signals regulatory headwinds for AI companies in Europe — jurisdiction matters. Sony's deepfake takedown campaign is becoming a template for rights holder enforcement. Michael Smith guilty plea (reduced to 5-year max from 60) suggests DOJ is willing to prosecute AI-assisted fraud but with plea deal leverage. Suno hitting $300M ARR with 2M paid subs shows the AI music market is real and growing fast despite pushback. Create Music Group at $2.2B valuation further validates the sector.",
+  "lastUpdated": "2026-03-27T13:00:00Z",
+  "note": "Morning research - March 27, 2026, 9:00 AM ET. Fresh signals: TIME reports AI slop flooding streaming, including impersonation/scam uploads and Deezer saying 50,000 AI tracks/day now account for 34% of new uploads; Google expands Lyria with Lyria 3 Pro for up-to-3-minute songs and more structured composition control; Suno keeps moving upmarket with MILO-1080, an AI-driven step sequencer aimed at producers; Moises/Water & Music survey says AI adoption is much higher among pros (78%) than hobbyists (60%), with stem separation far more common than full-song generation.",
+  "insightTech": "The AI-music stack is bifurcating: consumer-facing generation keeps scaling, but product momentum is shifting toward deeper workflow tools for musicians. Google is lengthening output and adding song-structure control in Lyria 3 Pro, while Suno is building DAW-adjacent interfaces like MILO-1080 for beatmakers and producers. Meanwhile, real usage data suggests practical utility still skews toward assistive tasks like stem separation rather than one-click full-song creation.",
+  "insightStrategy": "Market narrative is hardening around two simultaneous truths: AI music is becoming more powerful for legitimate creators, and the distribution layer is getting noisier and riskier. For Musio, that reinforces a positioning edge around authentic, high-quality instrument performance and credible musician workflows rather than generic prompt-to-song hype. Product/marketing should emphasize human control, real instruments, and trust/signal over slop—especially as platforms struggle with impersonation, spam, and AI upload volume.",
   "research": [
+    {
+      "date": "2026-03-26",
+      "source": "TIME",
+      "title": "AI Slop Is Flooding Streaming—and Musicians Are Fighting Back",
+      "summary": "TIME highlights rising AI-music impersonation and scam uploads. Deezer says 50,000 AI-generated tracks are uploaded daily, representing 34% of new music uploads, while Sony says it sought removal of 135,000+ AI songs impersonating its artists.",
+      "category": "trends"
+    },
+    {
+      "date": "2026-03-26",
+      "source": "Music Ally",
+      "title": "Google's Lyria goes 'Pro' with songs up to three minutes long",
+      "summary": "Google launches Lyria 3 Pro with support for songs up to three minutes plus better handling of intros, verses, choruses and bridges. It is available across Gemini, AI Studio, Vertex AI, Google Vids and ProducerAI.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-03-24",
+      "source": "Music Ally",
+      "title": "Suno's latest move is MILO-1080 – an AI-driven step sequencer",
+      "summary": "Suno introduces MILO-1080, a 16-track AI-assisted step sequencer in Labs. The move signals Suno is targeting producers and beatmakers with deeper workflow tools, not just casual text-to-music users.",
+      "category": "tools"
+    },
+    {
+      "date": "2026-03-23",
+      "source": "Music Ally",
+      "title": "Moises and OC&C publish new reports exploring AI music trends",
+      "summary": "Moises/Water & Music survey of 1,525 musicians finds 78% of professional musicians use AI versus 60% of hobbyists. Stem separation is the top use case (71% of AI users), while only 24% report using AI to generate full songs.",
+      "category": "trends"
+    },
     {
       "date": "2026-03-20",
       "source": "MBW",
