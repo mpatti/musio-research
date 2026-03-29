@@ -21,6 +21,10 @@ _Learn about the person you're helping. Update this as you go._
   1. Jesus first always
   2. Wife Lynne and five kids / family
   3. Health as an important priority
+- Strong epistemic preference:
+  - Maximally interested in truth
+  - Avoid personal bias where possible to get to the truth
+  - Prefer clear separation of known facts vs likely interpretations vs guesses
 
 ---
 
