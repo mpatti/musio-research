@@ -1,372 +1,126 @@
 {
-  "lastUpdated": "2026-03-27T13:00:00Z",
-  "note": "Morning research - March 27, 2026, 9:00 AM ET. Fresh signals: TIME reports AI slop flooding streaming, including impersonation/scam uploads and Deezer saying 50,000 AI tracks/day now account for 34% of new uploads; Google expands Lyria with Lyria 3 Pro for up-to-3-minute songs and more structured composition control; Suno keeps moving upmarket with MILO-1080, an AI-driven step sequencer aimed at producers; Moises/Water & Music survey says AI adoption is much higher among pros (78%) than hobbyists (60%), with stem separation far more common than full-song generation.",
-  "insightTech": "The AI-music stack is bifurcating: consumer-facing generation keeps scaling, but product momentum is shifting toward deeper workflow tools for musicians. Google is lengthening output and adding song-structure control in Lyria 3 Pro, while Suno is building DAW-adjacent interfaces like MILO-1080 for beatmakers and producers. Meanwhile, real usage data suggests practical utility still skews toward assistive tasks like stem separation rather than one-click full-song creation.",
-  "insightStrategy": "Market narrative is hardening around two simultaneous truths: AI music is becoming more powerful for legitimate creators, and the distribution layer is getting noisier and riskier. For Musio, that reinforces a positioning edge around authentic, high-quality instrument performance and credible musician workflows rather than generic prompt-to-song hype. Product/marketing should emphasize human control, real instruments, and trust/signal over slop—especially as platforms struggle with impersonation, spam, and AI upload volume.",
-  "research": [
+  "lastUpdated": "2026-03-29T04:40:00Z",
+  "note": "Refreshed March 29, 2026 with newer/verified signals emphasizing primary or close-to-primary sources. This update separates observed facts from interpretation for Musio.",
+  "insightTech": "Verified product momentum continues to favor longer-form and more controllable AI music generation, but creator adoption data still points to assistive workflow tools winning broader trust than full-song generation. Google expanded Lyria 3 into Lyria 3 Pro with up to three-minute tracks and structure-aware prompting; creator-survey data from Moises/Water & Music shows stem separation far outpacing full-song generation in practical usage.",
+  "insightStrategy": "For Musio, the strongest strategic lane remains: real-performer sound, controlled creator workflow, and clean rights posture. The market is getting bigger and noisier at the same time. If the goal is to grow to sell, Musio likely becomes more valuable by looking like trusted infrastructure for serious creators and downstream commercial use, not like another generic prompt-to-song app.",
+  "facts": [
     {
-      "date": "2026-03-26",
-      "source": "TIME",
-      "title": "AI Slop Is Flooding Streaming—and Musicians Are Fighting Back",
-      "summary": "TIME highlights rising AI-music impersonation and scam uploads. Deezer says 50,000 AI-generated tracks are uploaded daily, representing 34% of new music uploads, while Sony says it sought removal of 135,000+ AI songs impersonating its artists.",
-      "category": "trends"
+      "date": "2026-03-25",
+      "source": "Google Workspace Updates",
+      "title": "Lyria 3 Pro adds up to three-minute tracks and song-structure control",
+      "summary": "Google said Lyria 3 Pro lets users create tracks up to three minutes long and better prompt for intros, verses, choruses, and bridges. The feature rolled out in Gemini on March 25.",
+      "category": "tools",
+      "url": "https://workspaceupdates.googleblog.com/2026/03/create-longer-musical-tracks-in-gemini-app-with-Lyria-3-Pro.html",
+      "authority": "primary"
     },
     {
-      "date": "2026-03-26",
-      "source": "Music Ally",
-      "title": "Google's Lyria goes 'Pro' with songs up to three minutes long",
-      "summary": "Google launches Lyria 3 Pro with support for songs up to three minutes plus better handling of intros, verses, choruses and bridges. It is available across Gemini, AI Studio, Vertex AI, Google Vids and ProducerAI.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-24",
-      "source": "Music Ally",
-      "title": "Suno's latest move is MILO-1080 – an AI-driven step sequencer",
-      "summary": "Suno introduces MILO-1080, a 16-track AI-assisted step sequencer in Labs. The move signals Suno is targeting producers and beatmakers with deeper workflow tools, not just casual text-to-music users.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-23",
-      "source": "Music Ally",
-      "title": "Moises and OC&C publish new reports exploring AI music trends",
-      "summary": "Moises/Water & Music survey of 1,525 musicians finds 78% of professional musicians use AI versus 60% of hobbyists. Stem separation is the top use case (71% of AI users), while only 24% report using AI to generate full songs.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-20",
-      "source": "MBW",
-      "title": "UK government reverses course, abandons plan to let AI companies train on copyrighted music without permission",
-      "summary": "UK Technology Secretary Liz Kendall announces government 'no longer has a preferred option' on AI copyright reform, reversing from earlier stance that would have allowed AI devs to train on copyrighted works unless rightsholders opted out. Major win for music industry and creative sector lobbying. Government will now pursue broader consultation rather than mandated exception.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-20",
-      "source": "MBW / BBC",
-      "title": "Sony Music targets 135,000+ deepfakes of its artists' music for removal from streaming platforms",
-      "summary": "Sony Music has asked streaming platforms to remove 135,000+ deepfake tracks impersonating its artists, including Beyoncé, Queen, and Harry Styles. Sony says this is likely only a fraction of the actual total. Dennis Kooker (Sony President, Global Digital) notes deepfakes cause 'direct commercial harm' and are 'demand-driven events' exploiting artist promotion cycles. Company flagged ~60,000 in the past year alone, up from 75,000 the prior year.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-19",
-      "source": "MBW",
-      "title": "Streaming fraud man who pocketed $8M using hundreds of thousands of AI songs streamed billions of times pleads guilty",
-      "summary": "Michael Smith of Cornelius, NC pleads guilty to one count of conspiracy to commit wire fraud in first-ever US criminal prosecution for AI-assisted streaming fraud. Smith used AI to generate thousands of fake songs, streamed them billions of times via bots, and diverted $8M in royalties from real artists. Facing up to 5 years prison (reduced from 60 years under initial charges). Must forfeit $8M+. Sentencing July 29.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-19",
-      "source": "MBW",
-      "title": "BMG sues Anthropic for infringement, alleging AI firm's $380B valuation was built on 'stolen copyrighted works'",
-      "summary": "BMG files lawsuit against Anthropic claiming the AI company's massive $380B valuation was built on copyrighted works used without license - a major escalation of copyright wars beyond the music industry into AI company valuation itself.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-19",
-      "source": "IFPI / Google News",
-      "title": "Global recorded music revenues hit $31.7B in 2025, up 6.4% YoY; paid music subscriptions reach 837M",
-      "summary": "IFPI Global Music Report 2026 confirms global recorded music revenues reached $31.7B in 2025, up 6.4% year-over-year. Paid music subscriptions hit 837 million users globally - record numbers despite AI disruption.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-19",
-      "source": "MBW",
-      "title": "Sir Lucian Grainge becomes first music exec at Nvidia GTC conference: 'I Love Disruption'",
-      "summary": "UMG CEO Sir Lucian Grainge delivered remarks at Nvidia GTC 2026 (Nvidia's AI conference, dubbed the 'Super Bowl of AI'), making him the first music executive to keynote the event. He declared 'I love disruption' - signaling major label strategic embrace of AI infrastructure partnerships.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-19",
-      "source": "MBW",
-      "title": "Tina Turner music interests acquired by Pophouse in 'strategic transaction' with BMG",
-      "summary": "Pophouse acquires Tina Turner's music interests in a strategic transaction with BMG - continuing consolidation trend in catalog ownership and artist legacy investments.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-19",
-      "source": "Billboard",
-      "title": "Tina Turner music interests acquired by Pophouse in 'strategic transaction' with BMG",
-      "summary": "Tencent Music Q4 earnings call revealed: new Warner Music Group licensing deal, Ed Sheeran collaboration in the pipeline, and platform now has 10 million AI music production users - massive Asian market AI music adoption.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-20",
-      "source": "Billboard",
-      "title": "SXSW London reveals first musical acts for 2026 festival",
-      "summary": "SXSW announces first wave of musical acts for inaugural SXSW London festival in 2026, expanding the South by Southwest brand to Europe.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-20",
-      "source": "MBW",
-      "title": "Recorded music revenues in Italy grew +10.7% YoY in 2025; paid streaming revenues jumped 14.1% YoY",
-      "summary": "Italy's recorded music revenues grew 10.7% YoY in 2025, with paid streaming revenues up 14.1%. Paid subscriptions totaled EUR €234.4M ($269M), representing 69% of Italy's total streaming revenues - strong European growth story.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-18",
-      "source": "Billboard",
-      "title": "A Short History of AI-Generated Music: From 'Fake Drake' to Blockbuster Legal Settlements",
-      "summary": "Billboard publishes comprehensive timeline of AI-generated music evolution - from the viral 'Fake Drake' track that sparked the conversation to the landmark Suno/Udio/WMG settlement agreements, mapping the industry's journey from crisis to regulated market.",
-      "category": "trends"
+      "date": "2026-03-25",
+      "source": "Google Workspace Updates",
+      "title": "Google Vids now uses Lyria 3 and Lyria 3 Pro for custom music generation",
+      "summary": "Google Vids users can generate music clips around 30 seconds or longer tracks up to three minutes directly inside the product. That shows Google is embedding music generation into mainstream business workflow software, not just experimental consumer surfaces.",
+      "category": "tools",
+      "url": "https://workspaceupdates.googleblog.com/2026/03/generate-custom-music-in-google-vids-powered-by-Lyria-3-and-Lyria-3-Pro.html?hl=en",
+      "authority": "primary"
     },
     {
       "date": "2026-03-18",
       "source": "IFPI",
-      "title": "Global recorded music revenues surpass $30B for first time (2025)",
-      "summary": "IFPI Global Music Report confirms global recorded music revenues cross $30B threshold for first time in 2025 - landmark milestone for the industry despite AI disruption.",
-      "category": "business"
+      "title": "Global recorded music revenues reached $31.7B in 2025; paid subscriptions hit 837M",
+      "summary": "IFPI reported recorded music revenues grew 6.4% in 2025 to $31.7 billion. Paid subscription streaming grew 8.8%, and paid streaming subscription accounts reached 837 million globally.",
+      "category": "market_structure",
+      "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
+      "authority": "primary"
     },
     {
       "date": "2026-03-18",
-      "source": "Music Business Worldwide",
-      "title": "Ken Doroshow to retire as Chief Legal Officer of RIAA after 10 years",
-      "summary": "RIAA's long-time Chief Legal Officer Ken Doroshow retiring after a decade. SVP Jacob Tracer to assume role on acting basis as trade body navigates evolving legal and regulatory landscape.",
-      "category": "business"
+      "source": "BBC",
+      "title": "UK government backed away from favored opt-out AI copyright approach",
+      "summary": "BBC reported the UK government said it no longer favored its prior proposal that would have allowed AI companies to train on copyrighted works subject to opt-out, and that it now has no preferred option. This is a meaningful policy win for rightsholders and for licensing-first business models.",
+      "category": "licensing_copyright",
+      "url": "https://www.bbc.com/news/articles/cvg1gr5v333o",
+      "authority": "high_quality_press"
     },
     {
-      "date": "2026-03-18",
-      "source": "Music Business Worldwide",
-      "title": "Matt Young named CEO of UMG's Bravado as Dan Goldberg and Eric Mackay join leadership team",
-      "summary": "Universal Music's global merch and artist services division Bravado gets new CEO and refreshed leadership team.",
-      "category": "business"
+      "date": "2026-03-23",
+      "source": "Moises x Water & Music",
+      "title": "Survey of 1,525 musicians shows AI usage is higher among pros than hobbyists",
+      "summary": "In the survey, 67% of respondents said they had used AI for music-related work; 78% of professionals reported using AI versus 60% of hobbyists. Among AI users, stem separation led at 71% adoption, while full-song generation was 24%. 58% worried about authenticity and 55% about copyright and licensing.",
+      "category": "creator_workflow",
+      "url": "https://moises.ai/insights/musician-ai-report-water-and-music/",
+      "authority": "company_research"
     },
     {
-      "date": "2026-03-18",
-      "source": "Billboard",
-      "title": "Mark Cuban: Music Is 'The Worst Industry Ever' (And How Artists Can Still Win)",
-      "summary": "Mark Cuban doubles down on harsh take of music industry, offers advice on how artists can still succeed despite structural challenges.",
-      "category": "trends"
+      "date": "2026-03-27",
+      "source": "UNESCO",
+      "title": "UNESCO projects generative-AI-driven revenue losses of 24% for music creators by 2028",
+      "summary": "UNESCO said generative AI outputs are projected to cause global revenue losses of 24% for music creators by 2028. The same report also highlighted market concentration on major platforms and opaque curation systems as structural risks for lesser-known creators.",
+      "category": "market_structure",
+      "url": "https://www.unesco.org/en/articles/creators-face-projected-global-revenue-losses-24-2028-new-unesco-report-shows",
+      "authority": "primary"
     },
     {
-      "date": "2026-03-18",
-      "source": "Billboard",
-      "title": "AI-Generated 'Actress' Tilly Norwood Drops Music Video for 'Take the Lead'",
-      "summary": "AI-generated virtual actress Tilly Norwood releases music video, declaring 'I'm just a tool, but I've got life' - testing boundaries of AI-generated 'artists'.",
-      "category": "trends"
+      "date": "2026-03-26",
+      "source": "TIME citing Deezer and Sony",
+      "title": "AI-upload volume and impersonation pressure on streaming platforms remain severe",
+      "summary": "TIME reported Deezer said 50,000 AI-generated tracks were being uploaded daily and accounted for 34% of new uploads, while Sony had sought removal of more than 135,000 tracks impersonating its artists. This indicates persistent discovery, trust, and enforcement problems in open distribution channels.",
+      "category": "licensing_copyright",
+      "url": "https://time.com/7277468/ai-music-streaming-deezer-spotify/",
+      "authority": "high_quality_press"
     },
     {
-      "date": "2026-03-17",
-      "source": "Billboard",
-      "title": "SZA Says She's 'At War Because of AI,' Slams 'Weird, Stereotypical Struggle Music'",
-      "summary": "SZA speaks out against AI-generated music, calling the situation 'war' and criticizing AI-generated music as 'weird, stereotypical struggle music.'",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-17",
-      "source": "Billboard",
-      "title": "Google Pulled Into AI Music Litigation as Indie Artists Claim Lyria 3 Stole YouTube Songs",
-      "summary": "Indie artists file lawsuit alleging Google used their YouTube music catalog to train Lyria 3 AI without permission - expanding legal front in AI copyright battles.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-17",
-      "source": "Billboard",
-      "title": "UMG 2025 Earnings: Strong Q4 ($4.19B, +10.6% YoY), Shelves U.S. Stock Offering",
-      "summary": "Universal Music reports strong Q4 results, discusses Downtown deal and AI plans. Company shelved U.S. stock offering citing market conditions.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-17",
-      "source": "Billboard",
-      "title": "Warner Music CEO Robert Kyncl: 'Now is the Time to Deliver' on AI Monetization",
-      "summary": "Warner Music CEO tells investors company must deliver strategic growth and AI monetization. Discussed streaming price hikes and AI opportunities.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-17",
-      "source": "Billboard",
-      "title": "Suno CEO Says AI Music Company Hits 2M Paid Subscribers, $300M ARR",
-      "summary": "Suno announces 2 million paid subscribers and $300M annual recurring revenue - major milestone for AI music sector.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-17",
-      "source": "Billboard",
-      "title": "Google Acquires AI Music Startup ProducerAI",
-      "summary": "Google acquires ProducerAI, strengthening its position in the AI music generation market.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-16",
-      "source": "Music Business Worldwide",
-      "title": "Concord acquires UK-based indie label Ninja Tune",
-      "summary": "Concord acquires prominent London-based independent label Ninja Tune, expanding its presence in the UK and Europe. Deal brings Ninja Tune's catalog including The Prodigy, Soulwax, Bonobo, ODESZA, Flying Lotus under Concord.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-16",
-      "source": "Music Business Worldwide",
-      "title": "Spotify to let users edit the algorithm behind their personalized recommendations with 'Taste Profile'",
-      "summary": "Spotify announces 'Taste Profile' - new feature letting users see and shape the listening data driving their personalized recommendations. Initially beta for Premium users in New Zealand.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-16",
-      "source": "Music Business Worldwide",
-      "title": "Quincy Jones estate sells catalog and ancillary rights to HarbourView",
-      "summary": "HarbourView acquires recorded music, publishing, and ancillary rights from the estate of legendary producer Quincy Jones.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-16",
-      "source": "Music Business Worldwide",
-      "title": "Too Lost strikes nine-figure investment round",
-      "summary": "Too Lost secures nine-figure investment round led by GoldState and TA Associates. Funds will expand tech, invest in artist advances, and execute catalog acquisitions.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-16",
-      "source": "Music Business Worldwide",
-      "title": "TikTok Radio launches on iHeartRadio as TikTok ends SiriusXM partnership",
-      "summary": "TikTok Radio launches on iHeartRadio with segments including weekly countdown of TikTok's 10 biggest songs, trending topics, and new music highlights.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-16",
-      "source": "Music Business Worldwide",
-      "title": "Pharrell Williams legal battle with ex-Neptunes partner widens as Chad Hugo challenges credits on Rosalía and Latto tracks",
-      "summary": "Legal battle between Pharrell Williams and ex-Neptunes partner Chad Hugo widens. Amended filing expands Hugo's claims alleging he was left off songwriter credits on several tracks.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-15",
-      "source": "Music Business Worldwide",
-      "title": "Nvidia unveils AI audio generator Fugatto that can produce 'sounds never heard before'",
-      "summary": "Nvidia launches Fugatto - 2.5B parameter foundational generative audio transformer that can generate novel sounds (trumpet barking, saxophone meowing), create singing voices from text prompts, modify songs by adding/removing instruments, and change voice accents/emotions. Trained on 32 H100 GPUs. No public release timeline announced.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-12",
-      "source": "Billboard",
-      "title": "Apple Music Introduces Tagging for AI Songs, Its First Regulation on AI Use",
-      "summary": "Apple Music becomes latest platform to introduce AI song tagging - first formal regulation on AI use. Tags are voluntary for labels and distributors.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-12",
-      "source": "Billboard",
-      "title": "Google's Gemini Launches New AI Music Model, Lyria 3",
-      "summary": "Google's Gemini introduces Lyria 3, its newest AI music generation model - major tech player deepening AI music capabilities.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-12",
-      "source": "Billboard",
-      "title": "AI Platform KLAY Signs Licensing Deals With UMG, WMG, Sony",
-      "summary": "AI music platform KLAY signs licensing deals with all three major labels for recorded music and publishing rights - expanding licensed AI music ecosystem.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-12",
-      "source": "Billboard",
-      "title": "Suno & WMG Ink Licensing Deal, Effectively Settling WMG's Legal Claims",
-      "summary": "Suno and Warner Music Group sign licensing deal, effectively settling WMG's legal claims against the AI music company.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "80 artists generated $10M+ each from Spotify last year. Over 1,500 generated $1M+",
-      "summary": "Spotify published its annual Loud & Clear report showing 80 artists generated $10M+ each in 2025, with over 1,500 artists generating $1M+.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Apple Music lands exclusive TikTok partnership to bring full-song streaming into social app",
-      "summary": "Apple Music and TikTok announce exclusive partnership allowing full-song streaming within the social app, plus 'Listening Party' feature for real-time fan interaction.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "Indie artists sue Google, claiming YouTube used their catalog to train Lyria 3 AI",
-      "summary": "Independent artists have filed lawsuit against Google alleging YouTube used their music catalog to train Lyria 3 AI model without permission.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "GEMA vs. Suno: Landmark AI music copyright case heard in Munich court",
-      "summary": "Oral proceedings in Munich court in copyright case brought by Germany's GEMA against AI music generator Suno - key test for AI copyright in Europe.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-11",
-      "source": "Music Business Worldwide",
-      "title": "ChatGPT can now Shazam songs as Apple brings music recognition tool to OpenAI's chatbot",
-      "summary": "OpenAI integrates Apple's Shazam music recognition into ChatGPT - users can now identify songs directly through the chatbot.",
-      "category": "tools"
-    },
-    {
-      "date": "2026-03-10",
-      "source": "Billboard",
-      "title": "iHeartRadio Won't Play AI Music or Use AI Generated Personalities",
-      "summary": "iHeartRadio exec says company won't play AI music or use AI generated personalities in staff memo - major radio broadcaster takes firm stance.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "Sir Lucian Grainge talks AI strategy, Downtown, D2C, superfans on UMG Q4 call",
-      "summary": "UMG CEO compares Downtown Music acquisition to EMI (2011) - 'one of the most successful and strategically important in music industry history.'",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "UMG generated $4.19B in Q4, up 10.6% YoY",
-      "summary": "Universal Music's Q4 results driven by Taylor Swift, KPop Demon Hunters soundtrack, Olivia Dean and more - strong quarter for major label.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-06",
-      "source": "Music Business Worldwide",
-      "title": "South Korea's music industry unites against AI copyright infringement",
-      "summary": "Six music rights organizations form coalition declaring 'state of emergency' and 'declaration of war' against AI copyright infringement.",
-      "category": "trends"
-    },
-    {
-      "date": "2026-03-05",
-      "source": "Music Business Worldwide",
-      "title": "Create raises $450M at $2.2B Valuation",
-      "summary": "Create Music Group completes $450 million funding round at $2.2 billion valuation - major player in AI music and label services space.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-05",
-      "source": "Music Business Worldwide",
-      "title": "Charlie Puth joins AI music creation platform Moises as Chief Music Officer",
-      "summary": "Grammy-nominated songwriter and producer Charlie Puth joins Moises as CMO to guide creative and product direction.",
-      "category": "business"
-    },
-    {
-      "date": "2026-03-04",
-      "source": "Music Business Worldwide",
-      "title": "Suno and Udio Complete Licensing Deals",
-      "summary": "Suno and Udio have now completed licensing deals with major labels, transitioning from defendants to industry partners.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-27",
-      "source": "Music Business Worldwide",
-      "title": "ElevenLabs raises $500M at $11B valuation",
-      "summary": "ElevenLabs raised $500M in latest round led by Sequoia Capital, reaching $11B valuation. Major entry into AI music market.",
-      "category": "business"
-    },
-    {
-      "date": "2026-02-25",
-      "source": "UN News",
-      "title": "Artist representatives launch 'Say No To Suno' campaign",
-      "summary": "Campaign against AI music generators, arguing 'AI slop dilutes the royalty pools of legitimate artists.'",
-      "category": "trends"
-    },
-    {
-      "date": "2026-02-22",
-      "source": "UN News",
-      "title": "Artists face steep income decline due to AI, UNESCO finds",
-      "summary": "Music creators could see revenues fall by 24% due to AI, while audiovisual sector may lose 21%.",
-      "category": "trends"
+      "date": "2026-03-24",
+      "source": "Suno / industry coverage",
+      "title": "Suno MILO-1080 indicates move toward producer workflow tooling",
+      "summary": "Suno's MILO-1080 Lab experience presents a sequencer-style interface rather than just plain text prompting. Even though public details are limited on the product page, the direction is clearly toward beatmaking and iterative workflow, not only one-shot song generation.",
+      "category": "competitors",
+      "url": "https://suno.com/labs/milo",
+      "authority": "primary_partial"
     }
-  ]
+  ],
+  "interpretations": {
+    "creator_workflow": [
+      "The best-supported near-term wedge in music AI is workflow assistance inside existing creation behavior, not replacement of the musician. The Moises/Water & Music survey strongly supports this.",
+      "Longer generation and more structure control from Google matter, but they do not by themselves prove sustained creator preference for full-song generation over assistive tools."
+    ],
+    "licensing_and_policy": [
+      "The UK step-back from an opt-out training regime suggests the center of gravity is moving toward permissioning, licensing, or at minimum stronger political resistance to uncompensated training on copyrighted music.",
+      "That makes a clean-rights narrative more strategically valuable for Musio, especially for enterprise, sync, education, and serious creator use cases."
+    ],
+    "market_structure": [
+      "The industry is simultaneously healthy and fragile: top-line recorded music revenues are growing, but creator economics are vulnerable to platform concentration, AI-driven oversupply, and fraud/spam leakage.",
+      "This favors companies that improve signal, trust, and workflow efficiency rather than those adding more undifferentiated content volume."
+    ],
+    "competitive_landscape": [
+      "Google, Suno, and similar players are pushing the frontier in generation breadth, but that also crowds the 'make a whole song from a prompt' category. Musio is better off not fighting there head-on unless it has a truly differentiated asset.",
+      "Musio's more defensible angle is the layer between composition intent and usable, controllable, commercially credible musical output."
+    ]
+  },
+  "musioPositioning": {
+    "whereMusioFits": [
+      "A creator-first music tool focused on realism, controllability, and trust rather than novelty demos.",
+      "A workflow product that helps songwriters, composers, producers, and content teams get to usable musical results faster without crossing obvious rights or authenticity red lines.",
+      "Potentially an attractive acquisition candidate if it becomes a differentiated interface or sound layer for serious music creation, media production, or creator SaaS."
+    ],
+    "sellability_lens": {
+      "likely_buyers": [
+        "music software / creator-tool companies",
+        "media creation suites needing music workflow capability",
+        "catalog, licensing, or B2B music infrastructure players",
+        "AI audio companies that lack credible real-instrument or creator-trust positioning"
+      ],
+      "what_increases_value": [
+        "Clear rights story and low legal ambiguity",
+        "Evidence of repeat use in real creator workflows rather than curiosity usage",
+        "Strong retention in niches like composers, worship/church music, content creators, indie producers, and educators",
+        "Distinctive sound quality and human-feel performance that generic generators do not match",
+        "Workflow integrations that make Musio feel infrastructural, not replaceable"
+      ],
+      "what_reduces_value": [
+        "Looking like a generic AI music app in an overcrowded category",
+        "Weak differentiation versus larger models from Google/Suno/Udio",
+        "Any unresolved ambiguity around training data, output ownership, or commercial usage"
+      ]
+    },
+    "recommended_message": "Musio should emphasize: real musicality, human control, usable output, and a more trustworthy commercial posture than open-ended prompt-to-song systems."
+  }
 }

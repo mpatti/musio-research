@@ -1,77 +1,77 @@
 {
-  "lastUpdated": "2026-03-19T17:00:00Z",
-  "period": "midday",
-  "sources": ["Music Business Worldwide", "TechCrunch", "The Verge"],
+  "lastUpdated": "2026-03-29T04:40:00Z",
+  "period": "late-night refresh",
+  "sources": [
+    "IFPI",
+    "Google Workspace Updates",
+    "UNESCO",
+    "BBC",
+    "Moises x Water & Music",
+    "TIME",
+    "Suno"
+  ],
   "stories": [
     {
-      "headline": "ElevenLabs raises $500M at $11B valuation — triples valuation in under a year",
-      "category": "funding",
-      "summary": "ElevenLabs (Eleven Music, Suno rival) closes $500M Series D led by Sequoia at $11B valuation. Total raised: $781M across 5 rounds since 2022. Already has licensing deals with Merlin and Kobalt. Plans global expansion to 15+ cities.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/elevenlabs-creator-of-suno-rival-eleven-music-raises-500m-at-11bn-valuation/",
-      "date": "2026-03-19"
-    },
-    {
-      "headline": "UK gov't considers 'commercial research exception' for AI training on copyrighted music",
-      "category": "policy",
-      "summary": "UK government weighing proposal to let AI companies train on copyrighted music without permission, provided they license before commercial launch. Microsoft, Google, Meta pushed for it. BPI calls it 'deeply troubling.' March 18 parliamentary deadline. Culture Secretary reportedly opposed. Lords committee published scathing report — creative industries (£124B/2.4M jobs) vs AI sector (£12B/86K jobs).",
-      "source": "Music Business Worldwide / The Times",
-      "url": "https://www.musicbusinessworldwide.com/uk-government-weighs-commercial-research-exception-that-could-let-ai-companies-train-on-copyrighted-music-without-permission-report/",
-      "date": "2026-03-19"
-    },
-    {
-      "headline": "Spotify launches AI prompt-based playlist personalization",
+      "headline": "Google expands Lyria into Lyria 3 Pro with longer tracks and more structure control",
       "category": "product",
-      "summary": "Spotify rolling out feature letting users 'steer the algorithm' using AI text prompts to shape playlist recommendations. Described as part of broader shift in how Spotify approaches personalization.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/spotify-to-let-users-steer-the-algorithm-by-personalizing-playlists-with-ai-prompts/",
-      "date": "2026-03-19"
+      "summary": "Google said Lyria 3 Pro can generate tracks up to three minutes long and better follow prompts for intros, verses, choruses, and bridges. It also embedded music generation into Google Vids, signaling mainstream workflow distribution rather than pure experiment.",
+      "source": "Google Workspace Updates",
+      "url": "https://workspaceupdates.googleblog.com/2026/03/create-longer-musical-tracks-in-gemini-app-with-Lyria-3-Pro.html",
+      "date": "2026-03-25"
     },
     {
-      "headline": "Musixmatch launches Music Lens — AI analytics agent for catalog insights",
-      "category": "product",
-      "summary": "Musixmatch launches AI-powered 'Music Lens' tool for publishers, labels, and creators to extract actionable insights from music catalogs. Built specifically for the industry, not generic AI.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/musixmatch-launches-music-lens-an-ai-agent-that-transforms-catalogs-into-actionable-insights-for-publishers-labels-and-creators/",
-      "date": "2026-03-19"
+      "headline": "IFPI says global recorded music hit $31.7B in 2025 and 837M paid subscriptions",
+      "category": "market",
+      "summary": "Recorded music remains structurally large and growing even amid AI disruption. Paid subscription streaming grew 8.8% and total streaming revenue surpassed $22B.",
+      "source": "IFPI",
+      "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
+      "date": "2026-03-18"
     },
     {
-      "headline": "Major labels vs Suno lawsuit intensifies",
-      "category": "legal",
-      "summary": "Record companies (UMG, Warner, Sony) suing AI music platform Suno continue to escalate the case. Major labels turning up pressure on the startup. Key copyright and fair use arguments remain unresolved.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/3-things-you-might-have-missed-in-the-major-labels-suno-lawsuit/",
-      "date": "2026-03-19"
-    },
-    {
-      "headline": "Cloudflare launches pay-to-access tool for content owners vs AI crawlers",
-      "category": "infrastructure",
-      "summary": "Cloudflare allowing content owners to charge AI companies for access. Universal Music applauds the move as potential new licensing marketplace. Could set precedent for how AI cos pay for training data.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/universal-music-applauds-cloudflares-move-that-allows-content-owners-to-charge-ai-companies-for-access/",
-      "date": "2026-03-19"
-    },
-    {
-      "headline": "Australia rejects AI training copyright exemption — opts for licensing regime",
+      "headline": "UK backs away from favored opt-out AI copyright proposal",
       "category": "policy",
-      "summary": "Australia will not exempt AI training from copyright laws. Instead moving to licensing framework between AI developers and rightsholders. Contrast with UK's pending decision.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/australia-rejects-proposal-that-would-have-exempted-ai-training-from-copyright-laws/",
-      "date": "2026-03-19"
+      "summary": "The UK government said it no longer favored its earlier opt-out approach for AI training on copyrighted works and now has no preferred option. That is directionally positive for licensing-first models and rightsholder leverage.",
+      "source": "BBC",
+      "url": "https://www.bbc.com/news/articles/cvg1gr5v333o",
+      "date": "2026-03-18"
     },
     {
-      "headline": "Warner Music Brazil revives samba legend Cleber Augusto's voice via AI",
-      "category": "ai_voice",
-      "summary": "Warner Music Brazil uses AI to recreate voice of samba legend Cleber Augusto, who lost his voice to throat cancer surgery 20+ years ago. Example of legacy artist voice cloning with rightsholder involvement.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/warner-music-brazil-brings-back-voice-of-samba-legend-cleber-augusto-through-ai/",
-      "date": "2026-03-19"
+      "headline": "Moises/Water & Music survey shows practical AI use is mostly workflow assistance",
+      "category": "creator_workflow",
+      "summary": "Among 1,525 surveyed musicians, 78% of professionals said they use AI versus 60% of hobbyists. Stem separation led use cases at 71%, while full-song generation was only 24%, suggesting assistive workflows still dominate real usage.",
+      "source": "Moises x Water & Music",
+      "url": "https://moises.ai/insights/musician-ai-report-water-and-music/",
+      "date": "2026-03-23"
+    },
+    {
+      "headline": "UNESCO warns music creators could lose 24% of revenue by 2028 from generative AI outputs",
+      "category": "economics",
+      "summary": "UNESCO also highlighted platform concentration and opaque curation systems as ongoing risks for creators. This reinforces the importance of trusted tools and monetization pathways.",
+      "source": "UNESCO",
+      "url": "https://www.unesco.org/en/articles/creators-face-projected-global-revenue-losses-24-2028-new-unesco-report-shows",
+      "date": "2026-03-27"
+    },
+    {
+      "headline": "TIME reports AI flood and impersonation remain major streaming-layer problems",
+      "category": "distribution_risk",
+      "summary": "TIME reported Deezer said 50,000 AI-generated tracks were uploaded daily and made up 34% of new uploads, while Sony had asked platforms to remove 135,000+ tracks impersonating its artists.",
+      "source": "TIME",
+      "url": "https://time.com/7277468/ai-music-streaming-deezer-spotify/",
+      "date": "2026-03-26"
+    },
+    {
+      "headline": "Suno's MILO-1080 points toward DAW-adjacent product expansion",
+      "category": "competition",
+      "summary": "Suno is not standing still in pure text-to-song. The MILO-1080 lab experiment suggests continued movement toward sequencer-like creation interfaces and more producer-native workflow positioning.",
+      "source": "Suno",
+      "url": "https://suno.com/labs/milo",
+      "date": "2026-03-24"
     }
   ],
   "themes": {
-    "funding_momentum": "Major funding continues flowing into AI audio — ElevenLabs $11B is the latest landmark. Competition between Suno, Udio, and Eleven Music heating up.",
-    "policy_pivotal": "UK decision (March 18 deadline) could reshape AI music training economics globally. Australia taking a different path via mandatory licensing.",
-    "legal_fragments": "Courts split on fair use for AI training — Anthropic books ruling vs ongoing Suno case. No clear precedent yet.",
-    "industry_adoption": "Major labels and platforms (Spotify, Musixmatch, Warner) actively deploying AI as product features and catalog tools, not just被动 resisting."
+    "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction in existing music workflows, not tools that fully replace musicians.",
+    "rights_cleanliness_matters_more": "Policy and public pressure are making clean licensing and rights posture more valuable, not less.",
+    "distribution_is_getting_noisier": "Spam, impersonation, and AI oversupply are degrading trust at the streaming layer, which increases the value of products associated with quality and control.",
+    "musio_implication": "Musio should position as trustworthy creator infrastructure: realistic musical output, human control, and commercially usable results rather than mass-volume generative novelty."
   }
 }
