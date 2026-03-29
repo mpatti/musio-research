@@ -2,3 +2,8 @@
 /OpenDaw/
 /project-tracker/
 /tbc-browser-daw/
+/slop-studio-pro/
+
+# Private/local-only artifacts
+/PRIVATE_CLONE_BUNDLE.md
+/slop-studio-screenshot.jpg
