@@ -20,9 +20,11 @@
 - Important nuance: Paddle dashboard "Active Subscribers" does not exactly match a raw API count of subscriptions with `status=active`.
 - On 2026-03-28:
   - Paddle dashboard screenshot showed **3,466 active subscribers**.
+  - Paddle dashboard screenshot showed **$29,098.78 MRR**.
   - Strict API count was about **3,426–3,427 active**.
   - Non-canceled-ish current customers (`active + past_due + paused`) were about **3,483**.
-- Best answer rule: if the user asks for the number that matches what Paddle shows on the dashboard, use **3,466** unless newer data is fetched.
+  - A reconstructed MRR estimate from active plan prices overstated actual dashboard MRR and should not be treated as source of truth.
+- Best answer rule: if the user asks for the number that matches what Paddle shows on the dashboard, use the **dashboard values** unless newer live dashboard data is available.
 - Do not rely on old truncated API samples; paginate/dedupe properly when querying Paddle.
 - Querying preference for subscription/billing questions:
   - If Mike asks a **global/high-level** question (totals, counts, overall product breakdowns, active subscriber counts, "so far" questions), fetch the **full dataset** and paginate/dedupe properly.
