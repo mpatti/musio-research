@@ -29,6 +29,12 @@
   - If Mike asks about **recent transactions / latest activity**, it is fine to use a recent window or latest-page view instead of scanning everything.
 - Paddle live API key was saved locally for future use in a non-git-tracked credential file at `/data/.openclaw/credentials/paddle/live_api_key`.
 
+## Billing / Revenue Goals
+
+- Musio subscriptions have a current business goal of reaching **$30k MRR**.
+- When Mike asks about subscription progress, frame updates in terms of progress toward the **$30k MRR** target.
+- Do not assume background monitoring is re-enabled just because this goal exists; regular automated checks were paused unless Mike explicitly asks to resume them.
+
 ## Backup / Clone Context
 
 - User wants a daily full backup of this OpenClaw state so an identical Tobor can be recreated elsewhere.
