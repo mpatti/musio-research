@@ -37,6 +37,7 @@
 - Musio market research should be kept active and updated again.
 - The purpose is not generic news collection; it should steadily improve Tobor's understanding of the music-tech market and how Musio fits if the goal is to **grow to sell**.
 - Preferred cadence is the prior morning / midday / evening workflow, but kept quiet unless something materially important happens.
+- Research updates should not stay local-only: the public GitHub Pages site for the musio-research repo should be kept current when the research materially changes.
 
 ## Billing / Revenue Goals
 
