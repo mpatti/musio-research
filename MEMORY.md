@@ -8,6 +8,7 @@
   2) push to GitHub,
   3) publish/update GitHub Pages.
 - For Telegram scheduled sends, use a numeric chat target (chat id) instead of username aliases like `mpatti`.
+- For Google searching, prefer **Serper Dev** as the default route when using local search credentials/setup.
 
 ## Known Messaging Target
 
