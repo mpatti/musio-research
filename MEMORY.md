@@ -28,3 +28,14 @@
   - If Mike asks a **global/high-level** question (totals, counts, overall product breakdowns, active subscriber counts, "so far" questions), fetch the **full dataset** and paginate/dedupe properly.
   - If Mike asks about **recent transactions / latest activity**, it is fine to use a recent window or latest-page view instead of scanning everything.
 - Paddle live API key was saved locally for future use in a non-git-tracked credential file at `/data/.openclaw/credentials/paddle/live_api_key`.
+
+## Backup / Clone Context
+
+- User wants a daily full backup of this OpenClaw state so an identical Tobor can be recreated elsewhere.
+- Private backup repo: `mpatti/tobor`.
+- Daily rolling backup cron is enabled:
+  - Job name: `Daily Tobor backup`
+  - Schedule: `3:15 AM America/New_York` every day
+  - Behavior: create a full backup of `/data/.openclaw` and force-push the latest rolling snapshot to `mpatti/tobor`
+  - Success: stay quiet
+  - Failure: alert Mike on Telegram
