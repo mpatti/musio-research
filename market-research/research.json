@@ -1,80 +1,80 @@
 {
-  "lastUpdated": "2026-03-29T13:10:00Z",
-  "period": "morning refresh",
+  "lastUpdated": "2026-03-29T17:05:00Z",
+  "period": "midday refresh",
   "sources": [
-    "Serper/Google search",
-    "X recent-search spot check",
-    "Google Workspace Updates",
+    "Serper/Google search via local key",
+    "X recent-search spot check via local credentials",
+    "Google",
     "IFPI",
-    "BBC",
+    "Reuters",
+    "Music Ally",
     "Moises x Water & Music",
     "UNESCO",
-    "TIME",
     "Music Business Worldwide"
   ],
   "stories": [
     {
-      "headline": "Google expands Lyria into Lyria 3 Pro with longer tracks and more structure control",
+      "headline": "Google expands Lyria 3 Pro into mainstream workflow surfaces",
       "category": "product",
-      "summary": "Google said Lyria 3 Pro can generate tracks up to three minutes long and better follow prompts for intros, verses, choruses, and bridges. It also embedded music generation into Google Vids, signaling mainstream workflow distribution rather than a pure experiment.",
-      "source": "Google Workspace Updates",
-      "url": "https://workspaceupdates.googleblog.com/2026/03/create-longer-musical-tracks-in-gemini-app-with-Lyria-3-Pro.html",
+      "summary": "Google said Lyria 3 Pro can generate tracks up to three minutes long with stronger song-structure control, and is rolling it into Gemini, Google Vids, Vertex AI, AI Studio, and ProducerAI. That is a distribution signal, not just a model-improvement signal.",
+      "source": "Google",
+      "url": "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/",
       "date": "2026-03-25"
     },
     {
-      "headline": "Suno claims 2M paid subscribers and $300M ARR",
+      "headline": "Suno still looks like the biggest paid-scale signal in AI music",
       "category": "competition",
-      "summary": "Music Business Worldwide reported Suno CEO Mikey Shulman said the company reached 2 million paid subscribers, $300 million ARR, and 100 million total users. Treat as a company claim, but it is still an important competitive-scale signal.",
+      "summary": "Music Business Worldwide reported Suno CEO Mikey Shulman said Suno reached 2 million paid subscribers, $300 million ARR, and 100 million users. Treat it as a company claim, but it remains strategically relevant because it suggests the category has real willingness to pay.",
       "source": "Music Business Worldwide",
       "url": "https://www.musicbusinessworldwide.com/suno-hits-2m-paid-subscribers-300m-annual-revenue/",
       "date": "2026-02-25"
     },
     {
-      "headline": "IFPI says global recorded music hit $31.7B in 2025 and 837M paid subscriptions",
+      "headline": "IFPI says recorded music reached $31.7B in 2025 and 837M paid subscriptions",
       "category": "market",
-      "summary": "Recorded music remains structurally large and growing even amid AI disruption. Paid subscription streaming grew 8.8% and total streaming revenue surpassed $22B.",
+      "summary": "Recorded music remains structurally large and growing. That means the opportunity is real, but it also increases pressure to find a defensible niche within a very noisy stack.",
       "source": "IFPI",
       "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
       "date": "2026-03-18"
     },
     {
-      "headline": "UK backs away from favored opt-out AI copyright proposal",
+      "headline": "U.S. legal posture still leaves AI-training copyright questions unresolved",
       "category": "policy",
-      "summary": "The UK government said it no longer favored its earlier opt-out approach for AI training on copyrighted works and now has no preferred option. That is directionally positive for licensing-first models and rightsholder leverage.",
-      "source": "BBC",
-      "url": "https://www.bbc.com/news/articles/cvg1gr5v333o",
-      "date": "2026-03-18"
+      "summary": "Music Ally reported the White House said courts should resolve whether training on copyrighted material is fair use, while Reuters' legal review said 2025 cases increasingly turn on lawful sourcing, piracy risk, and market-harm analysis. The takeaway is not certainty; it is continued legal ambiguity with strong importance on data provenance.",
+      "source": "Music Ally + Reuters",
+      "url": "https://musically.com/2026/03/23/white-house-says-courts-will-decide-if-ai-training-is-fair-use/",
+      "date": "2026-03-23"
     },
     {
-      "headline": "Moises/Water & Music survey shows practical AI use is mostly workflow assistance",
+      "headline": "Moises/Water & Music survey still supports workflow-first adoption",
       "category": "creator_workflow",
-      "summary": "Among 1,525 surveyed musicians, 78% of professionals said they use AI versus 60% of hobbyists. Stem separation led use cases at 71%, while full-song generation was only 24%, suggesting assistive workflows still dominate real usage.",
+      "summary": "Among 1,525 surveyed musicians, pros used AI more than hobbyists, but the biggest use case was still stem separation at 71%, versus 24% for full-song generation. Trust and rights concerns remained high.",
       "source": "Moises x Water & Music",
       "url": "https://moises.ai/insights/musician-ai-report-water-and-music/",
       "date": "2026-03-23"
     },
     {
-      "headline": "UNESCO warns music creators could lose 24% of revenue by 2028 from generative AI outputs",
+      "headline": "Deezer is commercializing AI-detection infrastructure as fraud pressure rises",
+      "category": "distribution_risk",
+      "summary": "Reuters reported Deezer licensed its AI-detection tool to Sacem, said it removed up to 85% of fraudulent AI streams from its royalty pool in 2025, and said it now receives around 60,000 fully AI-created tracks per day. That is a strong signal that trust/compliance tooling is becoming part of the music stack.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/deezer-licenses-ai-detection-tool-french-royalty-agency-sacem-plans-wider-roll-2026-01-29/",
+      "date": "2026-01-29"
+    },
+    {
+      "headline": "UNESCO warns creator economics remain under pressure",
       "category": "economics",
-      "summary": "UNESCO also highlighted platform concentration and opaque curation systems as ongoing risks for creators. This reinforces the importance of trusted tools and monetization pathways.",
+      "summary": "UNESCO projected up to 24% revenue losses for music creators by 2028 from generative AI outputs and highlighted market concentration plus opaque curation systems as structural risks.",
       "source": "UNESCO",
       "url": "https://www.unesco.org/en/articles/creators-face-projected-global-revenue-losses-24-2028-new-unesco-report-shows",
       "date": "2026-03-27"
-    },
-    {
-      "headline": "TIME reports AI flood and impersonation remain major streaming-layer problems",
-      "category": "distribution_risk",
-      "summary": "TIME reported Deezer said 50,000 AI-generated tracks were uploaded daily and made up 34% of new uploads, while Sony had asked platforms to remove 135,000+ tracks impersonating its artists.",
-      "source": "TIME",
-      "url": "https://time.com/7277468/ai-music-streaming-deezer-spotify/",
-      "date": "2026-03-26"
     }
   ],
   "themes": {
-    "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction in existing music workflows, not tools that fully replace musicians.",
-    "rights_cleanliness_matters_more": "Policy and public pressure are making clean licensing and rights posture more valuable, not less.",
-    "scale_is_real_but_not_enough": "Suno's reported scale and Google's distribution show the category is commercially real, but that also makes undifferentiated AI music apps less defensible.",
-    "distribution_is_getting_noisier": "Spam, impersonation, and AI oversupply are degrading trust at the streaming layer, which increases the value of products associated with quality and control.",
-    "musio_implication": "Musio should position as trustworthy creator infrastructure: realistic musical output, human control, and commercially usable results rather than mass-volume generative novelty."
+    "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction inside existing music workflows rather than tools that fully replace musicians.",
+    "rights_cleanliness_matters_more": "The legal and commercial environment continues to reward clean sourcing, transparency, and rights clarity.",
+    "scale_is_real_but_not_enough": "Suno's scale signal and Google's distribution show the category is real, but they also make undifferentiated AI music apps less defensible.",
+    "trust_infrastructure_is_rising": "Fraud, spam, and impersonation are turning trust and detection into real product categories inside music tech.",
+    "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, and commercially usable results."
   }
 }
