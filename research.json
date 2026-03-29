@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-29T04:40:00Z",
-  "note": "Refreshed March 29, 2026 with newer/verified signals emphasizing primary or close-to-primary sources. This update separates observed facts from interpretation for Musio.",
-  "insightTech": "Verified product momentum continues to favor longer-form and more controllable AI music generation, but creator adoption data still points to assistive workflow tools winning broader trust than full-song generation. Google expanded Lyria 3 into Lyria 3 Pro with up to three-minute tracks and structure-aware prompting; creator-survey data from Moises/Water & Music shows stem separation far outpacing full-song generation in practical usage.",
-  "insightStrategy": "For Musio, the strongest strategic lane remains: real-performer sound, controlled creator workflow, and clean rights posture. The market is getting bigger and noisier at the same time. If the goal is to grow to sell, Musio likely becomes more valuable by looking like trusted infrastructure for serious creators and downstream commercial use, not like another generic prompt-to-song app.",
+  "lastUpdated": "2026-03-29T13:10:00Z",
+  "note": "Refreshed March 29, 2026 morning using the requested source mix: Google search via local Serper, limited X/Twitter recent-search checks via local credentials, and primary/high-quality industry sources. Facts are separated from interpretation; X was treated as directional only.",
+  "insightTech": "The strongest hard signal is not just better generation quality; it is distribution plus monetization scale. Google is pushing Lyria into mainstream workflow products, while Suno says it has reached 2M paid subscribers and $300M ARR. At the same time, creator-usage data still says practical AI adoption is led by workflow help such as stem separation, not full-song generation.",
+  "insightStrategy": "If Musio wants to grow toward a sale, the best lane still looks like trusted creator infrastructure: real-performer feel, controllable workflow, and a cleaner commercial-rights posture. The market is getting bigger, but the generic prompt-to-song category is getting both more crowded and more politically exposed.",
   "facts": [
     {
       "date": "2026-03-25",
@@ -17,10 +17,19 @@
       "date": "2026-03-25",
       "source": "Google Workspace Updates",
       "title": "Google Vids now uses Lyria 3 and Lyria 3 Pro for custom music generation",
-      "summary": "Google Vids users can generate music clips around 30 seconds or longer tracks up to three minutes directly inside the product. That shows Google is embedding music generation into mainstream business workflow software, not just experimental consumer surfaces.",
+      "summary": "Google Vids users can generate music clips around 30 seconds or longer tracks up to three minutes directly inside the product. That shows Google is embedding music generation into mainstream workflow software, not just experimental consumer surfaces.",
       "category": "tools",
       "url": "https://workspaceupdates.googleblog.com/2026/03/generate-custom-music-in-google-vids-powered-by-Lyria-3-and-Lyria-3-Pro.html?hl=en",
       "authority": "primary"
+    },
+    {
+      "date": "2026-02-25",
+      "source": "Suno via Music Business Worldwide",
+      "title": "Suno says it reached 2M paid subscribers and $300M ARR",
+      "summary": "Music Business Worldwide reported CEO Mikey Shulman said Suno had reached 2 million paid subscribers, $300 million in annual recurring revenue, and 100 million total users two years after launch. This is company-claimed scale, not independently audited, but it is strategically important if directionally true.",
+      "category": "competitors",
+      "url": "https://www.musicbusinessworldwide.com/suno-hits-2m-paid-subscribers-300m-annual-revenue/",
+      "authority": "company_claim_high_relevance"
     },
     {
       "date": "2026-03-18",
@@ -35,7 +44,7 @@
       "date": "2026-03-18",
       "source": "BBC",
       "title": "UK government backed away from favored opt-out AI copyright approach",
-      "summary": "BBC reported the UK government said it no longer favored its prior proposal that would have allowed AI companies to train on copyrighted works subject to opt-out, and that it now has no preferred option. This is a meaningful policy win for rightsholders and for licensing-first business models.",
+      "summary": "BBC reported the UK government said it no longer favored its prior proposal that would have allowed AI companies to train on copyrighted works subject to opt-out, and that it now has no preferred option.",
       "category": "licensing_copyright",
       "url": "https://www.bbc.com/news/articles/cvg1gr5v333o",
       "authority": "high_quality_press"
@@ -62,44 +71,39 @@
       "date": "2026-03-26",
       "source": "TIME citing Deezer and Sony",
       "title": "AI-upload volume and impersonation pressure on streaming platforms remain severe",
-      "summary": "TIME reported Deezer said 50,000 AI-generated tracks were being uploaded daily and accounted for 34% of new uploads, while Sony had sought removal of more than 135,000 tracks impersonating its artists. This indicates persistent discovery, trust, and enforcement problems in open distribution channels.",
+      "summary": "TIME reported Deezer said 50,000 AI-generated tracks were being uploaded daily and accounted for 34% of new uploads, while Sony had sought removal of more than 135,000 tracks impersonating its artists.",
       "category": "licensing_copyright",
       "url": "https://time.com/7277468/ai-music-streaming-deezer-spotify/",
       "authority": "high_quality_press"
-    },
-    {
-      "date": "2026-03-24",
-      "source": "Suno / industry coverage",
-      "title": "Suno MILO-1080 indicates move toward producer workflow tooling",
-      "summary": "Suno's MILO-1080 Lab experience presents a sequencer-style interface rather than just plain text prompting. Even though public details are limited on the product page, the direction is clearly toward beatmaking and iterative workflow, not only one-shot song generation.",
-      "category": "competitors",
-      "url": "https://suno.com/labs/milo",
-      "authority": "primary_partial"
     }
   ],
   "interpretations": {
     "creator_workflow": [
-      "The best-supported near-term wedge in music AI is workflow assistance inside existing creation behavior, not replacement of the musician. The Moises/Water & Music survey strongly supports this.",
-      "Longer generation and more structure control from Google matter, but they do not by themselves prove sustained creator preference for full-song generation over assistive tools."
+      "The best-supported near-term wedge in music AI is workflow assistance inside existing creation behavior, not replacement of the musician. The Moises/Water & Music survey still supports this more strongly than headline product demos do.",
+      "Google's longer generation and Suno's monetization scale matter, but they do not overturn the evidence that many serious users still value tools that solve specific production friction points."
     ],
     "licensing_and_policy": [
-      "The UK step-back from an opt-out training regime suggests the center of gravity is moving toward permissioning, licensing, or at minimum stronger political resistance to uncompensated training on copyrighted music.",
-      "That makes a clean-rights narrative more strategically valuable for Musio, especially for enterprise, sync, education, and serious creator use cases."
+      "The UK step-back from an opt-out training regime suggests the center of gravity is still contested and that rights-holder resistance has real political force.",
+      "That keeps a clean-rights narrative strategically valuable for Musio, especially for enterprise, sync, education, and serious commercial creator use cases."
     ],
     "market_structure": [
-      "The industry is simultaneously healthy and fragile: top-line recorded music revenues are growing, but creator economics are vulnerable to platform concentration, AI-driven oversupply, and fraud/spam leakage.",
-      "This favors companies that improve signal, trust, and workflow efficiency rather than those adding more undifferentiated content volume."
+      "The market is simultaneously healthy and more chaotic: industry revenues are growing, but creator economics are under pressure from oversupply, platform concentration, and fraud/impersonation.",
+      "This favors companies that improve trust, signal quality, and workflow efficiency rather than those adding more undifferentiated content volume."
     ],
     "competitive_landscape": [
-      "Google, Suno, and similar players are pushing the frontier in generation breadth, but that also crowds the 'make a whole song from a prompt' category. Musio is better off not fighting there head-on unless it has a truly differentiated asset.",
+      "Google is broadening distribution and Suno appears to be proving paid demand at scale, which makes the generic AI-music-app lane harder to win as an independent company.",
       "Musio's more defensible angle is the layer between composition intent and usable, controllable, commercially credible musical output."
+    ],
+    "x_signals_directional_only": [
+      "A limited X recent-search pass was noisy, but the recurring themes were continued attention to Suno's claimed scale and creators using AI music in video/content workflows.",
+      "That is useful as sentiment/context, not as source-of-truth evidence."
     ]
   },
   "musioPositioning": {
     "whereMusioFits": [
       "A creator-first music tool focused on realism, controllability, and trust rather than novelty demos.",
       "A workflow product that helps songwriters, composers, producers, and content teams get to usable musical results faster without crossing obvious rights or authenticity red lines.",
-      "Potentially an attractive acquisition candidate if it becomes a differentiated interface or sound layer for serious music creation, media production, or creator SaaS."
+      "Potentially an attractive acquisition candidate if it becomes a differentiated interface, sound layer, or rights-safe workflow layer for serious music creation and media production."
     ],
     "sellability_lens": {
       "likely_buyers": [

@@ -1,23 +1,33 @@
 {
-  "lastUpdated": "2026-03-29T04:40:00Z",
-  "period": "late-night refresh",
+  "lastUpdated": "2026-03-29T13:10:00Z",
+  "period": "morning refresh",
   "sources": [
-    "IFPI",
+    "Serper/Google search",
+    "X recent-search spot check",
     "Google Workspace Updates",
-    "UNESCO",
+    "IFPI",
     "BBC",
     "Moises x Water & Music",
+    "UNESCO",
     "TIME",
-    "Suno"
+    "Music Business Worldwide"
   ],
   "stories": [
     {
       "headline": "Google expands Lyria into Lyria 3 Pro with longer tracks and more structure control",
       "category": "product",
-      "summary": "Google said Lyria 3 Pro can generate tracks up to three minutes long and better follow prompts for intros, verses, choruses, and bridges. It also embedded music generation into Google Vids, signaling mainstream workflow distribution rather than pure experiment.",
+      "summary": "Google said Lyria 3 Pro can generate tracks up to three minutes long and better follow prompts for intros, verses, choruses, and bridges. It also embedded music generation into Google Vids, signaling mainstream workflow distribution rather than a pure experiment.",
       "source": "Google Workspace Updates",
       "url": "https://workspaceupdates.googleblog.com/2026/03/create-longer-musical-tracks-in-gemini-app-with-Lyria-3-Pro.html",
       "date": "2026-03-25"
+    },
+    {
+      "headline": "Suno claims 2M paid subscribers and $300M ARR",
+      "category": "competition",
+      "summary": "Music Business Worldwide reported Suno CEO Mikey Shulman said the company reached 2 million paid subscribers, $300 million ARR, and 100 million total users. Treat as a company claim, but it is still an important competitive-scale signal.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/suno-hits-2m-paid-subscribers-300m-annual-revenue/",
+      "date": "2026-02-25"
     },
     {
       "headline": "IFPI says global recorded music hit $31.7B in 2025 and 837M paid subscriptions",
@@ -58,19 +68,12 @@
       "source": "TIME",
       "url": "https://time.com/7277468/ai-music-streaming-deezer-spotify/",
       "date": "2026-03-26"
-    },
-    {
-      "headline": "Suno's MILO-1080 points toward DAW-adjacent product expansion",
-      "category": "competition",
-      "summary": "Suno is not standing still in pure text-to-song. The MILO-1080 lab experiment suggests continued movement toward sequencer-like creation interfaces and more producer-native workflow positioning.",
-      "source": "Suno",
-      "url": "https://suno.com/labs/milo",
-      "date": "2026-03-24"
     }
   ],
   "themes": {
     "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction in existing music workflows, not tools that fully replace musicians.",
     "rights_cleanliness_matters_more": "Policy and public pressure are making clean licensing and rights posture more valuable, not less.",
+    "scale_is_real_but_not_enough": "Suno's reported scale and Google's distribution show the category is commercially real, but that also makes undifferentiated AI music apps less defensible.",
     "distribution_is_getting_noisier": "Spam, impersonation, and AI oversupply are degrading trust at the streaming layer, which increases the value of products associated with quality and control.",
     "musio_implication": "Musio should position as trustworthy creator infrastructure: realistic musical output, human control, and commercially usable results rather than mass-volume generative novelty."
   }
