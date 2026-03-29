@@ -32,6 +32,12 @@
   - Be **supremely accurate** on billing/subscription questions: prefer the most authoritative source available, cross-check when numbers seem off, and avoid replying from shaky reconstructed estimates.
 - Paddle live API key was saved locally for future use in a non-git-tracked credential file at `/data/.openclaw/credentials/paddle/live_api_key`. 
 
+## Market Research / Musio Strategy Context
+
+- Musio market research should be kept active and updated again.
+- The purpose is not generic news collection; it should steadily improve Tobor's understanding of the music-tech market and how Musio fits if the goal is to **grow to sell**.
+- Preferred cadence is the prior morning / midday / evening workflow, but kept quiet unless something materially important happens.
+
 ## Billing / Revenue Goals
 
 - Musio subscriptions have a current business goal of reaching **$30k MRR**.
