@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-03-29T17:05:00Z",
-  "period": "midday refresh",
+  "lastUpdated": "2026-03-29T22:05:00Z",
+  "period": "evening refresh",
   "sources": [
     "Serper/Google search via local key",
-    "X recent-search spot check via local credentials",
+    "X API attempt via local credentials (recent search blocked by access level)",
     "Google",
     "IFPI",
     "Reuters",
-    "Music Ally",
     "Moises x Water & Music",
     "UNESCO",
-    "Music Business Worldwide"
+    "Music Business Worldwide",
+    "Spotify via TechCrunch"
   ],
   "stories": [
     {
@@ -30,20 +30,12 @@
       "date": "2026-02-25"
     },
     {
-      "headline": "IFPI says recorded music reached $31.7B in 2025 and 837M paid subscriptions",
-      "category": "market",
-      "summary": "Recorded music remains structurally large and growing. That means the opportunity is real, but it also increases pressure to find a defensible niche within a very noisy stack.",
-      "source": "IFPI",
-      "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
-      "date": "2026-03-18"
-    },
-    {
-      "headline": "U.S. legal posture still leaves AI-training copyright questions unresolved",
+      "headline": "Music-specific copyright pressure remains active, not theoretical",
       "category": "policy",
-      "summary": "Music Ally reported the White House said courts should resolve whether training on copyrighted material is fair use, while Reuters' legal review said 2025 cases increasingly turn on lawful sourcing, piracy risk, and market-harm analysis. The takeaway is not certainty; it is continued legal ambiguity with strong importance on data provenance.",
-      "source": "Music Ally + Reuters",
-      "url": "https://musically.com/2026/03/23/white-house-says-courts-will-decide-if-ai-training-is-fair-use/",
-      "date": "2026-03-23"
+      "summary": "Reuters reported music publishers asked a court to reject Anthropic's fair-use defense, arguing Claude can reproduce lyrics on demand and dilute the market for originals. For music tech, that keeps lyric/output substitution risk very live.",
+      "source": "Reuters Legal",
+      "url": "https://www.reuters.com/legal/legalindustry/us-music-publishers-suing-anthropic-make-their-case-against-ai-fair-use-2026-03-24/",
+      "date": "2026-03-24"
     },
     {
       "headline": "Moises/Water & Music survey still supports workflow-first adoption",
@@ -54,12 +46,20 @@
       "date": "2026-03-23"
     },
     {
-      "headline": "Deezer is commercializing AI-detection infrastructure as fraud pressure rises",
+      "headline": "Spotify and Deezer both point toward platform-side trust controls",
       "category": "distribution_risk",
-      "summary": "Reuters reported Deezer licensed its AI-detection tool to Sacem, said it removed up to 85% of fraudulent AI streams from its royalty pool in 2025, and said it now receives around 60,000 fully AI-created tracks per day. That is a strong signal that trust/compliance tooling is becoming part of the music stack.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/deezer-licenses-ai-detection-tool-french-royalty-agency-sacem-plans-wider-roll-2026-01-29/",
-      "date": "2026-01-29"
+      "summary": "Spotify is beta testing artist profile approval controls to stop misattribution and AI slop, while Deezer is licensing AI-detection tooling into collecting-society workflows. The distribution layer is actively defending artist identity and royalty integrity.",
+      "source": "Spotify via TechCrunch + Reuters",
+      "url": "https://techcrunch.com/2026/03/24/spotify-tests-new-tool-to-stop-ai-slop-from-being-attributed-to-real-artists/",
+      "date": "2026-03-24"
+    },
+    {
+      "headline": "IFPI says recorded music reached $31.7B in 2025 and 837M paid subscriptions",
+      "category": "market",
+      "summary": "Recorded music remains structurally large and growing. That means the opportunity is real, but it also increases pressure to find a defensible niche within a very noisy stack.",
+      "source": "IFPI",
+      "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
+      "date": "2026-03-18"
     },
     {
       "headline": "UNESCO warns creator economics remain under pressure",
@@ -74,7 +74,7 @@
     "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction inside existing music workflows rather than tools that fully replace musicians.",
     "rights_cleanliness_matters_more": "The legal and commercial environment continues to reward clean sourcing, transparency, and rights clarity.",
     "scale_is_real_but_not_enough": "Suno's scale signal and Google's distribution show the category is real, but they also make undifferentiated AI music apps less defensible.",
-    "trust_infrastructure_is_rising": "Fraud, spam, and impersonation are turning trust and detection into real product categories inside music tech.",
+    "trust_infrastructure_is_rising": "Deezer's detection licensing and Spotify's artist-profile controls both point to trust/compliance becoming real product categories inside music tech.",
     "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, and commercially usable results."
   }
 }

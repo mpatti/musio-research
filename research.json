@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-03-29T17:05:00Z",
-  "note": "Refreshed March 29, 2026 midday using the requested source mix: Google search via the local Serper key in TOOLS.md, a limited recent-search pass on X/Twitter via the local X credentials in TOOLS.md, and authoritative industry/news sources. Facts are separated from interpretation; X is treated as directional only.",
-  "insightTech": "The hard market signal is still distribution plus monetization, not just model quality. Google is pushing Lyria 3 Pro into mainstream products and Suno continues to present large paid scale. But the strongest creator-usage evidence still favors workflow help over fully generated songs.",
-  "insightStrategy": "For a company trying to grow toward a sale, Musio's stronger lane still looks like trusted creator infrastructure: realistic output, controllability, and a cleaner commercial-rights posture. The generic prompt-to-song category is commercially real, but it is also getting more crowded, more legally exposed, and more polluted by fraud/spam.",
+  "lastUpdated": "2026-03-29T22:05:00Z",
+  "note": "Refreshed March 29, 2026 evening using the requested source mix: Google search via the local Serper key in TOOLS.md, an attempted X/Twitter check via the local X credentials in TOOLS.md, and authoritative industry/news sources. The X credentials currently have limited API access and did not allow recent-search endpoint reads this refresh, so X was not used for factual claims. Facts are separated from interpretation.",
+  "insightTech": "The market signal is still distribution plus trust, not just model quality. Google is widening music-generation distribution, but the more durable movement this afternoon/evening was around platform-side identity protection and anti-slop controls.",
+  "insightStrategy": "If Musio is being built to grow and eventually sell, the strongest lane still looks like trusted creator workflow infrastructure: realistic output, controllability, and a cleaner commercial story than generic prompt-to-song products. Distribution layers are starting to defend against AI spam and impersonation, which makes trust posture more valuable, not less.",
   "facts": [
     {
       "date": "2026-03-25",
@@ -32,13 +32,13 @@
       "authority": "primary"
     },
     {
-      "date": "2026-03-23",
-      "source": "White House framework via Music Ally",
-      "title": "White House says courts should resolve whether AI training on copyrighted material is fair use",
-      "summary": "Music Ally reported the White House AI policy framework said the administration believes training on copyrighted material does not violate copyright law, but also said courts should resolve the question and Congress should consider licensing or collective-rights frameworks without prejudging whether licensing is required.",
+      "date": "2026-03-24",
+      "source": "Reuters Legal",
+      "title": "Music publishers pressed the Anthropic lyrics case around fair use and market substitution",
+      "summary": "Reuters reported UMG, Concord, and ABKCO asked a California judge to reject Anthropic's fair-use defense, arguing Claude can reproduce lyrics on demand and that its lyric outputs compete with and dilute the market for the originals.",
       "category": "licensing_copyright",
-      "url": "https://musically.com/2026/03/23/white-house-says-courts-will-decide-if-ai-training-is-fair-use/",
-      "authority": "industry_press_high_relevance"
+      "url": "https://www.reuters.com/legal/legalindustry/us-music-publishers-suing-anthropic-make-their-case-against-ai-fair-use-2026-03-24/",
+      "authority": "high_quality_press"
     },
     {
       "date": "2026-03-16",
@@ -57,6 +57,15 @@
       "category": "creator_workflow",
       "url": "https://moises.ai/insights/musician-ai-report-water-and-music/",
       "authority": "company_research"
+    },
+    {
+      "date": "2026-03-24",
+      "source": "Spotify via TechCrunch",
+      "title": "Spotify is beta testing artist profile approval controls to reduce misattribution and AI slop",
+      "summary": "TechCrunch reported Spotify's new Artist Profile Protection beta lets artists review and approve or decline releases delivered under their names before they go live on artist pages. Spotify framed artist identity protection as a top priority for 2026.",
+      "category": "distribution_risk",
+      "url": "https://techcrunch.com/2026/03/24/spotify-tests-new-tool-to-stop-ai-slop-from-being-attributed-to-real-artists/",
+      "authority": "credible_press_platform_signal"
     },
     {
       "date": "2026-01-29",
@@ -84,7 +93,7 @@
     ],
     "licensing_and_policy": [
       "The legal and policy environment is still unsettled, but the direction of travel is clear enough to matter: lawful sourcing, transparency, and rights posture are strategic assets.",
-      "That makes a clean commercial story more valuable for acquisition-oriented positioning, especially for enterprise, sync, education, and serious creator use cases."
+      "The Anthropic lyrics dispute matters because music-specific cases emphasize output substitution and on-demand reproduction, not just abstract training doctrine."
     ],
     "market_structure": [
       "The market is simultaneously bigger and messier: industry revenues are growing, but oversupply, fraud, and platform concentration are increasing pressure on trust and discovery.",
@@ -94,8 +103,13 @@
       "Google's distribution and Suno's claimed scale make the category look commercially real, but they also make the generic AI-music-app lane harder to win independently.",
       "Musio's more defensible angle remains the layer between musical intent and usable, commercially credible output."
     ],
+    "distribution_controls": [
+      "Spotify's identity-protection beta and Deezer's AI-detection licensing point the same direction: distribution platforms increasingly need anti-spam, anti-impersonation, and provenance controls.",
+      "That strengthens the case for Musio to position around trustworthiness and commercial cleanliness rather than raw output volume."
+    ],
     "x_signals_directional_only": [
-      "A limited X recent-search pass was noisy but directionally consistent with creator/content-workflow usage and continued attention on Suno. This is useful for sentiment and positioning, not as evidence."
+      "An X/Twitter pull was attempted with the local credentials, but current API access level blocked recent-search reads this refresh.",
+      "Operational takeaway: X remains worth checking when accessible, but this evening's update should lean on web/news/primary sources instead of pretending there was fresh X evidence."
     ]
   },
   "musioPositioning": {
@@ -116,7 +130,8 @@
         "Evidence of repeat use in real creator workflows rather than curiosity usage",
         "Strong retention in niches like composers, worship/church music, content creators, indie producers, and educators",
         "Distinctive sound quality and human-feel performance that generic generators do not match",
-        "Workflow integrations that make Musio feel infrastructural, not replaceable"
+        "Workflow integrations that make Musio feel infrastructural, not replaceable",
+        "A reputation for clean outputs that do not create identity, provenance, or platform-trust headaches"
       ],
       "what_reduces_value": [
         "Looking like a generic AI music app in an overcrowded category",
