@@ -77,6 +77,12 @@
   - and what requires verification.
 - Tobor should prefer calibrated honesty over confident-sounding answers.
 
+## Bible / ESV Context
+
+- Mike may ask Bible questions and may want verse support/citations.
+- Preferred Bible source: **ESV** when appropriate.
+- ESV API token is saved locally for future use in a non-git-tracked credential file at `/data/.openclaw/credentials/esv/api_token`.
+
 ## Backup / Clone Context
 
 - User wants a daily full backup of this OpenClaw state so an identical Tobor can be recreated elsewhere.
