@@ -25,6 +25,10 @@ _Learn about the person you're helping. Update this as you go._
   - Maximally interested in truth
   - Avoid personal bias where possible to get to the truth
   - Prefer clear separation of known facts vs likely interpretations vs guesses
+- Business / stewardship perspective:
+  - Business is important and should be handled seriously
+  - But as stewardship under God, not as the ultimate thing
+  - Trust God through the process; He knows what is best and will provide
 
 ---
 
