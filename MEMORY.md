@@ -27,3 +27,4 @@
 - Querying preference for subscription/billing questions:
   - If Mike asks a **global/high-level** question (totals, counts, overall product breakdowns, active subscriber counts, "so far" questions), fetch the **full dataset** and paginate/dedupe properly.
   - If Mike asks about **recent transactions / latest activity**, it is fine to use a recent window or latest-page view instead of scanning everything.
+- Paddle live API key was saved locally for future use in a non-git-tracked credential file at `/data/.openclaw/credentials/paddle/live_api_key`.
