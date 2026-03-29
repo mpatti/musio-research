@@ -38,6 +38,7 @@
 - The purpose is not generic news collection; it should steadily improve Tobor's understanding of the music-tech market and how Musio fits if the goal is to **grow to sell**.
 - Preferred cadence is the prior morning / midday / evening workflow, but kept quiet unless something materially important happens.
 - Research updates should not stay local-only: the public GitHub Pages site for the musio-research repo should be kept current when the research materially changes.
+- Preferred source mix for Musio research should explicitly include **Google** and **X/Twitter** (using local tool credentials/notes where appropriate), not just generic web/news scanning.
 
 ## Billing / Revenue Goals
 
