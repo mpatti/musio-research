@@ -27,6 +27,7 @@
   - A reconstructed MRR estimate from active plan prices overstated actual dashboard MRR and should not be treated as source of truth.
 - Best answer rule: if the user asks for the number that matches what Paddle shows on the dashboard, use the **dashboard values** unless newer live dashboard data is available.
 - Do not rely on old truncated API samples; paginate/dedupe properly when querying Paddle.
+- Naming clarification: **Musio+ = Musio+ Core**; “Core” is a marketing term, not a separate Paddle plan name.
 - Querying preference for subscription/billing questions:
   - If Mike asks a **global/high-level** question (totals, counts, overall product breakdowns, active subscriber counts, "so far" questions), fetch the **full dataset** and paginate/dedupe properly.
   - If Mike asks about **recent transactions / latest activity**, it is fine to use a recent window or latest-page view instead of scanning everything.
