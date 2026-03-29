@@ -24,3 +24,6 @@
   - Non-canceled-ish current customers (`active + past_due + paused`) were about **3,483**.
 - Best answer rule: if the user asks for the number that matches what Paddle shows on the dashboard, use **3,466** unless newer data is fetched.
 - Do not rely on old truncated API samples; paginate/dedupe properly when querying Paddle.
+- Querying preference for subscription/billing questions:
+  - If Mike asks a **global/high-level** question (totals, counts, overall product breakdowns, active subscriber counts, "so far" questions), fetch the **full dataset** and paginate/dedupe properly.
+  - If Mike asks about **recent transactions / latest activity**, it is fine to use a recent window or latest-page view instead of scanning everything.
