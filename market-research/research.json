@@ -1,24 +1,41 @@
 {
-  "lastUpdated": "2026-04-01T17:00:00Z",
-  "period": "midday refresh",
+  "lastUpdated": "2026-04-01T22:00:00Z",
+  "period": "evening refresh",
   "sources": [
     "Serper/Google search via local key",
     "X API recent-search sample via local credentials",
     "Google",
     "IFPI",
     "Reuters",
+    "Billboard",
     "Moises x Water & Music",
     "Music Business Worldwide",
     "BBC reporting via Music Business Worldwide"
   ],
   "stories": [
     {
-      "headline": "Midday check: the morning view still holds, with one useful extra signal on lawful licensing",
+      "headline": "Evening check: no reversal, but policy and litigation pressure widened further",
       "category": "bottom_line",
-      "summary": "No major midday reversal appeared. The most useful new addition is Reuters' reporting on STIM's AI training licence, which shows a concrete licensing path can exist for music AI instead of the market staying purely adversarial.",
+      "summary": "The market view did not flip by evening. The most useful added signals are that the UK government backed away from an AI-training opt-out path after creative-industry backlash, and Google was pulled into music-training litigation over Lyria 3.",
       "source": "Synthesis from source set",
-      "url": "https://www.reuters.com/business/media-telecom/sweden-launches-ai-music-licence-protect-songwriters-2025-09-09/",
+      "url": "https://www.billboard.com/pro/uk-music-industry-wins-government-abandons-ai-opt-out-plan/",
       "date": "2026-04-01"
+    },
+    {
+      "headline": "Google is now inside the music-training rights fight too",
+      "category": "policy",
+      "summary": "Billboard reported indie artists sued Google over alleged Lyria 3 training on unlicensed YouTube songs. This is an allegation rather than a legal finding, but it meaningfully weakens any assumption that large-platform distribution automatically means low rights risk.",
+      "source": "Billboard",
+      "url": "https://www.billboard.com/pro/google-ai-music-lawsuit-artists-lyria-3-model-youtube-songs/",
+      "date": "2026-03-09"
+    },
+    {
+      "headline": "The UK stepped back from a creator-hostile AI training default",
+      "category": "policy",
+      "summary": "Billboard reported the UK government no longer had a preferred opt-out approach after strong rejection from the creative industries. That suggests music-sector pressure can still shape public policy, not just courtroom outcomes.",
+      "source": "Billboard / UK government statements",
+      "url": "https://www.billboard.com/pro/uk-music-industry-wins-government-abandons-ai-opt-out-plan/",
+      "date": "2026-03-23"
     },
     {
       "headline": "BMG added another music-specific copyright front against Anthropic",
@@ -29,7 +46,7 @@
       "date": "2026-03-18"
     },
     {
-      "headline": "GEMA vs. Suno is now a concrete European test of output similarity and licensing",
+      "headline": "GEMA vs. Suno remains a concrete European test of output similarity and licensing",
       "category": "policy",
       "summary": "Music Business Worldwide reported the Munich hearing ended without a ruling and set a June 12 decision date. GEMA is pressing the argument that Suno outputs can be misleadingly similar to original songs in melody, harmony, and rhythm.",
       "source": "Music Business Worldwide",
@@ -37,28 +54,12 @@
       "date": "2026-03-09"
     },
     {
-      "headline": "Sweden's STIM licensing move is a real sign that rights-cleared AI music markets can form",
-      "category": "policy",
-      "summary": "Reuters reported STIM launched a licence allowing AI firms to train on copyrighted songs while paying royalties and tracking outputs. It is early, but it matters because it shows music AI is not only moving toward litigation; it is also moving toward licensable market infrastructure.",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/media-telecom/sweden-launches-ai-music-licence-protect-songwriters-2025-09-09/",
-      "date": "2025-09-09"
-    },
-    {
-      "headline": "Sony says it has already targeted 135,000+ artist deepfakes for removal",
-      "category": "distribution_risk",
-      "summary": "Sony's disclosed takedown volume is a strong signal that impersonation is no longer a fringe issue. Trust controls now look like category infrastructure, not just moderation cleanup.",
-      "source": "BBC via Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/sony-music-has-targeted-135000-deepfakes-of-its-artists-music-for-removal-from-streaming-platforms/",
-      "date": "2026-03-18"
-    },
-    {
-      "headline": "Google distribution and Suno scale still say the category is commercially real",
+      "headline": "Google distribution and Suno product velocity still say the category is commercially real",
       "category": "competition",
-      "summary": "Google is pushing Lyria 3 Pro into mainstream workflow surfaces, and Suno's reported paid scale remains the clearest demand-side proof point in AI music. But those same signals make undifferentiated AI music apps less defensible.",
+      "summary": "Google is pushing Lyria 3 Pro into mainstream workflow surfaces, while MBW reported Suno launched v5.5 with voice capture and personal-style models. But those same moves also make identity control and rights posture more strategically important.",
       "source": "Google + Music Business Worldwide",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/",
-      "date": "2026-03-25"
+      "url": "https://workspaceupdates.googleblog.com/2026/03/create-longer-musical-tracks-in-gemini-app-with-Lyria-3-Pro.html",
+      "date": "2026-03-27"
     },
     {
       "headline": "Musician adoption evidence still supports workflow-first products",
@@ -71,7 +72,7 @@
     {
       "headline": "X remains more useful as a noise/weather check than a factual source",
       "category": "x_signal",
-      "summary": "A small recent-search sample was dominated by hobbyist AI-music publishing chatter, DSP release talk, ethics/copyright debate, and a few 'copyright-safe' positioning pitches. Directionally, that supports the view that AI music is leaking into mass self-publishing workflows and that trust-safe messaging is becoming part of the pitch.",
+      "summary": "A small recent-search sample was again dominated by hobbyist AI-music publishing chatter, DSP release talk, ethics/copyright debate, and low-signal promotion. Directionally, that supports the view that AI music is leaking into mass self-publishing workflows and that trust-safe messaging is becoming part of the pitch.",
       "source": "X recent search via local credentials",
       "url": "https://x.com/",
       "date": "2026-04-01"
@@ -79,9 +80,9 @@
   ],
   "themes": {
     "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction inside existing music workflows rather than tools that fully replace musicians.",
-    "rights_cleanliness_matters_more": "The legal and commercial environment continues to reward clean sourcing, transparency, and rights clarity.",
-    "scale_is_real_but_not_enough": "Google's distribution and Suno's scale claim show the category is real, but they also make generic AI music apps less defensible.",
-    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing, STIM's licensing framework, and Spotify identity controls all point toward trust/compliance becoming product categories inside music tech.",
+    "rights_cleanliness_matters_more": "The legal and policy environment continues to reward clean sourcing, transparency, consent, and rights clarity.",
+    "scale_is_real_but_not_enough": "Google's distribution and Suno's scale/product pace show the category is real, but they also make generic AI music apps less defensible.",
+    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing, STIM's licensing framework, the UK policy retreat, and Google litigation all point toward trust/compliance becoming product categories inside music tech.",
     "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, and commercially usable results."
   }
 }
