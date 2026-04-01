@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-01T13:00:00Z",
-  "period": "morning refresh",
+  "lastUpdated": "2026-04-01T17:00:00Z",
+  "period": "midday refresh",
   "sources": [
     "Serper/Google search via local key",
     "X API recent-search sample via local credentials",
@@ -13,11 +13,11 @@
   ],
   "stories": [
     {
-      "headline": "Legal and trust pressure intensified more than model/news hype this cycle",
+      "headline": "Midday check: the morning view still holds, with one useful extra signal on lawful licensing",
       "category": "bottom_line",
-      "summary": "The biggest meaningful change since the March 29 refresh is sharper evidence that rights, provenance, and anti-impersonation concerns are becoming core market structure, not side issues.",
+      "summary": "No major midday reversal appeared. The most useful new addition is Reuters' reporting on STIM's AI training licence, which shows a concrete licensing path can exist for music AI instead of the market staying purely adversarial.",
       "source": "Synthesis from source set",
-      "url": "https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/",
+      "url": "https://www.reuters.com/business/media-telecom/sweden-launches-ai-music-licence-protect-songwriters-2025-09-09/",
       "date": "2026-04-01"
     },
     {
@@ -35,6 +35,14 @@
       "source": "Music Business Worldwide",
       "url": "https://www.musicbusinessworldwide.com/gema-vs-suno-german-court-hears-landmark-ai-music-copyright-case/",
       "date": "2026-03-09"
+    },
+    {
+      "headline": "Sweden's STIM licensing move is a real sign that rights-cleared AI music markets can form",
+      "category": "policy",
+      "summary": "Reuters reported STIM launched a licence allowing AI firms to train on copyrighted songs while paying royalties and tracking outputs. It is early, but it matters because it shows music AI is not only moving toward litigation; it is also moving toward licensable market infrastructure.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/media-telecom/sweden-launches-ai-music-licence-protect-songwriters-2025-09-09/",
+      "date": "2025-09-09"
     },
     {
       "headline": "Sony says it has already targeted 135,000+ artist deepfakes for removal",
@@ -63,7 +71,7 @@
     {
       "headline": "X remains more useful as a noise/weather check than a factual source",
       "category": "x_signal",
-      "summary": "A small recent-search sample was dominated by hobbyist Suno publishing chatter, Spotify/DistroKid release talk, and scattered user complaints about lyric/copyright flagging. Directionally, that supports the view that AI music is leaking into mass self-publishing workflows and adding downstream trust noise.",
+      "summary": "A small recent-search sample was dominated by hobbyist AI-music publishing chatter, DSP release talk, ethics/copyright debate, and a few 'copyright-safe' positioning pitches. Directionally, that supports the view that AI music is leaking into mass self-publishing workflows and that trust-safe messaging is becoming part of the pitch.",
       "source": "X recent search via local credentials",
       "url": "https://x.com/",
       "date": "2026-04-01"
@@ -73,7 +81,7 @@
     "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction inside existing music workflows rather than tools that fully replace musicians.",
     "rights_cleanliness_matters_more": "The legal and commercial environment continues to reward clean sourcing, transparency, and rights clarity.",
     "scale_is_real_but_not_enough": "Google's distribution and Suno's scale claim show the category is real, but they also make generic AI music apps less defensible.",
-    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing, and Spotify's identity controls all point toward trust/compliance becoming product categories inside music tech.",
+    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing, STIM's licensing framework, and Spotify identity controls all point toward trust/compliance becoming product categories inside music tech.",
     "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, and commercially usable results."
   }
 }

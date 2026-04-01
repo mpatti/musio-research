@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-01T13:00:00Z",
-  "note": "Refreshed April 1, 2026 morning using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Facts are separated from interpretation. X was useful mainly as directional creator/distribution chatter, not as a source of high-confidence factual claims.",
-  "insightTech": "The strongest new signal is not a breakthrough model launch; it is tightening pressure around rights, provenance, and catalog trust. That makes generic AI-song generation less attractive as a standalone business and makes commercially credible workflow/trust positioning more valuable.",
-  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure: realistic output, control, and a cleaner rights/commercial story than prompt-to-song products that trigger fraud, misattribution, and licensing anxiety.",
+  "lastUpdated": "2026-04-01T17:00:00Z",
+  "note": "Refreshed April 1, 2026 midday using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Facts are separated from interpretation. Midday check found no major reversal versus the morning view; the most useful additional signal was Sweden's STIM licensing path for lawful AI music training, which reinforces that rights-cleared infrastructure is becoming a strategic differentiator.",
+  "insightTech": "The strongest new signal is still not a breakthrough model launch; it is tightening pressure around rights, provenance, anti-impersonation, and catalog trust. At midday, the extra meaningful evidence is that lawful licensing paths are starting to take shape, which makes generic AI-song generation less attractive as a standalone business and makes commercially credible workflow/trust positioning more valuable.",
+  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure: realistic output, control, and a cleaner rights/commercial story than prompt-to-song products that trigger fraud, misattribution, and licensing anxiety. The added STIM signal makes the market look even more likely to reward products that can show a clean provenance and licensing posture.",
   "facts": [
     {
       "date": "2026-03-25",
@@ -59,6 +59,15 @@
       "authority": "credible_trade_press"
     },
     {
+      "date": "2025-09-09",
+      "source": "Reuters",
+      "title": "Sweden's STIM launched an AI music training licence",
+      "summary": "Reuters reported STIM introduced a licence allowing AI companies to legally use copyrighted songs for training while paying royalties to creators, with tracking requirements for AI-generated outputs. This is not a broad market standard yet, but it is one of the clearest concrete signs that music-rights licensing paths for AI can exist.",
+      "category": "licensing_copyright",
+      "url": "https://www.reuters.com/business/media-telecom/sweden-launches-ai-music-licence-protect-songwriters-2025-09-09/",
+      "authority": "high_quality_press"
+    },
+    {
       "date": "2026-03-19",
       "source": "Moises x Water & Music",
       "title": "Survey of 1,525 musicians still shows AI usage is higher among pros than hobbyists, but practical use is led by workflow tools",
@@ -93,7 +102,7 @@
     ],
     "licensing_and_policy": [
       "The legal environment is not merely unsettled; it is actively music-specific and getting sharper around lyrics, similarity, sourcing, and remuneration.",
-      "That raises the strategic value of lawful sourcing, transparent rights posture, and avoiding product behavior that looks like substitution or impersonation."
+      "The STIM licensing move matters because it shows a possible lawful path, not just conflict. That raises the strategic value of transparent rights posture and products built to fit a licensable market structure."
     ],
     "market_structure": [
       "The market is structurally large and still growing, but more of the value chain is now worried about fraud, catalog pollution, and identity abuse.",
@@ -108,8 +117,8 @@
       "That strengthens the case for Musio to position around trustworthiness and commercial cleanliness rather than raw output volume."
     ],
     "x_signals_directional_only": [
-      "A small rate-safe X recent-search pull on April 1 was dominated by hobbyist creators publishing Suno-made tracks and discussing Spotify/DistroKid release plans, plus scattered user complaints about aggressive copyright/lyric filtering.",
-      "Useful directional takeaway: X currently reflects noisy downstream distribution behavior more than high-confidence market intelligence. It supports the view that catalog pollution and creator-side release automation are real, but it should not be treated as authoritative evidence by itself."
+      "A small rate-safe X recent-search pull on April 1 was dominated by hobbyist creators publishing AI-made tracks to Spotify or other DSPs, scattered ethics/copyright debate, and a few pitches around 'copyright-safe' AI background music.",
+      "Useful directional takeaway: X currently reflects noisy downstream distribution behavior and buyer messaging themes more than high-confidence market intelligence. It supports the view that catalog pollution, release automation, and rights-safety marketing are real, but it should not be treated as authoritative evidence by itself."
     ]
   },
   "musioPositioning": {

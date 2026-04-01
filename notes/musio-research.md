@@ -1,15 +1,17 @@
 # Musio Market Research
 ## April 2026 refresh
 
-Last updated: April 1, 2026 (morning)
+Last updated: April 1, 2026 (midday)
 
 ---
 
 ## Bottom line
 
-The biggest useful change since the last refresh is **not** a flashy new model release.
+The midday check did **not** produce a major reversal versus the morning view.
 
-It is that the market keeps getting more explicit about **rights, provenance, impersonation, and fraud**.
+The clearest useful signal is still that the market keeps getting more explicit about **rights, provenance, impersonation, and fraud**.
+
+The most meaningful added data point is that **STIM in Sweden has already launched a licensing path for lawful AI music training**, which suggests the market is starting to sort into both **litigation pressure** and **licensable infrastructure**.
 
 That still points Musio away from the generic prompt-to-song race and toward **trusted creator workflow infrastructure**.
 
@@ -57,7 +59,14 @@ That still points Musio away from the generic prompt-to-song race and toward **t
 - Source: Music Business Worldwide, March 9, 2026  
   <https://www.musicbusinessworldwide.com/gema-vs-suno-german-court-hears-landmark-ai-music-copyright-case/>
 
-### 6) Real creator usage still skews toward assistive tools, not full-song generation
+### 6) Sweden's STIM shows that lawful AI music licensing paths can exist
+- **Reuters** reported **STIM** introduced a licence allowing AI companies to legally use copyrighted songs for training while paying royalties to creators.
+- The licence also includes tracking requirements for AI-generated outputs.
+- This is **not** yet a broad market standard, but it is one of the clearest real-world examples that music AI can move toward licensing infrastructure instead of only lawsuits.
+- Source: Reuters, Sept. 9, 2025  
+  <https://www.reuters.com/business/media-telecom/sweden-launches-ai-music-licence-protect-songwriters-2025-09-09/>
+
+### 7) Real creator usage still skews toward assistive tools, not full-song generation
 - **Moises x Water & Music** surveyed **1,525 musicians**.
 - **67%** said they had used AI for music-related work.
 - **78% of pros** reported AI use vs **60%** of hobbyists.
@@ -67,7 +76,7 @@ That still points Musio away from the generic prompt-to-song race and toward **t
 - Source: Moises / Water & Music, March 2026  
   <https://moises.ai/insights/musician-ai-report-water-and-music/>
 
-### 7) The distribution layer is dealing with large-scale impersonation and AI spam
+### 8) The distribution layer is dealing with large-scale impersonation and AI spam
 - **Music Business Worldwide**, citing **BBC** and Sony executive Dennis Kooker, reported **Sony Music** has targeted **135,000+** AI deepfakes of its artists for removal from streaming platforms.
 - **Reuters** reported **Deezer** licensed its AI-detection technology to **Sacem**, flagged **13.4M+** AI tracks, receives about **60,000 fully AI-created tracks per day**, and said up to **85%** of AI-generated streams removed from its royalty pool in 2025 were fraudulent.
 - Sources: Music Business Worldwide, March 19, 2026; Reuters, Jan. 29, 2026  
@@ -108,6 +117,8 @@ The market is increasingly drawing distinctions around:
 - and whether outputs create substitution / takedown / moderation headaches.
 
 That matters directly if the goal is to build something someone would want to buy.
+
+It also means a product that can fit into an eventual rights-cleared licensing environment may be worth more than one that only works in legal gray zones.
 
 #### D) Trust infrastructure is becoming part of music-tech itself
 Sony takedowns, Deezer detection, and Spotify identity controls all point the same direction:
