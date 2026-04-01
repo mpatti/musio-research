@@ -1,18 +1,15 @@
 # Musio Market Research
-## March 2026 refresh
+## April 2026 refresh
 
-Last updated: March 29, 2026 (evening)
+Last updated: April 1, 2026 (morning)
 
 ---
 
 ## Bottom line
 
-Four things look true tonight:
+The biggest useful change since the last refresh is **not** a flashy new model release.
 
-1. **AI music is commercially real** — Google is pushing Lyria 3 Pro deeper into mainstream workflow products, and Suno continues to present very large paid scale.
-2. **Real creator adoption still skews toward workflow help** — the best usage evidence still favors assistive tools like stem separation over fully generated songs.
-3. **Trust, rights, and fraud are becoming more central to product value** — legal ambiguity remains, and streaming/distribution quality is getting noisier.
-4. **The distribution layer is starting to defend itself more actively** — Spotify and Deezer are both moving toward artist-identity and AI-detection controls.
+It is that the market keeps getting more explicit about **rights, provenance, impersonation, and fraud**.
 
 That still points Musio away from the generic prompt-to-song race and toward **trusted creator workflow infrastructure**.
 
@@ -20,7 +17,7 @@ That still points Musio away from the generic prompt-to-song race and toward **t
 
 ## Verified facts
 
-### 1) Google is distributing AI music more broadly, not just improving demos
+### 1) Google is still pushing AI music into mainstream workflow surfaces
 - **Google** said **Lyria 3 Pro** can generate tracks up to **3 minutes** long.
 - It also said users can prompt for **intros, verses, choruses, and bridges**.
 - Google said Lyria 3 Pro is rolling into **Gemini, Google Vids, Vertex AI, AI Studio, and ProducerAI**.
@@ -36,22 +33,31 @@ That still points Musio away from the generic prompt-to-song race and toward **t
 - Source: Music Business Worldwide, Feb. 25, 2026  
   <https://www.musicbusinessworldwide.com/suno-hits-2m-paid-subscribers-300m-annual-revenue/>
 
-### 3) The recorded-music market remains large and growing
+### 3) The recorded-music market remains large and growing, and fraud is now explicitly central
 - **IFPI** reported global recorded music revenue reached **$31.7B in 2025**, up **6.4% YoY**.
-- Paid subscription streaming grew **8.8%**.
+- **Reuters** reported streaming now accounts for around **70%** of recorded music income and total streaming revenue surpassed **$22B**.
 - Paid streaming subscription accounts reached **837M** globally.
-- Source: IFPI, March 18, 2026  
-  <https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/>
+- IFPI also explicitly called streaming fraud **"theft, plain and simple."**
+- Sources: IFPI + Reuters, March 18, 2026  
+  <https://www.ifpi.org/global-music-report-2026-global-recorded-music-revenues-grow-6-4-as-record-companies-drive-innovation/>  
+  <https://www.reuters.com/business/media-telecom/streaming-boosts-global-music-revenues-once-again-2025-report-shows-2026-03-18/>
 
-### 4) Music-specific copyright pressure is still active
-- **Reuters Legal** reported **UMG, Concord, and ABKCO** asked a California judge to reject Anthropic's fair-use defense.
-- The publishers argued Claude can reproduce lyrics on demand and that its lyric outputs can **compete with and dilute the market** for originals.
-- Separate Reuters legal analysis said U.S. courts are becoming more receptive where training data was **lawfully acquired**, but **piracy / improper sourcing** remains a major risk point.
-- Sources: Reuters Legal, March 24, 2026; Reuters Legal, March 16, 2026  
-  <https://www.reuters.com/legal/legalindustry/us-music-publishers-suing-anthropic-make-their-case-against-ai-fair-use-2026-03-24/>  
-  <https://www.reuters.com/legal/legalindustry/copyright-law-2025-courts-begin-draw-lines-around-ai-training-piracy-market-harm--pracin-2026-03-16/>
+### 4) Music-specific copyright pressure is widening
+- **Reuters Legal** reported **BMG** sued Anthropic over alleged use of copyrighted lyrics in model training.
+- Reuters said BMG cited **493 examples** of alleged infringement and criticized sourcing from **unauthorized torrent sites**.
+- Reuters also reported **UMG, Concord, and ABKCO** pressed the existing Anthropic lyrics case by arguing Claude can reproduce lyrics on demand and substitute for the originals.
+- Sources: Reuters Legal, March 18 and March 24, 2026  
+  <https://www.reuters.com/legal/litigation/bmg-sues-anthropic-using-bruno-mars-rolling-stones-lyrics-ai-training-2026-03-18/>  
+  <https://www.reuters.com/legal/legalindustry/us-music-publishers-suing-anthropic-make-their-case-against-ai-fair-use-2026-03-24/>
 
-### 5) Real creator usage still skews toward assistive tools, not full-song generation
+### 5) Europe now has a live Suno test around output similarity
+- **Music Business Worldwide** reported the Munich court heard **GEMA's** case against **Suno** on March 9.
+- GEMA alleges Suno outputs are **"misleadingly similar"** to protected songs in melody, harmony, and rhythm.
+- The hearing ended **without a ruling**, and a decision date was set for **June 12, 2026**.
+- Source: Music Business Worldwide, March 9, 2026  
+  <https://www.musicbusinessworldwide.com/gema-vs-suno-german-court-hears-landmark-ai-music-copyright-case/>
+
+### 6) Real creator usage still skews toward assistive tools, not full-song generation
 - **Moises x Water & Music** surveyed **1,525 musicians**.
 - **67%** said they had used AI for music-related work.
 - **78% of pros** reported AI use vs **60%** of hobbyists.
@@ -61,30 +67,22 @@ That still points Musio away from the generic prompt-to-song race and toward **t
 - Source: Moises / Water & Music, March 2026  
   <https://moises.ai/insights/musician-ai-report-water-and-music/>
 
-### 6) Distribution platforms are adding more trust controls
-- **TechCrunch** reported **Spotify** is beta testing **Artist Profile Protection**, letting artists approve or decline releases delivered under their names before they go live on profile pages.
-- **Reuters** reported **Deezer** licensed its AI-detection technology to **Sacem** and said it removed up to **85% of fraudulent AI-generated streams** from its royalty pool in 2025.
-- Deezer also said it now receives around **60,000 fully AI-created tracks per day**, roughly **39% of total daily uploads**.
-- Sources: TechCrunch, March 24, 2026; Reuters, Jan. 29, 2026  
-  <https://techcrunch.com/2026/03/24/spotify-tests-new-tool-to-stop-ai-slop-from-being-attributed-to-real-artists/>  
+### 7) The distribution layer is dealing with large-scale impersonation and AI spam
+- **Music Business Worldwide**, citing **BBC** and Sony executive Dennis Kooker, reported **Sony Music** has targeted **135,000+** AI deepfakes of its artists for removal from streaming platforms.
+- **Reuters** reported **Deezer** licensed its AI-detection technology to **Sacem**, flagged **13.4M+** AI tracks, receives about **60,000 fully AI-created tracks per day**, and said up to **85%** of AI-generated streams removed from its royalty pool in 2025 were fraudulent.
+- Sources: Music Business Worldwide, March 19, 2026; Reuters, Jan. 29, 2026  
+  <https://www.musicbusinessworldwide.com/sony-music-has-targeted-135000-deepfakes-of-its-artists-music-for-removal-from-streaming-platforms/>  
   <https://www.reuters.com/business/media-telecom/deezer-licenses-ai-detection-tool-french-royalty-agency-sacem-plans-wider-roll-2026-01-29/>
-
-### 7) UNESCO is still warning about creator-income pressure
-- **UNESCO** said generative AI outputs are projected to cause **24% global revenue losses for music creators by 2028**.
-- It also highlighted **platform concentration** and **opaque curation systems** as structural risks.
-- Source: UNESCO, March 27, 2026  
-  <https://www.unesco.org/en/articles/creators-face-projected-global-revenue-losses-24-2028-new-unesco-report-shows>
 
 ---
 
 ## X / Twitter check
 
-Using the local X credentials for this evening's refresh:
-- I **attempted** a recent-search pull through the X API.
-- The current access level on these credentials returned a **403 / limited-endpoint** response for search.
-- So there was **no fresh reliable X evidence** to use this cycle.
-
-That matters operationally, but it should **not** be papered over as if we had real X signal.
+Using the local X credentials for this refresh:
+- I ran a **small, rate-safe recent-search sample**.
+- The feed was mostly **creator chatter**: Suno tracks being pushed toward **Spotify/DistroKid**, plus scattered complaints about lyric/copyright filtering.
+- That is useful as a **directional signal** that AI music is flowing into self-publishing and adding downstream catalog noise.
+- It is **not** strong enough to treat as authoritative market fact.
 
 ---
 
@@ -92,23 +90,28 @@ That matters operationally, but it should **not** be papered over as if we had r
 
 ### What seems true now
 
-#### A) The category is real, but generic products are getting less defensible
-Google and Suno both reinforce that AI music is not just hype.
+#### A) The category is real, but legal/trust pressure is becoming part of the product surface
+Google and Suno still say the category is commercially real.
 
-But those same signals also mean the broad prompt-to-song lane is becoming harder to win as an independent company.
+But the stronger recent signal is that **trust, provenance, and rights risk** are now shaping what distribution platforms, rightsholders, and regulators care about.
 
 #### B) Workflow utility still looks more durable than one-click finished songs
 The best creator-usage evidence still favors tools that remove friction in real workflows.
 
 That supports products that help people make music better or faster, not just products that generate more music.
 
-#### C) Rights posture and sourcing are part of enterprise/product value
-The legal picture is still unsettled.
+#### C) Rights posture is becoming part of enterprise value
+The market is increasingly drawing distinctions around:
+- lawful sourcing,
+- transparency,
+- impersonation risk,
+- and whether outputs create substitution / takedown / moderation headaches.
 
-But the trend is clear enough to matter: **lawful sourcing, transparency, and commercial clarity** are strategic assets.
+That matters directly if the goal is to build something someone would want to buy.
 
-#### D) Trust infrastructure is becoming part of the stack
-Spotify's artist-profile approval controls and Deezer's AI-detection licensing point the same direction: the distribution layer increasingly values **identity protection, provenance signals, fraud control, and catalog cleanliness**.
+#### D) Trust infrastructure is becoming part of music-tech itself
+Sony takedowns, Deezer detection, and Spotify identity controls all point the same direction:
+**catalog cleanliness and artist identity protection are becoming product categories.**
 
 ---
 
@@ -150,4 +153,4 @@ Musio is less advantaged if it tries to compete directly as:
 
 Best message direction:
 
-**Real musicality. Human control. Useful output. Trustworthy commercial posture.**
+**Real musicality. Human control. Useful workflow. Trustworthy commercial posture.**
