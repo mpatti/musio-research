@@ -1,19 +1,20 @@
 # Musio Market Research
 ## April 2026 refresh
 
-Last updated: April 2, 2026 (midday)
+Last updated: April 2, 2026 (evening)
 
 ---
 
 ## Bottom line
 
-The midday check still did **not** produce a category reversal.
+The evening check still did **not** produce a category reversal.
 
-The most useful added signal versus the morning view was:
-- **Reuters reporting** that **Deezer** is explicitly packaging **AI detection** into its business/platform strategy,
-- which reinforces that **trust, catalog cleanliness, fraud control, and AI moderation are becoming product surface area**, not just cleanup work.
+The most useful added signal versus the midday view was:
+- **Music Business Worldwide** reporting a public **'Say No to Suno'** campaign from artist representatives,
+- plus a fresh indie-artist case alleging **stream-ripping, copied lyric corpora, and market harm**,
+- which reinforces that backlash is widening beyond the major labels into broader creator-rights and royalty-pool arguments.
 
-That reinforces the same core conclusion from yesterday and this morning: the market keeps getting more explicit about **rights, provenance, impersonation, and trust**.
+That keeps pointing to the same core conclusion: the market keeps getting more explicit about **rights, provenance, impersonation, lawful sourcing, and trust**.
 
 If Musio is being built to **grow to sell**, this still points away from the generic prompt-to-song race and toward **trusted creator workflow infrastructure**.
 
@@ -124,6 +125,22 @@ If Musio is being built to **grow to sell**, this still points away from the gen
 - Source: Reuters, March 19, 2026  
   <https://www.reuters.com/technology/deezer-reshapes-offering-businesses-boost-revenue-with-ads-ai-detection-2026-03-19/>
 
+### 14) Artist-side backlash is broadening beyond the major labels
+- **Music Business Worldwide** reported a coalition of artist representatives published an open letter titled **'Say No to Suno'**.
+- The letter argued that unauthorized generative AI platforms dilute royalty pools and are built on artists' work without permission.
+- This is **advocacy**, not a legal ruling.
+- But it matters because it shows the category narrative is now being shaped not only by labels and platforms, but also by artist-rights advocates.
+- Source: Music Business Worldwide / Music Technology Policy, Feb. 23, 2026  
+  <https://www.musicbusinessworldwide.com/artist-representatives-launch-say-no-to-suno-campaign-ai-slop-dilutes-the-royalty-pools-of-legitimate-artists-from-whose-music-this-slop-is-derived/>
+
+### 15) Indie-artist claims are converging on stream-ripping and substitute-market harm
+- **Music Business Worldwide** reported Illinois indie artists sued **Suno** and **Udio**.
+- The complaint alleges unauthorized training on recordings and lyrics, **stream-ripping from YouTube**, internal corpora of copied files, and **market substitution** that reduces licensing opportunities.
+- These are **allegations**, not findings.
+- Strategically, they reinforce that the rights problem is broadening beyond the major labels into a wider commercial-liability issue.
+- Source: Music Business Worldwide, Oct. 21, 2025  
+  <https://www.musicbusinessworldwide.com/suno-and-udio-face-another-lawsuit-from-indie-artists-accusing-them-of-stream-ripping-and-market-harm/>
+
 ---
 
 ## X / Twitter check
@@ -160,7 +177,8 @@ The market is increasingly drawing distinctions around:
 - lawful sourcing,
 - consent,
 - impersonation risk,
-- and whether outputs create substitution / takedown / moderation headaches.
+- royalty-pool dilution and substitution risk,
+- and whether outputs create takedown / moderation headaches.
 
 That matters directly if the goal is to build something someone would want to buy.
 

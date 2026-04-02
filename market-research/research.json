@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-02T17:00:00Z",
-  "period": "midday refresh",
+  "lastUpdated": "2026-04-02T22:00:00Z",
+  "period": "evening refresh",
   "sources": [
     "Serper/Google search via local key",
     "X API recent-search sample via local credentials",
@@ -12,16 +12,25 @@
     "Billboard",
     "Moises x Water & Music",
     "Music Business Worldwide",
-    "BBC reporting via Music Business Worldwide"
+    "BBC reporting via Music Business Worldwide",
+    "Music Technology Policy open letter (via Music Business Worldwide reporting)"
   ],
   "stories": [
     {
-      "headline": "Midday check: no category reversal; Deezer makes trust controls look more infrastructural",
+      "headline": "Evening check: no category reversal; artist-side backlash is widening beyond the majors",
       "category": "bottom_line",
-      "summary": "The market view still did not flip. The most useful new addition versus the morning snapshot is Reuters reporting that Deezer is explicitly packaging AI detection into its business/platform strategy, reinforcing that trust, catalog cleanliness, and fraud control are becoming part of the music-tech product stack.",
+      "summary": "The market view still did not flip. The most useful added signal versus the midday snapshot is that artist-side backlash keeps broadening: Music Business Worldwide reported a public 'Say No to Suno' campaign from artist representatives and highlighted fresh indie-artist allegations around stream-ripping and market harm. That reinforces Musio's best lane as trusted creator workflow infrastructure rather than a generic generator.",
       "source": "Synthesis from source set",
-      "url": "https://www.reuters.com/technology/deezer-reshapes-offering-businesses-boost-revenue-with-ads-ai-detection-2026-03-19/",
+      "url": "https://www.musicbusinessworldwide.com/artist-representatives-launch-say-no-to-suno-campaign-ai-slop-dilutes-the-royalty-pools-of-legitimate-artists-from-whose-music-this-slop-is-derived/",
       "date": "2026-04-02"
+    },
+    {
+      "headline": "Indie artist claims are converging on stream-ripping and substitute-market harm",
+      "category": "policy",
+      "summary": "Music Business Worldwide reported Illinois indie artists sued Suno and Udio alleging stream-ripping from YouTube, copied lyric databases, internal corpora of unlicensed files, and market substitution. These are allegations rather than findings, but they reinforce that the legal/commercial pressure is widening beyond the major labels.",
+      "source": "Music Business Worldwide",
+      "url": "https://www.musicbusinessworldwide.com/suno-and-udio-face-another-lawsuit-from-indie-artists-accusing-them-of-stream-ripping-and-market-harm/",
+      "date": "2025-10-21"
     },
     {
       "headline": "Deezer is turning AI detection into platform capability, not just moderation",
@@ -93,7 +102,7 @@
     "rights_cleanliness_matters_more": "The legal and policy environment continues to reward clean sourcing, transparency, consent, and rights clarity.",
     "scale_is_real_but_not_enough": "Google's distribution and Suno's scale/product pace show the category is real, but they also make generic AI music apps less defensible.",
     "industry_accommodation_is_real": "Even leading AI-song startups appear to be moving toward settlements, licences, and rightsholder relationships rather than assuming the music industry can simply be routed around.",
-    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing and platform push, STIM's licensing framework, the UK policy retreat, and Google litigation all point toward trust/compliance becoming product categories inside music tech.",
-    "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, and commercially usable results."
+    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing and platform push, STIM's licensing framework, the UK policy retreat, and widening artist backlash all point toward trust/compliance becoming product categories inside music tech.",
+    "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, commercially usable results, and a cleaner trust story than generic generators."
   }
 }

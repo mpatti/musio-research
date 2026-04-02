@@ -1,9 +1,27 @@
 {
-  "lastUpdated": "2026-04-02T17:00:00Z",
-  "note": "Refreshed April 2, 2026 midday using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Midday check still found no category reversal. The most useful added signal versus the morning view was Reuters reporting that Deezer is explicitly packaging AI detection inside its business/platform strategy, reinforcing that trust, catalog cleanliness, and fraud control are becoming product surface area. Facts are separated from interpretation.",
-  "insightTech": "The strongest midday signal is still not a dramatic leap in generation quality. It is that AI-music capability keeps spreading while the market keeps operationalizing trust: detection, fraud control, lawful sourcing, impersonation risk, and platform cleanliness are increasingly part of the product and distribution stack.",
-  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure: realistic output, control, and a cleaner rights/commercial story than generic prompt-to-song products. The new Deezer signal strengthens that because it shows trust/compliance moving from policy headache into monetizable platform capability.",
+  "lastUpdated": "2026-04-02T22:00:00Z",
+  "note": "Refreshed April 2, 2026 evening using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Evening check again found no category reversal. The most useful added signal versus the midday view was expanding artist-side backlash around Suno and Udio: Music Business Worldwide reported a public 'Say No to Suno' campaign from artist representatives and a fresh indie-artist lawsuit alleging stream-ripping and market harm. Facts are separated from interpretation.",
+  "insightTech": "The strongest evening signal is still not breakthrough generation quality. It is that the market keeps converting AI-music controversy into operating requirements: licensed inputs, provenance, fraud controls, artist-consent boundaries, and defensible workflow utility.",
+  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure. The new evening signal strengthens that because artist-side backlash is broadening beyond major-label litigation into reputation, royalty-pool, and substitution arguments that make generic prompt-to-song positioning less attractive.",
   "facts": [
+    {
+      "date": "2025-10-21",
+      "source": "Music Business Worldwide",
+      "title": "Indie artists sued Suno and Udio alleging stream-ripping, copied lyric corpora, and market substitution harm",
+      "summary": "Music Business Worldwide reported Illinois indie artists sued Suno and Udio, alleging unauthorized training on recordings and lyrics, stream-ripping from YouTube, internal corpora of copied files, and market harm from radio-quality substitutes that reduce licensing opportunities. These are allegations rather than findings, but they extend the legal and commercial challenge beyond the majors.",
+      "category": "licensing_copyright",
+      "url": "https://www.musicbusinessworldwide.com/suno-and-udio-face-another-lawsuit-from-indie-artists-accusing-them-of-stream-ripping-and-market-harm/",
+      "authority": "credible_trade_press_allegation"
+    },
+    {
+      "date": "2026-02-23",
+      "source": "Music Business Worldwide / Music Technology Policy open letter",
+      "title": "Artist representatives launched a 'Say No to Suno' campaign focused on royalty dilution and unauthorized training",
+      "summary": "Music Business Worldwide reported a coalition of artist representatives published an open letter calling on the music community to reject Suno, describing unauthorized generative AI platforms as 'AI slop' that dilutes royalty pools and is built on artists' work without permission. This is advocacy, not a legal finding, but it shows creator-side backlash expanding beyond major labels into broader artist-rights messaging.",
+      "category": "market_structure",
+      "url": "https://www.musicbusinessworldwide.com/artist-representatives-launch-say-no-to-suno-campaign-ai-slop-dilutes-the-royalty-pools-of-legitimate-artists-from-whose-music-this-slop-is-derived/",
+      "authority": "credible_trade_press_reporting_on_advocacy"
+    },
     {
       "date": "2026-03-16",
       "source": "Reuters Legal",
@@ -158,11 +176,13 @@
     "licensing_and_policy": [
       "The legal environment is not merely unsettled; it is actively music-specific and getting sharper around lyrics, similarity, sourcing, remuneration, and the political viability of training exceptions.",
       "Reuters' legal synthesis matters because it frames lawful sourcing, piracy risk, and market harm as emerging decision lines rather than background noise.",
-      "The STIM licensing move matters because it shows a possible lawful path, while the UK retreat from opt-out policy shows creator backlash can block permissive defaults. Together they imply the market may reward transparent rights posture more than speed-only approaches."
+      "The STIM licensing move matters because it shows a possible lawful path, while the UK retreat from opt-out policy shows creator backlash can block permissive defaults. Together they imply the market may reward transparent rights posture more than speed-only approaches.",
+      "The fresh indie-artist allegations around stream-ripping, copied lyric corpora, and substitute-market harm reinforce that rights risk is broadening beyond a fight with majors into a wider commercial-liability question."
     ],
     "market_structure": [
       "The market is structurally large and still growing, but more of the value chain is now worried about fraud, catalog pollution, identity misuse, and whether AI companies can coexist with incumbent rights holders.",
-      "LA Times/AP reporting that Suno and Udio are seeking settlements, licences, and label relationships suggests the category is drifting toward accommodation with the industry rather than cleanly routing around it."
+      "LA Times/AP reporting that Suno and Udio are seeking settlements, licences, and label relationships suggests the category is drifting toward accommodation with the industry rather than cleanly routing around it.",
+      "The 'Say No to Suno' campaign matters because it shows the backlash is not just label litigation; artist-rights framing around royalty dilution and unauthorized training is becoming part of the category narrative too."
     ],
     "competitive_landscape": [
       "Google's distribution and Suno's claimed scale make the category look commercially real, but they also make the generic AI-music-app lane harder to win independently.",
@@ -174,8 +194,8 @@
       "Deezer's move is especially useful because it implies fraud/detection controls may become monetizable infrastructure, not just defensive moderation."
     ],
     "x_signals_directional_only": [
-      "A small rate-safe X recent-search pull on April 2 again leaned heavily toward low-signal promotion, hobbyist publishing, and commentary about licensing, detection, and the big platforms rather than high-confidence new facts.",
-      "Useful directional takeaway: X continues to show that rights-clean training, AI detection, and platform trust are becoming messaging topics in the market, but it remains a noisy weather check rather than a source of record."
+      "A small rate-safe X recent-search pull on April 2 again leaned heavily toward low-signal promotion, creator chatter, and scattered discussion about copyright-free placeholders, detection tools, and artist theft accusations rather than high-confidence new facts.",
+      "Useful directional takeaway: X still behaves more like a noisy weather check than a source of record, but it continues to reflect that rights-clean training, AI detection, and platform trust are active themes in the market conversation."
     ]
   },
   "musioPositioning": {
