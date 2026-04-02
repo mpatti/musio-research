@@ -1,9 +1,11 @@
 {
-  "lastUpdated": "2026-04-01T22:00:00Z",
-  "period": "evening refresh",
+  "lastUpdated": "2026-04-02T13:00:00Z",
+  "period": "morning refresh",
   "sources": [
     "Serper/Google search via local key",
     "X API recent-search sample via local credentials",
+    "Reuters Legal",
+    "Los Angeles Times / AP",
     "Google",
     "IFPI",
     "Reuters",
@@ -14,17 +16,33 @@
   ],
   "stories": [
     {
-      "headline": "Evening check: no reversal, but policy and litigation pressure widened further",
+      "headline": "Morning check: no overnight reversal; rights posture keeps getting more central",
       "category": "bottom_line",
-      "summary": "The market view did not flip by evening. The most useful added signals are that the UK government backed away from an AI-training opt-out path after creative-industry backlash, and Google was pulled into music-training litigation over Lyria 3.",
+      "summary": "The market view did not flip overnight. The most useful added signals are Reuters Legal's framing that courts are increasingly drawing lines around lawful sourcing, piracy, and market harm, plus Los Angeles Times/AP reporting that Suno and Udio are still trying to secure industry footholds through settlements, licences, and label relationships.",
       "source": "Synthesis from source set",
-      "url": "https://www.billboard.com/pro/uk-music-industry-wins-government-abandons-ai-opt-out-plan/",
-      "date": "2026-04-01"
+      "url": "https://www.reuters.com/legal/legalindustry/copyright-law-2025-courts-begin-draw-lines-around-ai-training-piracy-market-harm--pracin-2026-03-16/",
+      "date": "2026-04-02"
+    },
+    {
+      "headline": "Even the big generator players are moving toward industry accommodation",
+      "category": "market_structure",
+      "summary": "Los Angeles Times/AP reported Suno settled with Warner, Udio signed licensing agreements with Warner, Universal, and Merlin, and Sony remains the holdout. Strategically, this suggests the AI-song category is moving toward negotiation with incumbent rights holders rather than escaping them.",
+      "source": "Los Angeles Times / AP",
+      "url": "https://www.latimes.com/business/story/2026-02-26/ai-song-generator-startups-suno-udio-angered-music-industry-now-theyre-hoping-to-join-it",
+      "date": "2026-02-26"
+    },
+    {
+      "headline": "Courts appear to be hardening around lawful sourcing and market-harm logic",
+      "category": "policy",
+      "summary": "Reuters Legal summarized 2025 AI copyright rulings as early guideposts that favor lawful sourcing more than pirated acquisition and keep market harm central. That matters because it turns rights posture into a practical business issue, not just a PR issue.",
+      "source": "Reuters Legal",
+      "url": "https://www.reuters.com/legal/legalindustry/copyright-law-2025-courts-begin-draw-lines-around-ai-training-piracy-market-harm--pracin-2026-03-16/",
+      "date": "2026-03-16"
     },
     {
       "headline": "Google is now inside the music-training rights fight too",
       "category": "policy",
-      "summary": "Billboard reported indie artists sued Google over alleged Lyria 3 training on unlicensed YouTube songs. This is an allegation rather than a legal finding, but it meaningfully weakens any assumption that large-platform distribution automatically means low rights risk.",
+      "summary": "Billboard reported indie artists sued Google over alleged Lyria 3 training on unlicensed YouTube songs. This is an allegation rather than a legal finding, but it weakens the idea that large-platform distribution automatically means low rights risk.",
       "source": "Billboard",
       "url": "https://www.billboard.com/pro/google-ai-music-lawsuit-artists-lyria-3-model-youtube-songs/",
       "date": "2026-03-09"
@@ -38,23 +56,7 @@
       "date": "2026-03-23"
     },
     {
-      "headline": "BMG added another music-specific copyright front against Anthropic",
-      "category": "policy",
-      "summary": "Reuters reported BMG sued Anthropic over alleged use of copyrighted lyrics in Claude training, citing 493 infringed works and criticizing sourcing from unauthorized torrent sites. That keeps music-specific sourcing and substitution risk very live.",
-      "source": "Reuters Legal",
-      "url": "https://www.reuters.com/legal/litigation/bmg-sues-anthropic-using-bruno-mars-rolling-stones-lyrics-ai-training-2026-03-18/",
-      "date": "2026-03-18"
-    },
-    {
-      "headline": "GEMA vs. Suno remains a concrete European test of output similarity and licensing",
-      "category": "policy",
-      "summary": "Music Business Worldwide reported the Munich hearing ended without a ruling and set a June 12 decision date. GEMA is pressing the argument that Suno outputs can be misleadingly similar to original songs in melody, harmony, and rhythm.",
-      "source": "Music Business Worldwide",
-      "url": "https://www.musicbusinessworldwide.com/gema-vs-suno-german-court-hears-landmark-ai-music-copyright-case/",
-      "date": "2026-03-09"
-    },
-    {
-      "headline": "Google distribution and Suno product velocity still say the category is commercially real",
+      "headline": "Google distribution and Suno product velocity still show the category is commercially real",
       "category": "competition",
       "summary": "Google is pushing Lyria 3 Pro into mainstream workflow surfaces, while MBW reported Suno launched v5.5 with voice capture and personal-style models. But those same moves also make identity control and rights posture more strategically important.",
       "source": "Google + Music Business Worldwide",
@@ -62,26 +64,27 @@
       "date": "2026-03-27"
     },
     {
-      "headline": "Musician adoption evidence still supports workflow-first products",
+      "headline": "Musician adoption evidence still supports workflow-first products, with some sampling caveat",
       "category": "creator_workflow",
-      "summary": "Moises and Water & Music still show practical tools beating full-song generation in real usage. Stem separation led at 71%, versus 24% for full-song generation, while copyright and authenticity worries stayed high.",
-      "source": "Moises x Water & Music",
+      "summary": "Moises and Water & Music still show practical tools beating full-song generation in real usage, but outside commentary usefully notes the sample skewed toward users already inside an AI-tool ecosystem. Directionally, workflow utility still looks stronger than full replacement.",
+      "source": "Moises x Water & Music + MusicTech commentary",
       "url": "https://moises.ai/insights/musician-ai-report-water-and-music/",
       "date": "2026-03-19"
     },
     {
       "headline": "X remains more useful as a noise/weather check than a factual source",
       "category": "x_signal",
-      "summary": "A small recent-search sample was again dominated by hobbyist AI-music publishing chatter, DSP release talk, ethics/copyright debate, and low-signal promotion. Directionally, that supports the view that AI music is leaking into mass self-publishing workflows and that trust-safe messaging is becoming part of the pitch.",
+      "summary": "A small recent-search sample was again dominated by hobbyist AI-music publishing chatter, rights-clean training claims, AI detection talk, and low-signal promotion. Directionally, that supports the view that trust-safe messaging is becoming part of the pitch, but it is not evidence by itself.",
       "source": "X recent search via local credentials",
       "url": "https://x.com/",
-      "date": "2026-04-01"
+      "date": "2026-04-02"
     }
   ],
   "themes": {
     "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction inside existing music workflows rather than tools that fully replace musicians.",
     "rights_cleanliness_matters_more": "The legal and policy environment continues to reward clean sourcing, transparency, consent, and rights clarity.",
     "scale_is_real_but_not_enough": "Google's distribution and Suno's scale/product pace show the category is real, but they also make generic AI music apps less defensible.",
+    "industry_accommodation_is_real": "Even leading AI-song startups appear to be moving toward settlements, licences, and rightsholder relationships rather than assuming the music industry can simply be routed around.",
     "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing, STIM's licensing framework, the UK policy retreat, and Google litigation all point toward trust/compliance becoming product categories inside music tech.",
     "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, and commercially usable results."
   }
