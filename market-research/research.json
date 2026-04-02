@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-02T13:00:00Z",
-  "period": "morning refresh",
+  "lastUpdated": "2026-04-02T17:00:00Z",
+  "period": "midday refresh",
   "sources": [
     "Serper/Google search via local key",
     "X API recent-search sample via local credentials",
@@ -16,12 +16,20 @@
   ],
   "stories": [
     {
-      "headline": "Morning check: no overnight reversal; rights posture keeps getting more central",
+      "headline": "Midday check: no category reversal; Deezer makes trust controls look more infrastructural",
       "category": "bottom_line",
-      "summary": "The market view did not flip overnight. The most useful added signals are Reuters Legal's framing that courts are increasingly drawing lines around lawful sourcing, piracy, and market harm, plus Los Angeles Times/AP reporting that Suno and Udio are still trying to secure industry footholds through settlements, licences, and label relationships.",
+      "summary": "The market view still did not flip. The most useful new addition versus the morning snapshot is Reuters reporting that Deezer is explicitly packaging AI detection into its business/platform strategy, reinforcing that trust, catalog cleanliness, and fraud control are becoming part of the music-tech product stack.",
       "source": "Synthesis from source set",
-      "url": "https://www.reuters.com/legal/legalindustry/copyright-law-2025-courts-begin-draw-lines-around-ai-training-piracy-market-harm--pracin-2026-03-16/",
+      "url": "https://www.reuters.com/technology/deezer-reshapes-offering-businesses-boost-revenue-with-ads-ai-detection-2026-03-19/",
       "date": "2026-04-02"
+    },
+    {
+      "headline": "Deezer is turning AI detection into platform capability, not just moderation",
+      "category": "distribution",
+      "summary": "Reuters reported Deezer is building AI detection into a new unified business platform while already excluding fully AI-generated music from recommendations. Strategically, that suggests trust/compliance controls may become sellable infrastructure inside music tech.",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/technology/deezer-reshapes-offering-businesses-boost-revenue-with-ads-ai-detection-2026-03-19/",
+      "date": "2026-03-19"
     },
     {
       "headline": "Even the big generator players are moving toward industry accommodation",
@@ -85,7 +93,7 @@
     "rights_cleanliness_matters_more": "The legal and policy environment continues to reward clean sourcing, transparency, consent, and rights clarity.",
     "scale_is_real_but_not_enough": "Google's distribution and Suno's scale/product pace show the category is real, but they also make generic AI music apps less defensible.",
     "industry_accommodation_is_real": "Even leading AI-song startups appear to be moving toward settlements, licences, and rightsholder relationships rather than assuming the music industry can simply be routed around.",
-    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing, STIM's licensing framework, the UK policy retreat, and Google litigation all point toward trust/compliance becoming product categories inside music tech.",
+    "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing and platform push, STIM's licensing framework, the UK policy retreat, and Google litigation all point toward trust/compliance becoming product categories inside music tech.",
     "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, and commercially usable results."
   }
 }

@@ -1,19 +1,19 @@
 # Musio Market Research
 ## April 2026 refresh
 
-Last updated: April 2, 2026 (morning)
+Last updated: April 2, 2026 (midday)
 
 ---
 
 ## Bottom line
 
-The morning check did **not** produce an overnight category reversal.
+The midday check still did **not** produce a category reversal.
 
-The most useful additions were:
-- **Reuters Legal's synthesis** that courts are increasingly drawing AI-training lines around **lawful sourcing, piracy, and market harm**,
-- and **Los Angeles Times / AP reporting** that even the leading AI-song generators are trying to secure footholds through **settlements, licences, and label relationships**.
+The most useful added signal versus the morning view was:
+- **Reuters reporting** that **Deezer** is explicitly packaging **AI detection** into its business/platform strategy,
+- which reinforces that **trust, catalog cleanliness, fraud control, and AI moderation are becoming product surface area**, not just cleanup work.
 
-That reinforces the same core conclusion from yesterday: the market keeps getting more explicit about **rights, provenance, impersonation, and trust**.
+That reinforces the same core conclusion from yesterday and this morning: the market keeps getting more explicit about **rights, provenance, impersonation, and trust**.
 
 If Musio is being built to **grow to sell**, this still points away from the generic prompt-to-song race and toward **trusted creator workflow infrastructure**.
 
@@ -117,6 +117,13 @@ If Musio is being built to **grow to sell**, this still points away from the gen
   <https://www.musicbusinessworldwide.com/sony-music-has-targeted-135000-deepfakes-of-its-artists-music-for-removal-from-streaming-platforms/>  
   <https://www.reuters.com/business/media-telecom/deezer-licenses-ai-detection-tool-french-royalty-agency-sacem-plans-wider-roll-2026-01-29/>
 
+### 13) Deezer is now treating AI detection as business/platform capability too
+- **Reuters** reported Deezer is building AI detection into a **new unified platform for businesses**.
+- Reuters also said Deezer is already using the technology to **exclude fully AI-generated music from recommendations**.
+- This matters less as a one-off corporate story than as evidence that **trust/compliance controls may become monetizable infrastructure inside music tech**.
+- Source: Reuters, March 19, 2026  
+  <https://www.reuters.com/technology/deezer-reshapes-offering-businesses-boost-revenue-with-ads-ai-detection-2026-03-19/>
+
 ---
 
 ## X / Twitter check
@@ -158,7 +165,7 @@ The market is increasingly drawing distinctions around:
 That matters directly if the goal is to build something someone would want to buy.
 
 #### E) Trust infrastructure is becoming part of music-tech itself
-Sony takedowns, Deezer detection, the UK policy retreat, and Google litigation all point the same direction:
+Sony takedowns, Deezer's detection licensing and business-platform push, the UK policy retreat, and Google litigation all point the same direction:
 **catalog cleanliness and artist identity protection are becoming product categories.**
 
 ---
