@@ -1,26 +1,36 @@
 {
-  "lastUpdated": "2026-04-03T17:00:00Z",
-  "period": "midday refresh",
+  "lastUpdated": "2026-04-03T22:00:00Z",
+  "period": "evening refresh",
   "sources": [
     "Serper/Google search via local key",
     "X API recent-search sample via local credentials",
+    "Google",
     "Reuters",
     "Reuters Legal",
     "IFPI",
     "Los Angeles Times / AP",
-    "Google",
     "Billboard",
     "Moises x Water & Music",
-    "Music Business Worldwide"
+    "Music Business Worldwide",
+    "TechCrunch",
+    "The Verge"
   ],
   "stories": [
     {
-      "headline": "Midday check: no material category reversal; trust/compliance still looks like the durable wedge",
+      "headline": "Evening check: no material category reversal; Google Vids strengthens the workflow-embedding thesis",
       "category": "bottom_line",
-      "summary": "The April 3 midday refresh did not produce a category flip. The most decision-useful synthesis remains that AI music is commercially real, but durable value keeps moving toward lawful sourcing, detection/fraud controls, identity protection, and creator-safe workflow utility. That still points Musio away from the generic generator race and toward trusted creator infrastructure.",
+      "summary": "The April 3 evening refresh did not produce a category flip. The most decision-useful new signal was Google's April 2 Vids update, which bundles Lyria music generation into a broader video creation and distribution workflow. That strengthens the existing conclusion that durable value is concentrating around creator workflow, lawful sourcing, identity/provenance controls, and trust/compliance infrastructure rather than generic standalone generators.",
       "source": "Synthesis from source set",
-      "url": "https://www.reuters.com/legal/legalindustry/copyright-law-2025-courts-begin-draw-lines-around-ai-training-piracy-market-harm--pracin-2026-03-16/",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
       "date": "2026-04-03"
+    },
+    {
+      "headline": "Google is pushing Lyria deeper into mainstream creator workflow via Vids",
+      "category": "competition",
+      "summary": "Google's April 2 Vids update adds custom music with Lyria 3 and Lyria 3 Pro, Veo 3.1 clips, directable avatars, screen recording, and direct YouTube export. The useful takeaway is not that Google built a better standalone music app; it is that AI music is being bundled into a broader content workflow and distribution surface.",
+      "source": "Google",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
+      "date": "2026-04-02"
     },
     {
       "headline": "Billboard's 2026 company map shows AI music is broadening beyond just prompt-to-song apps",
@@ -106,9 +116,9 @@
   "themes": {
     "workflow_over_hype": "The strongest evidence still favors AI tools that remove friction inside existing music workflows rather than tools that fully replace musicians.",
     "rights_cleanliness_matters_more": "The legal and policy environment continues to reward clean sourcing, transparency, consent, and rights clarity.",
-    "scale_is_real_but_not_enough": "Google's distribution and Suno's scale/product pace show the category is real, but they also make generic AI music apps less defensible.",
+    "scale_is_real_but_not_enough": "Google's distribution, now including deeper Vids embedding, and Suno's scale/product pace show the category is real, but they also make generic AI music apps less defensible.",
     "industry_accommodation_is_real": "Even leading AI-song startups appear to be moving toward settlements, licences, and rightsholder relationships rather than assuming the music industry can simply be routed around.",
     "trust_infrastructure_is_rising": "Sony's deepfake takedowns, Deezer's detection licensing and platform push, STIM's licensing framework, the UK policy retreat, and widening artist backlash all point toward trust/compliance becoming product categories inside music tech.",
-    "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, commercially usable results, and a cleaner trust story than generic generators. The April 3 midday refresh did not change that conclusion."
+    "musio_implication": "Musio should keep leaning toward trustworthy creator infrastructure: realistic musical output, human control, workflow fit, commercially usable results, and a cleaner trust story than generic generators. The April 3 evening refresh slightly strengthened that conclusion by showing Google pushing AI music further into bundled creation workflow."
   }
 }

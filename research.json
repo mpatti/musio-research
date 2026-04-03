@@ -1,9 +1,18 @@
 {
-  "lastUpdated": "2026-04-03T17:00:00Z",
-  "note": "Refreshed April 3, 2026 midday using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Midday check again found no material category reversal versus the morning snapshot. The most useful added signal was not a breakthrough product launch but continued evidence that the competitive map is widening while durable value keeps concentrating around lawful sourcing, fraud/detection controls, identity protection, and creator-safe workflow utility. Facts are separated from interpretation.",
-  "insightTech": "The clearest midday read is still that AI music is moving from novelty toward infrastructure fights: who has the cleanest rights posture, who can control impersonation/fraud, and who fits repeat creator workflow instead of one-off prompt novelty.",
-  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure. The midday refresh added more evidence that the buyer-relevant market is not just song generation; it now includes adjacent trust and enablement layers like detection, remixing with consent, catalog-safe tooling, and creator workflow embedding.",
+  "lastUpdated": "2026-04-03T22:00:00Z",
+  "note": "Refreshed April 3, 2026 evening using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Evening check still found no material category reversal versus the midday snapshot. The most useful added signal was Google's April 2 Google Vids update: Lyria 3 / Lyria 3 Pro are being embedded more directly into video workflow, alongside Veo 3.1, directable avatars, and direct YouTube export. Facts are separated from interpretation.",
+  "insightTech": "The clearest evening read is still that AI music is moving from novelty toward infrastructure fights: rights cleanliness, identity/provenance controls, and who gets embedded into repeat creator workflow. Google's Vids rollout adds one more concrete example of music generation becoming a feature inside broader creation software.",
+  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure. The evening refresh slightly strengthens the case that buyer-relevant value sits in embedded workflow utility and trust-safe output, not in trying to win a standalone prompt-to-song scale race against Google, Suno, or Udio.",
   "facts": [
+    {
+      "date": "2026-04-02",
+      "source": "Google",
+      "title": "Google Vids added Lyria 3 / Lyria 3 Pro custom music generation, Veo 3.1 clips, directable avatars, and direct YouTube export",
+      "summary": "Google said anyone with a Google account can generate Veo 3.1 clips in Vids, while Google AI Pro and Ultra subscribers can create custom music with Lyria 3 and Lyria 3 Pro, direct avatars with prompts, record screens, and publish videos directly to YouTube. Strategically, this matters because it embeds AI music inside a broader video/content workflow instead of asking users to adopt a separate music-only product.",
+      "category": "creator_workflow",
+      "url": "https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/",
+      "authority": "primary"
+    },
     {
       "date": "2026-01-29",
       "source": "Billboard",
@@ -204,6 +213,7 @@
       "The 'Say No to Suno' campaign matters because it shows the backlash is not just label litigation; artist-rights framing around royalty dilution and unauthorized training is becoming part of the category narrative too."
     ],
     "competitive_landscape": [
+      "Google's April 2 Vids rollout is strategically important because it turns AI music into an embedded video-workflow feature with direct distribution to YouTube, which raises the bar for standalone AI-music apps and favors products with a sharper workflow or trust wedge.",
       "Google's distribution and Suno's claimed scale make the category look commercially real, but they also make the generic AI-music-app lane harder to win independently.",
       "Musio's more defensible angle remains the layer between musical intent and usable, commercially credible output, especially if larger platforms keep absorbing legal and trust controversy.",
       "The midday competitor readthrough strengthens the case that Musio should think of itself as part of the workflow/trust layer, not only as a direct generator competitor."
@@ -214,6 +224,7 @@
       "Deezer's move is especially useful because it implies fraud/detection controls may become monetizable infrastructure, not just defensive moderation."
     ],
     "x_signals_directional_only": [
+      "Tonight's small X sample again showed mostly noisy Suno usage chatter, but also more evidence that Google's Lyria attention is clustering around video/content workflow embedding rather than around pure music-making communities.",
       "A small rate-safe X recent-search pull on April 3 was again dominated by low-signal Suno usage posts, scattered anti-AI-music sentiment, and a few comments about Google extending Lyria into broader video/content workflows.",
       "Useful directional takeaway: X continues to behave more like a noisy weather check than a source of record, but it still reflects that market attention clusters around product embedding, creator experimentation, and discomfort with AI-music authenticity."
     ]

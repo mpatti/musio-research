@@ -1,22 +1,22 @@
 # Musio Market Research
 ## April 2026 refresh
 
-Last updated: April 3, 2026 (midday)
+Last updated: April 3, 2026 (evening)
 
 ---
 
 ## Bottom line
 
-The midday check still did **not** produce a material category reversal.
+The evening check still did **not** produce a material category reversal.
 
-Most of the decision-useful signal remains the same as this morning:
+Most of the decision-useful signal remains the same as midday:
 - **Reuters Legal** still provides the cleanest synthesis that courts are drawing lines around **lawful sourcing, piracy risk, and market harm**,
 - **IFPI + Reuters** still show the recorded-music market is large and growing while fraud is becoming more explicit as an industry concern,
 - and the current **X/Twitter** pull was again mostly noisy usage chatter rather than new authoritative facts.
 
-The most useful added midday signal was **Billboard's broader 2026 competitor map**: the strategic field is not just Suno/Udio-style prompt-to-song apps anymore. It also includes licensed remixing, artist-fan tooling, detection, streaming controls, and workflow surfaces.
+The most useful added evening signal was **Google's April 2 Vids update**: Google is embedding **Lyria 3 / Lyria 3 Pro** more directly into a broader video workflow, alongside **Veo 3.1**, directable avatars, screen recording, and direct **YouTube export**.
 
-That keeps pointing to the same core conclusion: the market keeps getting more explicit about **rights, provenance, impersonation, lawful sourcing, and trust**.
+That does **not** reverse the broader category read. It slightly strengthens it: durable value keeps concentrating around **embedded workflow, rights posture, provenance, identity control, and trust**, not just around standalone prompt-to-song novelty.
 
 If Musio is being built to **grow to sell**, this still points away from the generic prompt-to-song race and toward **trusted creator workflow infrastructure**.
 
@@ -64,6 +64,12 @@ If Musio is being built to **grow to sell**, this still points away from the gen
 - Google said the feature is rolling into **Gemini, Google Vids, Vertex AI, AI Studio, and ProducerAI**.
 - Source: Google, March 25, 2026  
   <https://blog.google/innovation-and-ai/technology/ai/lyria-3-pro/>
+
+### 5b) Google is now bundling AI music more concretely inside Vids workflow
+- On **April 2**, Google said **Vids** now includes custom music generation with **Lyria 3 / Lyria 3 Pro**, **Veo 3.1** clip generation, directable/customizable avatars, a Chrome screen-recording extension, and direct **YouTube export**.
+- This is a **primary source** and a meaningful strategic signal because it shows AI music being bundled inside a broader content workflow and distribution surface, not only marketed as a standalone music product.
+- Source: Google, April 2, 2026  
+  <https://blog.google/products-and-platforms/products/workspace/google-vids-updates-lyria-veo/>
 
 ### 6) Google has now been pulled into music-training litigation too
 - **Billboard** reported a proposed class action by indie artists, songwriters, and producers alleging **Google trained Lyria 3 on unlicensed YouTube songs**.
@@ -166,7 +172,7 @@ If Musio is being built to **grow to sell**, this still points away from the gen
 
 Using the local X credentials for this refresh:
 - I ran a **small, rate-safe recent-search sample**.
-- The feed was again mostly **casual Suno usage posts, low-signal promotion, scattered anti-AI-music sentiment, and a few comments about Google extending Lyria into broader video/content workflows**.
+- The feed was again mostly **casual Suno usage posts, low-signal promotion, scattered anti-AI-music sentiment, and more chatter around Google embedding Lyria into video/content workflows**.
 - That is useful as a **directional signal** that product embedding and trust-safe messaging remain part of the market conversation.
 - It is **not** strong enough to treat as authoritative market fact.
 
