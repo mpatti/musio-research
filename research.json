@@ -1,9 +1,27 @@
 {
-  "lastUpdated": "2026-04-03T13:00:00Z",
-  "note": "Refreshed April 3, 2026 morning using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Morning check found no material category reversal versus the April 2 evening snapshot. The most decision-useful readthrough remains that commercial scale is real (IFPI/Reuters, Google, Suno claims), but the more durable advantage is shifting toward trust/compliance: lawful sourcing, identity protection, fraud controls, and creator-safe workflow utility. Facts are separated from interpretation.",
-  "insightTech": "The strongest morning signal is still not a new breakthrough headline. It is that AI music keeps getting pulled into existing music-market guardrails: licensed or lawfully sourced inputs, detection/fraud controls, identity/voice consent, and workflow utility that can survive platform and policy scrutiny.",
-  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure. Morning research did not surface a new reason to chase the generic prompt-to-song race; it reinforced that sellable value is more likely to come from realism, control, repeat workflow use, and a cleaner commercial posture than larger AI-music generators.",
+  "lastUpdated": "2026-04-03T17:00:00Z",
+  "note": "Refreshed April 3, 2026 midday using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Midday check again found no material category reversal versus the morning snapshot. The most useful added signal was not a breakthrough product launch but continued evidence that the competitive map is widening while durable value keeps concentrating around lawful sourcing, fraud/detection controls, identity protection, and creator-safe workflow utility. Facts are separated from interpretation.",
+  "insightTech": "The clearest midday read is still that AI music is moving from novelty toward infrastructure fights: who has the cleanest rights posture, who can control impersonation/fraud, and who fits repeat creator workflow instead of one-off prompt novelty.",
+  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure. The midday refresh added more evidence that the buyer-relevant market is not just song generation; it now includes adjacent trust and enablement layers like detection, remixing with consent, catalog-safe tooling, and creator workflow embedding.",
   "facts": [
+    {
+      "date": "2026-01-29",
+      "source": "Billboard",
+      "title": "Billboard's 2026 AI-music company map widened the competitive set beyond Suno/Udio to include ElevenLabs, Spotify, SoundPatrol, Deezer, and Splice",
+      "summary": "Billboard's roundup framed 2026 AI music as a broader market than just prompt-to-song apps. It highlighted Suno and Udio, but also companies focused on licensed remixing, artist-fan tools, AI detection, streaming controls, and creator workflow. This is trade-press synthesis rather than audited market share data, but it is useful for competitor mapping.",
+      "category": "competitors",
+      "url": "https://www.billboard.com/lists/top-ai-music-companies-2026-future-music/",
+      "authority": "credible_trade_press"
+    },
+    {
+      "date": "2026-01-05",
+      "source": "Reuters",
+      "title": "Reuters said 2026 is becoming a decisive year for AI copyright and fair-use rulings",
+      "summary": "Reuters reported that after mixed 2025 rulings and major settlements, 2026 is likely to bring more decisions across disputes involving Anthropic, Google, Stability, and Suno versus major labels. The practical importance is that licensing economics and fair-use boundaries are moving from theory toward case law.",
+      "category": "licensing_copyright",
+      "url": "https://www.reuters.com/legal/government/ai-copyright-battles-enter-pivotal-year-us-courts-weigh-fair-use-2026-01-05/",
+      "authority": "high_quality_press"
+    },
     {
       "date": "2025-10-21",
       "source": "Music Business Worldwide",
@@ -175,18 +193,20 @@
     ],
     "licensing_and_policy": [
       "The legal environment is not merely unsettled; it is actively music-specific and getting sharper around lyrics, similarity, sourcing, remuneration, and the political viability of training exceptions.",
-      "Reuters' legal synthesis matters because it frames lawful sourcing, piracy risk, and market harm as emerging decision lines rather than background noise.",
+      "Reuters' January and March framing matters because it moves AI copyright from abstract debate toward an investability question: whether companies will operate under broad fair-use shelter or a licensing-heavy regime.",
       "The STIM licensing move matters because it shows a possible lawful path, while the UK retreat from opt-out policy shows creator backlash can block permissive defaults. Together they imply the market may reward transparent rights posture more than speed-only approaches.",
-      "The fresh indie-artist allegations around stream-ripping, copied lyric corpora, and substitute-market harm reinforce that rights risk is broadening beyond a fight with majors into a wider commercial-liability question."
+      "The indie-artist allegations around stream-ripping, copied lyric corpora, and substitute-market harm reinforce that rights risk is broadening beyond a fight with majors into a wider commercial-liability question."
     ],
     "market_structure": [
       "The market is structurally large and still growing, but more of the value chain is now worried about fraud, catalog pollution, identity misuse, and whether AI companies can coexist with incumbent rights holders.",
       "LA Times/AP reporting that Suno and Udio are seeking settlements, licences, and label relationships suggests the category is drifting toward accommodation with the industry rather than cleanly routing around it.",
+      "Billboard's company map is useful because it shows the competitive field broadening into licensed remixing, fan-engagement tools, detection, and workflow surfaces, not just pure song generation.",
       "The 'Say No to Suno' campaign matters because it shows the backlash is not just label litigation; artist-rights framing around royalty dilution and unauthorized training is becoming part of the category narrative too."
     ],
     "competitive_landscape": [
       "Google's distribution and Suno's claimed scale make the category look commercially real, but they also make the generic AI-music-app lane harder to win independently.",
-      "Musio's more defensible angle remains the layer between musical intent and usable, commercially credible output, especially if larger platforms keep absorbing legal and trust controversy."
+      "Musio's more defensible angle remains the layer between musical intent and usable, commercially credible output, especially if larger platforms keep absorbing legal and trust controversy.",
+      "The midday competitor readthrough strengthens the case that Musio should think of itself as part of the workflow/trust layer, not only as a direct generator competitor."
     ],
     "distribution_controls": [
       "Sony's 135k-plus deepfake takedown figure, Deezer's detection licensing and business-platform push, the UK policy retreat, and Google's lawsuit all point in the same direction: trust/compliance is becoming product surface area, not back-office cleanup.",
@@ -194,7 +214,7 @@
       "Deezer's move is especially useful because it implies fraud/detection controls may become monetizable infrastructure, not just defensive moderation."
     ],
     "x_signals_directional_only": [
-      "A small rate-safe X recent-search pull on April 3 was again dominated by low-signal Suno usage posts, scattered anti-AI-music sentiment, and a few comments about Google extending Lyria deeper into content workflows.",
+      "A small rate-safe X recent-search pull on April 3 was again dominated by low-signal Suno usage posts, scattered anti-AI-music sentiment, and a few comments about Google extending Lyria into broader video/content workflows.",
       "Useful directional takeaway: X continues to behave more like a noisy weather check than a source of record, but it still reflects that market attention clusters around product embedding, creator experimentation, and discomfort with AI-music authenticity."
     ]
   },
