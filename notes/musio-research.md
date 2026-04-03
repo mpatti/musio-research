@@ -1,18 +1,18 @@
 # Musio Market Research
 ## April 2026 refresh
 
-Last updated: April 2, 2026 (evening)
+Last updated: April 3, 2026 (morning)
 
 ---
 
 ## Bottom line
 
-The evening check still did **not** produce a category reversal.
+The morning check still did **not** produce a material category reversal.
 
-The most useful added signal versus the midday view was:
-- **Music Business Worldwide** reporting a public **'Say No to Suno'** campaign from artist representatives,
-- plus a fresh indie-artist case alleging **stream-ripping, copied lyric corpora, and market harm**,
-- which reinforces that backlash is widening beyond the major labels into broader creator-rights and royalty-pool arguments.
+Most of the decision-useful signal remains the same as last night:
+- **Reuters Legal** still provides the cleanest synthesis that courts are drawing lines around **lawful sourcing, piracy risk, and market harm**,
+- **IFPI + Reuters** still show the recorded-music market is large and growing while fraud is becoming more explicit as an industry concern,
+- and the current **X/Twitter** pull was again mostly noisy usage chatter rather than new authoritative facts.
 
 That keeps pointing to the same core conclusion: the market keeps getting more explicit about **rights, provenance, impersonation, lawful sourcing, and trust**.
 
@@ -147,8 +147,8 @@ If Musio is being built to **grow to sell**, this still points away from the gen
 
 Using the local X credentials for this refresh:
 - I ran a **small, rate-safe recent-search sample**.
-- The feed was again mostly **creator chatter and promotion**, plus discussion around **licensed training claims**, **AI detection**, and the relative quality/positioning of Suno, Udio, Lyria, and adjacent tools.
-- That is useful as a **directional signal** that rights-clean messaging and trust tooling are becoming part of the market conversation.
+- The feed was again mostly **casual Suno usage posts, low-signal promotion, scattered anti-AI-music sentiment, and a few comments about Google extending Lyria deeper into creation/video workflows**.
+- That is useful as a **directional signal** that product embedding and trust-safe messaging remain part of the market conversation.
 - It is **not** strong enough to treat as authoritative market fact.
 
 ---

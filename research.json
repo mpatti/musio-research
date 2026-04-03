@@ -1,8 +1,8 @@
 {
-  "lastUpdated": "2026-04-02T22:00:00Z",
-  "note": "Refreshed April 2, 2026 evening using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Evening check again found no category reversal. The most useful added signal versus the midday view was expanding artist-side backlash around Suno and Udio: Music Business Worldwide reported a public 'Say No to Suno' campaign from artist representatives and a fresh indie-artist lawsuit alleging stream-ripping and market harm. Facts are separated from interpretation.",
-  "insightTech": "The strongest evening signal is still not breakthrough generation quality. It is that the market keeps converting AI-music controversy into operating requirements: licensed inputs, provenance, fraud controls, artist-consent boundaries, and defensible workflow utility.",
-  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure. The new evening signal strengthens that because artist-side backlash is broadening beyond major-label litigation into reputation, royalty-pool, and substitution arguments that make generic prompt-to-song positioning less attractive.",
+  "lastUpdated": "2026-04-03T13:00:00Z",
+  "note": "Refreshed April 3, 2026 morning using the requested source mix: Google search via the local Serper key in TOOLS.md, a small rate-safe X/Twitter recent-search pull via the local X credentials in TOOLS.md, and authoritative industry/news sources. Morning check found no material category reversal versus the April 2 evening snapshot. The most decision-useful readthrough remains that commercial scale is real (IFPI/Reuters, Google, Suno claims), but the more durable advantage is shifting toward trust/compliance: lawful sourcing, identity protection, fraud controls, and creator-safe workflow utility. Facts are separated from interpretation.",
+  "insightTech": "The strongest morning signal is still not a new breakthrough headline. It is that AI music keeps getting pulled into existing music-market guardrails: licensed or lawfully sourced inputs, detection/fraud controls, identity/voice consent, and workflow utility that can survive platform and policy scrutiny.",
+  "insightStrategy": "If Musio is being built to grow and eventually sell, the best lane still looks like trusted creator workflow infrastructure. Morning research did not surface a new reason to chase the generic prompt-to-song race; it reinforced that sellable value is more likely to come from realism, control, repeat workflow use, and a cleaner commercial posture than larger AI-music generators.",
   "facts": [
     {
       "date": "2025-10-21",
@@ -194,8 +194,8 @@
       "Deezer's move is especially useful because it implies fraud/detection controls may become monetizable infrastructure, not just defensive moderation."
     ],
     "x_signals_directional_only": [
-      "A small rate-safe X recent-search pull on April 2 again leaned heavily toward low-signal promotion, creator chatter, and scattered discussion about copyright-free placeholders, detection tools, and artist theft accusations rather than high-confidence new facts.",
-      "Useful directional takeaway: X still behaves more like a noisy weather check than a source of record, but it continues to reflect that rights-clean training, AI detection, and platform trust are active themes in the market conversation."
+      "A small rate-safe X recent-search pull on April 3 was again dominated by low-signal Suno usage posts, scattered anti-AI-music sentiment, and a few comments about Google extending Lyria deeper into content workflows.",
+      "Useful directional takeaway: X continues to behave more like a noisy weather check than a source of record, but it still reflects that market attention clusters around product embedding, creator experimentation, and discomfort with AI-music authenticity."
     ]
   },
   "musioPositioning": {
