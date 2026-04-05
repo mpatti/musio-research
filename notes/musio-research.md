@@ -1,22 +1,22 @@
 # Musio Market Research
 ## April 2026 refresh
 
-Last updated: April 4, 2026 (evening)
+Last updated: April 5, 2026 (morning)
 
 ---
 
 ## Bottom line
 
-The evening check still did **not** produce a material category reversal.
+The morning check still did **not** produce a material category reversal.
 
-Most of the decision-useful signal remains the same as the April 4 midday snapshot:
+Most of the decision-useful signal remains the same as the April 4 evening snapshot:
 - **Reuters Legal** still provides the cleanest synthesis that courts are drawing lines around **lawful sourcing, piracy risk, and market harm**,
 - **IFPI + Reuters** still show the recorded-music market is large and growing while fraud is becoming more explicit as an industry concern,
 - and the current **X/Twitter** pull was again mostly noisy usage chatter rather than new authoritative facts.
 
 The most useful current signal is still **Google's April 2 Vids update**: Google is embedding **Lyria 3 / Lyria 3 Pro** more directly into a broader video workflow, alongside **Veo 3.1**, directable avatars, screen recording, and direct **YouTube export**.
 
-That does **not** reverse the broader category read. The April 4 evening refresh again strengthens it: durable value keeps concentrating around **embedded workflow, rights posture, provenance, identity control, and trust**, not just around standalone prompt-to-song novelty.
+That does **not** reverse the broader category read. The April 5 morning refresh again strengthens it: durable value keeps concentrating around **embedded workflow, rights posture, provenance, identity control, and trust**, not just around standalone prompt-to-song novelty.
 
 If Musio is being built to **grow to sell**, this still points away from the generic prompt-to-song race and toward **trusted creator workflow infrastructure**.
 
@@ -172,7 +172,7 @@ If Musio is being built to **grow to sell**, this still points away from the gen
 
 Using the local X credentials for this refresh:
 - I ran a **small, rate-safe recent-search sample**.
-- The feed was again mostly **casual Suno usage posts, low-signal promotion, scattered anti-AI-music sentiment, and a little workflow-oriented chatter rather than strong new market facts**.
+- The feed was again mostly **casual Suno usage posts, low-signal promotion, copyright confusion, scattered anti-AI-music sentiment, and a little workflow-oriented chatter rather than strong new market facts**.
 - That is useful as a **directional signal** that trust-safe positioning and workflow framing remain part of the market conversation.
 - It is **not** strong enough to treat as authoritative market fact.
 
